@@ -462,6 +462,13 @@ def main():
                 "text_backend": args.text_backend,
                 "structure": before,
             }
+            if original.name == 'Knights - Unofficial Patch.esp':
+                from build_shrine_messages import build as build_shrine_messages
+                temporary = destination.with_suffix('.esp.shrine-building')
+                shrine_report = build_shrine_messages(destination, temporary, original.name)
+                temporary.replace(destination)
+                report[original.name]['shrine_messages'] = shrine_report
+                report[original.name]['output_sha256'] = shrine_report['output_sha256']
             print(f"{original.name}: {applied} Korean fields; reviewed-base {counts['reviewed_base_translation']} (overrode prior KR {counts['reviewed_base_overrode_prior_kr']}), forwarded-base {counts['forwarded_base_translation']}; locations base {counts['canonical_base_location']} + direct {counts['canonical_direct_location']} + patch {counts['canonical_patch_location']}")
     (args.output / "release_audit.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 

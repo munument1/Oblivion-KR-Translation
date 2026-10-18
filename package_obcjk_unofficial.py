@@ -5,7 +5,6 @@ import json
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 
-OPTIONAL = {'Oblivion Citadel Door Fix.esp', 'DLCThievesDen - Unofficial Patch - SSSB.esp'}
 OMIT = 'UOP Vampire Aging & Face Fix.esp'
 PATCHES = {
     'UOP': {'Unofficial Oblivion Patch.esp', 'Oblivion Citadel Door Fix.esp'},
@@ -35,6 +34,7 @@ def load_validation(folder: Path):
                 'translated_fields': source.get('translated_fields', 0),
                 'structure': source.get('structure'),
                 'text_backend': source.get('text_backend'),
+                **({'shrine_messages': source['shrine_messages']} if 'shrine_messages' in source else {}),
             },
             'locations': {
                 'base': source.get('canonical_base_location', 0),
@@ -72,7 +72,7 @@ def package(inputs, output, patch):
     for name in sorted(expected):
         path = sources[name]
         report = reports[name]
-        target = ('Optional/' if name in OPTIONAL else '') + name
+        target = name
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
         entries.append((path, target))
         audit[name] = {
@@ -97,6 +97,8 @@ def package(inputs, output, patch):
             f'{audit[path.name]["output_sha256"]}  {name}\n' for path, name in entries))
 
     with ZipFile(output) as archive:
+        if any('/' in n for n in archive.namelist() if n.lower().endswith('.esp')):
+            raise ValueError('Every ESP must be at the archive root')
         if archive.testzip():
             raise ValueError('ZIP integrity check failed')
     sha = hashlib.sha256(output.read_bytes()).hexdigest()

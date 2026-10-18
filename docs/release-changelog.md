@@ -1,3 +1,7 @@
+## 2026-10-19 · 성소 메시지 및 배포 경로 수정
+
+본편 설치기 v1.1.4와 UODP 27-KR1.7에 9개 성소 메시지를 반영했습니다. 본편·기사단 DLC·비공식 기사단 패치의 27개 SCPT / 메시지 144곳을 처리합니다. UOP 3.5.9a-KR1.7과 UODP 27-KR1.7은 모든 ESP를 ZIP 최상위에 배치합니다. 기존 책 본문 복구를 포함하며 플러그인 활성화 상태와 로드 순서는 유지합니다. 성소의 게임 내 표시는 아직 미확인입니다.
+
 # Oblivion Original Korean Translation Release Changelog
 
 Player-facing release notes. Newest releases are listed first.

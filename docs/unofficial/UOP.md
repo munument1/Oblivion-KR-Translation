@@ -1,5 +1,9 @@
 # Unofficial Oblivion Patch 한국어 UTF-8 번역 (UOP 3.5.9a)
 
+## 2026-10-19 패키지 경로 수정
+
+두 ESP를 ZIP 최상위에 배치했습니다. 파일 이동 없이 영문 UOP 위에 덮어쓸 수 있습니다. 기존에 사용하던 플러그인의 활성화 상태를 유지하세요. `Optional` 하위 폴더는 만들지 않습니다. 배포 파일은 `UOP_KR_UTF8_obCJK_3.5.9a_KR1.7_20261019.zip`입니다. 이번 성소 메시지 레코드는 UOP에 없으며, 기존 112개 책 본문 복구를 포함합니다.
+
 ## 2026-10-15 BOOK 본문 복구
 
 이전 한국어 UOP ESP에서 본문 대신 제목 한 줄만 표시되던 **112개 BOOK/DESC** 레코드를 복구했습니다. 책 본문은 본편 Oblivion.esm의 검증된 한국어 텍스트를 사용하며, 영문 UOP가 수정한 두 책(`00024594`, `00072296`)의 오탈자·서식 차이도 반영합니다. **진정한 바렌지아 5권**의 제목을 다른 권과 통일했습니다.
@@ -14,7 +18,7 @@
 ## 구성
 
 - 기본: `Unofficial Oblivion Patch.esp`
-- 선택: `Optional/Oblivion Citadel Door Fix.esp`
+- 선택: `Oblivion Citadel Door Fix.esp` (다른 ESP와 같은 최상위 경로)
 
 번역할 문자열이 없는 `UOP Vampire Aging & Face Fix.esp`는 원본을 그대로 사용합니다.
 
@@ -23,7 +27,7 @@
 1. xOBSE, obCJK, 영문 UOP 3.5.9a를 먼저 설치합니다.
 2. 본편·공식 DLC용 `Oblivion_KR_obCJK`를 활성화합니다. 글꼴과 프로필 INI는 본편 v1.1.0 설치기 안내를 따릅니다.
 3. 이 ZIP을 별도 모드로 설치하고, MO2 왼쪽 목록에서 영문 UOP 및 본편 번역 모드보다 아래에 둡니다.
-4. Citadel Door Fix를 사용하던 경우에만 `Optional` 안 ESP를 모드 최상위로 옮깁니다.
+4. 모든 ESP는 ZIP 최상위에 있습니다. Citadel Door Fix 등 기존에 사용하던 플러그인의 활성화 상태를 유지합니다.
 5. 플러그인 이름과 기존 로드 순서를 유지합니다. 이전 바이트 방식 UOP 한글 모드와 UTF-8 시험판을 끄고 MO2의 Oblivion 항목으로 실행합니다.
 
 검증된 번역을 UTF-8로 변환하고 CELL/WRLD 한글 위치명을 적용했습니다. 종족 이름은 영어로 유지합니다. 원문 대조가 확정되지 않은 문자열은 영어로 남을 수 있습니다.

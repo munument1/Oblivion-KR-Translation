@@ -10,6 +10,10 @@ on:
       - 'canonical_unofficial_translation_v2.csv'
       - 'tests/test_uop_book_restoration.py'
       - 'tests/test_unofficial_forwarding.py'
+      - 'build_shrine_messages.py'
+      - 'package_obcjk_unofficial.py'
+      - 'tests/test_shrine_messages.py'
+      - 'tests/test_unofficial_package.py'
       - '.github/workflows/uop-book-qa.yml'
   pull_request:
     paths:
@@ -20,6 +24,10 @@ on:
       - 'canonical_unofficial_translation_v2.csv'
       - 'tests/test_uop_book_restoration.py'
       - 'tests/test_unofficial_forwarding.py'
+      - 'build_shrine_messages.py'
+      - 'package_obcjk_unofficial.py'
+      - 'tests/test_shrine_messages.py'
+      - 'tests/test_unofficial_package.py'
       - '.github/workflows/uop-book-qa.yml'
   workflow_dispatch:
 
@@ -39,3 +47,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_uop_book_restoration.py' -v
       - name: Verify existing unofficial-patch forwarding behavior
         run: python -m unittest discover -s tests -p 'test_unofficial_forwarding.py' -v
+      - name: Verify wayshrine bytecode and root-level ESP packages
+        run: |
+          python -m unittest discover -s tests -p 'test_shrine_messages.py' -v
+          python -m unittest discover -s tests -p 'test_unofficial_package.py' -v

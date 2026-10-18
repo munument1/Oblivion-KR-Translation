@@ -29,6 +29,7 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 - `build_unofficial_release.py`: UOP/USIP/UODP 원본에 번역과 CELL/WRLD/REFR/REGN 위치 canonical을 함께 적용하는 OBCJK UTF-8 전용 빌더입니다.
 - `build_obcjk_locations.py`: 지도 마커·현재 위치·발견 위치용 이름을 적용합니다. 현재 레코드 순회·검증 공용 함수 때문에 `build_obcjk_overlay.py`, `obcjk_text_backend.py`, `oblivion_korean_codec.py`를 간접 사용하므로 이 세 파일은 삭제하지 않습니다.
 - `build_obcjk_ui.py`, `master_layout.py`, `obcjk_fonts.py`: 메뉴 UI, 원본 레코드 배열 보존, 글꼴 설치·검증.
+- `build_shrine_messages.py`: 본편·기사단 DLC·UODP의 9개 성소, 총 27개 SCPT / 메시지 144곳을 원본 스크립트 SHA-256으로 검사하고 고정 길이 UTF-8로 번역합니다. 최종 보고서의 `shrine_messages`에 결과를 기록합니다. 앞 단계 `structure`의 스크립트 해시는 성소 표시 문자열 수정 전 값이며 최종 해시는 `output_sha256`입니다.
 - `build_script_messages.py`: 원본 전체 스크립트 SHA-256을 확인한 뒤 하수도 출구의 SCDA/SCTX 표시 문구 다섯 건만 같은 바이트 길이로 번역합니다. 기존 구조·스크립트 검증과 native layout 검증이 끝난 후 적용하며, 최종 파일의 모든 바이트를 입력과 허용한 문구 변경에 대조합니다. 검증 보고서의 `structure`와 `native_master_layout`은 이 단계 이전 값이며, 최종 파일 해시와 문구 변경 내역은 `script_messages`에 기록합니다.
 - 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 현재 canonical 및 언오피셜 빌드 입력에 사용되므로 임의로 삭제하지 않습니다.
 - `assets/obcjk_fonts`: 원본 글꼴 3개, obCJK.ini, 라이선스와 SHA-256 목록.
@@ -50,7 +51,7 @@ python package_obcjk_unofficial.py --patch USIP --input-dir _build/obcjk/USIP --
 python package_obcjk_unofficial.py --patch UODP --input-dir _build/obcjk/UODP --output dist/UODP_KR_UTF8_obCJK_v1.1.0.zip
 ```
 
-선택 ESP는 해당 ZIP의 Optional에 둡니다. 패키징은 통합 OBCJK 빌드의 release_audit.json과 ESP SHA-256을 확인하며, 각 ZIP에 해당 모드의 ESP만 포함합니다. 이 세 ZIP은 GitHub 본편 설치기에 넣지 않고 Nexus에서 별도 배포합니다.
+모든 ESP는 해당 ZIP 최상위에 둡니다. Citadel Door Fix와 SSSB도 하위 폴더로 분리하지 않으며 기존 플러그인 활성화 상태를 유지합니다. 패키징은 통합 OBCJK 빌드의 release_audit.json과 ESP SHA-256을 확인하며, 각 ZIP에 해당 모드의 ESP만 포함합니다. 이 세 ZIP은 GitHub 본편 설치기에 넣지 않고 Nexus에서 별도 배포합니다.
 
 ## main 정리
 

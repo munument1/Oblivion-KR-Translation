@@ -22,6 +22,7 @@ from build_vanilla_overlay import (
 from build_video_subtitles import build_videos
 from master_layout import apply_layout
 from build_script_messages import build as build_script_messages
+from build_shrine_messages import build as build_shrine_messages
 from obcjk_runtime import bundle_manifest as runtime_manifest, install_runtime
 
 ORIGINAL_FONT_SETTINGS = (
@@ -172,6 +173,21 @@ def build(args):
         reports[MASTER]['script_messages'] = script_report
         reports[MASTER]['output_sha256'] = script_report['output_sha256']
 
+        # Both the base scripts and Knights overrides must be translated.
+        for name in (MASTER, 'Knights.esp'):
+            target = output / name
+            if not target.is_file():
+                continue
+            shrine_output = temp / (name + '.shrine-messages')
+            shrine_report = build_shrine_messages(target, shrine_output, name)
+            copied_shrine = target.with_suffix(target.suffix + '.shrine-building')
+            shutil.copyfile(shrine_output, copied_shrine)
+            if sha256_file(copied_shrine) != shrine_report['output_sha256']:
+                raise ValueError('Wayshrine message copy checksum mismatch')
+            copied_shrine.replace(target)
+            reports[name]['shrine_messages'] = shrine_report
+            reports[name]['output_sha256'] = shrine_report['output_sha256']
+
         shutil.copyfile(locations / 'location_validation.json', output / 'location_validation.json')
 
     ui_report = build_ui(HERE / 'assets/menus/strings.xml', output / 'menus/strings.xml')
@@ -196,6 +212,7 @@ def build(args):
             'location_changes': report['location_changes'],
             **({'native_master_layout': report['native_master_layout']} if 'native_master_layout' in report else {}),
             **({'script_messages': report['script_messages']} if 'script_messages' in report else {}),
+            **({'shrine_messages': report['shrine_messages']} if 'shrine_messages' in report else {}),
         }
         for name, report in reports.items()
     }

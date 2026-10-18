@@ -1,0 +1,90 @@
+name: Upload unofficial Korean patches to Nexus Mods
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Published GitHub release tag
+        required: true
+        default: v1.1.4
+        type: string
+      patch:
+        description: Unofficial patch package
+        required: true
+        type: choice
+        options:
+          - UODP
+          - UOP
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nexus-unofficial-${{ inputs.patch }}
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Select verified package
+        id: package
+        env:
+          PATCH: ${{ inputs.patch }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$PATCH" in
+            UODP)
+              echo 'filename=UODP_KR_UTF8_obCJK_v27_KR1.7_SHRINEFIX_20261019.zip' >> "$GITHUB_OUTPUT"
+              echo 'file_id=8036709' >> "$GITHUB_OUTPUT"
+              echo 'mod_id=433791753537' >> "$GITHUB_OUTPUT"
+              echo 'version=27-KR1.7' >> "$GITHUB_OUTPUT"
+              echo 'display_name=UODP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
+              echo 'changelog=9개 성소 스크립트 메시지 72곳을 번역했습니다. 기존 책 본문 복구를 포함하는 전체 교체본입니다. 모든 ESP를 ZIP 최상위에 배치했습니다. 본편 설치기도 v1.1.4로 업데이트하세요. 기존 플러그인 활성화 상태와 로드 순서는 유지하세요. 성소의 게임 내 표시는 미확인입니다.' >> "$GITHUB_OUTPUT"
+              ;;
+            UOP)
+              echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.7_20261019.zip' >> "$GITHUB_OUTPUT"
+              echo 'file_id=8036688' >> "$GITHUB_OUTPUT"
+              echo 'mod_id=433791753535' >> "$GITHUB_OUTPUT"
+              echo 'version=3.5.9a-KR1.7' >> "$GITHUB_OUTPUT"
+              echo 'display_name=UOP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
+              echo 'changelog=모든 ESP를 ZIP 최상위에 배치하여 Optional 폴더의 파일 이동 단계를 없앴습니다. 기존 112개 책 본문 복구를 포함합니다. 기존 플러그인 활성화 상태와 로드 순서를 유지하세요. 성소 메시지 수정은 본편 설치기 v1.1.4와 별도 UODP 27-KR1.7에 적용됩니다.' >> "$GITHUB_OUTPUT"
+              ;;
+            *) exit 1 ;;
+          esac
+      - name: Download and verify release package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.tag }}
+          FILENAME: ${{ steps.package.outputs.filename }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          gh release download "$RELEASE_TAG" --pattern "$FILENAME" --pattern "$FILENAME.sha256"
+          sha256sum --check "$FILENAME.sha256"
+          python -c 'import sys,zipfile; z=zipfile.ZipFile(sys.argv[1]); assert z.testzip() is None; assert all("/" not in n for n in z.namelist() if n.lower().endswith(".esp"))' "$FILENAME"
+      - name: Update Nexus file
+        id: nexus
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ steps.package.outputs.file_id }}
+          mod_id: ${{ steps.package.outputs.mod_id }}
+          filename: ${{ steps.package.outputs.filename }}
+          version: ${{ steps.package.outputs.version }}
+          display_name: ${{ steps.package.outputs.display_name }}
+          description: ${{ steps.package.outputs.changelog }}
+          changelog: ${{ steps.package.outputs.changelog }}
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Record result
+        env:
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+        run: echo "Uploaded Nexus file version $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
