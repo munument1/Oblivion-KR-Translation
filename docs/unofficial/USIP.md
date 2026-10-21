@@ -1,4 +1,8 @@
-# Unofficial Shivering Isles Patch 한국어 UTF-8 번역 v1.1.0
+# Unofficial Shivering Isles Patch 한국어 UTF-8 번역 (USIP 1.6.2-KR1.6)
+
+## 2026-10-21 궁정 계급명 보정
+
+이번 전체 교체본 `USIP_KR_UTF8_obCJK_1.6.2_KR1.6_20261021.zip`은 쉬버링 아일즈 궁정의 계급명 원문과 등급 순서의 불일치를 고치고, 영문 패치의 덮어쓰기 레코드에서도 검증된 한국어 명칭을 사용합니다. 본편 설치기 v1.1.5와 함께 업데이트하고 기존 ESP 로드 순서를 유지하세요.
 
 대상 원본: **USIP 1.6.2**. 다른 버전의 ESP에 적용하지 마세요.
 

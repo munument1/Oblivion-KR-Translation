@@ -6,12 +6,12 @@ on:
       tag:
         description: Published GitHub release tag
         required: true
-        default: v1.1.3
+        default: v1.1.5
         type: string
       changelog:
         description: Nexus changelog for this version
         required: true
-        default: '방어구 종류의 Light 오역을 불빛에서 경갑으로 수정했습니다. 다른 문맥의 불빛 번역은 유지합니다. 새 설치기로 본편 번역 모드를 다시 생성해 교체하세요. UOP / USIP / UODP 업데이트는 필요하지 않습니다.'
+        default: '루시엔의 오계명 대사, 생귄 퀘스트 로그, 졸링 대사와 오웬의 싸움꾼 표현을 교정했습니다. 주요 길드 계급명 누락 20필드와 쉬버링 아일즈 궁정 계급명 7필드를 보완하고 마법사 길드 실내 지명 2곳을 수정했습니다. 새 설치기로 번역 모드를 다시 생성하고 UOP/USIP/UODP 한국어 ESP도 갱신하세요.'
         type: string
 
 permissions:

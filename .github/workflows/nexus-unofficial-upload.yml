@@ -6,7 +6,7 @@ on:
       tag:
         description: Published GitHub release tag
         required: true
-        default: v1.1.4
+        default: v1.1.5
         type: string
       patch:
         description: Unofficial patch package
@@ -37,20 +37,20 @@ jobs:
           set -euo pipefail
           case "$PATCH" in
             UODP)
-              echo 'filename=UODP_KR_UTF8_obCJK_v27_KR1.7_SHRINEFIX_20261019.zip' >> "$GITHUB_OUTPUT"
+              echo 'filename=UODP_KR_UTF8_obCJK_v27_KR1.8_20261021.zip' >> "$GITHUB_OUTPUT"
               echo 'file_id=8036709' >> "$GITHUB_OUTPUT"
               echo 'mod_id=433791753537' >> "$GITHUB_OUTPUT"
-              echo 'version=27-KR1.7' >> "$GITHUB_OUTPUT"
+              echo 'version=27-KR1.8' >> "$GITHUB_OUTPUT"
               echo 'display_name=UODP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
-              echo 'changelog=9개 성소 스크립트 메시지 72곳을 번역했습니다. 기존 책 본문 복구를 포함하는 전체 교체본입니다. 모든 ESP를 ZIP 최상위에 배치했습니다. 본편 설치기도 v1.1.4로 업데이트하세요. 기존 플러그인 활성화 상태와 로드 순서는 유지하세요. 성소의 게임 내 표시는 미확인입니다.' >> "$GITHUB_OUTPUT"
+              echo 'changelog=본편 v1.1.5의 대사 및 퀘스트 로그 교정을 비공식 DLC 패치의 덮어쓰기 레코드에도 반영했습니다. 기존 성소 메시지 72곳과 책 본문 복구도 유지됩니다. 본편 설치기 v1.1.5와 함께 모든 ESP를 교체하고 기존 활성화·로드 순서를 유지하세요.' >> "$GITHUB_OUTPUT"
               ;;
             UOP)
-              echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.7_20261019.zip' >> "$GITHUB_OUTPUT"
+              echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.8_20261021.zip' >> "$GITHUB_OUTPUT"
               echo 'file_id=8036688' >> "$GITHUB_OUTPUT"
               echo 'mod_id=433791753535' >> "$GITHUB_OUTPUT"
-              echo 'version=3.5.9a-KR1.7' >> "$GITHUB_OUTPUT"
+              echo 'version=3.5.9a-KR1.8' >> "$GITHUB_OUTPUT"
               echo 'display_name=UOP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
-              echo 'changelog=모든 ESP를 ZIP 최상위에 배치하여 Optional 폴더의 파일 이동 단계를 없앴습니다. 기존 112개 책 본문 복구를 포함합니다. 기존 플러그인 활성화 상태와 로드 순서를 유지하세요. 성소 메시지 수정은 본편 설치기 v1.1.4와 별도 UODP 27-KR1.7에 적용됩니다.' >> "$GITHUB_OUTPUT"
+              echo 'changelog=루시엔·퀘스트 로그·오웬 대사를 보완하고 아레나·길드의 한국어 계급명이 UOP의 영문 덮어쓰기에 사라지지 않도록 수정했습니다. 기존 112개 책 본문 복구와 두 ESP 최상위 배치를 유지합니다. 본편 설치기 v1.1.5와 함께 교체하세요.' >> "$GITHUB_OUTPUT"
               ;;
             *) exit 1 ;;
           esac

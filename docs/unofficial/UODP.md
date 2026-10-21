@@ -1,4 +1,9 @@
-# Unofficial Oblivion DLC Patches 한국어 UTF-8 번역 27-KR1.7
+# Unofficial Oblivion DLC Patches 한국어 UTF-8 번역 27-KR1.8
+
+## 2026-10-21 본편 대사·레코드 보정
+
+이번 전체 교체본 `UODP_KR_UTF8_obCJK_v27_KR1.8_20261021.zip`은 v1.1.5에서 검증한 대사 및 퀘스트 로그 수정이 비공식 DLC 패치의 레코드 덮어쓰기로 사라지지 않도록 전달한 파일입니다. 기존 기사단 성소 메시지 72곳의 수정, BOOK 본문 복구 및 ESP 최상위 배치는 그대로 포함합니다. 설치기 v1.1.5와 함께 한국어 ESP를 교체하고 기존 활성화 상태와 로드 순서를 유지하세요.
+
 
 대상 원본: **UODP v27**. 다른 버전의 ESP에 적용하지 마세요.
 
