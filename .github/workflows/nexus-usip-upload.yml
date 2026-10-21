@@ -1,0 +1,85 @@
+name: Upload USIP Korean patch to Nexus Mods
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Published GitHub release tag
+        required: true
+        default: v1.1.5
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nexus-usip-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Download and validate published USIP package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          filename='USIP_KR_UTF8_obCJK_1.6.2_KR1.6_20261021.zip'
+          gh release download "$RELEASE_TAG" --pattern "$filename" --pattern "$filename.sha256"
+          sha256sum --check "$filename.sha256"
+          python -c 'import sys,zipfile; z=zipfile.ZipFile(sys.argv[1]); assert z.testzip() is None; assert [n for n in z.namelist() if n.lower().endswith(".esp")] == ["Unofficial Shivering Isles Patch.esp"]' "$filename"
+
+      - name: Resolve existing Nexus mod and file identity
+        id: target
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$NEXUS_API_KEY"
+          # The previous public KR1.5 upload exposes game-scoped version ID 1000046772.
+          # Resolve its stable file ID through the authenticated official v3 API.
+          version_json=$(curl --fail-with-body --silent --show-error --retry 2 \
+            --header "apikey: $NEXUS_API_KEY" \
+            'https://api.nexusmods.com/v3/games/oblivion/mod-file-versions/1000046772')
+          file_id=$(jq -r '.data.file.id // empty' <<< "$version_json")
+          previous_version=$(jq -r '.data.version // empty' <<< "$version_json")
+          [[ "$file_id" =~ ^[0-9]+$ ]]
+          [[ "$previous_version" == '1.6.2-KR1.5' ]] || { echo 'Unexpected existing USIP version'; exit 1; }
+          mod_json=$(curl --fail-with-body --silent --show-error --retry 2 \
+            --header "apikey: $NEXUS_API_KEY" \
+            'https://api.nexusmods.com/v3/games/oblivion/mods/56640')
+          mod_id=$(jq -r '.data.id // empty' <<< "$mod_json")
+          mod_name=$(jq -r '.data.name // empty' <<< "$mod_json")
+          [[ "$mod_id" =~ ^[0-9]+$ ]]
+          [[ "$mod_name" == *'Unofficial Shivering Isles Patch'* ]]
+          printf 'file_id=%s\nmod_id=%s\n' "$file_id" "$mod_id" >> "$GITHUB_OUTPUT"
+
+      - name: Update existing Nexus USIP file
+        id: nexus
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ steps.target.outputs.file_id }}
+          mod_id: ${{ steps.target.outputs.mod_id }}
+          filename: USIP_KR_UTF8_obCJK_1.6.2_KR1.6_20261021.zip
+          version: 1.6.2-KR1.6
+          display_name: Unofficial Shivering Isles Patch KR
+          description: 쉬버링 아일즈 궁정 계급명 원문 및 등급 순서 7필드 수정. 기존 번역을 포함한 전체 교체본입니다. 본편 설치기 v1.1.5와 함께 업데이트하세요.
+          changelog: 궁정 계급명 7필드와 영문 USIP 덮어쓰기 번역 전달을 수정했습니다. 기존 플러그인 활성화 및 로드 순서를 유지하세요.
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+
+      - name: Record upload result
+        env:
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+        run: echo "Updated USIP to 1.6.2-KR1.6. Version ID $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
