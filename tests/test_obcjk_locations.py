@@ -1,4 +1,5 @@
 import csv
+import shutil
 import struct
 import tempfile
 import unittest
@@ -10,6 +11,57 @@ from build_vanilla_overlay import encode_subrecord
 
 
 class LocationOverlayTests(unittest.TestCase):
+    def test_mages_guild_cell_overrides_match_exact_original_names(self):
+        """The original base ESM uses different FULL text from its DLC/UOP overrides."""
+        reviewed = {
+            0x0002E545: ("CheydinhalMagesGuild", "Mages' Guild", "셰이딘홀 메이지 길드"),
+            0x00030534: ("LeyawiinMagesGuild", "Leyawiin Mages' Guild", "레이야윈 메이지 길드"),
+        }
+        canonical = Path(__file__).resolve().parents[1] / "canonical_locations_v2.csv"
+        with canonical.open(encoding="utf-8-sig", newline="") as stream:
+            rows = [row for row in csv.DictReader(stream)
+                    if row["effective_source"] == "Oblivion.esm"
+                    and row["record_type"] == "CELL"
+                    and row["raw_formid"] in {f"{fid:08X}" for fid in reviewed}]
+        self.assertEqual(len(rows), len(reviewed))
+        for row in rows:
+            fid = int(row["raw_formid"], 16)
+            editor, english, korean = reviewed[fid]
+            self.assertEqual((row["field"], row["editor_id"], row["old_english"]),
+                             ("FULL", editor, english))
+            self.assertEqual((row["obcjk_unicode_text"], row["obcjk_conversion_status"]),
+                             (korean, "verified"))
+            self.assertEqual(bytes.fromhex(row["obcjk_utf8_hex"]),
+                             korean.encode("utf-8") + b"\0")
+
+        # The third original ASCII cell uses a Test* EditorID; preserve it.
+        cases = {**reviewed, 0x0005D36A: ("TestParadiseCave", "Paradise Cave", "Paradise Cave")}
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source, tables, output = root / "source", root / "tables", root / "output"
+            source.mkdir()
+            tables.mkdir()
+            shutil.copyfile(canonical, tables / "canonical_locations_v2.csv")
+            chunks = []
+            for fid, (editor, english, korean) in cases.items():
+                body = (encode_subrecord(b"EDID", editor.encode("ascii") + b"\0")
+                        + encode_subrecord(b"FULL", english.encode("cp1252") + b"\0")
+                        + encode_subrecord(b"DATA", b"\x21"))
+                chunks.append(struct.pack("<4sIIII", b"CELL", len(body), 0, fid, 0) + body)
+            (source / "Oblivion.esm").write_bytes(b"".join(chunks))
+            report = build([source], tables, output)["Oblivion.esm"]
+            self.assertEqual(report["location_counts"], {"CELL": 2})
+            self.assertEqual({row["formid"] for row in report["changes"]},
+                             {f"{fid:08X}" for fid in reviewed})
+            self.assertTrue(all(row["match_kind"] == "record_and_source"
+                                for row in report["changes"]))
+            self.assertEqual(report["unmatched"], [])
+            actual = {fid: parts for (kind, fid), _, parts, _ in records(output / "Oblivion.esm")}
+            for fid, (editor, english, korean) in cases.items():
+                self.assertEqual(actual[fid][0][1], editor.encode("ascii") + b"\0")
+                self.assertEqual(actual[fid][1][1], korean.encode("utf-8") + b"\0")
+                self.assertEqual(actual[fid][2][1], b"\x21")
+
     def test_marker_names_and_region_names_preserve_nonmarker_and_data(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

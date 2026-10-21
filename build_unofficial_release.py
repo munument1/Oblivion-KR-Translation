@@ -33,6 +33,13 @@ PAIRS = (
     ("UODP", "Unofficial Oblivion DLC Patches-KR"),
 )
 TEXT_FIELDS = {b"FULL", b"DESC", b"NAM1", b"CNAM", b"DATA", b"RDMP"}
+FACT_RANK_FIELDS = {b"MNAM", b"FNAM"}
+
+
+def localizable_field(record_type: bytes, field: bytes) -> bool:
+    # MNAM/FNAM are rank names only in FACT. Other records can reuse these
+    # subrecord signatures with unrelated structures and must stay untouched.
+    return field in TEXT_FIELDS or (record_type == b"FACT" and field in FACT_RANK_FIELDS)
 
 
 def read_records(path: Path):
@@ -104,7 +111,7 @@ def has_localizable_text(path: Path):
         if kind == b"TES4":
             continue
         for field, value in fields:
-            if field not in TEXT_FIELDS or not value.endswith(b"\0") or b"\0" in value[:-1]:
+            if not localizable_field(kind, field) or not value.endswith(b"\0") or b"\0" in value[:-1]:
                 continue
             try:
                 text = value[:-1].decode("cp1252")
@@ -128,11 +135,16 @@ def reviewed_identity(records, formid):
     return owner, (canonical_slot << 24) | (formid & 0xFFFFFF)
 
 
-def matching_translation(table, official, record_type, formid, field, old, editor, occurrence):
+def matching_translation(table, official, record_type, formid, field, old, editor, occurrence,
+                         require_exact_identity=False):
     candidates = (table or {}).get((official, record_type, formid, field), ())
     matches = [item for item in candidates if item.english == decode_english(old) and
                (item.editor_id is None or item.editor_id == editor) and
-               (item.occurrence is None or item.occurrence == occurrence)]
+               (item.occurrence is None or item.occurrence == occurrence) and
+               (not require_exact_identity or
+                (item.source == official and item.editor_id == editor and
+                 item.editor_id is not None and item.occurrence == occurrence and
+                 item.occurrence is not None))]
     if not matches:
         return None
     targets = {item.korean for item in matches}
@@ -146,7 +158,7 @@ def matching_translation(table, official, record_type, formid, field, old, edito
 def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vanilla_table=None, final_table=None,
                     quest_entries=None, loading_entries=None, completions=None, nexus_completions=None,
                     patch_table=None, location_table=None, patch_location_table=None,
-                    book_restorations=None):
+                    book_restorations=None, rank_table=None):
     old_records = read_records(original)
     kr_records = read_records(prior) if prior is not None else old_records
     if old_records.keys() != kr_records.keys():
@@ -175,7 +187,7 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
             if key[0] == b"QUST" and field == b"CNAM" and stage is not None:
                 occurrence = stage_occurrences[stage]
                 stage_occurrences[stage] += 1
-            if field not in TEXT_FIELDS:
+            if not localizable_field(key[0], field):
                 if old != new:
                     raise ValueError(f"{original.name}: non-text difference at {key} field {field!r}")
                 continue
@@ -197,6 +209,31 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
                 continue
             if old != new and b"\0" in new[:-1]:
                 raise ValueError(f"{original.name}: embedded NUL at {key} field {field!r}")
+
+            # FACT rank names must come from a master-owned canonical entry
+            # with exact editor/occurrence provenance. The vanilla audit is
+            # preferred, but older audit files predate some reviewed ranks;
+            # those can come ONLY from the separately loaded UI supplement.
+            # Never forward bare prior-KR rank memories or unrelated fields.
+            if key[0] == b"FACT" and field in FACT_RANK_FIELDS:
+                if identity is None:
+                    continue
+                audit_key = (official, "FACT", f"{base_formid:08X}",
+                             field.decode("ascii"), hashlib.sha256(old).hexdigest())
+                audited = vanilla_audit is not None and audit_key in vanilla_audit
+                selected = matching_translation(
+                    vanilla_table if audited else rank_table, official, key[0], base_formid,
+                    field, old, old_editor.rstrip(b"\0"), field_occurrence,
+                    require_exact_identity=True)
+                if selected is not None and selected != old:
+                    changes.setdefault(key, {})[index] = (field, old, selected)
+                    counts["translated_fields"] += 1
+                    counts["reviewed_base_translation"] += 1
+                    if not audited:
+                        counts["supplement_fact_rank_translation"] += 1
+                    if old != new and selected != new:
+                        counts["reviewed_base_overrode_prior_kr"] += 1
+                continue
 
             # Existing KR is a legacy fallback. A tracked canonical patch table
             # can replace that dependency entirely for reproducible UTF-8 builds.
@@ -371,15 +408,22 @@ def main():
         data = json.loads(args.vanilla_audit.read_text(encoding="utf-8"))
         vanilla_audit = {(a["file"], a["type"], a["formid"], a["field"], a["source_sha256"])
                          for a in data["applied"]}
-        # Official-record forwarding uses the same canonical v2 table as the
-        # vanilla release. Legacy/remaster memories are archival only.
+        # Include reviewed UI/faction ranks from the vanilla build. The audit
+        # and exact master-owned record identity still gate all forwarding.
         vanilla_table = load_translations(
             root / "canonical_translation_v2.csv",
+            extra_paths=(root / "canonical_ui_supplement_v1.csv",),
+            encoded_column="obcjk_utf8_hex" if args.text_backend == "obcjk" else "new_bytes_hex")
+        # Audits generated before the UI supplement gained certain FACT ranks
+        # cannot authorize them. Keep the fallback strictly supplement-only.
+        rank_table = load_translations(
+            root / "canonical_ui_supplement_v1.csv",
             encoded_column="obcjk_utf8_hex" if args.text_backend == "obcjk" else "new_bytes_hex")
         final_table = None
         quest_entries = loading_entries = None
     else:
         vanilla_audit = vanilla_table = final_table = quest_entries = loading_entries = None
+        rank_table = None
     completions = {}
     if args.text_backend == "legacy":
         with (Path(__file__).resolve().parent / "patch_completion.csv").open(encoding="utf-8-sig", newline="") as stream:
@@ -431,7 +475,8 @@ def main():
             changes, counts = collect_changes(original, prior, vanilla_audit, vanilla_table, final_table,
                                               quest_entries, loading_entries, completions, nexus_completions,
                                               patch_table, location_table, patch_location_table,
-                                              book_restorations=book_restorations)
+                                              book_restorations=book_restorations,
+                                              rank_table=rank_table)
             if original.name == UOP_PLUGIN and counts["uop_book_desc_restored"] != len(book_restorations):
                 raise ValueError(
                     f"UOP BOOK/DESC restoration incomplete: "
@@ -450,6 +495,7 @@ def main():
                 "translated_fields": applied,
                 "forwarded_base_translation": counts["forwarded_base_translation"],
                 "reviewed_base_translation": counts["reviewed_base_translation"],
+                "supplement_fact_rank_translation": counts["supplement_fact_rank_translation"],
                 "reviewed_base_overrode_prior_kr": counts["reviewed_base_overrode_prior_kr"],
                 "manual_completion": counts["manual_completion"],
                 "nexus_completion": counts["nexus_completion"],

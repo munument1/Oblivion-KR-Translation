@@ -1033,6 +1033,7 @@ Oblivion.esm,CELL,0002DC0A,FULL,Chapel Undercroft,SkingradChapelUndercroft,예�
 Oblivion.esm,CELL,0002DC0B,FULL,Chapel Hall,SkingradChapelHall,예배당 회당,ec9888ebb0b0eb8bb920ed9a8ceb8bb900,verified
 Oblivion.esm,CELL,0002DD9B,FULL,Lazare Milvan's Basement,SkingradLazareMilvansBasement,라자르 밀반의 집 지하실,eb9dbcec9e90eba5b420ebb080ebb098ec9d9820eca79120eca780ed9598ec8ba400,verified
 Oblivion.esm,CELL,0002E544,FULL,Mages Guild Well,CheydinhalMagesGuildWell,셰이딘홀 메이지 길드 우물,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c20ec9ab0ebacbc00,verified
+Oblivion.esm,CELL,0002E545,FULL,Mages' Guild,CheydinhalMagesGuild,셰이딘홀 메이지 길드,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c00,verified
 Oblivion.esm,CELL,0002E57B,FULL,Nonwyll Cavern,NonwyllCavern,논윌 동굴,eb85bcec9c8c20eb8f99eab5b400,verified
 Oblivion.esm,CELL,0002E5B2,FULL,Herminia Cinna's House,ICElvenGardensHerminiaCinnasHouse,헤르미니아 시나의 집,ed97a4eba5b4ebafb8eb8b88ec958420ec8b9ceb8298ec9d9820eca79100,verified
 Oblivion.esm,CELL,0002E9A1,FULL,Two Sisters Lodge Cellar,SkingradTwoSistersLodgeCellar,두 자매의 오두막 지하실,eb919020ec9e90eba7a4ec9d9820ec98a4eb9190eba78920eca780ed9598ec8ba400,verified
@@ -1123,6 +1124,7 @@ Oblivion.esm,CELL,0003052F,FULL,Mahei's House,LeyawiinMaheisHouse,마헤이의 �
 Oblivion.esm,CELL,00030530,FULL,Blackwood Company Hall,LeyawiinBlackwoodCompanyHall,블랙우드 컴퍼니 홀,ebb894eb9e99ec9ab0eb939c20ecbbb4ed8dbceb8b8820ed998000,verified
 Oblivion.esm,CELL,00030531,FULL,J'Bari's House,LeyawiinJBarisHouse,즈'바리의 집,eca68827ebb094eba6acec9d9820eca79100,verified
 Oblivion.esm,CELL,00030532,FULL,Dar Jee's House,LeyawiinDarJeesHouse,다르 지의 집,eb8ba4eba5b420eca780ec9d9820eca79100,verified
+Oblivion.esm,CELL,00030534,FULL,Leyawiin Mages' Guild,LeyawiinMagesGuild,레이야윈 메이지 길드,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c00,verified
 Oblivion.esm,CELL,00030535,FULL,Fighter's Guild,LeyawiinFightersGuild,파이터 길드,ed8c8cec9db4ed84b020eab8b8eb939c00,verified
 Oblivion.esm,CELL,00030536,FULL,Dummy cell,LeyawiinCastle,레이야윈 - 성,eba088ec9db4ec95bcec9c88202d20ec84b100,verified
 Oblivion.esm,CELL,00030538,FULL,The Dividing Line,LeyawiinTheDividingLine,한 끗 차이,ed959c20eb819720ecb0a8ec9db400,verified

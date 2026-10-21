@@ -94,15 +94,15 @@ Oblivion.esm,FACT,0006A7FC,FNAM,Madwoman,광녀,eab491eb858000,SECourtofMadnessF
 Oblivion.esm,FACT,0006A7FC,MNAM,Honored Madman,명예로운 광인,ebaa85ec9888eba19cec9ab420eab491ec9db800,SECourtofMadnessFaction,4
 Oblivion.esm,FACT,0006A7FC,FNAM,Honored Madwoman,명예로운 광녀,ebaa85ec9888eba19cec9ab420eab491eb858000,SECourtofMadnessFaction,4
 Oblivion.esm,FACT,0006A7FC,MNAM,Duke of Dementia,디멘시아의 공작,eb9494eba998ec8b9cec9584ec9d9820eab3b5ec9e9100,SECourtofMadnessFaction,5
-Oblivion.esm,FACT,0006A7FC,FNAM,Duchess of Mania,매니아의 여공작,eba7a4eb8b88ec9584ec9d9820ec97aceab3b5ec9e9100,SECourtofMadnessFaction,5
+Oblivion.esm,FACT,0006A7FC,FNAM,Duchess of Dementia,디멘시아의 여공작,eb9494eba998ec8b9cec9584ec9d9820ec97aceab3b5ec9e9100,SECourtofMadnessFaction,5
 Oblivion.esm,FACT,0006A7FC,MNAM,Duke of Mania,매니아의 공작,eba7a4eb8b88ec9584ec9d9820eab3b5ec9e9100,SECourtofMadnessFaction,6
-Oblivion.esm,FACT,0006A7FC,FNAM,Defender of the Realm,왕국의 수호자,ec9995eab5adec9d9820ec8898ed98b8ec9e9000,SECourtofMadnessFaction,6
-Oblivion.esm,FACT,0006A7FC,MNAM,Madgod,광기의 신,eab491eab8b0ec9d9820ec8ba000,SECourtofMadnessFaction,7
-Oblivion.esm,FACT,0006A7FC,FNAM,Madgod,광기의 신,eab491eab8b0ec9d9820ec8ba000,SECourtofMadnessFaction,7
+Oblivion.esm,FACT,0006A7FC,FNAM,Duchess of Mania,매니아의 여공작,eba7a4eb8b88ec9584ec9d9820ec97aceab3b5ec9e9100,SECourtofMadnessFaction,6
+Oblivion.esm,FACT,0006A7FC,MNAM,Regent,섭정,ec84adeca09500,SECourtofMadnessFaction,7
+Oblivion.esm,FACT,0006A7FC,FNAM,Regent,섭정,ec84adeca09500,SECourtofMadnessFaction,7
 Oblivion.esm,FACT,0006A7FC,MNAM,Defender of the Realm,왕국의 수호자,ec9995eab5adec9d9820ec8898ed98b8ec9e9000,SECourtofMadnessFaction,8
-Oblivion.esm,FACT,0006A7FC,FNAM,Duchess of Dementia,디멘시아의 여공작,eb9494eba998ec8b9cec9584ec9d9820ec97aceab3b5ec9e9100,SECourtofMadnessFaction,8
-Oblivion.esm,FACT,0006A7FC,FNAM,Regent,섭정,ec84adeca09500,SECourtofMadnessFaction,9
-Oblivion.esm,FACT,0006A7FC,MNAM,Regent,섭정,ec84adeca09500,SECourtofMadnessFaction,9
+Oblivion.esm,FACT,0006A7FC,FNAM,Defender of the Realm,왕국의 수호자,ec9995eab5adec9d9820ec8898ed98b8ec9e9000,SECourtofMadnessFaction,8
+Oblivion.esm,FACT,0006A7FC,MNAM,Madgod,광기의 신,eab491eab8b0ec9d9820ec8ba000,SECourtofMadnessFaction,9
+Oblivion.esm,FACT,0006A7FC,FNAM,Madgod,광기의 신,eab491eab8b0ec9d9820ec8ba000,SECourtofMadnessFaction,9
 Oblivion.esm,FACT,000980DD,MNAM,Brother,형제,ed9895eca09c00,OrderoftheVirtuousBlood,0
 Oblivion.esm,FACT,000980DD,FNAM,Sister,자매,ec9e90eba7a400,OrderoftheVirtuousBlood,0
 Oblivion.esm,FACT,00033F53,MNAM,Vampire,뱀파이어,ebb180ed8c8cec9db4ec96b400,VampireFaction,0
@@ -119,10 +119,14 @@ Oblivion.esm,FACT,0002F872,MNAM,Slayer,슬레이어,ec8aaceba088ec9db4ec96b400,D
 Oblivion.esm,FACT,0002F872,FNAM,Slayer,슬레이어,ec8aaceba088ec9db4ec96b400,DarkBrotherhood,1
 Oblivion.esm,FACT,0002F872,MNAM,Eliminator,일리미네이터,ec9dbceba6acebafb8eb84a4ec9db4ed84b000,DarkBrotherhood,2
 Oblivion.esm,FACT,0002F872,FNAM,Eliminator,일리미네이터,ec9dbceba6acebafb8eb84a4ec9db4ed84b000,DarkBrotherhood,2
+Oblivion.esm,FACT,0002F872,MNAM,Assassin,암살자,ec9594ec82b4ec9e9000,DarkBrotherhood,3
+Oblivion.esm,FACT,0002F872,FNAM,Assassin,암살자,ec9594ec82b4ec9e9000,DarkBrotherhood,3
 Oblivion.esm,FACT,0002F872,MNAM,Executioner,처형자,ecb298ed9895ec9e9000,DarkBrotherhood,4
 Oblivion.esm,FACT,0002F872,FNAM,Executioner,처형자,ecb298ed9895ec9e9000,DarkBrotherhood,4
 Oblivion.esm,FACT,0002F872,MNAM,Silencer,사일렌서,ec82acec9dbceba08cec849c00,DarkBrotherhood,5
 Oblivion.esm,FACT,0002F872,FNAM,Silencer,사일렌서,ec82acec9dbceba08cec849c00,DarkBrotherhood,5
+Oblivion.esm,FACT,0002F872,MNAM,Speaker,대변인,eb8c80ebb380ec9db800,DarkBrotherhood,6
+Oblivion.esm,FACT,0002F872,FNAM,Speaker,대변인,eb8c80ebb380ec9db800,DarkBrotherhood,6
 Oblivion.esm,FACT,0002F872,MNAM,Listener,청취자,ecb2adecb7a8ec9e9000,DarkBrotherhood,7
 Oblivion.esm,FACT,0002F872,FNAM,Listener,청취자,ecb2adecb7a8ec9e9000,DarkBrotherhood,7
 Oblivion.esm,FACT,00029F82,MNAM,Initiate,입문자,ec9e85ebacb8ec9e9000,MythicDawn,0
@@ -137,18 +141,28 @@ Oblivion.esm,FACT,000299B9,MNAM,Bloodletter,블러드레터,ebb894eb9faceb939ceb
 Oblivion.esm,FACT,000299B9,FNAM,Bloodletter,블러드레터,ebb894eb9faceb939ceba088ed84b000,ArenaCombatants,2
 Oblivion.esm,FACT,000299B9,MNAM,Myrmidon,미르미돈,ebafb8eba5b4ebafb8eb8f8800,ArenaCombatants,3
 Oblivion.esm,FACT,000299B9,FNAM,Myrmidon,미르미돈,ebafb8eba5b4ebafb8eb8f8800,ArenaCombatants,3
+Oblivion.esm,FACT,000299B9,MNAM,Warrior,전사,eca084ec82ac00,ArenaCombatants,4
+Oblivion.esm,FACT,000299B9,FNAM,Warrior,전사,eca084ec82ac00,ArenaCombatants,4
 Oblivion.esm,FACT,000299B9,MNAM,Gladiator,검투사,eab280ed88acec82ac00,ArenaCombatants,5
 Oblivion.esm,FACT,000299B9,FNAM,Gladiator,검투사,eab280ed88acec82ac00,ArenaCombatants,5
 Oblivion.esm,FACT,000299B9,MNAM,Hero,영웅,ec9881ec9b8500,ArenaCombatants,6
 Oblivion.esm,FACT,000299B9,FNAM,Hero,영웅,ec9881ec9b8500,ArenaCombatants,6
+Oblivion.esm,FACT,000299B9,MNAM,Champion,챔피언,ecb194ed94bcec96b800,ArenaCombatants,7
+Oblivion.esm,FACT,000299B9,FNAM,Champion,챔피언,ecb194ed94bcec96b800,ArenaCombatants,7
+Oblivion.esm,FACT,000299B9,MNAM,Grand Champion,그랜드 챔피언,eab7b8eb9e9ceb939c20ecb194ed94bcec96b800,ArenaCombatants,8
+Oblivion.esm,FACT,000299B9,FNAM,Grand Champion,그랜드 챔피언,eab7b8eb9e9ceb939c20ecb194ed94bcec96b800,ArenaCombatants,8
 Oblivion.esm,FACT,000274AB,MNAM,Knight Brother,기사 형제,eab8b0ec82ac20ed9895eca09c00,Blades,0
 Oblivion.esm,FACT,000274AB,FNAM,Knight Sister,기사 자매,eab8b0ec82ac20ec9e90eba7a400,Blades,0
 Oblivion.esm,FACT,000274AB,MNAM,Captain,대장,eb8c80ec9ea500,Blades,1
 Oblivion.esm,FACT,000274AB,FNAM,Captain,대장,eb8c80ec9ea500,Blades,1
 Oblivion.esm,FACT,000274AB,MNAM,Grandmaster,그랜드마스터,eab7b8eb9e9ceb939ceba788ec8aa4ed84b000,Blades,2
 Oblivion.esm,FACT,000274AB,FNAM,Grandmaster,그랜드마스터,eab7b8eb9e9ceb939ceba788ec8aa4ed84b000,Blades,2
+Oblivion.esm,FACT,00024164,MNAM,Pickpocket,소매치기,ec868ceba7a4ecb998eab8b000,ThievesGuild,0
+Oblivion.esm,FACT,00024164,FNAM,Pickpocket,소매치기,ec868ceba7a4ecb998eab8b000,ThievesGuild,0
 Oblivion.esm,FACT,00024164,MNAM,Footpad,노상강도,eb85b8ec8381eab095eb8f8400,ThievesGuild,1
 Oblivion.esm,FACT,00024164,FNAM,Footpad,노상강도,eb85b8ec8381eab095eb8f8400,ThievesGuild,1
+Oblivion.esm,FACT,00024164,MNAM,Bandit,도적,eb8f84eca08100,ThievesGuild,2
+Oblivion.esm,FACT,00024164,FNAM,Bandit,도적,eb8f84eca08100,ThievesGuild,2
 Oblivion.esm,FACT,00024164,MNAM,Prowler,절도범,eca088eb8f84ebb29400,ThievesGuild,3
 Oblivion.esm,FACT,00024164,FNAM,Prowler,절도범,eca088eb8f84ebb29400,ThievesGuild,3
 Oblivion.esm,FACT,00024164,MNAM,Cat burglar,빈집털이범,ebb988eca791ed84b8ec9db4ebb29400,ThievesGuild,4
@@ -157,6 +171,8 @@ Oblivion.esm,FACT,00024164,MNAM,Shadowfoot,쉐도우풋,ec8990eb8f84ec9ab0ed928b
 Oblivion.esm,FACT,00024164,FNAM,Shadowfoot,쉐도우풋,ec8990eb8f84ec9ab0ed928b00,ThievesGuild,5
 Oblivion.esm,FACT,00024164,MNAM,Master Thief,마스터 씨프,eba788ec8aa4ed84b020ec94a8ed948400,ThievesGuild,6
 Oblivion.esm,FACT,00024164,FNAM,Master Thief,마스터 씨프,eba788ec8aa4ed84b020ec94a8ed948400,ThievesGuild,6
+Oblivion.esm,FACT,00024164,MNAM,Gray Fox,그레이 폭스,eab7b8eba088ec9db420ed8fadec8aa400,ThievesGuild,7
+Oblivion.esm,FACT,00024164,FNAM,Gray Fox,그레이 폭스,eab7b8eba088ec9db420ed8fadec8aa400,ThievesGuild,7
 Oblivion.esm,FACT,00022296,MNAM,Associate,준회원,eca480ed9a8cec9b9000,MagesGuild,0
 Oblivion.esm,FACT,00022296,FNAM,Associate,준회원,eca480ed9a8cec9b9000,MagesGuild,0
 Oblivion.esm,FACT,00022296,MNAM,Apprentice,도제,eb8f84eca09c00,MagesGuild,1
@@ -169,6 +185,8 @@ Oblivion.esm,FACT,00022296,MNAM,Conjurer,소환마법사,ec868ced9998eba788ebb29
 Oblivion.esm,FACT,00022296,FNAM,Conjurer,소환마법사,ec868ced9998eba788ebb295ec82ac00,MagesGuild,4
 Oblivion.esm,FACT,00022296,MNAM,Magician,매지션,eba7a4eca780ec859800,MagesGuild,5
 Oblivion.esm,FACT,00022296,FNAM,Magician,매지션,eba7a4eca780ec859800,MagesGuild,5
+Oblivion.esm,FACT,00022296,MNAM,Warlock,워록,ec9b8ceba19d00,MagesGuild,6
+Oblivion.esm,FACT,00022296,FNAM,Warlock,워록,ec9b8ceba19d00,MagesGuild,6
 Oblivion.esm,FACT,00022296,MNAM,Wizard,위저드,ec9c84eca080eb939c00,MagesGuild,7
 Oblivion.esm,FACT,00022296,FNAM,Wizard,위저드,ec9c84eca080eb939c00,MagesGuild,7
 Oblivion.esm,FACT,00022296,MNAM,Master-Wizard,마스터위저드,eba788ec8aa4ed84b0ec9c84eca080eb939c00,MagesGuild,8
@@ -191,6 +209,8 @@ Oblivion.esm,FACT,0002228F,MNAM,Warder,워더,ec9b8ceb8d9400,FightersGuild,6
 Oblivion.esm,FACT,0002228F,FNAM,Warder,워더,ec9b8ceb8d9400,FightersGuild,6
 Oblivion.esm,FACT,0002228F,MNAM,Guardian,가디언,eab080eb9494ec96b800,FightersGuild,7
 Oblivion.esm,FACT,0002228F,FNAM,Guardian,가디언,eab080eb9494ec96b800,FightersGuild,7
+Oblivion.esm,FACT,0002228F,MNAM,Champion,챔피언,ecb194ed94bcec96b800,FightersGuild,8
+Oblivion.esm,FACT,0002228F,FNAM,Champion,챔피언,ecb194ed94bcec96b800,FightersGuild,8
 Oblivion.esm,FACT,0002228F,MNAM,Master,마스터,eba788ec8aa4ed84b000,FightersGuild,9
 Oblivion.esm,FACT,0002228F,FNAM,Master,마스터,eba788ec8aa4ed84b000,FightersGuild,9
 Knights.esp,FACT,01000CEE,MNAM,Knight Errant,방랑 기사,ebb0a9eb9e9120eab8b0ec82ac00,NDKnightsoftheNine,0
