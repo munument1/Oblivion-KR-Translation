@@ -309,6 +309,13 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
             # canonical UOP title-only DESC translations and prior KR memories.
             if original.name == UOP_PLUGIN and key[0] == b"BOOK":
                 if field == b"DESC":
+                    # This specific reviewed source also requires an exact EDID:
+                    # the hash alone does not establish record ownership.
+                    if (key[1] == 0x00024564
+                            and 0x00024564 in (book_restorations or {})
+                            and old_editor.rstrip(b"\0") != b"Book2CommonDarkestDarkness"):
+                        raise ValueError(
+                            f"{original.name}: Darkest Darkness BOOK editor mismatch at {key}")
                     restored = restore_book_body(key[1], old, book_restorations or {})
                     if restored is not None:
                         replacement = restored
@@ -402,6 +409,14 @@ def main():
     book_restorations = load_restorations(
         root / "uop_book_body_restore_v1.csv",
         root / "canonical_translation_v2.csv")
+    # Nexus 56688: source-hash-pin the reviewed, non-truncated Darkest Darkness
+    # body separately from the 112 earlier title-only restoration cases.
+    reviewed_books = load_restorations(
+        root / "uop_book_source_forward_v1.csv",
+        root / "canonical_translation_v2.csv", expected_count=1)
+    if set(book_restorations) & set(reviewed_books):
+        raise ValueError("Overlapping UOP BOOK/DESC restorations")
+    book_restorations.update(reviewed_books)
     location_table = load_patch_canonical(root / "canonical_locations_v2.csv")
     patch_location_table = load_patch_canonical(root / "canonical_unofficial_locations_v2.csv")
     if args.vanilla_audit:
