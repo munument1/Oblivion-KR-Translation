@@ -106,6 +106,38 @@ class Nexus56688TranslationFixesTests(unittest.TestCase):
                     )
         self.assertEqual(mentions, 10)
 
+    def test_fur_armor_has_one_consistent_name(self):
+        expected = {
+            "00024764": ("Fur Greaves", "모피 각반"),
+            "00024765": ("Fur Gauntlets", "모피 장갑"),
+            "00024766": ("Fur Cuirass", "모피 흉갑"),
+            "00024767": ("Fur Boots", "모피 전투화"),
+            "00024768": ("Fur Helmet", "모피 투구"),
+            "00025056": ("Fur Shield", "모피 방패"),
+            "000733E2": ("Fur Helmet", "모피 투구"),
+            "000977BE": ("Fur Shield", "모피 방패"),
+        }
+        found = {}
+        with SOURCE.open(encoding="utf-8-sig", newline="") as stream:
+            for row in csv.DictReader(stream):
+                if (row["effective_source"] == "Oblivion.esm" and
+                        row["record_type"] == "ARMO" and row["field"] == "FULL" and
+                        row["old_english"] in {name for name, _ in expected.values()}):
+                    formid = row["raw_formid"]
+                    self.assertNotIn(formid, found, "Duplicate Fur armor FormID")
+                    found[formid] = row
+        self.assertEqual(set(found), set(expected))
+        for fid, (source, translated) in expected.items():
+            with self.subTest(formid=fid):
+                row = found[fid]
+                self.assertEqual(row["old_english"], source)
+                self.assertEqual(row["new_korean"], translated)
+                self.assertEqual(row["obcjk_unicode_text"], translated)
+                self.assertEqual(bytes.fromhex(row["obcjk_utf8_hex"]),
+                                 translated.encode("utf-8") + b"\\0")
+                self.assertEqual(decode_legacy(bytes.fromhex(row["new_bytes_hex"])[:-1]),
+                                 translated)
+
     def _assert_patch_matches_rows(self, record, rows):
         for row in rows:
             text = row["new_korean"]
