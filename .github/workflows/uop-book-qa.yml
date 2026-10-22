@@ -32,7 +32,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   uop-book-qa:
@@ -51,21 +51,65 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_shrine_messages.py' -v
           python -m unittest discover -s tests -p 'test_unofficial_package.py' -v
-      - name: Compare exact UOP book source identity
+      - name: Correct four verified Fur armor translations and push reviewed CSV
         run: |
           python - <<'PY'
-          import csv,hashlib,difflib
-          rows=[]
-          for filename in ('canonical_translation_v2.csv','canonical_unofficial_translation_v2.csv'):
-              with open(filename,encoding='utf-8-sig',newline='') as f:
-                  for row in csv.DictReader(f):
-                      if row.get('raw_formid','').upper()=='00024564' and row.get('record_type')=='BOOK' and row.get('field')=='DESC':
-                          txt=row['old_english']; k=row['new_korean']
-                          print('SOURCE',filename,row['effective_source'],'ENlen',len(txt),'ENhash',hashlib.sha256(txt.encode('cp1252')+b'\\0').hexdigest(),'KOlen',len(k),'EDID',row['editor_id'],'occ',row['occurrence'])
-                          rows.append((filename,txt,k))
-          if len(rows)==2:
-              a,b=rows
-              print('SOURCE_EQUAL',a[1]==b[1])
-              print('DIFF',list(difflib.unified_diff(a[1].splitlines(),b[1].splitlines(),n=0))[:16])
-              print('BASE_KOREAN_PREFIX',repr(a[2][:150]))
+          from pathlib import Path
+          import csv,io
+          from oblivion_korean_codec import encode_legacy,decode_legacy
+          target=Path('canonical_translation_v2.csv')
+          fixed={
+              '00024765': ('Fur Gauntlets','털가죽 장갑','모피 장갑'),
+              '00024767': ('Fur Boots','털가죽 전투화','모피 전투화'),
+              '00024768': ('Fur Helmet','털가죽 투구','모피 투구'),
+              '000733E2': ('Fur Helmet','털가죽 투구','모피 투구'),
+          }
+          source=target.read_bytes()
+          chunks=source.splitlines(keepends=True)
+          header=next(csv.reader([chunks[0].decode('utf-8-sig').rstrip('\r\n')]))
+          required={'effective_source','record_type','raw_formid','field','old_english','new_korean','new_bytes_hex','obcjk_unicode_text','obcjk_utf8_hex'}
+          if not required.issubset(set(header)): raise ValueError('Unexpected canonical translation schema')
+          changed={}
+          for i,line in enumerate(chunks):
+              if b',ARMO,' not in line or not any(fid.encode() in line for fid in fixed):
+                  continue
+              ending=b'\r\n' if line.endswith(b'\r\n') else b'\n' if line.endswith(b'\n') else b''
+              body=line[:-len(ending)] if ending else line
+              values=next(csv.reader([body.decode('utf-8')]))
+              if len(values)!=len(header): raise ValueError('Ambiguous target CSV row')
+              row=dict(zip(header,values))
+              fid=row['raw_formid']
+              if fid not in fixed: continue
+              if fid in changed: raise ValueError('Duplicate target '+fid)
+              oldenglish,oldko,newko=fixed[fid]
+              if (row['effective_source'],row['record_type'],row['field'],row['old_english'],row['new_korean']) != ('Oblivion.esm','ARMO','FULL',oldenglish,oldko):
+                  raise ValueError('Source identity changed for '+fid)
+              if row['obcjk_unicode_text']!=oldko or bytes.fromhex(row['obcjk_utf8_hex'])!=oldko.encode('utf-8')+b'\0':
+                  raise ValueError('Old UTF-8 target mismatch '+fid)
+              if bytes.fromhex(row['new_bytes_hex'])!=encode_legacy(oldko)+b'\0':
+                  raise ValueError('Old legacy target mismatch '+fid)
+              updates={
+                  'new_korean':newko,
+                  'obcjk_unicode_text':newko,
+                  'obcjk_utf8_hex':(newko.encode('utf-8')+b'\0').hex(),
+                  'new_bytes_hex':(encode_legacy(newko)+b'\0').hex(),
+              }
+              for field,value in updates.items():values[header.index(field)]=value
+              dst=io.StringIO(newline='')
+              csv.writer(dst,lineterminator='').writerow(values)
+              chunks[i]=dst.getvalue().encode('utf-8')+ending
+              changed[fid]=(oldko,newko)
+          if set(changed)!=set(fixed): raise ValueError('Missing target Fur rows: '+repr(set(fixed)-set(changed)))
+          updated=b''.join(chunks)
+          if source==updated:raise ValueError('No changes')
+          target.write_bytes(updated)
+          print('VERIFIED_CSV_CORRECTIONS',changed)
           PY
+          python -m unittest discover -s tests -p 'test_nexus_56688_translation_fixes.py' -v
+          python -m unittest discover -s tests -p 'test_uop_book_restoration.py' -v
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add canonical_translation_v2.csv
+          git diff --cached --stat
+          git commit -m 'fix: normalize four Fur armor names and UTF-8/legacy encodings'
+          git push origin HEAD:fix/nexus-56688-oct23-qa
