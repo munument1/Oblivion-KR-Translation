@@ -51,30 +51,21 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_shrine_messages.py' -v
           python -m unittest discover -s tests -p 'test_unofficial_package.py' -v
-      - name: Inspect original book and UOP overrides
+      - name: Compare exact UOP book source identity
         run: |
           python - <<'PY'
-          import csv, re, collections
-          files=['canonical_translation_v2.csv','canonical_unofficial_translation_v2.csv','uop_book_body_restore_v1.csv','applied_translations_v2.csv']
-          for fn in files:
-              print('SOURCEFILE',fn)
-              with open(fn,encoding='utf-8-sig',newline='') as f:
-                  ct=collections.Counter()
+          import csv,hashlib,difflib
+          rows=[]
+          for filename in ('canonical_translation_v2.csv','canonical_unofficial_translation_v2.csv'):
+              with open(filename,encoding='utf-8-sig',newline='') as f:
                   for row in csv.DictReader(f):
-                      kind=row.get('record_type',''); field=row.get('field',''); fid=row.get('raw_formid','').upper()
-                      en=row.get('old_english',''); ko=row.get('new_korean') or row.get('obcjk_unicode_text') or row.get('korean','')
-                      if kind=='BOOK' and (fid=='00024564' or 'Darkest Darkness' in en[:140] or '가장 어두운 어둠' in ko[:140]):
-                          print('BOOKMATCH',row.get('effective_source'),fid,field,row.get('editor_id'),repr(en[:65]),len(ko))
-                          for needle in ('Mehrunes','Razor','Almalexia','Azura','Sotha Sil','메루니스','메이룬','아말렉시아','알말렉시아','아주라','가장 어두운 어둠'):
-                              for m in list(re.finditer(re.escape(needle),ko,re.I))[:2]:
-                                  print('BOOKTEXT',needle,repr(ko[max(0,m.start()-50):m.end()+65]))
-                      if kind=='BOOK' and field=='DESC':
-                          ctr=collections.Counter(c for c in ko if '\\u4e00'<=c<='\\u9fff' or c=='\\ufffd')
-                          if ctr and ct['glyph']<15:
-                              print('GLYPH',row.get('effective_source'),fid,repr(en[:30]),dict(ctr))
-                          if ctr:ct['glyph']+=1
-                      if any(x in en.lower() for x in ['remote gate','puzzle gate','ayleid gate','remotely','control gate']):
-                          if ct['gate']<30:print('SOURCEGATE',row.get('effective_source'),kind,fid,field,repr(en[:150]),repr(ko[:100]))
-                          ct['gate']+=1
-                  print('STATS',fn,dict(ct))
+                      if row.get('raw_formid','').upper()=='00024564' and row.get('record_type')=='BOOK' and row.get('field')=='DESC':
+                          txt=row['old_english']; k=row['new_korean']
+                          print('SOURCE',filename,row['effective_source'],'ENlen',len(txt),'ENhash',hashlib.sha256(txt.encode('cp1252')+b'\\0').hexdigest(),'KOlen',len(k),'EDID',row['editor_id'],'occ',row['occurrence'])
+                          rows.append((filename,txt,k))
+          if len(rows)==2:
+              a,b=rows
+              print('SOURCE_EQUAL',a[1]==b[1])
+              print('DIFF',list(difflib.unified_diff(a[1].splitlines(),b[1].splitlines(),n=0))[:16])
+              print('BASE_KOREAN_PREFIX',repr(a[2][:150]))
           PY
