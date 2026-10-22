@@ -57,17 +57,17 @@ class FurTerminologyTests(unittest.TestCase):
                 self.assertEqual(new["field"], "FULL")
                 self.assertEqual(new["occurrence"], "0")
                 self.assertEqual(new["new_korean"], new_korean)
-                self.assertEqual(bytes.fromhex(new["obcjk_utf8_hex"]), new_korean.encode("utf-8") + b"\\0")
+                self.assertEqual(bytes.fromhex(new["obcjk_utf8_hex"]), new_korean.encode("utf-8") + b"\0")
 
     def test_real_overlay_wins_and_guards_identity(self):
         for formid, (english, _, korean, editor_id) in EXPECTED.items():
             with self.subTest(formid=formid):
                 kind, fid = b"ARMO", int(formid, 16)
-                source = (encode_subrecord(b"EDID", editor_id.encode("ascii") + b"\\0") +
-                          encode_subrecord(b"FULL", english.encode("ascii") + b"\\0"))
+                source = (encode_subrecord(b"EDID", editor_id.encode("ascii") + b"\0") +
+                          encode_subrecord(b"FULL", english.encode("ascii") + b"\0"))
                 result = patch_record(source, "Oblivion.esm", kind, fid, self.table, Counter(), [])
                 fields = dict((sig, val) for sig, val, _ in parse_subrecords(result))
-                self.assertEqual(fields[b"FULL"], korean.encode("utf-8") + b"\\0")
+                self.assertEqual(fields[b"FULL"], korean.encode("utf-8") + b"\0")
                 self.assertEqual(patch_record(source, "Oblivion.esm", kind, fid + 0x1000000,
                                               self.table, Counter(), []), source)
                 incorrect_editor = source.replace(editor_id.encode("ascii"), b"WrongName")
