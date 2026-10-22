@@ -134,7 +134,7 @@ class Nexus56688TranslationFixesTests(unittest.TestCase):
                 self.assertEqual(row["new_korean"], translated)
                 self.assertEqual(row["obcjk_unicode_text"], translated)
                 self.assertEqual(bytes.fromhex(row["obcjk_utf8_hex"]),
-                                 translated.encode("utf-8") + b"\\0")
+                                 translated.encode("utf-8") + b"\0")
                 self.assertEqual(decode_legacy(bytes.fromhex(row["new_bytes_hex"])[:-1]),
                                  translated)
 
