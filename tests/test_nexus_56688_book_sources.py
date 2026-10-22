@@ -67,7 +67,7 @@ class Nexus56688BookSourcesTests(unittest.TestCase):
         self.assertEqual(
             patch_record(original, "Oblivion.esm", b"BOOK", BOOK_ID + 1,
                          table, Counter(), []), original)
-        wrong_editor = original.replace(EDITOR_ID, b"Book2WrongEditor", 1)
+        wrong_editor = original.replace(EDITOR_ID, b"X" * len(EDITOR_ID), 1)
         self.assertEqual(
             patch_record(wrong_editor, "Oblivion.esm", b"BOOK", BOOK_ID,
                          table, Counter(), []), wrong_editor)
