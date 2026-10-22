@@ -82,7 +82,9 @@ def build(args):
     runtime_manifest()
 
     supplement = HERE / 'canonical_ui_supplement_v1.csv'
-    extra_tables = (supplement, *(path.resolve() for path in args.extra_csv))
+    # Verified Nexus 56688 armor names override the older canonical wording.
+    fur_feedback = HERE / 'canonical_nexus_56688_fur_v1.csv'
+    extra_tables = (supplement, fur_feedback, *(path.resolve() for path in args.extra_csv))
     translations = load_translations(
         args.csv.resolve(), extra_tables,
         encoded_column='obcjk_utf8_hex')

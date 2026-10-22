@@ -1,0 +1,35 @@
+name: Fur Armor Translation QA
+
+on:
+  push:
+    paths:
+      - 'canonical_nexus_56688_fur_v1.csv'
+      - 'build_obcjk_release.py'
+      - 'build_unofficial_release.py'
+      - 'tests/test_nexus_56688_fur.py'
+      - '.github/workflows/fur-translation-qa.yml'
+  pull_request:
+    paths:
+      - 'canonical_nexus_56688_fur_v1.csv'
+      - 'build_obcjk_release.py'
+      - 'build_unofficial_release.py'
+      - 'tests/test_nexus_56688_fur.py'
+      - '.github/workflows/fur-translation-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fur-translation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate source-scoped armor corrections
+        run: python -m unittest discover -s tests -p 'test_nexus_56688_fur.py' -v
+      - name: Run complete regression suite
+        run: python -m unittest discover -s tests -v

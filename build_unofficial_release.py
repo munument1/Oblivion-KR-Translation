@@ -412,7 +412,8 @@ def main():
         # and exact master-owned record identity still gate all forwarding.
         vanilla_table = load_translations(
             root / "canonical_translation_v2.csv",
-            extra_paths=(root / "canonical_ui_supplement_v1.csv",),
+            extra_paths=(root / "canonical_ui_supplement_v1.csv",
+                         root / "canonical_nexus_56688_fur_v1.csv"),
             encoded_column="obcjk_utf8_hex" if args.text_backend == "obcjk" else "new_bytes_hex")
         # Audits generated before the UI supplement gained certain FACT ranks
         # cannot authorize them. Keep the fallback strictly supplement-only.
