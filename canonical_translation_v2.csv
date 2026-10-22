@@ -22148,10 +22148,10 @@ Oblivion.esm,ARMO,00023921,FULL,Blades Boots,블레이드 전투화,canonical_v2
 Oblivion.esm,ARMO,00023922,FULL,Blades Shield,블레이드 방패,canonical_v2,c5a804b38bb789c28820d5a008bc8a00,BladesShield,0,블레이드 방패,ebb894eba088ec9db4eb939c20ebb0a9ed8ca800,verified
 Oblivion.esm,ARMO,00023923,FULL,Steel Shield,강철 방패,canonical_v2,d0a008d9a20420d5a008bc8a00,SteelShield,0,강철 방패,eab095ecb2a020ebb0a9ed8ca800,verified
 Oblivion.esm,ARMO,00024764,FULL,Fur Greaves,모피 각반,canonical_v2,c484bc8920d0a001d5a00200,FurGreaves,0,모피 각반,ebaaa8ed94bc20eab081ebb09800,verified
-Oblivion.esm,ARMO,00024765,FULL,Fur Gauntlets,털가죽 장갑,canonical_v2,dba204b080c8a60120d8a008d0a00600,FurGauntlets,0,털가죽 장갑,ed84b8eab080eca3bd20ec9ea5eab09100,verified
+Oblivion.esm,ARMO,00024765,FULL,Fur Gauntlets,모피 장갑,canonical_v2,c484bc8920d8a008d0a00600,FurGauntlets,0,모피 장갑,ebaaa8ed94bc20ec9ea5eab09100,verified
 Oblivion.esm,ARMO,00024766,FULL,Fur Cuirass,모피 흉갑,canonical_v2,c484bc8920cda708d0a00600,FurCuirass,0,모피 흉갑,ebaaa8ed94bc20ed9d89eab09100,verified
-Oblivion.esm,ARMO,00024767,FULL,Fur Boots,털가죽 전투화,canonical_v2,dba204b080c8a60120d8a202cb86dd9000,FurBoots,0,털가죽 전투화,ed84b8eab080eca3bd20eca084ed88aced999400,verified
-Oblivion.esm,ARMO,00024768,FULL,Fur Helmet,털가죽 투구,canonical_v2,dba204b080c8a60120cb86c08600,FurHelmet,0,털가죽 투구,ed84b8eab080eca3bd20ed88aceab5ac00,verified
+Oblivion.esm,ARMO,00024767,FULL,Fur Boots,모피 전투화,canonical_v2,c484bc8920d8a202cb86dd9000,FurBoots,0,모피 전투화,ebaaa8ed94bc20eca084ed88aced999400,verified
+Oblivion.esm,ARMO,00024768,FULL,Fur Helmet,모피 투구,canonical_v2,c484bc8920cb86c08600,FurHelmet,0,모피 투구,ebaaa8ed94bc20ed88aceab5ac00,verified
 Oblivion.esm,ARMO,00025056,FULL,Fur Shield,모피 방패,canonical_v2,c484bc8920d5a008bc8a00,FurShield,0,모피 방패,ebaaa8ed94bc20ebb0a9ed8ca800,verified
 Oblivion.esm,ARMO,00025058,FULL,Leather Shield,가죽 방패,canonical_v2,b080c8a60120d5a008bc8a00,LeatherShield,0,가죽 방패,eab080eca3bd20ebb0a9ed8ca800,verified
 Oblivion.esm,ARMO,00026263,FULL,Bound Shield,마법 방패,canonical_v2,b480d5a20620d5a008bc8a00,BoundShield,0,마법 방패,eba788ebb29520ebb0a9ed8ca800,verified
@@ -22718,7 +22718,7 @@ Oblivion.esm,ARMO,0006D617,FULL,Madness Shield,광기의 방패,canonical_v2,e09
 Oblivion.esm,ARMO,0006E2E1,FULL,Broken Shield,부서진 방패,canonical_v2,c586b682d8a90220d5a008bc8a00,FGD03BlackwoodShield,0,부서진 방패,ebb680ec849ceca78420ebb0a9ed8ca800,verified
 Oblivion.esm,ARMO,000733E0,FULL,Light Iron Shield,경량 철 방패,canonical_v2,d0a308d3a10820d9a20420d5a008bc8a00,ArenaChainmailShield,0,경량 철 방패,eab2bdeb9f8920ecb2a020ebb0a9ed8ca800,verified
 Oblivion.esm,ARMO,000733E1,FULL,Glass Shield,글래스 방패,canonical_v2,c0a804b38ac68820d5a008bc8a00,ArenaGlassShield,0,글래스 방패,eab880eb9e98ec8aa420ebb0a9ed8ca800,verified
-Oblivion.esm,ARMO,000733E2,FULL,Fur Helmet,털가죽 투구,canonical_v2,dba204b080c8a60120cb86c08600,ArenaFurHelmet,0,털가죽 투구,ed84b8eab080eca3bd20ed88aceab5ac00,verified
+Oblivion.esm,ARMO,000733E2,FULL,Fur Helmet,모피 투구,canonical_v2,c484bc8920cb86c08600,ArenaFurHelmet,0,모피 투구,ebaaa8ed94bc20ed88aceab5ac00,verified
 Oblivion.esm,ARMO,000733E3,FULL,Leather Helmet,가죽 투구,canonical_v2,b080c8a60120cb86c08600,ArenaLeatherHelmet,0,가죽 투구,eab080eca3bd20ed88aceab5ac00,verified
 Oblivion.esm,ARMO,000733E4,FULL,Mithril Helmet,미스릴 투구,canonical_v2,b489c688d3a90420cb86c08600,ArenaMithrilHelmet,0,미스릴 투구,ebafb8ec8aa4eba6b420ed88aceab5ac00,verified
 Oblivion.esm,ARMO,000733E5,FULL,Elven Helmet,엘프제 투구,canonical_v2,d7ab04cc88b88b20cb86c08600,ArenaElvenHelmet,0,엘프제 투구,ec9798ed9484eca09c20ed88aceab5ac00,verified

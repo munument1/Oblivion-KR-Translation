@@ -6,10 +6,12 @@ on:
       - 'build_unofficial_release.py'
       - 'uop_book_restoration.py'
       - 'uop_book_body_restore_v1.csv'
+      - 'uop_book_reviewed_override_v1.csv'
       - 'canonical_translation_v2.csv'
       - 'canonical_unofficial_translation_v2.csv'
       - 'tests/test_uop_book_restoration.py'
       - 'tests/test_unofficial_forwarding.py'
+      - 'tests/test_nexus_56688_translation_fixes.py'
       - 'build_shrine_messages.py'
       - 'package_obcjk_unofficial.py'
       - 'tests/test_shrine_messages.py'
@@ -20,10 +22,12 @@ on:
       - 'build_unofficial_release.py'
       - 'uop_book_restoration.py'
       - 'uop_book_body_restore_v1.csv'
+      - 'uop_book_reviewed_override_v1.csv'
       - 'canonical_translation_v2.csv'
       - 'canonical_unofficial_translation_v2.csv'
       - 'tests/test_uop_book_restoration.py'
       - 'tests/test_unofficial_forwarding.py'
+      - 'tests/test_nexus_56688_translation_fixes.py'
       - 'build_shrine_messages.py'
       - 'package_obcjk_unofficial.py'
       - 'tests/test_shrine_messages.py'
@@ -45,6 +49,8 @@ jobs:
           python-version: '3.11'
       - name: Verify all 112 UOP restored books and source fingerprints
         run: python -m unittest discover -s tests -p 'test_uop_book_restoration.py' -v
+      - name: Verify Nexus 56688 terminology fixes
+        run: python -m unittest discover -s tests -p 'test_nexus_56688_translation_fixes.py' -v
       - name: Verify existing unofficial-patch forwarding behavior
         run: python -m unittest discover -s tests -p 'test_unofficial_forwarding.py' -v
       - name: Verify wayshrine bytecode and root-level ESP packages

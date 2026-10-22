@@ -402,6 +402,17 @@ def main():
     book_restorations = load_restorations(
         root / "uop_book_body_restore_v1.csv",
         root / "canonical_translation_v2.csv")
+    # The UOP spelling of Mehrunes' Razor differs from the base ESM by one
+    # apostrophe. Forward the fully reviewed vanilla book body only for the
+    # exact, pinned UOP source rather than retaining the obsolete mixed-English
+    # translation from the patch canonical table.
+    reviewed_uop_books = load_restorations(
+        root / "uop_book_reviewed_override_v1.csv",
+        root / "canonical_translation_v2.csv",
+        expected_count=1)
+    if book_restorations.keys() & reviewed_uop_books.keys():
+        raise ValueError("Reviewed UOP book conflicts with an existing restoration")
+    book_restorations.update(reviewed_uop_books)
     location_table = load_patch_canonical(root / "canonical_locations_v2.csv")
     patch_location_table = load_patch_canonical(root / "canonical_unofficial_locations_v2.csv")
     if args.vanilla_audit:

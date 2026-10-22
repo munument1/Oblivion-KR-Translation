@@ -65,6 +65,38 @@ class UOPBookRestorationTests(unittest.TestCase):
             restore_book_body(0x1234, raw + b"x", mapping)
         self.assertIsNone(restore_book_body(0x4321, raw, mapping))
 
+    def test_nexus_56688_darkest_darkness_exact_source_override(self):
+        # This UOP book differs from the base source by a single apostrophe
+        # in Mehrunes' Razor; its older UOP Korean text is not the reviewed
+        # vanilla translation.
+        fid = 0x00024564
+        overrides = load_restorations(
+            ROOT / "uop_book_reviewed_override_v1.csv",
+            ROOT / "canonical_translation_v2.csv", expected_count=1)
+        self.assertEqual(set(overrides), {fid})
+        self.assertNotIn(fid, self.restorations)
+        source = None
+        with (ROOT / "canonical_unofficial_translation_v2.csv").open(
+                encoding="utf-8-sig", newline="") as stream:
+            for row in csv.DictReader(stream):
+                if (row["effective_source"] == UOP_PLUGIN and
+                        row["record_type"] == "BOOK" and
+                        row["field"] == "DESC" and
+                        row["raw_formid"] == "00024564"):
+                    self.assertIsNone(source, "Duplicate source book")
+                    source = row["old_english"].encode("cp1252") + b"\0"
+        self.assertIsNotNone(source, "Missing UOP source book")
+        self.assertEqual(hashlib.sha256(source).hexdigest(), overrides[fid][0])
+        restored = restore_book_body(fid, source, overrides)
+        body = restored[:-1].decode("utf-8")
+        for name in ("메이룬스의 면도칼", "알말렉시아", "아주라"):
+            self.assertIn(name, body)
+        for stale in ("메루니스의 칼", "Almalexia", "Sotha Sil",
+                      "Mehrunes Razor", "Boethiah"):
+            self.assertNotIn(stale, body)
+        with self.assertRaisesRegex(ValueError, "source hash"):
+            restore_book_body(fid, source[:-1] + b"!" + b"\0", overrides)
+
     def test_special_uop_changes(self):
         wild = self.restorations[WILD_ELVES][1].decode("utf-8")
         self.assertIn("1E 2790-2E 227", wild)
