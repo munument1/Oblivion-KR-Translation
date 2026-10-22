@@ -1,0 +1,43 @@
+name: Nexus 56688 Source Audit
+on:
+  push:
+    branches:
+      - fix/nexus-56688-oct23
+    paths:
+      - '.github/workflows/nexus-56688-audit.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect reported translation records
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv
+          from collections import Counter
+          from pathlib import Path
+          samples=Counter()
+          targets = {
+            "razor": lambda r: "메루니스의 칼" in r["new_korean"] or ("Mehrunes" in r["old_english"] and r["record_type"]=="BOOK"),
+            "dark": lambda r: "가장 어두운 어둠" in r["new_korean"] or "Darkest Darkness" in r["old_english"],
+            "name": lambda r: r["record_type"]=="BOOK" and r["field"]=="DESC" and ("Almalexia" in r["new_korean"] or "Azura" in r["new_korean"]),
+            "fur": lambda r: r["record_type"] in ("ARMO","CLOT") and r["field"]=="FULL" and ("털가죽" in r["new_korean"] or "모피" in r["new_korean"]),
+            "gate": lambda r: "Ayleid" in r["old_english"] and ("gate" in r["old_english"].lower() or "door" in r["old_english"].lower()),
+          }
+          with Path("canonical_translation_v2.csv").open(encoding="utf-8-sig",newline="") as f:
+            for r in csv.DictReader(f):
+              for key,check in targets.items():
+                if not check(r):continue
+                samples[key]+=1
+                if samples[key]>25:continue
+                val=r["new_korean"]
+                needles=["메루니스의 칼","Mehrunes","Almalexia","Azura","털가죽","모피","가장 어두운 어둠"]
+                idx=next((val.find(n) for n in needles if n in val),0)
+                snippet=val[max(0,idx-90):idx+160].replace("\n","\\n").replace("\r","\\r")
+                print(key, r["effective_source"],r["record_type"],r["raw_formid"],r["field"],r["occurrence"],"EDID",r["editor_id"],"ENGLISH",r["old_english"][:150].replace("\n","\\n"),"KOREAN",snippet, flush=True)
+          print("COUNTS",dict(samples))
+          PY
