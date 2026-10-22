@@ -51,3 +51,27 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_shrine_messages.py' -v
           python -m unittest discover -s tests -p 'test_unofficial_package.py' -v
+      - name: Inspect Nexus 56688 reported source rows (read-only)
+        run: |
+          python - <<'PY'
+          import csv, re, collections
+          f='canonical_translation_v2.csv'
+          hits=collections.Counter()
+          with open(f,encoding='utf-8-sig',newline='') as stream:
+              for row in csv.DictReader(stream):
+                  kind, field, fid=row['record_type'],row['field'],row['raw_formid']
+                  en=row['old_english']; ko=row.get('new_korean') or row.get('obcjk_unicode_text','')
+                  if kind=='BOOK' and fid.upper()=='00024564':
+                      print('DARKEST',row['effective_source'],kind,fid,field,'EDID',row['editor_id'],'occ',row.get('occurrence'),'englishlen',len(en),'koreanlen',len(ko))
+                      for needle in ('Mehrunes','Razor','Almalexia','Azura','Boethiah','Clavicus','Vivec','메루니스','메이룬','아주라','아말렉시아','Ayleid'):
+                          for txt,which in ((en,'EN'),(ko,'KO')):
+                              for m in list(re.finditer(re.escape(needle),txt,re.I))[:6]:
+                                  print('DARKMATCH',which,needle,repr(txt[max(0,m.start()-75):m.end()+90]))
+                  if kind in ('ARMO','CLOT','MISC','INGR') and field=='FULL' and (re.search(r'\\b(Fur|Pelt|Hide|Wolfskin)\\b',en,re.I) or '털가죽' in ko or ('모피' in ko and len(ko)<70)):
+                      hits['fur']+=1
+                      if hits['fur']<=100: print('FUR',row['effective_source'],kind,fid,repr(en[:100]),repr(ko[:100]))
+                  if re.search(r'\\b(gate|remote|ayleid)\\b',en,re.I) and kind in ('ACTI','DOOR','GMST','MESG','INFO') and len(en)<250:
+                      hits['gate']+=1
+                      if hits['gate']<=60: print('GATE',row['effective_source'],kind,fid,field,repr(en[:125]),repr(ko[:125]))
+          print('COUNTS',dict(hits))
+          PY
