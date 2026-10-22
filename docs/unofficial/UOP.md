@@ -1,3 +1,9 @@
+## 2026-10-23 넥서스 56688 서적 교정 (소스 반영, 미배포)
+
+신규 제보에서 확인된 `가장 어두운 어둠 / Darkest Darkness` 책의 UOP `BOOK/DESC 00024564`에는 `메루니스의 칼`, `Almalexia`, `Azura` 등 예전 번역이 남아 있었습니다. 본편 Oblivion.esm에는 이미 교정된 본문이 들어 있으므로 UOP 3.5.9a의 원문 SHA-256과 `Book2CommonDarkestDarkness` EDID가 일치할 때만 해당 본문을 본편의 검증된 UTF-8 번역으로 교체하도록 했습니다.
+
+기존 제목 수준으로 잘린 BOOK 본문 112건 복구는 그대로 유지하며, 추가 1건은 `uop_book_source_forward_v1.csv`에서 별도로 추적합니다. **아직 배포된 UOP 3.5.9a-KR1.8 ZIP에는 이 변경이 포함되지 않습니다.** 다음 UOP 한국어 전체 교체본 빌드·출력 검증 및 게임 내 확인이 필요합니다.
+
 # Unofficial Oblivion Patch 한국어 UTF-8 번역 (UOP 3.5.9a)
 
 ## 2026-10-21 계급명 및 대사 보정 (3.5.9a-KR1.8)

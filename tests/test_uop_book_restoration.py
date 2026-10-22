@@ -65,6 +65,69 @@ class UOPBookRestorationTests(unittest.TestCase):
             restore_book_body(0x1234, raw + b"x", mapping)
         self.assertIsNone(restore_book_body(0x4321, raw, mapping))
 
+    def test_nexus_56688_darkest_darkness_uop_forwards_reviewed_book(self):
+        """Only the exact UOP record may replace the older English-heavy body."""
+        fid = 0x00024564
+        manifest = ROOT / "uop_book_source_forward_v1.csv"
+        source_path = ROOT / "canonical_unofficial_translation_v2.csv"
+        fixes = load_restorations(
+            manifest, ROOT / "canonical_translation_v2.csv",
+            expected_count=1)
+        self.assertEqual(set(fixes), {fid})
+        row = None
+        with source_path.open(encoding="utf-8-sig", newline="") as stream:
+            for item in csv.DictReader(stream):
+                if (item["effective_source"] == UOP_PLUGIN
+                        and item["record_type"] == "BOOK"
+                        and item["raw_formid"] == "00024564"
+                        and item["field"] == "DESC"):
+                    self.assertIsNone(row, "Duplicate UOP Darkest Darkness source")
+                    row = item
+        self.assertIsNotNone(row)
+        self.assertEqual(row["editor_id"], "Book2CommonDarkestDarkness")
+        self.assertEqual(row["occurrence"], "0")
+        old = row["old_english"].encode("cp1252") + b"\0"
+        self.assertEqual(hashlib.sha256(old).hexdigest(), row["source_sha256"])
+        self.assertEqual(row["source_sha256"], fixes[fid][0])
+        self.assertIn("메루니스의 칼", row["new_korean"])
+        self.assertIn("Almalexia", row["new_korean"])
+        reviewed = fixes[fid][1]
+        reviewed_text = reviewed[:-1].decode("utf-8")
+        for expected in ("메이룬스의 면도칼", "알말렉시아", "아주라"):
+            self.assertIn(expected, reviewed_text)
+        for unwanted in ("메루니스의 칼", "Almalexia", "Azura"):
+            self.assertNotIn(unwanted, reviewed_text)
+
+        source_record = {
+            (b"TES4", 0): [(b"MAST", b"Oblivion.esm\0")],
+            (b"BOOK", fid): [
+                (b"EDID", b"Book2CommonDarkestDarkness\0"),
+                (b"FULL", b"Darkest Darkness\0"),
+                (b"DESC", old)],
+        }
+        with patch("build_unofficial_release.read_records",
+                   return_value=source_record):
+            changes, counts = collect_changes(
+                Path(UOP_PLUGIN), None, book_restorations=fixes)
+        self.assertEqual(counts["uop_book_desc_restored"], 1)
+        self.assertEqual(changes[(b"BOOK", fid)][2][2], reviewed)
+        self.assertNotIn(1, changes[(b"BOOK", fid)])
+
+        wrong_editor = {
+            **source_record,
+            (b"BOOK", fid): [
+                (b"EDID", b"WrongBookEditor\0"),
+                (b"FULL", b"Darkest Darkness\0"),
+                (b"DESC", old)],
+        }
+        with patch("build_unofficial_release.read_records",
+                   return_value=wrong_editor):
+            with self.assertRaisesRegex(ValueError, "BOOK editor mismatch"):
+                collect_changes(Path(UOP_PLUGIN), None,
+                                book_restorations=fixes)
+        with self.assertRaisesRegex(ValueError, "source hash"):
+            restore_book_body(fid, old + b"x", fixes)
+
     def test_special_uop_changes(self):
         wild = self.restorations[WILD_ELVES][1].decode("utf-8")
         self.assertIn("1E 2790-2E 227", wild)
