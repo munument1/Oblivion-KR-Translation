@@ -70,10 +70,12 @@ class FurTerminologyTests(unittest.TestCase):
                 self.assertEqual(fields[b"FULL"], korean.encode("utf-8") + b"\0")
                 self.assertEqual(patch_record(source, "Oblivion.esm", kind, fid + 0x1000000,
                                               self.table, Counter(), []), source)
-                incorrect_editor = source.replace(editor_id.encode("ascii"), b"WrongName")
+                incorrect_editor = (encode_subrecord(b"EDID", b"WrongName\0") +
+                                    encode_subrecord(b"FULL", english.encode("ascii") + b"\0"))
                 self.assertEqual(patch_record(incorrect_editor, "Oblivion.esm", kind, fid,
                                               self.table, Counter(), []), incorrect_editor)
-                incorrect_english = source.replace(english.encode("ascii"), b"Wrong Armor")
+                incorrect_english = (encode_subrecord(b"EDID", editor_id.encode("ascii") + b"\0") +
+                                     encode_subrecord(b"FULL", b"Wrong Armor\0"))
                 self.assertEqual(patch_record(incorrect_english, "Oblivion.esm", kind, fid,
                                               self.table, Counter(), []), incorrect_english)
 
