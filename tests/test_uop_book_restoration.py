@@ -84,7 +84,7 @@ class UOPBookRestorationTests(unittest.TestCase):
                         row["field"] == "DESC" and
                         row["raw_formid"] == "00024564"):
                     self.assertIsNone(source, "Duplicate source book")
-                    source = row["old_english"].encode("cp1252") + b"\\0"
+                    source = row["old_english"].encode("cp1252") + b"\0"
         self.assertIsNotNone(source, "Missing UOP source book")
         self.assertEqual(hashlib.sha256(source).hexdigest(), overrides[fid][0])
         restored = restore_book_body(fid, source, overrides)
@@ -95,7 +95,7 @@ class UOPBookRestorationTests(unittest.TestCase):
                       "Mehrunes Razor", "Boethiah"):
             self.assertNotIn(stale, body)
         with self.assertRaisesRegex(ValueError, "source hash"):
-            restore_book_body(fid, source[:-1] + b"!" + b"\\0", overrides)
+            restore_book_body(fid, source[:-1] + b"!" + b"\0", overrides)
 
     def test_special_uop_changes(self):
         wild = self.restorations[WILD_ELVES][1].decode("utf-8")
