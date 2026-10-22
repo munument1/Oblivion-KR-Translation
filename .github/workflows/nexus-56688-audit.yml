@@ -1,10 +1,8 @@
 name: Nexus 56688 Source Audit
 on:
   push:
-    branches:
-      - fix/nexus-56688-oct23
-    paths:
-      - '.github/workflows/nexus-56688-audit.yml'
+    branches: [fix/nexus-56688-oct23]
+    paths: ['.github/workflows/nexus-56688-audit.yml']
 permissions:
   contents: read
 jobs:
@@ -13,31 +11,27 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect reported translation records
+      - name: Inspect exact source strings
         shell: bash
         run: |
           python - <<'PY'
-          import csv
-          from collections import Counter
+          import csv,re
           from pathlib import Path
-          samples=Counter()
-          targets = {
-            "razor": lambda r: "메루니스의 칼" in r["new_korean"] or ("Mehrunes" in r["old_english"] and r["record_type"]=="BOOK"),
-            "dark": lambda r: "가장 어두운 어둠" in r["new_korean"] or "Darkest Darkness" in r["old_english"],
-            "name": lambda r: r["record_type"]=="BOOK" and r["field"]=="DESC" and ("Almalexia" in r["new_korean"] or "Azura" in r["new_korean"]),
-            "fur": lambda r: r["record_type"] in ("ARMO","CLOT") and r["field"]=="FULL" and ("털가죽" in r["new_korean"] or "모피" in r["new_korean"]),
-            "gate": lambda r: "Ayleid" in r["old_english"] and ("gate" in r["old_english"].lower() or "door" in r["old_english"].lower()),
-          }
+          found=0
+          ascii_names={"Almalexia":0,"Azura":0}
           with Path("canonical_translation_v2.csv").open(encoding="utf-8-sig",newline="") as f:
             for r in csv.DictReader(f):
-              for key,check in targets.items():
-                if not check(r):continue
-                samples[key]+=1
-                if samples[key]>25:continue
-                val=r["new_korean"]
-                needles=["메루니스의 칼","Mehrunes","Almalexia","Azura","털가죽","모피","가장 어두운 어둠"]
-                idx=next((val.find(n) for n in needles if n in val),0)
-                snippet=val[max(0,idx-90):idx+160].replace("\n","\\n").replace("\r","\\r")
-                print(key, r["effective_source"],r["record_type"],r["raw_formid"],r["field"],r["occurrence"],"EDID",r["editor_id"],"ENGLISH",r["old_english"][:150].replace("\n","\\n"),"KOREAN",snippet, flush=True)
-          print("COUNTS",dict(samples))
+              en,ko=r["old_english"],r["new_korean"]
+              if r["record_type"]=="BOOK" and r["field"]=="DESC":
+                for name in ascii_names: ascii_names[name]+=ko.count(name)
+              if r["record_type"]=="BOOK" and r["raw_formid"]=="00024564":
+                print("BOOK",r["field"],"EDID",r["editor_id"],"SOURCE",en[:115].replace("\n","\\n").replace("\r","\\r"), flush=True)
+                for s in ["Mehrunes","Razor","메루니스","메이룬스","칼","Almalexia","Azura","알말렉시아","아주라","가장 깊은 어둠"]:
+                  for v,label in [(en,"EN"),(ko,"KR")]:
+                    for m in list(re.finditer(re.escape(s),v,re.IGNORECASE))[:4]:
+                      print("TOKEN",label,s,repr(v[max(0,m.start()-65):m.end()+70]),flush=True)
+              if "메루니스의 칼" in ko:
+                found+=1
+                print("OTHER_RAZOR",r["effective_source"],r["record_type"],r["raw_formid"],r["field"],r["editor_id"],repr(en[:80]),repr(ko[max(0,ko.index("메루니스의 칼")-60):ko.index("메루니스의 칼")+80]),flush=True)
+          print("ASCII_NAMES_BOOK_DESC",ascii_names,"MEURUNIS_SWORD_COUNT",found)
           PY
