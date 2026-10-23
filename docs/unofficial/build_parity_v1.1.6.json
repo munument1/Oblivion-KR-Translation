@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "compared_fields": 9719,
+  "per_plugin": {
+    "Oblivion Citadel Door Fix.esp": 16,
+    "Unofficial Oblivion Patch.esp": 7529,
+    "Unofficial Shivering Isles Patch.esp": 1507,
+    "DLCBattlehornCastle - Unofficial Patch.esp": 65,
+    "DLCFrostcrag - Unofficial Patch.esp": 27,
+    "DLCHorseArmor - Unofficial Patch.esp": 22,
+    "DLCMehrunesRazor - Unofficial Patch.esp": 48,
+    "DLCOrrery - Unofficial Patch.esp": 26,
+    "DLCSpellTomes - Unofficial Patch.esp": 3,
+    "DLCThievesDen - Unofficial Patch - SSSB.esp": 12,
+    "DLCThievesDen - Unofficial Patch.esp": 37,
+    "DLCVileLair - Unofficial Patch.esp": 43,
+    "Knights - Unofficial Patch.esp": 384
+  },
+  "method": "fresh audited English-field replay vs published-baseline refresh"
+}

@@ -23,6 +23,7 @@ from pathlib import Path
 from build_vanilla_overlay import (Translation, decode_english, encode_subrecord, load_quest_loading_translations,
                                    load_translations, parse_subrecords, sha256_file,
                                    structure_signature)
+from unofficial_text_forwarding import load_text_forwarding, forward_text
 from uop_book_restoration import (BARZ_FIVE, UOP_PLUGIN, load_restorations,
                                   normalize_volume_five_title, restore_book_body,
                                   suspicious_book_body)
@@ -158,7 +159,7 @@ def matching_translation(table, official, record_type, formid, field, old, edito
 def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vanilla_table=None, final_table=None,
                     quest_entries=None, loading_entries=None, completions=None, nexus_completions=None,
                     patch_table=None, location_table=None, patch_location_table=None,
-                    book_restorations=None, rank_table=None):
+                    book_restorations=None, rank_table=None, text_forwarding=None):
     old_records = read_records(original)
     kr_records = read_records(prior) if prior is not None else old_records
     if old_records.keys() != kr_records.keys():
@@ -217,6 +218,15 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
             # Never forward bare prior-KR rank memories or unrelated fields.
             if key[0] == b"FACT" and field in FACT_RANK_FIELDS:
                 if identity is None:
+                    continue
+                aligned_rank = forward_text(
+                    text_forwarding, original.name, key[0], key[1], field,
+                    old_editor.rstrip(b"\0"), field_occurrence, identity, old)
+                if aligned_rank is not None:
+                    if aligned_rank != old:
+                        changes.setdefault(key, {})[index] = (field, old, aligned_rank)
+                        counts["translated_fields"] += 1
+                        counts["canonical_text_forwarded"] += 1
                     continue
                 audit_key = (official, "FACT", f"{base_formid:08X}",
                              field.decode("ascii"), hashlib.sha256(old).hexdigest())
@@ -325,6 +335,15 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
                         replacement if replacement is not None else old)
                     counts["uop_book_title_fixed"] += 1
 
+            # Main-game canonical targets also cover audited spelling variants
+            # and explicitly mapped reordered responses/journal occurrences.
+            aligned = forward_text(text_forwarding, original.name, key[0], key[1],
+                                   field, old_editor.rstrip(b"\0"), field_occurrence,
+                                   identity, old)
+            if aligned is not None:
+                replacement = aligned
+                counts["canonical_text_forwarded"] += 1
+
             # Reject catastrophic future truncation: BOOK/DESC cannot silently
             # become just the title, even when it is non-empty valid UTF-8.
             if key[0] == b"BOOK" and field == b"DESC" and replacement is not None:
@@ -406,6 +425,7 @@ def main():
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     patch_table = load_patch_canonical(root / "canonical_unofficial_translation_v2.csv")
+    text_forwarding = load_text_forwarding(root)
     book_restorations = load_restorations(
         root / "uop_book_body_restore_v1.csv",
         root / "canonical_translation_v2.csv")
@@ -492,7 +512,7 @@ def main():
                                               quest_entries, loading_entries, completions, nexus_completions,
                                               patch_table, location_table, patch_location_table,
                                               book_restorations=book_restorations,
-                                              rank_table=rank_table)
+                                              rank_table=rank_table, text_forwarding=text_forwarding)
             if original.name == UOP_PLUGIN and counts["uop_book_desc_restored"] != len(book_restorations):
                 raise ValueError(
                     f"UOP BOOK/DESC restoration incomplete: "
@@ -521,6 +541,7 @@ def main():
                 "canonical_patch_translation": counts["canonical_patch_translation"],
                 "uop_book_desc_restored": counts["uop_book_desc_restored"],
                 "uop_book_title_fixed": counts["uop_book_title_fixed"],
+                "canonical_text_forwarded": counts["canonical_text_forwarded"],
                 "text_backend": args.text_backend,
                 "structure": before,
             }

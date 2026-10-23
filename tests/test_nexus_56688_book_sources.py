@@ -41,6 +41,8 @@ class Nexus56688BookSourcesTests(unittest.TestCase):
         self.assertEqual(book["occurrence"], "0")
         self.assertIn("Mehrunes Razor", book["old_english"])
         translated = book["new_korean"]
+        self.assertIn("접촉 마비 능력", translated)
+        self.assertNotIn("마봄비의 4월", translated)
         for expected in ("메이룬스의 면도칼", "알말렉시아", "아주라"):
             self.assertIn(expected, translated)
         for stale in ("메루니스의 칼", "Almalexia", "Azura"):

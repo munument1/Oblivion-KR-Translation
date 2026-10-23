@@ -1,13 +1,13 @@
-# Oblivion Original 한국어 번역 v1.1.5
+# Oblivion Original 한국어 번역 v1.1.6
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
-[v1.1.5 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.5)는 다크 브라더후드·아레나 대사, 주요 길드 계급명, 마법사 길드 내부 지명을 수정했습니다. UOP/USIP/UODP 사용자는 해당 비공식 패치 한국어 전체 교체본도 함께 업데이트하세요. 기존 obCJK 보정과 성소 메시지 번역을 포함합니다.
+[v1.1.6 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.6)는 모피 장비 명칭과 『가장 어두운 어둠』의 고유명사·접촉 마비 능력 설명을 교정합니다. UOP 3.5.9a-KR1.9 / USIP 1.6.2-KR1.7 / UODP v27-KR1.9는 서적뿐 아니라 대사·일지·명칭·설명을 본편·공식 DLC와 대조해 총 616필드를 수정했습니다. 비공식 패치를 사용한다면 해당 한국어 전체 교체본도 함께 업데이트하세요.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. 제공받거나 직접 빌드한 v1.1.5 설치기 ZIP의 전체 압축을 풉니다.
+2. 제공받거나 직접 빌드한 v1.1.6 설치기 ZIP의 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
@@ -15,7 +15,7 @@
 
 설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열, 수정된 `OBSE\plugins\obCJK.dll`과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 인트로·엔딩 한국어 자막 영상은 설치기와 분리해 Nexus에서 별도 배포합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
 
-v1.1.5 설치기에는 일부 모드의 한글 물음표와 능력치 이름 끝 글자 잘림을 수정한 **비공식 obCJK 임시 해결본 2**를 포함합니다. obCJK 원제작자는 AophMiSaki이며 공식 업데이트가 아닙니다. 생성한 번역 모드의 DLL과 INI가 기존 obCJK보다 우선하도록 두고, 이전 별도 임시 해결본 모드는 끄세요. `XOBSEStringUtf8Enable = 1`은 기본 적용됩니다. 확인된 xOBSE 22.13 빌드에서만 보정이 작동하며, Ultimate Leveling 알림·능력치 이름의 정상 표시는 게임에서 확인했습니다. 저장·재로드와 장시간 플레이는 미검증입니다. 출처·수정 소스와 검증 정보는 설치기 ZIP의 `obcjk_runtime`에서 확인할 수 있습니다.
+v1.1.6 설치기에는 일부 모드의 한글 물음표와 능력치 이름 끝 글자 잘림을 수정한 **비공식 obCJK 임시 해결본 2**를 포함합니다. obCJK 원제작자는 AophMiSaki이며 공식 업데이트가 아닙니다. 생성한 번역 모드의 DLL과 INI가 기존 obCJK보다 우선하도록 두고, 이전 별도 임시 해결본 모드는 끄세요. `XOBSEStringUtf8Enable = 1`은 기본 적용됩니다. 확인된 xOBSE 22.13 빌드에서만 보정이 작동하며, Ultimate Leveling 알림·능력치 이름의 정상 표시는 게임에서 확인했습니다. 저장·재로드와 장시간 플레이는 미검증입니다. 출처·수정 소스와 검증 정보는 설치기 ZIP의 `obcjk_runtime`에서 확인할 수 있습니다.
 
 기존 설치기와 같이 문서 폴더의 `My Games\Oblivion\Oblivion.ini`를 자동으로 찾습니다. 찾은 기존 파일에서 글꼴 경로만 복원하고 최초 변경 전 파일을 백업합니다. INI 주소 입력 단계는 없습니다. INI가 없으면 새 파일을 만들지 않습니다.
 

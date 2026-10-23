@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "forward/False": 8445,
+    "patch/False": 830,
+    "patch/True": 478,
+    "forward/True": 567
+  },
+  "coverage": {
+    "tracked_patch_text": 10320,
+    "patch_owned_or_no_main_text": 82,
+    "untracked_already_matches_main": 133,
+    "voice_safe_race_name": 5
+  },
+  "tracked_fields": 10320,
+  "forward_manifest_fields": 9719,
+  "release_changed_fields": {
+    "UOP": 508,
+    "USIP": 92,
+    "UODP": 16
+  },
+  "untracked_differences": []
+}

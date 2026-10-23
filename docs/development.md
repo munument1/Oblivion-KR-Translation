@@ -1,6 +1,6 @@
 # 빌드와 저장소 구성
 
-현재 main은 v1.1.5 OBCJK UTF-8 직접 빌드를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
+현재 main은 v1.1.6 OBCJK UTF-8 직접 빌드를 기준으로 합니다. 사용자 안내는 루트 README.md 한 곳에서 관리합니다.
 
 ## Windows 설치기 빌드
 
@@ -56,3 +56,9 @@ python package_obcjk_unofficial.py --patch UODP --input-dir _build/obcjk/UODP --
 ## main 정리
 
 main에는 현재 v1.1.5 빌드·검증·패키징에 필요한 Python만 유지합니다. 번역 검수 과정에서 사용한 `v2_tools`, 루트 audit/extract/export 도구, native 재정렬 일회성 검증 스크립트는 제거했으며 필요하면 Git 기록과 이전 태그에서 확인할 수 있습니다. 과거 검수 결과 자체는 `docs/v2_review`에 보관합니다.
+
+## v1.1.6 전체 번역 정합성
+
+`unofficial_text_forwarding.py`는 본편 canonical·UI 보충·모피 보정·책 제목 보정·지명 테이블을 실제 본편 빌더와 같은 순서로 읽습니다. `unofficial_text_forwarding_v1.csv`는 번역문 사본이 아닌 양쪽 원문 해시와 정체성 연결 자료입니다. 영문 변경을 유사도로 추측하는 코드는 런타임에 없습니다. `scripts/audit_unofficial_alignment.py`는 공개 배포본의 전체 표시 필드를 대조해 manifest 및 `docs/unofficial/alignment_audit_v1.1.6.json.gz`을 재생성하는 개발 도구입니다. 철자 등가 규칙은 개발 단계에서만 사용하며 의미 변경은 보존합니다.
+
+`unofficial_manual_fixes_v1.csv`는 별도 교정한 51항목의 정체성과 원문 해시만 보관하며, 실제 한국어는 기존 `canonical_unofficial_translation_v2.csv`에서 읽습니다. `scripts/release_unofficial_sync.py`는 고정 해시의 공개 v1.1.5 ZIP에서 같은 데이터로 텍스트만 갱신하고 모든 비선택 필드를 비교합니다. 사용자 원본이나 세이브는 접근하지 않습니다. 일반 영문 원본의 새 빌드도 `build_unofficial_release.py`에서 동일한 canonical 연결을 사용합니다.

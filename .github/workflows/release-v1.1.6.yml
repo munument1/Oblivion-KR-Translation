@@ -1,0 +1,187 @@
+name: Release v1.1.6 and update Nexus
+
+on:
+  push:
+    branches: [main]
+    paths: [release_notes_v1.1.6.md]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-v1.1.6
+  cancel-in-progress: false
+
+jobs:
+  patches:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run all regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Download pinned public baseline packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          mkdir baseline dist
+          gh release download v1.1.5 --dir baseline --pattern 'UOP_*.zip' --pattern 'USIP_*.zip' --pattern 'UODP_*'
+      - name: Refresh and verify audited text subrecords
+        run: |
+          python scripts/release_unofficial_sync.py --patch UOP --source baseline/UOP_KR_UTF8_obCJK_3.5.9a_KR1.8_20261021.zip --output dist
+          python scripts/release_unofficial_sync.py --patch USIP --source baseline/USIP_KR_UTF8_obCJK_1.6.2_KR1.6_20261021.zip --output dist
+          python scripts/release_unofficial_sync.py --patch UODP --source baseline/UODP_KR_UTF8_obCJK_v27_KR1.8_20261021.zip --output dist
+      - name: Verify normal builder and release refresh agree
+        run: |
+          mkdir baseline-esp
+          python -c "from pathlib import Path; from zipfile import ZipFile; [ZipFile(p).extractall('baseline-esp') for p in Path('baseline').glob('*.zip')]"
+          python scripts/verify_unofficial_sync.py --baseline baseline-esp --release dist --report dist/Unofficial_translation_parity_v1.1.6.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unofficial-packages
+          path: dist/*
+          if-no-files-found: error
+
+  installer:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build Windows installer
+        run: |
+          python -m pip install pyinstaller
+          python -m PyInstaller --noconfirm --clean OblivionKRBuilder.spec
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.1.6.zip --version 1.1.6
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Verify packaged translation inputs and executable entry point
+        run: |
+          python -c "from PyInstaller.archive.readers import CArchiveReader; a=CArchiveReader('dist/OblivionKRBuilder.exe'); assert 'canonical_nexus_56688_fur_v1.csv' in a.toc; assert 'canonical_translation_v2.csv' in a.toc"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & dist/OblivionKRBuilder.exe --help
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer
+          path: |
+            dist/Oblivion_Original_KR_Installer_v1.1.6.zip
+            dist/Oblivion_Original_KR_Installer_v1.1.6.zip.sha256
+          if-no-files-found: error
+
+  publish:
+    needs: [patches, installer]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: '*'
+          path: dist
+          merge-multiple: true
+      - name: Verify packages and publish official release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          cd dist
+          sha256sum --check *.sha256
+          cd ..
+          gh release create v1.1.6 dist/* --target "$GITHUB_SHA" --title 'Oblivion Original 한국어 번역 v1.1.6' --notes-file release_notes_v1.1.6.md --latest
+
+  nexus:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [installer, uop, usip, uodp]
+    steps:
+      - name: Select existing Nexus file
+        id: target
+        env:
+          TARGET: ${{ matrix.target }}
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$TARGET" in
+            installer)
+              filename='Oblivion_Original_KR_Installer_v1.1.6.zip'
+              file_id=8110293
+              mod_id=433791753584
+              version=1.1.6
+              display_name='Oblivion Original KR Installer'
+              changelog='모피 장비 명칭과 가장 어두운 어둠의 고유명사 번역을 보완했습니다. 모피 명칭 보정 CSV의 설치기 포함을 검증했습니다. UOP KR1.9·USIP KR1.7·UODP KR1.9도 함께 교체하세요. 대사·일지·명칭·설명·서적의 본편 번역 통일을 포함하며 한자/네모 X 표시 및 특정 퍼즐 메시지는 추가 확인 대상입니다.'
+              ;;
+            uop)
+              filename='UOP_KR_UTF8_obCJK_3.5.9a_KR1.9_20261023.zip'
+              file_id=8036688
+              mod_id=433791753535
+              version=3.5.9a-KR1.9
+              display_name='UOP KR UTF8 obCJK'
+              changelog='대사·일지·아이템·종족/직업 설명·서적 등 508필드를 수정했습니다. 본편 번역 전달을 통일하고 +5 전문화 설명·번개 약점·관문 제어 장치·계급명 누락을 교정했습니다. 가장 어두운 어둠의 고유명사와 접촉 마비 능력을 포함합니다. UOP의 의도적인 내용 교정과 기존 112개 본문 복구 유지. 구조·스크립트·나머지 필드 보존 검증 완료, 실게임 확인 필요.'
+              ;;
+            uodp)
+              filename='UODP_KR_UTF8_obCJK_v27_KR1.9_20261023.zip'
+              file_id=8036709
+              mod_id=433791753537
+              version=27-KR1.9
+              display_name='UODP KR UTF8 obCJK'
+              changelog='기사단·도둑 소굴·더러운 은신처 패치의 대사 및 일지 16필드를 본편·공식 DLC 번역에 맞췄습니다. 의도적인 원문 변경과 기존 성소 메시지·책 복구 유지. 구조·스크립트·나머지 필드 보존 검증 완료, 실게임 확인 필요. 기존 활성화·로드 순서를 유지하세요.'
+              ;;
+            usip)
+              filename='USIP_KR_UTF8_obCJK_1.6.2_KR1.7_20261023.zip'
+              previous=$(curl --fail-with-body --silent --show-error --header "apikey: $NEXUS_API_KEY" 'https://api.nexusmods.com/v3/games/oblivion/mod-file-versions/1000046772')
+              file_id=$(jq -r '.data.file.id // empty' <<< "$previous")
+              [[ $(jq -r '.data.version' <<< "$previous") == '1.6.2-KR1.5' ]]
+              mod=$(curl --fail-with-body --silent --show-error --header "apikey: $NEXUS_API_KEY" 'https://api.nexusmods.com/v3/games/oblivion/mods/56640')
+              mod_id=$(jq -r '.data.id // empty' <<< "$mod")
+              [[ $(jq -r '.data.name' <<< "$mod") == *'Unofficial Shivering Isles Patch'* ]]
+              version=1.6.2-KR1.7
+              display_name='Unofficial Shivering Isles Patch KR'
+              changelog='대사·일지·아이템·서적 등 92필드를 수정했습니다. 본편 번역 전달을 통일하고 광기 화살의 s 잔존·왕좌·호박석/광기 장검 주형·비탄 유령 명칭 등을 교정했습니다. USIP의 의도적인 내용 교정 유지. 구조·스크립트·나머지 필드 보존 검증 완료, 실게임 확인 필요.'
+              ;;
+          esac
+          [[ "$file_id" =~ ^[0-9]+$ && "$mod_id" =~ ^[0-9]+$ ]]
+          printf 'filename=%s\nfile_id=%s\nmod_id=%s\nversion=%s\ndisplay_name=%s\nchangelog=%s\n' "$filename" "$file_id" "$mod_id" "$version" "$display_name" "$changelog" >> "$GITHUB_OUTPUT"
+      - name: Download verified published package
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          FILENAME: ${{ steps.target.outputs.filename }}
+        run: |
+          gh release download v1.1.6 --pattern "$FILENAME" --pattern "$FILENAME.sha256"
+          sha256sum --check "$FILENAME.sha256"
+      - name: Update existing Nexus download and version
+        id: upload
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ steps.target.outputs.file_id }}
+          mod_id: ${{ steps.target.outputs.mod_id }}
+          filename: ${{ steps.target.outputs.filename }}
+          version: ${{ steps.target.outputs.version }}
+          display_name: ${{ steps.target.outputs.display_name }}
+          description: ${{ steps.target.outputs.changelog }}
+          changelog: ${{ steps.target.outputs.changelog }}
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Record Nexus result
+        env:
+          VERSION_ID: ${{ steps.upload.outputs.version_id }}
+        run: echo "Updated Nexus version $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
