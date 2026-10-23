@@ -61,6 +61,11 @@ def update_existing_ini(path, font_settings, *, dry_run=False):
     return str(backup)
 
 def main():
+    # Frozen Python ignores PYTHONIOENCODING. Keep the console's encoding,
+    # but do not abort installation when its code page cannot print Korean.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, 'reconfigure'):
+            stream.reconfigure(errors='backslashreplace')
     # The frozen builder invokes itself for the legacy intermediate conversion.
     if '--text-backend' in sys.argv:
         from build_vanilla_overlay import main as builder_main
