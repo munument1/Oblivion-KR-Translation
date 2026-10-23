@@ -1,0 +1,42 @@
+name: Recover verified Oblivion v1.1.6 checkpoint
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/recover-v1.1.6.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: recover-oblivion-v1.1.6
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore exact reviewed source and preserve current main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin 7531b1bfb689551f2c21abd5e31536993d54a161
+          git show FETCH_HEAD:checkpoint/oblivion-v1.1.6.bundle > /tmp/oblivion-v1.1.6.bundle
+          echo '839fca03d0f9f2dc10110ede2300687eb8a6fa4f1a3d5879039f87da4f72e5ec  /tmp/oblivion-v1.1.6.bundle' | sha256sum -c -
+          git bundle verify /tmp/oblivion-v1.1.6.bundle
+          git fetch /tmp/oblivion-v1.1.6.bundle HEAD
+          test "$(git rev-parse FETCH_HEAD)" = b4c36e4d5c22f8445b30e38f9415487bd618555c
+          test "$(git rev-parse FETCH_HEAD^{tree})" = 0f2e7ec51e0db5a09d947e14e8a2144196364f13
+          git switch -c release/oblivion-v1.1.6 FETCH_HEAD
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git merge --no-edit origin/main
+          git diff --exit-code b4c36e4d5c22f8445b30e38f9415487bd618555c HEAD -- . ':!.github/workflows/recover-v1.1.6.yml'
+          git push origin HEAD:main
+      - name: Explicitly start release workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh workflow run release-v1.1.6.yml --ref main
