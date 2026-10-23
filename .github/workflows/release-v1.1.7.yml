@@ -69,7 +69,12 @@ jobs:
           cd dist
           sha256sum --check *.sha256
           cd ..
-          gh release create v1.1.7 dist/* --target "$GITHUB_SHA" --title 'Oblivion Original 한국어 번역 v1.1.7' --notes-file release_notes_v1.1.7.md --latest
+          # A workflow token may not create a new tag at a non-head commit.
+          # Accept CI-only maintenance after the build; reject any source drift.
+          git fetch origin main
+          git diff --exit-code "$GITHUB_SHA" FETCH_HEAD -- . ':!.github/workflows/*'
+          release_target=$(git rev-parse FETCH_HEAD)
+          gh release create v1.1.7 dist/* --target "$release_target" --title 'Oblivion Original 한국어 번역 v1.1.7' --notes-file release_notes_v1.1.7.md --latest
   nexus:
     needs: publish
     runs-on: ubuntu-latest
