@@ -3,7 +3,7 @@ name: Release v1.1.6 and update Nexus
 on:
   push:
     branches: [main]
-    paths: [release_notes_v1.1.6.md]
+    paths: [release_notes_v1.1.6.md, .github/workflows/release-v1.1.6.yml]
   workflow_dispatch:
 
 permissions:
@@ -49,6 +49,8 @@ jobs:
 
   installer:
     runs-on: windows-latest
+    env:
+      PYTHONIOENCODING: utf-8
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
