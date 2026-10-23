@@ -23,6 +23,7 @@ from build_video_subtitles import build_videos
 from master_layout import apply_layout
 from build_script_messages import build as build_script_messages
 from build_shrine_messages import build as build_shrine_messages
+from build_gate_messages import build as build_gate_messages
 from obcjk_runtime import bundle_manifest as runtime_manifest, install_runtime
 
 ORIGINAL_FONT_SETTINGS = (
@@ -190,6 +191,16 @@ def build(args):
             reports[name]['shrine_messages'] = shrine_report
             reports[name]['output_sha256'] = shrine_report['output_sha256']
 
+        gate_output = temp / 'Oblivion.gate-messages.esm'
+        gate_report = build_gate_messages(master, gate_output, MASTER)
+        copied_gate = master.with_suffix('.esm.gate-building')
+        shutil.copyfile(gate_output, copied_gate)
+        if sha256_file(copied_gate) != gate_report['output_sha256']:
+            raise ValueError('Gate message copy checksum mismatch')
+        copied_gate.replace(master)
+        reports[MASTER]['gate_messages'] = gate_report
+        reports[MASTER]['output_sha256'] = gate_report['output_sha256']
+
         shutil.copyfile(locations / 'location_validation.json', output / 'location_validation.json')
 
     ui_report = build_ui(HERE / 'assets/menus/strings.xml', output / 'menus/strings.xml')
@@ -215,6 +226,7 @@ def build(args):
             **({'native_master_layout': report['native_master_layout']} if 'native_master_layout' in report else {}),
             **({'script_messages': report['script_messages']} if 'script_messages' in report else {}),
             **({'shrine_messages': report['shrine_messages']} if 'shrine_messages' in report else {}),
+            **({'gate_messages': report['gate_messages']} if 'gate_messages' in report else {}),
         }
         for name, report in reports.items()
     }

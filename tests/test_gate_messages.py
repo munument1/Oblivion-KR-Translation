@@ -48,6 +48,19 @@ class GateMessageTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Compiled string length'):
             gates.translate_body(broken, 'GateFixture', hashlib.sha256(broken).hexdigest())
 
+    def test_base_gate_writer_requires_both_exact_scripts(self):
+        body,pin=self.fixture([next(iter(gates.TRANSLATIONS))])
+        pins={('Oblivion.esm',fid):('GateFixture',pin) for fid in (0x4CAEE,0x947B3)}
+        raw=b''.join(struct.pack('<4sIIII',b'SCPT',len(body),0,fid,7)+body for _,fid in pins)
+        with tempfile.TemporaryDirectory() as temp, patch.object(gates,'PINS',pins):
+            source,output=Path(temp)/'Oblivion.esm',Path(temp)/'output.esm'
+            source.write_bytes(raw)
+            report=gates.build(source,output)
+            self.assertEqual(report['script_count'],2)
+            self.assertEqual(report['display_strings'],2)
+            self.assertEqual(source.read_bytes(),raw)
+            self.assertEqual(len(output.read_bytes()),len(raw))
+
     def test_writer_preserves_all_other_bytes_and_rejects_missing_duplicate(self):
         body, pin = self.fixture(list(gates.TRANSLATIONS)[1:])
         def record(fid):

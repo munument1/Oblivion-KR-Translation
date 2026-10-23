@@ -1,8 +1,8 @@
-"""Translate three hash-pinned UOP gate scripts using fixed-size UTF-8 literals.
+"""Translate hash-pinned base/UOP gate scripts using fixed-size UTF-8 literals.
 
 Only SCDA/SCTX payload bytes change; all metadata, instructions and offsets
-are preserved. These are confirmed UOP omissions, not proof of the reporter's
-unspecified Ayleid location or a fix for encoding failures in other mods.
+are preserved. ARGate01SCRIPT is linked by the base game's Ayleid Iron Gate.
+This does not repair encoding failures in other mods.
 """
 from __future__ import annotations
 import hashlib
@@ -18,6 +18,8 @@ TRANSLATIONS = {
     'The gate has already been opened.': '이미 열린 문입니다.',
 }
 PINS = {
+    ('Oblivion.esm', 0x0004CAEE): ('ARGate01SCRIPT', '80c0e51c9bf881f0257a6ab1c8811d14c14388fd6f5a539ad93b8f012e289c1d'),
+    ('Oblivion.esm', 0x000947B3): ('SewerVerticalGate01SCRIPT', '92baf9e3cae2458b08508a3bf448040912f399e56aacd402e6c70d2948925062'),
     ('Unofficial Oblivion Patch.esp', 0x0000CCD0): ('OblivionGateSwitch01MQ03Gates', '778779c98acbb8fcdb0a30619fa597e5af5d4add339c5255dedc27844f01d502'),
     ('Unofficial Oblivion Patch.esp', 0x000947B3): ('SewerVerticalGate01SCRIPT', '36ea9717db084e6208243fa5b45b1fbd5df41b0940049bd906f485f11bdc7032'),
     ('Unofficial Oblivion Patch.esp', 0x000C49FC): ('OblivionGateSwitch01', '97230965dd47766fe5afef4ac9227dc3038a943871020da6b77d94b25c3f44cb'),
@@ -72,8 +74,9 @@ def build(source, output, plugin=None):
     source, output = Path(source), Path(output)
     plugin = plugin or source.name
     pins = {fid: item for (name, fid), item in PINS.items() if name == plugin}
-    if len(pins) != 3:
-        raise ValueError('Expected three gate identities for supported plugin')
+    expected = 2 if plugin == 'Oblivion.esm' else 3
+    if len(pins) != expected:
+        raise ValueError('Unexpected gate identities for supported plugin')
     if source.resolve() == output.resolve() or output.exists():
         raise ValueError('Gate output must be new and separate from input')
     original = source.read_bytes()

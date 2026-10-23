@@ -1,0 +1,56 @@
+{
+  "source_sha256": "976e1801707d733d17e7a2262382a6c961bbedf161f2be4bc6b87d24eae87831",
+  "output_sha256": "92bba9f61b2fef9e0965097d0835a4195687e4ef79994afc8c0865a945aacdaa",
+  "scripts": [
+    {
+      "formid": "000947B3",
+      "edid": "SewerVerticalGate01SCRIPT",
+      "body_offset": 2635725,
+      "original_body_sha256": "92baf9e3cae2458b08508a3bf448040912f399e56aacd402e6c70d2948925062",
+      "changes": [
+        {
+          "field": "SCDA",
+          "body_offset": 177,
+          "bytes": 30,
+          "english": " This gate is opened remotely.",
+          "korean": "장치로 여는 문입니다."
+        },
+        {
+          "field": "SCTX",
+          "body_offset": 988,
+          "bytes": 30,
+          "english": " This gate is opened remotely.",
+          "korean": "장치로 여는 문입니다."
+        }
+      ]
+    },
+    {
+      "formid": "0004CAEE",
+      "edid": "ARGate01SCRIPT",
+      "body_offset": 2819452,
+      "original_body_sha256": "80c0e51c9bf881f0257a6ab1c8811d14c14388fd6f5a539ad93b8f012e289c1d",
+      "changes": [
+        {
+          "field": "SCDA",
+          "body_offset": 118,
+          "bytes": 30,
+          "english": " This gate is opened remotely.",
+          "korean": "장치로 여는 문입니다."
+        },
+        {
+          "field": "SCTX",
+          "body_offset": 887,
+          "bytes": 30,
+          "english": " This gate is opened remotely.",
+          "korean": "장치로 여는 문입니다."
+        }
+      ]
+    }
+  ],
+  "script_count": 2,
+  "display_strings": 2,
+  "file_size_unchanged": true,
+  "only_allowlisted_literal_bytes_changed": true,
+  "bytecode_lengths_and_control_flow_unchanged": true,
+  "runtime_verified": false
+}

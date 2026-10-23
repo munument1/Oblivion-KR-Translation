@@ -75,9 +75,19 @@ def main():
     parser.add_argument('--output', type=Path, help='MO2에 넣을 번역 모드 출력 폴더')
     parser.add_argument('--ini', type=Path, help='기존 Oblivion.ini; 생략하면 문서 폴더에서 자동 검색')
     parser.add_argument('--fonts-only', action='store_true', help='번역 데이터 생성 없이 글꼴만 설치')
+    parser.add_argument('--diagnose-display', action='store_true', help='제보된 글자 깨짐과 게이트 레코드를 읽기 전용 검사')
+    parser.add_argument('--load-order', type=Path, help='진단용 활성 플러그인 목록(로드 순서); 생략 시 덮어쓰기 우선순위 미판정')
     parser.add_argument('--video-subtitles', choices=('auto', 'required', 'off'), default='off',
                         help='인트로·엔딩 자막 영상: 기본 off. auto/required는 이미 설치된 FFmpeg·ffprobe·RAD만 사용')
     args = parser.parse_args()
+    if args.diagnose_display:
+        if not args.data_dir or args.output or args.fonts_only or args.ini:
+            parser.error('--diagnose-display는 --data-dir와 선택적인 --load-order만 사용합니다.')
+        from diagnose_display import diagnose
+        print(json.dumps(diagnose(args.data_dir,args.load_order),ensure_ascii=False,indent=2))
+        return 0
+    if args.load_order:
+        parser.error('--load-order는 --diagnose-display와 함께 사용하세요.')
     bundle_manifest()
     if args.fonts_only:
         if args.data_dir or args.output or args.ini:

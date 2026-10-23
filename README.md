@@ -1,13 +1,13 @@
-# Oblivion Original 한국어 번역 v1.1.6
+# Oblivion Original 한국어 번역 v1.1.7
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
-[v1.1.6 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.6)는 모피 장비 명칭과 『가장 어두운 어둠』의 고유명사·접촉 마비 능력 설명을 교정합니다. UOP 3.5.9a-KR1.9 / USIP 1.6.2-KR1.7 / UODP v27-KR1.9는 서적뿐 아니라 대사·일지·명칭·설명을 본편·공식 DLC와 대조해 총 616필드를 수정했습니다. 비공식 패치를 사용한다면 해당 한국어 전체 교체본도 함께 업데이트하세요.
+[v1.1.7 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.7)는 아일레이드 철문·하수도 철문의 원격 개방 안내문을 추가 번역하며, 모피 장비 명칭과 『가장 어두운 어둠』의 고유명사·접촉 마비 능력 설명을 교정합니다. UOP 3.5.9a-KR1.10 / USIP 1.6.2-KR1.7 / UODP v27-KR1.9는 서적뿐 아니라 대사·일지·명칭·설명을 본편·공식 DLC와 대조해 총 616필드를 수정했습니다. 비공식 패치를 사용한다면 해당 한국어 전체 교체본도 함께 업데이트하세요.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. 제공받거나 직접 빌드한 v1.1.6 설치기 ZIP의 전체 압축을 풉니다.
+2. 제공받거나 직접 빌드한 v1.1.7 설치기 ZIP의 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
@@ -15,7 +15,7 @@
 
 설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열, 수정된 `OBSE\plugins\obCJK.dll`과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 인트로·엔딩 한국어 자막 영상은 설치기와 분리해 Nexus에서 별도 배포합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
 
-v1.1.6 설치기에는 일부 모드의 한글 물음표와 능력치 이름 끝 글자 잘림을 수정한 **비공식 obCJK 임시 해결본 2**를 포함합니다. obCJK 원제작자는 AophMiSaki이며 공식 업데이트가 아닙니다. 생성한 번역 모드의 DLL과 INI가 기존 obCJK보다 우선하도록 두고, 이전 별도 임시 해결본 모드는 끄세요. `XOBSEStringUtf8Enable = 1`은 기본 적용됩니다. 확인된 xOBSE 22.13 빌드에서만 보정이 작동하며, Ultimate Leveling 알림·능력치 이름의 정상 표시는 게임에서 확인했습니다. 저장·재로드와 장시간 플레이는 미검증입니다. 출처·수정 소스와 검증 정보는 설치기 ZIP의 `obcjk_runtime`에서 확인할 수 있습니다.
+v1.1.7 설치기에는 일부 모드의 한글 물음표와 능력치 이름 끝 글자 잘림을 수정한 **비공식 obCJK 임시 해결본 2**를 포함합니다. obCJK 원제작자는 AophMiSaki이며 공식 업데이트가 아닙니다. 생성한 번역 모드의 DLL과 INI가 기존 obCJK보다 우선하도록 두고, 이전 별도 임시 해결본 모드는 끄세요. `XOBSEStringUtf8Enable = 1`은 기본 적용됩니다. 확인된 xOBSE 22.13 빌드에서만 보정이 작동하며, Ultimate Leveling 알림·능력치 이름의 정상 표시는 게임에서 확인했습니다. 저장·재로드와 장시간 플레이는 미검증입니다. 출처·수정 소스와 검증 정보는 설치기 ZIP의 `obcjk_runtime`에서 확인할 수 있습니다.
 
 기존 설치기와 같이 문서 폴더의 `My Games\Oblivion\Oblivion.ini`를 자동으로 찾습니다. 찾은 기존 파일에서 글꼴 경로만 복원하고 최초 변경 전 파일을 백업합니다. INI 주소 입력 단계는 없습니다. INI가 없으면 새 파일을 만들지 않습니다.
 
@@ -76,3 +76,13 @@ GitHub 설치기는 본편·공식 DLC용입니다. Nexus용 언오피셜 번역
 MO2에서 한국어 메뉴 표시, 한글 위치명이 들어간 세이브 생성, 본명조 및 줄바꿈·입력 커서 표시를 확인했습니다. 모든 기존 세이브 재로딩과 장시간 플레이의 전수 검증을 완료한 것은 아닙니다.
 
 [빌드와 저장소 구성](docs/development.md), [v1.0.8 표시 설정 검증 기록](docs/obcjk/release_validation_v1.0.8.md), [변경 이력](docs/release-changelog.md)을 참고하세요. [v1.0.8](https://github.com/munument1/-KR-Oblivion-Translation/releases/tag/v1.0.8)은 이전 버전으로 기존 릴리스에서 받을 수 있습니다.
+
+## 특정 글자 깨짐 진단
+
+제보된 강철 흉갑·책 저자·아일레이드 게이트만 읽기 전용으로 검사합니다. MO2를 사용한다면 아래 실행 파일을 MO2 실행 항목으로 등록해 가상 Data를 읽게 해야 합니다.
+
+```text
+OblivionKRBuilder.exe --diagnose-display --data-dir "게임의 Data 경로"
+```
+
+설치·글꼴 등록·플러그인 쓰기를 수행하지 않습니다. 해당 레코드를 가진 파일별 텍스트와 GBK 오해석 패턴, 유효한 obCJK.ini의 코드페이지와 DLL 해시를 출력합니다. 덮어쓰기 최종 승자를 판정하려면 `--load-order "활성 플러그인 순서.txt"`를 덧붙이세요. 이 목록에는 **활성 플러그인만 실제 로드 순서대로** 한 줄씩 적어야 하며, 비활성 항목까지 있는 loadorder.txt를 그대로 사용해서는 안 됩니다. 목록을 생략하면 파일별 후보만 나열하고 최종 승자를 추측하지 않습니다. 실행 중 다른 모드가 바꾸는 문자열이나 훅 충돌은 이 검사로 확정하지 않습니다.

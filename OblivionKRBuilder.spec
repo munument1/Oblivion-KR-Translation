@@ -12,6 +12,7 @@ a = Analysis(['install_obcjk.py'], pathex=[], binaries=[],
     datas=[(name, '.') for name in tables] + [
         ('assets', 'assets'), ('video_subtitles', 'video_subtitles')],
     hiddenimports=['build_vanilla_overlay', 'build_obcjk_release', 'build_obcjk_locations',
+                   'build_gate_messages', 'diagnose_display',
                    'master_layout', 'build_script_messages', 'build_shrine_messages', 'build_video_subtitles', 'obcjk_runtime', 'winreg'],
     hookspath=[], hooksconfig={}, runtime_hooks=[], excludes=[], noarchive=False, optimize=0)
 pyz = PYZ(a.pure)

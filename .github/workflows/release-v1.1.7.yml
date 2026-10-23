@@ -1,0 +1,108 @@
+name: Release v1.1.7 and update Nexus installer
+on:
+  push:
+    branches: [main]
+    paths: [release_notes_v1.1.7.md, .github/workflows/release-v1.1.7.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: release-v1.1.7
+  cancel-in-progress: false
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -v
+  installer:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build Windows installer
+        run: |
+          python -m pip install pyinstaller
+          python -m PyInstaller --noconfirm --clean OblivionKRBuilder.spec
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.1.7.zip --version 1.1.7
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Verify gate and diagnosis modules are frozen and executable
+        run: |
+          python -c "from PyInstaller.archive.readers import CArchiveReader; a=CArchiveReader('dist/OblivionKRBuilder.exe'); p=a.open_embedded_archive('PYZ.pyz'); assert 'build_gate_messages' in p.toc; assert 'diagnose_display' in p.toc; assert 'canonical_nexus_56688_fur_v1.csv' in a.toc"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & dist/OblivionKRBuilder.exe --help
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -c "import subprocess,tempfile,json; t=tempfile.TemporaryDirectory(); r=json.loads(subprocess.check_output(['dist/OblivionKRBuilder.exe','--diagnose-display','--data-dir',t.name])); assert r['read_only'] and r['inspected_plugins']==0; t.cleanup()"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer
+          path: |
+            dist/Oblivion_Original_KR_Installer_v1.1.7.zip
+            dist/Oblivion_Original_KR_Installer_v1.1.7.zip.sha256
+          if-no-files-found: error
+  publish:
+    needs: [tests, installer]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: windows-installer
+          path: dist
+      - name: Include unchanged current unofficial packages and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release download v1.1.6-uop-gate-hotfix --dir dist --pattern 'UOP_KR_*.zip' --pattern 'UOP_KR_*.zip.sha256'
+          gh release download v1.1.6 --dir dist --pattern 'USIP_*.zip*' --pattern 'UODP_*.zip*'
+          cd dist
+          sha256sum --check *.sha256
+          cd ..
+          gh release create v1.1.7 dist/* --target "$GITHUB_SHA" --title 'Oblivion Original 한국어 번역 v1.1.7' --notes-file release_notes_v1.1.7.md --latest
+  nexus:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Download published installer and verify
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release download v1.1.7 --pattern 'Oblivion_Original_KR_Installer_v1.1.7.zip*'
+          sha256sum --check *.sha256
+      - name: Update existing Nexus installer
+        id: upload
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: 8110293
+          mod_id: 433791753584
+          filename: Oblivion_Original_KR_Installer_v1.1.7.zip
+          version: 1.1.7
+          display_name: Oblivion Original KR Installer
+          description: '본편 아일레이드 철문(ARGate01SCRIPT)과 하수도 철문의 원격 개방 안내문을 번역합니다. 새 설치기로 본편 모드를 다시 생성하세요. UOP KR1.10·USIP KR1.7·UODP KR1.9 유지. 한자·네모 X는 UTF-8/GBK 오해석 패턴을 재현했으며 발생 지점은 미확정입니다. 읽기 전용 --diagnose-display 검사를 추가했습니다. 실게임 검증 미실시.'
+          changelog: 'v1.1.7: 실제 스크린샷 문구와 연결된 본편 게이트 스크립트 2개 번역. 전체 스크립트 해시 및 문자열 외 바이트 보존 검증. 읽기 전용 표시 오류 진단 추가. Windows 패키징·실행과 자동 테스트 116개 확인. 글자 깨짐 해결 완료를 주장하지 않습니다.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Record Nexus version
+        env:
+          VERSION_ID: ${{ steps.upload.outputs.version_id }}
+        run: |
+          test -n "$VERSION_ID"
+          echo "Installer v1.1.7 Nexus version $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
+
