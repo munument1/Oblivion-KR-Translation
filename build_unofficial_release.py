@@ -545,6 +545,13 @@ def main():
                 "text_backend": args.text_backend,
                 "structure": before,
             }
+            if original.name == UOP_PLUGIN and args.text_backend == 'obcjk':
+                from build_gate_messages import build as build_gate_messages
+                temporary = destination.with_suffix('.esp.gate-building')
+                gate_report = build_gate_messages(destination, temporary, original.name)
+                temporary.replace(destination)
+                report[original.name]['gate_messages'] = gate_report
+                report[original.name]['output_sha256'] = gate_report['output_sha256']
             if original.name == 'Knights - Unofficial Patch.esp':
                 from build_shrine_messages import build as build_shrine_messages
                 temporary = destination.with_suffix('.esp.shrine-building')

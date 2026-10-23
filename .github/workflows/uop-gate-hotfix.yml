@@ -1,0 +1,62 @@
+name: UOP gate message hotfix and Nexus
+on:
+  push:
+    branches: [main]
+    paths:
+      - release_notes_uop_gate_hotfix_20261023.md
+      - .github/workflows/uop-gate-hotfix.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: uop-gate-hotfix-20261023
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify regression suite
+        run: python -m unittest discover -s tests -v
+      - name: Download published baseline and package gate-only changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          mkdir baseline
+          gh release download v1.1.6 --dir baseline --pattern 'UOP_*.zip'
+          python scripts/package_uop_gate_hotfix.py --source baseline/UOP_KR_UTF8_obCJK_3.5.9a_KR1.9_20261023.zip --output dist
+          cd dist
+          sha256sum --check *.sha256
+      - name: Publish UOP hotfix without replacing main installer release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh release create v1.1.6-uop-gate-hotfix dist/* --target "$GITHUB_SHA" --title 'UOP 한국어판 KR1.10 — 게이트 안내문 핫픽스' --notes-file release_notes_uop_gate_hotfix_20261023.md --latest=false
+      - name: Update existing UOP Nexus file
+        id: upload
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: 8036688
+          mod_id: 433791753535
+          filename: dist/UOP_KR_UTF8_obCJK_3.5.9a_KR1.10_20261023.zip
+          version: 3.5.9a-KR1.10
+          display_name: UOP KR UTF8 obCJK
+          description: 'v1.1.6의 508필드 정렬 수정에 더해 UOP 게이트 스크립트 3개의 영어 안내문 7곳을 번역했습니다. 문자열 바이트만 교체하고 명령어·분기·참조·나머지 필드를 보존합니다. 본편 설치기 v1.1.6은 그대로 사용하세요. 원제보의 아일레이드 위치와 동일 대상인지, 한자·네모 X의 원인은 미확인입니다. 실게임 검증 미실시.'
+          changelog: 'KR1.10: UOP 게이트 스크립트 안내문 7곳(4종) 번역. 전체 스크립트 해시 및 고정 길이·비문자열 바이트 보존 검증. 본편 설치기 v1.1.6·USIP KR1.7·UODP KR1.9 유지.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Record upload
+        env:
+          VERSION_ID: ${{ steps.upload.outputs.version_id }}
+        run: |
+          test -n "$VERSION_ID"
+          echo "UOP KR1.10 Nexus version $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"

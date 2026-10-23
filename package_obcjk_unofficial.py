@@ -35,6 +35,7 @@ def load_validation(folder: Path):
                 'structure': source.get('structure'),
                 'text_backend': source.get('text_backend'),
                 **({'shrine_messages': source['shrine_messages']} if 'shrine_messages' in source else {}),
+                **({'gate_messages': source['gate_messages']} if 'gate_messages' in source else {}),
             },
             'locations': {
                 'base': source.get('canonical_base_location', 0),
