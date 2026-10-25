@@ -1,0 +1,35 @@
+{
+  "base_commit": "79a44191e0513949c05439657221d691ec0d37d0",
+  "unit_tests_passed": 116,
+  "base_translation_fields_checked": 3,
+  "base_gate_scripts": 3,
+  "arcane_gate_nonliteral_bytes_preserved": true,
+  "frozen_plugins_match_source_build": {
+    "DLCBattlehornCastle.esp": "8968be3a1a97178d6147395ff9db4606ccca6fa0fdf96ce6186f206b43968447",
+    "DLCFrostcrag.esp": "31db5159bf8cb57f5e2f46139da740532b97bafaef781ca1301f4a73335bf330",
+    "DLCHorseArmor.esp": "eb5fbda1f1a7fee25e66eccebae3ec246006e1c24a280898488d0ad495517342",
+    "DLCMehrunesRazor.esp": "87bc6c0769fa6f295ced107e5ac23a4a494eb8006e3354cfdf1c68140b7e105c",
+    "DLCOrrery.esp": "6b8078c8230ea57374b31323344e5cdec7415d7b79f3358eea957d1193964a1e",
+    "DLCSpellTomes.esp": "22d19d73fc24f1d30b9a479babe9a96a0c5f1643a8281e2b5f9eb1fcb507d1d3",
+    "DLCThievesDen.esp": "4ce9bd175889f5c3d6369eff7e49b036810ec261cb8444da43b2a12f551ec02c",
+    "DLCVileLair.esp": "2b8d09040525dc26c2e1c05f6a75865d05e4e36859efb4022d3e5ff0164815ae",
+    "Knights.esp": "9b3536c7aef7369fcc1690e502b144211846dcf48ca87e5d3e7956ef47daac94",
+    "Oblivion.esm": "123d1f8198539e16624854dead56e427c17752c8ead1d9f97f1ede20587e5187"
+  },
+  "existing_gate_diagnosis_and_fur_modules_preserved": true,
+  "release_archives": {
+    "Oblivion_Original_KR_Installer_v1.1.8.zip": "54b12d46923f89e4bc2c71da34b96e114c56a266905864846128b4c195ce29de",
+    "UOP_KR_UTF8_obCJK_3.5.9a_KR1.11_20261025.zip": "df541d33156e17a3eeb90254b3fd6f5303e34f1692c1f2fdfe27e50e35240e7e"
+  },
+  "uop_fix": {
+    "baseline_zip_sha256": "3546cd3ef189a8e596fa9eee8d4d7c91e377d8840fe0a7f4c35e9df01037f105",
+    "record": "BOOK 00071D50",
+    "field": "DESC",
+    "changed_fields": 1,
+    "old_field_sha256": "68c57e871d237ac5f3ef2c23276e937d7e20b0ab469f310016674f32394e95d3",
+    "new_field_sha256": "26a0b943ca72179d24217192f1a65b91f792bf7ab8e08d711626f8f204c51488",
+    "all_other_subrecords_and_scripts_unchanged": true,
+    "runtime_verified": false
+  },
+  "runtime_verified": false
+}

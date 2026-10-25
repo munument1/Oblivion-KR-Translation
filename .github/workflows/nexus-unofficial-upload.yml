@@ -45,12 +45,12 @@ jobs:
               echo 'changelog=본편 v1.1.5의 대사 및 퀘스트 로그 교정을 비공식 DLC 패치의 덮어쓰기 레코드에도 반영했습니다. 기존 성소 메시지 72곳과 책 본문 복구도 유지됩니다. 본편 설치기 v1.1.5와 함께 모든 ESP를 교체하고 기존 활성화·로드 순서를 유지하세요.' >> "$GITHUB_OUTPUT"
               ;;
             UOP)
-              echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.8_20261021.zip' >> "$GITHUB_OUTPUT"
+              echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.11_20261025.zip' >> "$GITHUB_OUTPUT"
               echo 'file_id=8036688' >> "$GITHUB_OUTPUT"
               echo 'mod_id=433791753535' >> "$GITHUB_OUTPUT"
-              echo 'version=3.5.9a-KR1.8' >> "$GITHUB_OUTPUT"
+              echo 'version=3.5.9a-KR1.11' >> "$GITHUB_OUTPUT"
               echo 'display_name=UOP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
-              echo 'changelog=루시엔·퀘스트 로그·오웬 대사를 보완하고 아레나·길드의 한국어 계급명이 UOP의 영문 덮어쓰기에 사라지지 않도록 수정했습니다. 기존 112개 책 본문 복구와 두 ESP 최상위 배치를 유지합니다. 본편 설치기 v1.1.5와 함께 교체하세요.' >> "$GITHUB_OUTPUT"
+              echo 'changelog=클라우디우스 집 공개 알림의 줄바꿈 태그 노출을 수정하고 나이트 마더 의식 금지 내용을 보완했습니다. 기존 KR1.10의 서적·대사·계급명·철문 메시지 수정을 모두 유지합니다. 본편 설치기 v1.1.8과 함께 교체하세요. 게임 내 새 문구 표시는 미검증입니다.' >> "$GITHUB_OUTPUT"
               ;;
             *) exit 1 ;;
           esac

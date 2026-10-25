@@ -16,8 +16,10 @@ TRANSLATIONS = {
     'You have opened a gate.': '문을 열었습니다.',
     'You may not use this switch at this time.': '지금은 조작할 수 없습니다.',
     'The gate has already been opened.': '이미 열린 문입니다.',
+    'No matter how hard you try, the gate will not move.': '아무리 애써도 문은 움직이지 않는다.',
 }
 PINS = {
+    ('Oblivion.esm', 0x0006F3FF): ('ArcaneUGateScript', '078e68d59d97f0ab3d8dd266cdb1a59130b0a1f67a70b39ca1735eadc516b143'),
     ('Oblivion.esm', 0x0004CAEE): ('ARGate01SCRIPT', '80c0e51c9bf881f0257a6ab1c8811d14c14388fd6f5a539ad93b8f012e289c1d'),
     ('Oblivion.esm', 0x000947B3): ('SewerVerticalGate01SCRIPT', '92baf9e3cae2458b08508a3bf448040912f399e56aacd402e6c70d2948925062'),
     ('Unofficial Oblivion Patch.esp', 0x0000CCD0): ('OblivionGateSwitch01MQ03Gates', '778779c98acbb8fcdb0a30619fa597e5af5d4add339c5255dedc27844f01d502'),
@@ -74,7 +76,7 @@ def build(source, output, plugin=None):
     source, output = Path(source), Path(output)
     plugin = plugin or source.name
     pins = {fid: item for (name, fid), item in PINS.items() if name == plugin}
-    expected = 2 if plugin == 'Oblivion.esm' else 3
+    expected = 3
     if len(pins) != expected:
         raise ValueError('Unexpected gate identities for supported plugin')
     if source.resolve() == output.resolve() or output.exists():

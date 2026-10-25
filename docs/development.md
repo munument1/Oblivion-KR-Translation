@@ -31,6 +31,7 @@ python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist
 - `build_obcjk_ui.py`, `master_layout.py`, `obcjk_fonts.py`: 메뉴 UI, 원본 레코드 배열 보존, 글꼴 설치·검증.
 - `build_shrine_messages.py`: 본편·기사단 DLC·UODP의 9개 성소, 총 27개 SCPT / 메시지 144곳을 원본 스크립트 SHA-256으로 검사하고 고정 길이 UTF-8로 번역합니다. 최종 보고서의 `shrine_messages`에 결과를 기록합니다. 앞 단계 `structure`의 스크립트 해시는 성소 표시 문자열 수정 전 값이며 최종 해시는 `output_sha256`입니다.
 - `build_script_messages.py`: 원본 전체 스크립트 SHA-256을 확인한 뒤 하수도 출구의 SCDA/SCTX 표시 문구 다섯 건만 같은 바이트 길이로 번역합니다. 기존 구조·스크립트 검증과 native layout 검증이 끝난 후 적용하며, 최종 파일의 모든 바이트를 입력과 허용한 문구 변경에 대조합니다. 검증 보고서의 `structure`와 `native_master_layout`은 이 단계 이전 값이며, 최종 파일 해시와 문구 변경 내역은 `script_messages`에 기록합니다.
+- `build_gate_messages.py`: 본편 철문 2개와 대학 출입문 SCPT `0006F3FF`, UOP 철문 3개의 표시 문구를 SCDA/SCTX 양쪽에 적용합니다. 원본 전체 스크립트 해시와 고정 길이를 검사하고 다른 바이트의 변경을 거부합니다. 최종 보고서의 `gate_messages`에 검사 결과를 기록합니다.
 - 루트 CSV 23개: 설치기의 실제 번역 입력. 이름에 legacy/remaster가 있어도 현재 canonical 및 언오피셜 빌드 입력에 사용되므로 임의로 삭제하지 않습니다.
 - `assets/obcjk_fonts`: 원본 글꼴 3개, obCJK.ini, 라이선스와 SHA-256 목록.
 - `obcjk_runtime.py`, `assets/obcjk_runtime`: 고정된 SHA-256의 비공식 obCJK 수정 DLL, 검증 정보, 원제작자 출처와 수정 소스. UTF-8 보정을 기본 활성화하고 출력 검증 보고서에 적용 DLL 해시를 기록합니다.
