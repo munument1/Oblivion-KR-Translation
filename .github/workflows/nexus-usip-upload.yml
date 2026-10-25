@@ -6,7 +6,7 @@ on:
       tag:
         description: Published GitHub release tag
         required: true
-        default: v1.1.5
+        default: v1.1.8
         type: string
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
         run: |
           set -euo pipefail
           [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
-          filename='USIP_KR_UTF8_obCJK_1.6.2_KR1.6_20261021.zip'
+          filename='USIP_KR_UTF8_obCJK_1.6.2_KR1.8_20261025.zip'
           gh release download "$RELEASE_TAG" --pattern "$filename" --pattern "$filename.sha256"
           sha256sum --check "$filename.sha256"
           python -c 'import sys,zipfile; z=zipfile.ZipFile(sys.argv[1]); assert z.testzip() is None; assert [n for n in z.namelist() if n.lower().endswith(".esp")] == ["Unofficial Shivering Isles Patch.esp"]' "$filename"
@@ -68,11 +68,11 @@ jobs:
           api_key: ${{ secrets.NEXUSMODS_API_KEY }}
           file_id: ${{ steps.target.outputs.file_id }}
           mod_id: ${{ steps.target.outputs.mod_id }}
-          filename: USIP_KR_UTF8_obCJK_1.6.2_KR1.6_20261021.zip
-          version: 1.6.2-KR1.6
+          filename: USIP_KR_UTF8_obCJK_1.6.2_KR1.8_20261025.zip
+          version: 1.6.2-KR1.8
           display_name: Unofficial Shivering Isles Patch KR
-          description: 쉬버링 아일즈 궁정 계급명 원문 및 등급 순서 7필드 수정. 기존 번역을 포함한 전체 교체본입니다. 본편 설치기 v1.1.5와 함께 업데이트하세요.
-          changelog: 궁정 계급명 7필드와 영문 USIP 덮어쓰기 번역 전달을 수정했습니다. 기존 플러그인 활성화 및 로드 순서를 유지하세요.
+          description: 대사·일지·서적 48개 필드를 최신 본편 번역에 맞췄습니다. 실제 USIP의 인물·지역·시간·내용 교정을 보존합니다. 본편 v1.1.8과 함께 업데이트하세요. 게임 내 표시는 미검증입니다.
+          changelog: 대사·일지·서적 48개 필드를 최신 본편 번역에 맞췄습니다. 실제 USIP의 인물·지역·시간·내용 교정을 보존합니다. 본편 v1.1.8과 함께 업데이트하세요. 게임 내 표시는 미검증입니다.
           category: main
           archive_existing_version: 'false'
           primary_mod_manager_download: 'true'
@@ -82,4 +82,18 @@ jobs:
       - name: Record upload result
         env:
           VERSION_ID: ${{ steps.nexus.outputs.version_id }}
-        run: echo "Updated USIP to 1.6.2-KR1.6. Version ID $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
+        run: echo "Updated USIP to 1.6.2-KR1.8. Version ID $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify uploaded Nexus version through API
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          EXPECTED_VERSION: 1.6.2-KR1.8
+          EXPECTED_FILE: ${{ steps.target.outputs.file_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$VERSION_ID" =~ ^[0-9]+$ ]]
+          curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" --output uploaded.json
+          jq -e --arg version "$EXPECTED_VERSION" --arg file "$EXPECTED_FILE" '.data.version == $version and (.data.file.id | tostring) == $file' uploaded.json
+          printf 'Verified Nexus version %s (%s), file %s.\n' "$EXPECTED_VERSION" "$VERSION_ID" "$EXPECTED_FILE" >> "$GITHUB_STEP_SUMMARY"

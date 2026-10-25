@@ -10,6 +10,7 @@ from pathlib import Path
 
 from build_vanilla_overlay import load_translations, Translation
 from book_title_overrides import apply_book_title_overrides
+from unofficial_target_variants import load_variants, apply_variant
 
 
 def main_translations(root):
@@ -35,6 +36,7 @@ def source_sha(text):
 
 def load_text_forwarding(root: Path):
     table = main_translations(root)
+    variants = load_variants(root)
     patch_rows = {}
     for name in ('canonical_unofficial_translation_v2.csv', 'canonical_unofficial_locations_v2.csv', 'canonical_locations_v2.csv', 'unofficial_extra_sources_v1.csv'):
         with (root / name).open(encoding='utf-8-sig', newline='') as stream:
@@ -65,7 +67,15 @@ def load_text_forwarding(root: Path):
             if not target.endswith(b'\0') or b'\0' in target[:-1]:
                 raise ValueError(f'Invalid main-game target: {key}')
             target[:-1].decode('utf-8', errors='strict')
-            result[key] = (owner, base_fid, row['patch_source_sha256'], target, row['policy'])
+            policy = row['policy']
+            if key in variants:
+                variant_target = apply_variant(variants.pop(key), row, target, table)
+                if variant_target is not None:
+                    target = variant_target
+                    policy = 'forward'
+            result[key] = (owner, base_fid, row['patch_source_sha256'], target, policy)
+    if variants:
+        raise ValueError('Reviewed variants have no audited forwarding identity')
     return result
 
 

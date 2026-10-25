@@ -63,3 +63,9 @@ main에는 현재 v1.1.5 빌드·검증·패키징에 필요한 Python만 유지
 `unofficial_text_forwarding.py`는 본편 canonical·UI 보충·모피 보정·책 제목 보정·지명 테이블을 실제 본편 빌더와 같은 순서로 읽습니다. `unofficial_text_forwarding_v1.csv`는 번역문 사본이 아닌 양쪽 원문 해시와 정체성 연결 자료입니다. 영문 변경을 유사도로 추측하는 코드는 런타임에 없습니다. `scripts/audit_unofficial_alignment.py`는 공개 배포본의 전체 표시 필드를 대조해 manifest 및 `docs/unofficial/alignment_audit_v1.1.6.json.gz`을 재생성하는 개발 도구입니다. 철자 등가 규칙은 개발 단계에서만 사용하며 의미 변경은 보존합니다.
 
 `unofficial_manual_fixes_v1.csv`는 별도 교정한 51항목의 정체성과 원문 해시만 보관하며, 실제 한국어는 기존 `canonical_unofficial_translation_v2.csv`에서 읽습니다. `scripts/release_unofficial_sync.py`는 고정 해시의 공개 v1.1.5 ZIP에서 같은 데이터로 텍스트만 갱신하고 모든 비선택 필드를 비교합니다. 사용자 원본이나 세이브는 접근하지 않습니다. 일반 영문 원본의 새 빌드도 `build_unofficial_release.py`에서 동일한 canonical 연결을 사용합니다.
+
+## v1.1.8 원문 변형의 최신 번역 전달
+
+`unofficial_reviewed_variants_v2.json`은 실제 배포본과 최신 본편이 달랐던 473개 예외의 검토 결정입니다. `unofficial_target_variants.py`는 본편 원문·패치 원문 해시와 전체 정체성을 확인하고, 최신 본편 문장 전달·국소 교정·재배치된 문장 조회·변경된 패치 내용의 별도 번역을 구분합니다. 국소 교정은 정확한 문자열과 횟수가 맞지 않으면 중단하므로 미래의 본편 수정에 묵은 문장을 조용히 재사용하지 않습니다. 121개 지명·아이템·기존 서식 예외는 명시적으로 보존합니다. 이름이나 문장의 유사도를 기준으로 자동 대입하지 않습니다.
+
+`scripts/package_reviewed_translation_fix.py`는 현재 공개된 UOP/USIP/UODP ZIP의 고정 해시를 확인하고 같은 전달 테이블로 표시 필드만 갱신합니다. 모든 나머지 서브레코드와 스크립트를 전수 대조합니다. 새 원본 빌드는 `build_unofficial_release.py`의 마지막 명시적 전달 단계에서 같은 테이블을 사용합니다.

@@ -68,3 +68,17 @@ jobs:
         shell: bash
         run: |
           printf 'Uploaded installer %s to Nexus Mods.\n\nVersion ID: %s\n\nhttps://www.nexusmods.com/oblivion/mods/56688?tab=files\n' "$VERSION" "$NEXUS_VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify uploaded Nexus version through API
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          EXPECTED_VERSION: ${{ steps.release.outputs.version }}
+          EXPECTED_FILE: 8110293
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$VERSION_ID" =~ ^[0-9]+$ ]]
+          curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" --output uploaded.json
+          jq -e --arg version "$EXPECTED_VERSION" --arg file "$EXPECTED_FILE" '.data.version == $version and (.data.file.id | tostring) == $file' uploaded.json
+          printf 'Verified Nexus version %s (%s), file %s.\n' "$EXPECTED_VERSION" "$VERSION_ID" "$EXPECTED_FILE" >> "$GITHUB_STEP_SUMMARY"

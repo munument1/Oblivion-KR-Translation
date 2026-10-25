@@ -1,10 +1,17 @@
 {
-  "base_commit": "79a44191e0513949c05439657221d691ec0d37d0",
-  "unit_tests_passed": 116,
-  "base_translation_fields_checked": 3,
-  "base_gate_scripts": 3,
-  "arcane_gate_nonliteral_bytes_preserved": true,
-  "frozen_plugins_match_source_build": {
+  "unit_tests_passed": 122,
+  "audited_visible_fields": 10540,
+  "reviewed_source_variants": 473,
+  "decision_modes": {
+    "patch": 121,
+    "lookup": 10,
+    "main": 187,
+    "replace": 120,
+    "literal": 34,
+    "ingredient_list": 1
+  },
+  "runtime_verified": false,
+  "official_plugin_hashes": {
     "DLCBattlehornCastle.esp": "8968be3a1a97178d6147395ff9db4606ccca6fa0fdf96ce6186f206b43968447",
     "DLCFrostcrag.esp": "31db5159bf8cb57f5e2f46139da740532b97bafaef781ca1301f4a73335bf330",
     "DLCHorseArmor.esp": "eb5fbda1f1a7fee25e66eccebae3ec246006e1c24a280898488d0ad495517342",
@@ -13,23 +20,120 @@
     "DLCSpellTomes.esp": "22d19d73fc24f1d30b9a479babe9a96a0c5f1643a8281e2b5f9eb1fcb507d1d3",
     "DLCThievesDen.esp": "4ce9bd175889f5c3d6369eff7e49b036810ec261cb8444da43b2a12f551ec02c",
     "DLCVileLair.esp": "2b8d09040525dc26c2e1c05f6a75865d05e4e36859efb4022d3e5ff0164815ae",
-    "Knights.esp": "9b3536c7aef7369fcc1690e502b144211846dcf48ca87e5d3e7956ef47daac94",
+    "Knights.esp": "c23f74356fa8173e25e2babab17101008451dbbbbd106a641bccd52eddd4f07f",
     "Oblivion.esm": "123d1f8198539e16624854dead56e427c17752c8ead1d9f97f1ede20587e5187"
   },
-  "existing_gate_diagnosis_and_fur_modules_preserved": true,
+  "unofficial_packages": {
+    "UOP": {
+      "sha256": "ccc8adca3ef43f29108e31ba5c4cbd3d1607317170fc9b7c8b178f4fe9251abc",
+      "plugins": {
+        "Oblivion Citadel Door Fix.esp": {
+          "changed_fields": 0,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "08281c6de8d8402cb5b84aa7d23de97ebebd5cc6bc641fba13632d89d19a7e9a"
+        },
+        "Unofficial Oblivion Patch.esp": {
+          "changed_fields": 280,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "4baa36ee228eee1065e68981c1662e90f4dc1398a23d8b3016d9af62b82c00e2"
+        }
+      },
+      "changed_fields": 280
+    },
+    "USIP": {
+      "sha256": "0433ab4d5287f20a666d17c2bbbb245b8504b646bd125f670a0e8b2c8526ab0e",
+      "plugins": {
+        "Unofficial Shivering Isles Patch.esp": {
+          "changed_fields": 48,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "4425f1b37751d76aa544a24fc8d35c5c9d7adc7dfbda28ed425fa520c5643594"
+        }
+      },
+      "changed_fields": 48
+    },
+    "UODP": {
+      "sha256": "39ec7cd6ad8d0a83090b8fd6752d7d3fe7dd0378099969b227694d455eb65240",
+      "plugins": {
+        "DLCBattlehornCastle - Unofficial Patch.esp": {
+          "changed_fields": 6,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "dca81291c5fdc26791d2ffbfe8b6dfe12167a75b03857904e1f18b4d5ce1f544"
+        },
+        "DLCFrostcrag - Unofficial Patch.esp": {
+          "changed_fields": 0,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "00ab3c9da93a25afab7a59547af5b3324355fe4bc4c42edb2387014df86b8139"
+        },
+        "DLCHorseArmor - Unofficial Patch.esp": {
+          "changed_fields": 0,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "2b2681ad03d6e4949991477b559745762d1592669444e6b02e81ef7a5deba8bf"
+        },
+        "DLCMehrunesRazor - Unofficial Patch.esp": {
+          "changed_fields": 2,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "723f6ccc1deee6c4ebf0fb6f2fcea4be47df9ee24c9b96391fca527a64a4a170"
+        },
+        "DLCOrrery - Unofficial Patch.esp": {
+          "changed_fields": 0,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "52921a0b192624aef9bf875e5d102af82a16a1a3e5dbcbfae103dbf6940c61f1"
+        },
+        "DLCSpellTomes - Unofficial Patch.esp": {
+          "changed_fields": 0,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "4d51ae0dccd4bef9ed727d7db30dbdb05f3c3a691be9af22258b6da0b1de1eb2"
+        },
+        "DLCThievesDen - Unofficial Patch - SSSB.esp": {
+          "changed_fields": 0,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "37788c6d8e95b1bd2d588c56d2993d2c197b427740820ceca6ed1ecf07783395"
+        },
+        "DLCThievesDen - Unofficial Patch.esp": {
+          "changed_fields": 1,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "b752bb01631d54e3ab300094dd15c9b94a61ea08e7bcaee8c157c74de683841b"
+        },
+        "DLCVileLair - Unofficial Patch.esp": {
+          "changed_fields": 1,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "67b46175f9ca5cb2e672c88f9815c0606aab13288d1bd12d4cf494129e501c34"
+        },
+        "Knights - Unofficial Patch.esp": {
+          "changed_fields": 11,
+          "all_unselected_fields_and_scripts_unchanged": true,
+          "fresh_original_source_record_parity": true,
+          "sha256": "474d1e8b73fc75e87bb8e81bf82778e38f89465a06cf84f44def27a494b44741"
+        }
+      },
+      "changed_fields": 21
+    }
+  },
+  "checked_forwarded_targets": 9364,
+  "changed_fields_by_type": {
+    "ACTI": 1,
+    "BOOK": 37,
+    "CELL": 3,
+    "INFO": 230,
+    "QUST": 78
+  },
+  "changed_unofficial_fields": 349,
   "release_archives": {
-    "Oblivion_Original_KR_Installer_v1.1.8.zip": "54b12d46923f89e4bc2c71da34b96e114c56a266905864846128b4c195ce29de",
-    "UOP_KR_UTF8_obCJK_3.5.9a_KR1.11_20261025.zip": "df541d33156e17a3eeb90254b3fd6f5303e34f1692c1f2fdfe27e50e35240e7e"
-  },
-  "uop_fix": {
-    "baseline_zip_sha256": "3546cd3ef189a8e596fa9eee8d4d7c91e377d8840fe0a7f4c35e9df01037f105",
-    "record": "BOOK 00071D50",
-    "field": "DESC",
-    "changed_fields": 1,
-    "old_field_sha256": "68c57e871d237ac5f3ef2c23276e937d7e20b0ab469f310016674f32394e95d3",
-    "new_field_sha256": "26a0b943ca72179d24217192f1a65b91f792bf7ab8e08d711626f8f204c51488",
-    "all_other_subrecords_and_scripts_unchanged": true,
-    "runtime_verified": false
-  },
-  "runtime_verified": false
+    "Oblivion_Original_KR_Installer_v1.1.8.zip": "1cc518025d0cb6aa058b09bae811c65fcb755b092c2981c05a38e9b47ede0cad",
+    "UODP_KR_UTF8_obCJK_v27_KR1.10_20261025.zip": "39ec7cd6ad8d0a83090b8fd6752d7d3fe7dd0378099969b227694d455eb65240",
+    "UOP_KR_UTF8_obCJK_3.5.9a_KR1.11_20261025.zip": "ccc8adca3ef43f29108e31ba5c4cbd3d1607317170fc9b7c8b178f4fe9251abc",
+    "USIP_KR_UTF8_obCJK_1.6.2_KR1.8_20261025.zip": "0433ab4d5287f20a666d17c2bbbb245b8504b646bd125f670a0e8b2c8526ab0e"
+  }
 }

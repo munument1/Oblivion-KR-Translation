@@ -6,7 +6,7 @@ on:
       tag:
         description: Published GitHub release tag
         required: true
-        default: v1.1.5
+        default: v1.1.8
         type: string
       patch:
         description: Unofficial patch package
@@ -37,12 +37,12 @@ jobs:
           set -euo pipefail
           case "$PATCH" in
             UODP)
-              echo 'filename=UODP_KR_UTF8_obCJK_v27_KR1.8_20261021.zip' >> "$GITHUB_OUTPUT"
+              echo 'filename=UODP_KR_UTF8_obCJK_v27_KR1.10_20261025.zip' >> "$GITHUB_OUTPUT"
               echo 'file_id=8036709' >> "$GITHUB_OUTPUT"
               echo 'mod_id=433791753537' >> "$GITHUB_OUTPUT"
-              echo 'version=27-KR1.8' >> "$GITHUB_OUTPUT"
+              echo 'version=27-KR1.10' >> "$GITHUB_OUTPUT"
               echo 'display_name=UODP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
-              echo 'changelog=본편 v1.1.5의 대사 및 퀘스트 로그 교정을 비공식 DLC 패치의 덮어쓰기 레코드에도 반영했습니다. 기존 성소 메시지 72곳과 책 본문 복구도 유지됩니다. 본편 설치기 v1.1.5와 함께 모든 ESP를 교체하고 기존 활성화·로드 순서를 유지하세요.' >> "$GITHUB_OUTPUT"
+              echo 'changelog=대사·일지·서적 21개 필드를 최신 본편·공식 DLC 번역에 맞췄습니다. 실제 패치의 내용 교정과 기존 성소 메시지·서적 복구를 유지합니다. 본편 v1.1.8과 함께 교체하세요.' >> "$GITHUB_OUTPUT"
               ;;
             UOP)
               echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.11_20261025.zip' >> "$GITHUB_OUTPUT"
@@ -50,7 +50,7 @@ jobs:
               echo 'mod_id=433791753535' >> "$GITHUB_OUTPUT"
               echo 'version=3.5.9a-KR1.11' >> "$GITHUB_OUTPUT"
               echo 'display_name=UOP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
-              echo 'changelog=클라우디우스 집 공개 알림의 줄바꿈 태그 노출을 수정하고 나이트 마더 의식 금지 내용을 보완했습니다. 기존 KR1.10의 서적·대사·계급명·철문 메시지 수정을 모두 유지합니다. 본편 설치기 v1.1.8과 함께 교체하세요. 게임 내 새 문구 표시는 미검증입니다.' >> "$GITHUB_OUTPUT"
+              echo 'changelog=대사·일지·서적·명칭 등 280개 필드를 최신 본편 번역에 맞췄습니다. 북쪽·남쪽과 경갑 훈련 등 실제 UOP 교정을 반영하고 기존 철문 메시지·서적 복구를 유지합니다. 본편 v1.1.8과 함께 교체하세요.' >> "$GITHUB_OUTPUT"
               ;;
             *) exit 1 ;;
           esac
@@ -88,3 +88,17 @@ jobs:
         env:
           VERSION_ID: ${{ steps.nexus.outputs.version_id }}
         run: echo "Uploaded Nexus file version $VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify uploaded Nexus version through API
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          EXPECTED_VERSION: ${{ steps.package.outputs.version }}
+          EXPECTED_FILE: ${{ steps.package.outputs.file_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$VERSION_ID" =~ ^[0-9]+$ ]]
+          curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" --output uploaded.json
+          jq -e --arg version "$EXPECTED_VERSION" --arg file "$EXPECTED_FILE" '.data.version == $version and (.data.file.id | tostring) == $file' uploaded.json
+          printf 'Verified Nexus version %s (%s), file %s.\n' "$EXPECTED_VERSION" "$VERSION_ID" "$EXPECTED_FILE" >> "$GITHUB_STEP_SUMMARY"
