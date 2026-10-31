@@ -114,10 +114,13 @@ jobs:
                      "issue8_context_verified_patch", "issue8_cupboard_patch",
                      "issue8_glossary_exceptions")
           assert not [m for m in modules if m not in pyz.toc]
+          toc_paths = {name.replace(chr(92), "/").lower() for name in archive.toc}
           for item in ("canonical_translation_v2.csv", "canonical_locations_v2.csv",
                        "canonical_book_title_overrides_v1.csv",
                        "assets/obcjk_fonts/obCJK.ini"):
-              assert item in archive.toc, f"Missing bundled input: {item}"
+              assert item.lower() in toc_paths, (
+                  f"Missing bundled input: {item}; preset candidates: "
+                  f"{[p for p in toc_paths if 'obcjk.ini' in p]}")
           print("PASS: frozen installer includes all original translation corrections and preset")
           '@ | python -
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
