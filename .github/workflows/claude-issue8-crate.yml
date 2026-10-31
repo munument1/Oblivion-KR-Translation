@@ -1,0 +1,34 @@
+name: Claude Issue 8 Crate QA
+
+on:
+  pull_request:
+    paths:
+      - 'claude_issue8_crate.py'
+      - 'build_obcjk_release.py'
+      - 'docs/v2_review/OBLIVION_GLOSSARY_V2_ACTIVE.csv'
+      - 'tests/test_claude_issue8_crate.py'
+      - '.github/workflows/claude-issue8-crate.yml'
+  push:
+    paths:
+      - 'claude_issue8_crate.py'
+      - 'build_obcjk_release.py'
+      - 'docs/v2_review/OBLIVION_GLOSSARY_V2_ACTIVE.csv'
+      - 'tests/test_claude_issue8_crate.py'
+      - '.github/workflows/claude-issue8-crate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  crate-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check 38 exact original records and builder behavior
+        run: python -m unittest discover -s tests -p 'test_claude_issue8_crate.py' -v
+      - name: Full translation regression suite
+        run: python -m unittest discover -s tests -q
