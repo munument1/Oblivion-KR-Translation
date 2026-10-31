@@ -1,0 +1,31 @@
+name: Claude Issue 8 Sancre Tor QA
+
+on:
+  push:
+    paths:
+      - 'canonical_locations_v2.csv'
+      - 'tests/test_claude_issue8_sancre_tor.py'
+      - '.github/workflows/claude-issue8-sancre-tor.yml'
+  pull_request:
+    paths:
+      - 'canonical_locations_v2.csv'
+      - 'tests/test_claude_issue8_sancre_tor.py'
+      - '.github/workflows/claude-issue8-sancre-tor.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  locations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify 13 exact, source-backed locations
+        run: python -m unittest discover -s tests -p 'test_claude_issue8_sancre_tor.py' -v
+      - name: Run complete regression suite
+        run: python -m unittest discover -s tests -q
