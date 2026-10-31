@@ -1,0 +1,39 @@
+name: Issue 8 Integrated OBCJK Data Dry Run
+
+on:
+  pull_request:
+    paths:
+      - 'canonical_book_title_overrides_v1.csv'
+      - 'tests/test_book_title_overrides.py'
+      - 'scripts/qa_issue8_integrated_overlay.py'
+      - '.github/workflows/issue8-integrated-qa.yml'
+  push:
+    paths:
+      - 'canonical_book_title_overrides_v1.csv'
+      - 'tests/test_book_title_overrides.py'
+      - 'scripts/qa_issue8_integrated_overlay.py'
+      - '.github/workflows/issue8-integrated-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  data-dry-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Full unit and original-source regression suite
+        run: python -m unittest discover -s tests -q
+      - name: Dry-run exact OBCJK build-time corrections in original plugin order
+        run: python scripts/qa_issue8_integrated_overlay.py --outdir issue8_integrated_qa
+      - name: Upload per-FormID before/after + provenance evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: issue8-integrated-original-source-qa
+          path: issue8_integrated_qa/
+          if-no-files-found: error
