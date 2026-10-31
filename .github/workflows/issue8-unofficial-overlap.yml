@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/audit_issue8_unofficial_overlap.py'
       - 'scripts/audit_issue8_unofficial_locations.py'
+      - 'scripts/refresh_unofficial_issue8_v120.py'
       - '.github/workflows/issue8-unofficial-overlap.yml'
   pull_request:
     paths:
@@ -49,6 +50,15 @@ jobs:
         run: |
           python scripts/audit_issue8_unofficial_overlap.py --release-dir released --outdir issue8_unofficial_overlap
           python scripts/audit_issue8_unofficial_locations.py --baseline previous_locations.csv --released released --outdir issue8_unofficial_overlap
+      - name: Build unofficial patch compatibility ZIPs (no publish)
+        run: |
+          python scripts/refresh_unofficial_issue8_v120.py --release-dir released --audit issue8_unofficial_overlap --outdir unofficial_issue8_updated
+          (cd unofficial_issue8_updated && sha256sum -c *.zip.sha256)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: issue8-unofficial-fixed-ESP-qa-only
+          path: unofficial_issue8_updated/
+          if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
           name: issue8-v120-unofficial-override-audit
