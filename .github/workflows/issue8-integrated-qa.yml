@@ -6,6 +6,7 @@ on:
       - 'canonical_book_title_overrides_v1.csv'
       - 'tests/test_book_title_overrides.py'
       - 'scripts/qa_issue8_integrated_overlay.py'
+      - 'OblivionKRBuilder.spec'
       - '.github/workflows/issue8-integrated-qa.yml'
   push:
     paths:
@@ -36,4 +37,52 @@ jobs:
         with:
           name: issue8-integrated-original-source-qa
           path: issue8_integrated_qa/
+          if-no-files-found: error
+
+
+  frozen-installer-smoke:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile Windows installer QA executable (NO publish)
+        shell: pwsh
+        run: |
+          python -m pip install pyinstaller
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -m PyInstaller --noconfirm --clean OblivionKRBuilder.spec
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Assert all seven source patches are bundled and builder executable responds
+        shell: pwsh
+        run: |
+          @'
+          from PyInstaller.archive.readers import CArchiveReader
+          archive = CArchiveReader('dist/OblivionKRBuilder.exe')
+          pyz = archive.open_embedded_archive('PYZ.pyz')
+          modules = (
+              'claude_issue8_crate', 'claude_issue8_amber',
+              'issue8_reporter_term_patch', 'issue8_remaining_term_patch',
+              'issue8_context_verified_patch', 'issue8_cupboard_patch',
+              'issue8_glossary_exceptions'
+          )
+          missing = [m for m in modules if m not in pyz.toc]
+          assert not missing, f"Source-correction module missing in EXE: {missing}"
+          assert 'canonical_book_title_overrides_v1.csv' in archive.toc
+          assert 'canonical_locations_v2.csv' in archive.toc
+          assert 'canonical_translation_v2.csv' in archive.toc
+          print('All 7 source patches + source CSVs embedded; QA-only EXE')
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & dist/OblivionKRBuilder.exe --help
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -c "import subprocess,tempfile,json; t=tempfile.TemporaryDirectory(); r=json.loads(subprocess.check_output(['dist/OblivionKRBuilder.exe','--diagnose-display','--data-dir',t.name])); assert r['read_only'] and r['inspected_plugins']==0; t.cleanup()"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Upload unshipped executable for local original-Data verification only
+        uses: actions/upload-artifact@v4
+        with:
+          name: issue8-frozen-windows-exe-QA-ONLY-NOT-RELEASE
+          path: dist/OblivionKRBuilder.exe
           if-no-files-found: error
