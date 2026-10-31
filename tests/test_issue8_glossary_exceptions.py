@@ -60,7 +60,7 @@ class GlossaryExceptionsTests(unittest.TestCase):
 
     def test_mysterium_name_and_mankar_in_journal(self):
         t=self.table[("Oblivion.esm",b"QUST",0x0001E728,b"CNAM")]
-        matches=[item for item in t if "Mysterium Xarxes" in item.english]
+        matches=[item for item in t if item.english.startswith("Mankar Camoran escaped to his realm of Paradise") and "Mysterium Xarxes" in item.english]
         self.assertEqual(len(matches),1)
         ko=matches[0].korean[:-1].decode("utf-8")
         self.assertIn("작시스의 신비",ko)
