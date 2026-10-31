@@ -40,7 +40,9 @@ class ReporterTermsTests(unittest.TestCase):
                 if left.korean != right.korean:
                     changes += 1
                     self.assertTrue(right.korean.endswith(b"\0"))
-        self.assertEqual(changes, sum(self.counts.values()))
+        # 13 physical records mention two audited English concepts, so
+        # 574 terminology hits correspond to 561 distinct changed records.
+        self.assertEqual(sum(self.counts.values()) - changes, 13)
         self.assertEqual(self.counts["Cheydinhal"], EXPECTED["Cheydinhal"])
         self.assertEqual(self.counts["Mysterium Xarxes"], EXPECTED["Mysterium Xarxes"])
         self.assertEqual(self.counts["Knights of the Nine"], EXPECTED["Knights of the Nine"])
