@@ -32,19 +32,19 @@ def table_with(barenziah, commentary):
 
 class BookTitleOverridesTests(unittest.TestCase):
     def test_fifth_volume_corrected_without_changing_suffix(self):
-        table = table_with("진짜 바렌지아, 제 5권", "미씩 던 논평집 2")
+        table = table_with("진짜 바렌지아, 제 5권", "미식 던 논평집 2")
         self.assertEqual(apply_book_title_overrides(table, OVERRIDES), 1)
         self.assertEqual(table[TITLE_KEY][0].korean[:-1].decode("utf-8"),
                          "진정한 바렌지아, 제 5권")
         self.assertEqual(table[COMMENTARIES_2_KEY][0].korean[:-1].decode("utf-8"),
-                         "미씩 던 논평집 2")
+                         "미식 던 논평집 2")
 
     def test_second_commentaries_title_matches_other_volumes(self):
         table = table_with("진정한 바렌지아, 제 5권", "미씩 던 주석서 2")
         before = table[COMMENTARIES_2_KEY][0]
         self.assertEqual(apply_book_title_overrides(table, OVERRIDES), 1)
         after = table[COMMENTARIES_2_KEY][0]
-        self.assertEqual(after.korean[:-1].decode("utf-8"), "미씩 던 논평집 2")
+        self.assertEqual(after.korean[:-1].decode("utf-8"), "미식 던 논평집 2")
         self.assertEqual(
             (after.source, after.record_type, after.formid, after.field,
              after.english, after.line, after.editor_id, after.occurrence),
@@ -54,7 +54,7 @@ class BookTitleOverridesTests(unittest.TestCase):
                          "진정한 바렌지아, 제 5권")
 
     def test_already_correct_is_idempotent(self):
-        table = table_with("진정한 바렌지아 5권", "미씩 던 논평집 2")
+        table = table_with("진정한 바렌지아 5권", "미식 던 논평집 2")
         self.assertEqual(apply_book_title_overrides(table, OVERRIDES), 0)
 
     def test_actual_canonical_second_volume_is_source_anchored(self):
@@ -78,7 +78,7 @@ class BookTitleOverridesTests(unittest.TestCase):
         after = [item for item in table[COMMENTARIES_2_KEY]
                  if item.english == "Mythic Dawn Commentaries 2"]
         self.assertEqual(len(after), 1)
-        self.assertEqual(after[0].korean, "미씩 던 논평집 2".encode("utf-8") + b"\0")
+        self.assertEqual(after[0].korean, "미식 던 논평집 2".encode("utf-8") + b"\0")
         self.assertEqual(original_key, (after[0].source, after[0].record_type,
                          after[0].formid, after[0].field, after[0].english,
                          after[0].line, after[0].editor_id, after[0].occurrence))
