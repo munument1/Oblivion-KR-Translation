@@ -1224,16 +1224,16 @@ Oblivion.esm,CELL,000338A2,FULL,Abandoned Mine Caverns,AbandonedMine02,버려진
 Oblivion.esm,CELL,000338EB,FULL,Dagon Shrine,LakeArriusShrineDagon,데이건 성소,eb8db0ec9db4eab1b420ec84b1ec868c00,verified
 Oblivion.esm,CELL,00033912,FULL,Shrine Antechamber,LakeArriusShrineAntechamber01,성소 안방,ec84b1ec868c20ec9588ebb0a900,verified
 Oblivion.esm,CELL,00033B5E,FULL,Reapers Sprawl,OblivionMqKvatchSmallTower01,사신들의 확산,ec82acec8ba0eb93a4ec9d9820ed9995ec82b000,verified
-Oblivion.esm,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생커 토르, 지하 묘지",ec839decbba420ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
-Oblivion.esm,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생커 토르, 레만 황제의 무덤",ec839decbba420ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
+Oblivion.esm,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생크 토르, 지하 묘지",ec839ded81ac20ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
+Oblivion.esm,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생크 토르, 레만 황제의 무덤",ec839ded81ac20ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
 Oblivion.esm,CELL,00033C7D,FULL,Darkfathom Cave,DarkfathomCave,어두운 측연 동굴,ec96b4eb9190ec9ab420ecb8a1ec97b020eb8f99eab5b400,verified
 Oblivion.esm,CELL,00033D33,FULL,Leafrot Hollow,LeafrotCave02,부패한 잎사귀 공동,ebb680ed8ca8ed959c20ec9e8eec82aceab78020eab3b5eb8f9900,verified
 Oblivion.esm,CELL,00033D34,FULL,Nisin Cave,TestFrank,니신 동굴,eb8b88ec8ba020eb8f99eab5b400,verified
 Oblivion.esm,CELL,00033F23,FULL,Southern Books 2nd Floor,LeyawiinSouthernBooks2ndFloor,남부 서점 2층,eb82a8ebb68020ec849ceca0902032ecb8b500,verified
-Oblivion.esm,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생커 토르,ec839decbba420ed86a0eba5b400,verified
-Oblivion.esm,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생커 토르, 입구 회랑",ec839decbba420ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
+Oblivion.esm,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생크 토르,ec839ded81ac20ed86a0eba5b400,verified
+Oblivion.esm,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생크 토르, 입구 회랑",ec839ded81ac20ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
 Oblivion.esm,CELL,0003427D,FULL,North Country Stables,ChorrolNorthCountryStables,노스 컨트리 마구간,eb85b8ec8aa420ecbba8ed8ab8eba6ac20eba788eab5aceab08400,verified
-Oblivion.esm,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생커 토르, 심판의 전당",ec839decbba420ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
+Oblivion.esm,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생크 토르, 심판의 전당",ec839ded81ac20ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
 Oblivion.esm,CELL,000345A8,FULL,Anutwyll Inner Chambers,Anutwyll02,아누트윌의 안방,ec9584eb8884ed8ab8ec9c8cec9d9820ec9588ebb0a900,verified
 Oblivion.esm,CELL,0003483E,FULL,The Bloated Float Inn Deck,ICWaterfrontTheBloatedFloatBelowDeck,부푼 부표 여관 갑판,ebb680ed91bc20ebb680ed919c20ec97aceab48020eab091ed8c9000,verified
 Oblivion.esm,CELL,00034E1D,FULL,Caverns,TestCave01,동굴,eb8f99eab5b400,verified
@@ -1256,7 +1256,7 @@ Oblivion.esm,CELL,00035681,FULL,Hrota Cave,HrotaCave,호로타 동굴,ed98b8eba1
 Oblivion.esm,CELL,00035687,FULL,Glademist Cave,GlademistCave,공터안개 동굴,eab3b5ed84b0ec9588eab09c20eb8f99eab5b400,verified
 Oblivion.esm,CELL,000359DC,FULL,Interior Cave Test,TestJuanGoblinLair,동굴 내부 테스트,eb8f99eab5b420eb82b4ebb68020ed858cec8aa4ed8ab800,verified
 Oblivion.esm,CELL,00035C31,FULL,Chamber of the Lost,SkingradCastleChamberOfTheLost,잃어버린 자들의 방,ec9e83ec96b4ebb284eba6b020ec9e90eb93a4ec9d9820ebb0a900,verified
-Oblivion.esm,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생커 토르, 감옥",ec839decbba420ed86a0eba5b42c20eab090ec98a500,verified
+Oblivion.esm,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생크 토르, 감옥",ec839ded81ac20ed86a0eba5b42c20eab090ec98a500,verified
 Oblivion.esm,CELL,00035DB0,FULL,Anvil Lighthouse,AnvilLighthouse,앤빌 등대,ec95a4ebb98c20eb93b1eb8c8000,verified
 Oblivion.esm,CELL,00035E3D,FULL,Dummy cell,ImperialLegionCompound,더미 셀,eb8d94ebafb820ec858000,verified
 Oblivion.esm,CELL,00035EFC,FULL,Vahtacen,Vahtacen,바타켄,ebb094ed8380ecbc8400,verified
@@ -2376,7 +2376,7 @@ Oblivion.esm,REFR,00020099,FULL,Bruma East Gate,BrumaMapMarkerNEW,브루마 동�
 Oblivion.esm,REFR,0002009A,FULL,Cheydinhal - West Gate,CheydinhalWestGateMapMarker,셰이딘홀 - 서문,ec85b0ec9db4eb9498ed9980202d20ec849cebacb800,verified
 Oblivion.esm,REFR,0002009B,FULL,Leyawiin - North East Gate,LeyawiinMapMarker,레이야윈 - 북동문,eba088ec9db4ec95bcec9c88202d20ebb681eb8f99ebacb800,verified
 Oblivion.esm,REFR,00024B3D,FULL,Frostfire Glade,FrostfireGladeMapMarker,타는 듯한 서리 공터,ed8380eb8a9420eb93afed959c20ec849ceba6ac20eab3b5ed84b000,verified
-Oblivion.esm,REFR,00026EBD,FULL,Sancre Tor,SancreTorMapMarker,생커 토르,ec839decbba420ed86a0eba5b400,verified
+Oblivion.esm,REFR,00026EBD,FULL,Sancre Tor,SancreTorMapMarker,생크 토르,ec839ded81ac20ed86a0eba5b400,verified
 Oblivion.esm,REFR,00028552,FULL,Hackdirt,HackdirtMapMarker,핵더트,ed95b5eb8d94ed8ab800,verified
 Oblivion.esm,REFR,0002A829,FULL,Rock Bottom Caverns,RockBottomCavernsMapMarker,바위 바닥 동굴,ebb094ec9c8420ebb094eb8ba520eb8f99eab5b400,verified
 Oblivion.esm,REFR,0002AA16,FULL,Redguard Valley Cave,RedguardValleyCaveMapMarker,레드가드 계곡 동굴,eba088eb939ceab080eb939c20eab384eab3a120eb8f99eab5b400,verified
@@ -3254,14 +3254,14 @@ Unofficial Oblivion Patch.esp,CELL,000338A2,FULL,Abandoned Mine Caverns,Abandone
 Unofficial Oblivion Patch.esp,CELL,000338EB,FULL,Dagon Shrine,LakeArriusShrineDagon,데이건 성소,eb8db0ec9db4eab1b420ec84b1ec868c00,verified
 Unofficial Oblivion Patch.esp,CELL,00033912,FULL,Shrine Antechamber,LakeArriusShrineAntechamber01,성소 안방,ec84b1ec868c20ec9588ebb0a900,verified
 Unofficial Oblivion Patch.esp,CELL,00033B5E,FULL,Reapers Sprawl,OblivionMqKvatchSmallTower01,사신들의 확산,ec82acec8ba0eb93a4ec9d9820ed9995ec82b000,verified
-Unofficial Oblivion Patch.esp,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생커 토르, 지하 묘지",ec839decbba420ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
-Unofficial Oblivion Patch.esp,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생커 토르, 레만 황제의 무덤",ec839decbba420ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
+Unofficial Oblivion Patch.esp,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생크 토르, 지하 묘지",ec839ded81ac20ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
+Unofficial Oblivion Patch.esp,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생크 토르, 레만 황제의 무덤",ec839ded81ac20ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
 Unofficial Oblivion Patch.esp,CELL,00033D33,FULL,Leafrot Hollow,LeafrotCave02,부패한 잎사귀 공동,ebb680ed8ca8ed959c20ec9e8eec82aceab78020eab3b5eb8f9900,verified
 Unofficial Oblivion Patch.esp,CELL,00033F23,FULL,Southern Books 2nd Floor,LeyawiinSouthernBooks2ndFloor,남부 서점 2층,eb82a8ebb68020ec849ceca0902032ecb8b500,verified
-Unofficial Oblivion Patch.esp,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생커 토르,ec839decbba420ed86a0eba5b400,verified
-Unofficial Oblivion Patch.esp,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생커 토르, 입구 회랑",ec839decbba420ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
+Unofficial Oblivion Patch.esp,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생크 토르,ec839ded81ac20ed86a0eba5b400,verified
+Unofficial Oblivion Patch.esp,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생크 토르, 입구 회랑",ec839ded81ac20ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
 Unofficial Oblivion Patch.esp,CELL,0003427D,FULL,North Country Stables,ChorrolNorthCountryStables,노스 컨트리 마구간,eb85b8ec8aa420ecbba8ed8ab8eba6ac20eba788eab5aceab08400,verified
-Unofficial Oblivion Patch.esp,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생커 토르, 심판의 전당",ec839decbba420ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
+Unofficial Oblivion Patch.esp,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생크 토르, 심판의 전당",ec839ded81ac20ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
 Unofficial Oblivion Patch.esp,CELL,000345A8,FULL,Anutwyll Inner Chambers,Anutwyll02,아누트윌의 안방,ec9584eb8884ed8ab8ec9c8cec9d9820ec9588ebb0a900,verified
 Unofficial Oblivion Patch.esp,CELL,0003483E,FULL,The Bloated Float Inn Deck,ICWaterfrontTheBloatedFloatBelowDeck,부푼 부표 여관 갑판,ebb680ed91bc20ebb680ed919c20ec97aceab48020eab091ed8c9000,verified
 Unofficial Oblivion Patch.esp,CELL,00034EC1,FULL,Chapel Undercroft,AnvilChapelUndercroft,예배당 납골당,ec9888ebb0b0eb8bb920eb82a9eab3a8eb8bb900,verified
@@ -3281,7 +3281,7 @@ Unofficial Oblivion Patch.esp,CELL,0003563D,FULL,Methredhel's House,ICWaterfront
 Unofficial Oblivion Patch.esp,CELL,00035681,FULL,Hrota Cave,HrotaCave,호로타 동굴,ed98b8eba19ced838020eb8f99eab5b400,verified
 Unofficial Oblivion Patch.esp,CELL,00035687,FULL,Glademist Cave,GlademistCave,공터안개 동굴,eab3b5ed84b0ec9588eab09c20eb8f99eab5b400,verified
 Unofficial Oblivion Patch.esp,CELL,00035C31,FULL,Chamber of the Lost,SkingradCastleChamberOfTheLost,잃어버린 자들의 방,ec9e83ec96b4ebb284eba6b020ec9e90eb93a4ec9d9820ebb0a900,verified
-Unofficial Oblivion Patch.esp,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생커 토르, 감옥",ec839decbba420ed86a0eba5b42c20eab090ec98a500,verified
+Unofficial Oblivion Patch.esp,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생크 토르, 감옥",ec839ded81ac20ed86a0eba5b42c20eab090ec98a500,verified
 Unofficial Oblivion Patch.esp,CELL,00035DB0,FULL,Anvil Lighthouse,AnvilLighthouse,앤빌 등대,ec95a4ebb98c20eb93b1eb8c8000,verified
 Unofficial Oblivion Patch.esp,CELL,00035EFC,FULL,Vahtacen,Vahtacen,바타켄,ebb094ed8380ecbc8400,verified
 Unofficial Oblivion Patch.esp,CELL,00035FC3,FULL,Chapel Hall,BrumaChapelHall,예배당 회당,ec9888ebb0b0eb8bb920ed9a8ceb8bb900,verified
