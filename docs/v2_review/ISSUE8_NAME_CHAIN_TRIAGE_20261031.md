@@ -21,11 +21,11 @@ The CI artifact from [PR #12 / run 41181729401](https://github.com/munument1/Obl
 - The confirmed glossary says \`Cheydinhal → 체이딘할\`, while actual \`Oblivion.esm/WRLD/0001C31C/FULL\` is \`셰이딘홀\`, and city gate/world/map locations also use \`셰이딘홀\`.
 - Of 298 matches, observed KO phrase counts are \`셰이딘홀\` 148, \`쉐이딘홀\` 65, \`체이딘홀\` 27, \`체이딘할\` 55, 3 unrecognized.
 - Contrast an actual dialogue topic \`Oblivion.esm/DIAL/0001FE63/FULL\` = \`셰이딘홀\` against equipment \`Oblivion.esm/ARMO/000352C9/FULL\` = \`체이딘할 방패\` and book \`BOOK/00024561/FULL\` = \`체이딘할 안내서\`.
-- **Decision required before modification:** choose one naming policy for map, armor/FULL, quest journal, books and dialogue; then adjust the glossary rather than blindly enforcing its current \`CONFIRMED\` entry. Do not edit editor IDs containing Cheydinhal where the English displayed text does not.
+- **Owner decision (2026-10-31):** the reporter's active glossary is authoritative; use \`Cheydinhal → 체이딘할\` across map, armor/FULL, journal, books and dialogue. Source-scoped changes are in #14, not this read-only PR. Do not edit EditorIDs or unrelated English text.
 
 ## Priority 2: main quest book/group chains
 
-**Mythic Dawn:** 157 hits. Current \`Oblivion.esm/BOOK/00022B04..00022B07/FULL\` use \`미씩 던\` (four volumes, plus inconsistent \`논평집/주석서\` book-title suffixes); \`DIAL/00023F8E/FULL\` = \`미씩 던\`, while gear/class FULL labels mostly use \`미식 던\`. Compare journal \`QUST/CNAM\` before selecting a canonical form. Changing only noun spelling will not resolve the Commentaries title inconsistency.
+**Mythic Dawn:** 157 hits. Current \`Oblivion.esm/BOOK/00022B04..00022B07/FULL\` use \`미씩 던\` (four volumes, plus inconsistent \`논평집/주석서\` book-title suffixes); \`DIAL/00023F8E/FULL\` = \`미씩 던\`, while gear/class FULL labels mostly use \`미식 던\`. Canonical form is now \`미식 던\` per reporter. #14 corrects source-backed occurrences; #13 independently corrects the second Commentaries book title to \`미식 던 논평집 2\`.
 
 **Mysterium Xarxes:** 59 hits. Book \`BOOK/00005599/FULL\` and \`BOOK/0008B60A/FULL\`, dialogue topic \`DIAL/0000918D/FULL\`, and many journal references use \`자서스의 신비\` against confirmed glossary \`작시스의 신비\`. Notably three BOOK-body appearances already use \`작시스의 신비\`. The nine "no recognized KO phrase" rows must be read in full; paraphrases and omissions are not automatically errors.
 
@@ -33,7 +33,7 @@ The CI artifact from [PR #12 / run 41181729401](https://github.com/munument1/Obl
 
 **Knights of the Nine:** 37 hits. The title \`Knights.esp/BOOK/01000ED2/FULL\` is \`나인 디바인 기사단\`, its BOOK body contains \`나인의 기사단\`; \`DIAL/01002BD2/FULL\` and much dialogue also use \`나인 디바인 기사단\`. This is a **same-book title/body discrepancy**, stronger evidence for targeted review than simple glossary count.
 
-**Crusader set:** 179 source matches. Representative \`Knights.esp/DIAL/01002A3F/FULL\` is \`성전사의 장화\`, \`DIAL/01002AED/FULL\` is \`성전사 방패\`. Actual equipment names, journals, dialogue and \`CELL\` locations mostly prefer \`성전사\` (173 occurrences against five \`성기사\`), while glossary has multiple \`... of the Crusader → 성기사의 ...\` SEED entries. Review the complete set as an entity, not each adjective in isolation.
+**Crusader set:** 179 source matches. Representative \`Knights.esp/DIAL/01002A3F/FULL\` is \`성전사의 장화\`, \`DIAL/01002AED/FULL\` is \`성전사 방패\`. Actual equipment names, journals, dialogue and \`CELL\` locations mostly prefer \`성전사\` (173 occurrences against five \`성기사\`), while glossary has multiple \`... of the Crusader → 성기사의 ...\` SEED entries. Owner selected the reporter glossary's \`성기사\` form. #14 applies source-scoped verified cases; remaining mixed/context cases still require review.
 
 ## Rules for subsequent changes
 
@@ -44,3 +44,5 @@ The CI artifact from [PR #12 / run 41181729401](https://github.com/munument1/Obl
 5. The already-open #9 Crate, #10 Amber equipment, and #11 Sancre Tor are source-scoped Draft PRs; do not confuse their changes with this audit or the unmodified canonical source.
 
 **Status:** #12 QA successful, 730-row candidate artifact uploaded. No canonical translation change, no full installer/gameplay smoke test, no release.
+
+**Naming-policy update:** See [the confirmed issue #8 glossary policy in Draft PR #14](https://github.com/munument1/Oblivion-KR-Translation/blob/fix/issue8-reporter-terms-20261031/docs/v2_review/ISSUE8_REPORTER_TERMINOLOGY_POLICY_20261031.md). Original counts above remain the unmodified baseline.
