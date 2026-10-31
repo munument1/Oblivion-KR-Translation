@@ -13,9 +13,10 @@
 2. **MOO 선택창의 `예아니요`는 xOBSE 22.13 `MessageBoxEX` 구분자 처리 결함으로 로컬 재현했다.**
    `_mbsbtype`/`_mbclen`이 UTF-8 문자 마지막 바이트와 파이프 구분자를 CP949 문자처럼 처리한다.
    이 오류는 현행 obCJK의 `_mbstok_s` 보정 범위 바깥이다.
-3. **업데이트한 xOBSE에서 `?`가 생기는 원인은 호환성 검사 실패 가능성을 우선 확인해야 한다.**
-   현행 obCJK 임시 해결본은 확인된 xOBSE 22.13의 특정 PE 빌드와 호출 위치만 허용한다.
-   현재 제보자의 22.14 실제 `obse_1_2_416.dll` 바이너리/로그가 없으므로 재현 확정은 아니다.
+3. **xOBSE 업데이트 후 일부 글자가 `?`로 나오는 현상은 obCJK Optional DLL 설치로 해결되었다는 제보자 확인이 있다.**
+   [obCJK Nexus Files](https://www.nexusmods.com/oblivion/mods/56434?tab=files)의
+   2026-10-29 **Optional DLL**은 xOBSE의 CJK/UTF-8 narrow-string 처리 문제 9개를 수정한다고 명시한다.
+   별도의 네이티브 DLL 수정은 이 건에 대해 진행하지 않는다.
 4. **OOO 아이템명·질병명은 번역 소유 플러그인의 winning record를 아직 확인하지 못했다.**
    게임 화면에 영어가 남은 사실과 별개로 모드 원본·폼 ID 없이 UOP/본편 원장에 임의 편입하면 안 된다.
 
@@ -33,13 +34,13 @@
   UI 메뉴 관련 `_mbstok_s` 호출 2곳(`0x499DE`, `0x499EC`)을 보정한다.
 - [xOBSE Nexus 변경 기록](https://www.nexusmods.com/oblivion/mods/37952?tab=logs)에
   2026-10-26의 22.14 업데이트 기록이 있다. 표시 버전과 실제 PE 빌드가 같다는 보증은 없다.
-  **22.14에서 보정이 반드시 실패한다고 단정하지 않는다.** 현재 사용 중인 DLL의 PE 타임스탬프,
-  이미지 크기, SHA-256과 이번 실행의 `obCJK.log`를 받아야 판단할 수 있다.
+  **22.14에서 구버전 임시 보정이 반드시 실패한다고 단정하지 않는다.**
+  사용 환경마다 DLL 로드 순서는 별개로 확인해야 한다.
 
-수정 경로: 검증된 22.14 바이너리와 해당 소스/호출 지점에 맞춰
-`obCJK_XOBSEStringUtf8.h`의 호환 후킹을 이식·검사 후 **32비트 obCJK DLL을 새로 컴파일**한다.
-`obcjk_runtime.py`의 체크섬·manifest·테스트도 새 DLL에 맞게 갱신해야 한다.
-Python 설치기만 다시 빌드해서는 xOBSE 내부 동작을 고치지 못한다.
+현재 제보에서 확인한 해결 방법은 **obCJK 20261029의 Optional DLL을 별도 설치**하는 것이다.
+이 파일은 obCJK 본체 `obCJK.dll`과 별도로 배포되는 xOBSE 플러그인이다.
+MO2를 사용한다면 설치된 Optional DLL이 실제 활성 모드에 포함되었는지 확인한다.
+본 저장소가 포함한 구버전 임시 obCJK DLL을 강제로 덮거나 추가 바이너리를 재컴파일하지 않는다.
 게임 설정은 `[obCJK] ActiveCodePage=UTF8`, `XOBSEStringUtf8Enable=1`이며
 MO2에서 실제 승리하는 설정 파일과 DLL의 해시를 확인한다.
 
@@ -68,10 +69,10 @@ MO2에서 실제 승리하는 설정 파일과 DLL의 해시를 확인한다.
 native 소스를 수정해 x86 컴파일하는 것이다. 기존 obCJK 보정은
 `Commands_Menu.cpp`의 `_mbstok_s`를 가로채므로 이 `Commands_Game.cpp` 직접 스캔 루프는 보정하지 않는다.
 스크린샷의 메뉴에서 `예아니요`로 실제 출력되었고, 로컬 함수 수준에서도 동일하게 재현했다.
-별도 제공하는 MOO 5.0.7 KR1.3 ZIP에서는 컴파일 문자열 길이를 유지하기 위해
+별도 제공하는 **MOO 5.0.7 KR1.2 소유권 선택창 전용 ZIP**에서는 컴파일 문자열 길이를 유지하기 위해
 질문 끝의 물음표를 제거하고 `|예 |아니요`로 교체하여 SCDA/SCTX를 모두 수정했다.
-수배지 2개의 `WANTED` 그림 제목과 영어 대명사 노출도 함께 보정했다.
-ESP 17,413개 레코드 중 해당 SCPT 1개와 BOOK 2개만 변경했으며,
+기존 KR1.1을 기준으로 ESP **17,413개 레코드 중 해당 SCPT 1개만 변경**하고
+나머지 17,412개 레코드와 ZIP 내 다른 리소스를 보존했다.
 수정 ESP의 실게임 클릭·선택값 확인은 별도다.
 
 ## UOP/USIP 설정 두루마리 — 원본 소유권 및 코드
@@ -139,9 +140,7 @@ SCDA 차이가 원본 보존 검사에 걸려 중단되었으므로, 그 실행�
 - 별도의 질병 툴팁은 `질병: Panniculitis Suppurative (30)`이다.
   기본/언오피셜 번역 CSV에서 `Panniculitis`·`Suppurative`를 조회했으나 해당 문자열을 찾지 못했다.
   제보자가 추측한 MOO 소유권은 아직 검증되지 않았다.
-- MOO Wanted 포스터의 표제 `WANTED`는 이미지 텍스처에 연결된 제목이었으며,
-  `Imperial`과 `He`는 런타임 스크립트가 본문에 삽입하던 값이다. 위 KR1.3에서는
-  해당 문구를 한국어 제목과 동적 변수 중심 표현으로 보정했다.
+수배서 관련 문자열·그림 및 스크립트 수정은 요청에 따라 이번 수정 범위에서 제외했다.
 
 최소 재현은 제보자의 활성 ESP/ESM 목록, 로드 순서, 해당 개체의 xEdit FormID와
 최종 `FULL`/`DESC`/`SPEL` 또는 `SCPT` 소유 레코드 확인이다. `Silver Nugget`은
@@ -152,12 +151,12 @@ SCDA 차이가 원본 보존 검사에 걸려 중단되었으므로, 그 실행�
 
 ## 필요한 게임 검증
 
-1. `obse_1_2_416.dll`의 실제 SHA-256·PE timestamp·image size와 obCJK DLL/INI 우선권 및
-   **동일 실행 시점**의 `obCJK.log`에서 `installed test2` 또는 `skipped` 기록 확인.
+1. xOBSE 22.14와 obCJK Optional DLL이 함께 활성화되어 있는지 확인. 제보 환경에서
+   물음표 문제가 해결됐으므로 별도 재현 요구 없이 우선 해결 상태로 분류한다.
 2. UOP 설정 두루마리의 기능별 메뉴 ON/OFF·선택 동작, USIP 메뉴 4개 상태 분기,
    `%` 변수와 효과 슬롯 번호 보존 확인.
 3. MOO 소유권 질문 `예`·`아니요` 각 별도 버튼 및 선택 결과(실제 소유권/돈 변화) 검증.
-4. OOO·OCRAFT·MOO 등 동시 활성과 단독 상태의 `Silver Nugget`/질병/수배지 비교,
+4. OOO·OCRAFT·MOO 등 동시 활성과 단독 상태의 `Silver Nugget`/질병 비교,
    winning record와 실제 화면 대응 확인.
 
 이 문서에 적은 PASS는 로컬 소스·파일 및 CRT 함수 수준의 검증이다.
