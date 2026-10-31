@@ -1,13 +1,13 @@
-# Oblivion Original 한국어 번역 v1.1.8
+# Oblivion Original 한국어 번역 v1.1.9
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
-[v1.1.8 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.8)는 움바카노 대사·대학 출입문 안내·공개 알림을 수정하고, 비공식 패치에 남아 있던 이전 번역을 최신 본편 기준으로 갱신합니다. UOP 3.5.9a-KR1.11 / USIP 1.6.2-KR1.8 / UODP v27-KR1.10의 대사·일지·서적·장소명 등 349개 필드를 보완했습니다. 비공식 패치의 실제 내용 변경과 기존 모피·서적·철문·성소 메시지 수정은 유지합니다.
+[v1.1.9 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.9)는 이슈 #6의 아레나 계급·대사·이름·채집 재료 표기를 통일하고, 책·상점 전단에서 글자로 보이던 줄바꿈 태그를 보정합니다. 별도 한국어판 UOP 3.5.9a-KR1.12 / USIP 1.6.2-KR1.9의 설정 두루마리 영문 메뉴도 교정했으며, UODP v27-KR1.10은 기존 배포본을 유지합니다. 기존 모피·서적·철문·성소 메시지 수정과 이전 번역은 보존합니다.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. 제공받거나 직접 빌드한 v1.1.8 설치기 ZIP의 전체 압축을 풉니다.
+2. 제공받거나 직접 빌드한 v1.1.9 설치기 ZIP의 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.

@@ -6,7 +6,7 @@ on:
       tag:
         description: Published GitHub release tag
         required: true
-        default: v1.1.8
+        default: v1.1.9
         type: string
       patch:
         description: Unofficial patch package
@@ -45,12 +45,12 @@ jobs:
               echo 'changelog=대사·일지·서적 21개 필드를 최신 본편·공식 DLC 번역에 맞췄습니다. 실제 패치의 내용 교정과 기존 성소 메시지·서적 복구를 유지합니다. 본편 v1.1.8과 함께 교체하세요.' >> "$GITHUB_OUTPUT"
               ;;
             UOP)
-              echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.11_20261025.zip' >> "$GITHUB_OUTPUT"
+              echo 'filename=UOP_KR_UTF8_obCJK_3.5.9a_KR1.12_20261031.zip' >> "$GITHUB_OUTPUT"
               echo 'file_id=8036688' >> "$GITHUB_OUTPUT"
               echo 'mod_id=433791753535' >> "$GITHUB_OUTPUT"
-              echo 'version=3.5.9a-KR1.11' >> "$GITHUB_OUTPUT"
+              echo 'version=3.5.9a-KR1.12' >> "$GITHUB_OUTPUT"
               echo 'display_name=UOP KR UTF8 obCJK' >> "$GITHUB_OUTPUT"
-              echo 'changelog=대사·일지·서적·명칭 등 280개 필드를 최신 본편 번역에 맞췄습니다. 북쪽·남쪽과 경갑 훈련 등 실제 UOP 교정을 반영하고 기존 철문 메시지·서적 복구를 유지합니다. 본편 v1.1.8과 함께 교체하세요.' >> "$GITHUB_OUTPUT"
+              echo 'changelog=이슈 #6: 설정 두루마리 영문 메뉴 21종/81회 한국어 번역, 책·전단 줄바꿈 태그와 본편 용어 연계 교정. 기존 KR1.11 전체 번역·원본 스크립트의 기타 데이터는 유지합니다. 본편 v1.1.9와 함께 교체하세요.' >> "$GITHUB_OUTPUT"
               ;;
             *) exit 1 ;;
           esac
