@@ -1,5 +1,19 @@
 # obCJK 글꼴 사용 위치와 교체 방법
 
+
+## NorthernUI Full 한글 윤곽선 보정 (2026-10-31, 소스 설정)
+
+NorthernUI Full에서는 바닐라 UI 슬롯 2와 별도로 **33~37번 폰트 역할**을 사용한다. 기본 한국어 프리셋에서 이 다섯 슬롯의 `OutlineMode`가 0이었기 때문에 한글 윤곽선이 보이지 않을 수 있었다. NorthernUI Away와의 시각적 차이에 관한 제보에 따라 아래 설정으로 변경했다.
+
+- `[obCJK] NorthernUIEnable = 1`: **공식 배포된 원본 NorthernUI.dll**의 글꼴을 연결한다. 기존 값 2는 OBSE 메시징 지원을 넣어 별도로 재컴파일한 NorthernUI.dll 전용이므로 일반 설치자에게 적합하지 않다.
+- `[UTF8] FontParam33~37_OutlineMode = 2`, `_OutlineSize = 1`, `_OutlineAlpha = 100`: Normal/Large/MediumLargeUpper/Shadowed/Small의 한국어 글꼴에 1px 검은 외곽선을 적용한다.
+- 바닐라 슬롯 2의 2px 외곽선, 다른 슬롯의 Off 설정, 폰트 이름·크기·간격·번역 레코드는 변경하지 않았다.
+- 사용자가 특별히 수정한 NorthernUI.dll(OBSE 메시징 구현)을 사용한다면 `NorthernUIEnable = 2`가 필요할 수 있다. 공식 파일을 쓰는 일반 사용자용 기본값은 1이다.
+
+이는 설치기 **소스 프리셋과 정적 회귀 검사에 반영한 내용**이다. Full/Away 인게임 비교 확인은 아직 하지 않았다. 이전에 다운로드한 v1.2.0 ZIP의 설정은 자동으로 바뀌지 않으므로, 새 설치기 빌드/배포 이전의 사용자는 활성 MO2 모드의 `OBSE\\plugins\\obCJK\\obCJK.ini`를 백업한 후 직접 변경해야 한다. 설정을 바꾼 뒤 게임을 완전히 재시작한다.
+
+아래 2026-10-03 시험 기록은 **v1.0.8 당시의 과거 설정**을 설명한다. 당시 NorthernUI 슬롯의 외곽선을 껐던 판단과 이번 소스 변경을 혼동하지 않는다.
+
 2026-10-03 현재 `obcjk-save-test`의 기본 게임 UI 기준이다. 설치본 obCJK의 `obcjk_iniedit_readme(EN).md`에 명시된 SLOT 역할과 실제 시험판 INI를 대조했다. UI 모드가 다른 슬롯을 지정하면 화면별 대응도 달라질 수 있다.
 
 ## 현재 글꼴과 사용 위치
