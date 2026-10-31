@@ -91,7 +91,8 @@ def collect(audit):
   report[patch].append({"identity":key,"source":row["owner"],"base_formid":row["base_formid"],"before_sha256":row["actual_sha256"],
      "after_sha256":digest(target.encode()+b"\0"),"policy":row["status"]})
  for patch,expected in EXPECTED.items():
-  if dict(count[patch])!=expected:raise ValueError(f"{patch} count drift: expected {expected} actual {dict(count[patch])}")
+  if any(count[patch][k]!=v for k,v in expected.items()) or set(count[patch])-set(expected):
+   raise ValueError(f"{patch} count drift: expected {expected} actual {dict(count[patch])}")
   if len(patchplan[patch])!=sum(v for k,v in expected.items() if k not in ("already_correct","untouched_review")):
    raise ValueError(f"{patch} duplicate field drift")
  return patchplan,count,report
