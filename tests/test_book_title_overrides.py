@@ -57,6 +57,32 @@ class BookTitleOverridesTests(unittest.TestCase):
         table = table_with("진정한 바렌지아 5권", "미씩 던 논평집 2")
         self.assertEqual(apply_book_title_overrides(table, OVERRIDES), 0)
 
+    def test_actual_canonical_second_volume_is_source_anchored(self):
+        # Only the display text is amended at build time; canonical input is not rewritten.
+        from build_vanilla_overlay import load_translations
+        table = load_translations(HERE / "canonical_translation_v2.csv",
+                                  encoded_column="obcjk_utf8_hex")
+        matches = [item for item in table[COMMENTARIES_2_KEY]
+                   if item.source == "Oblivion.esm"
+                   and item.record_type == b"BOOK"
+                   and item.formid == 0x00022B05
+                   and item.field == b"FULL"
+                   and item.english == "Mythic Dawn Commentaries 2"]
+        self.assertEqual(len(matches), 1)
+        self.assertEqual(matches[0].korean, "미씩 던 주석서 2".encode("utf-8") + b"\0")
+        original_key = (matches[0].source, matches[0].record_type,
+                        matches[0].formid, matches[0].field,
+                        matches[0].english, matches[0].line,
+                        matches[0].editor_id, matches[0].occurrence)
+        apply_book_title_overrides(table, OVERRIDES)
+        after = [item for item in table[COMMENTARIES_2_KEY]
+                 if item.english == "Mythic Dawn Commentaries 2"]
+        self.assertEqual(len(after), 1)
+        self.assertEqual(after[0].korean, "미씩 던 논평집 2".encode("utf-8") + b"\0")
+        self.assertEqual(original_key, (after[0].source, after[0].record_type,
+                         after[0].formid, after[0].field, after[0].english,
+                         after[0].line, after[0].editor_id, after[0].occurrence))
+
     def test_missing_translation_is_caught(self):
         with self.assertRaises(ValueError):
             apply_book_title_overrides(defaultdict(list), OVERRIDES)
