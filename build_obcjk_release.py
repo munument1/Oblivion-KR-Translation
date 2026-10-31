@@ -102,6 +102,8 @@ def build(args):
         correct_reporter_terms(translations, HERE / 'canonical_translation_v2.csv')
         from issue8_remaining_term_patch import correct_remaining_glossary_names
         correct_remaining_glossary_names(translations, HERE / 'canonical_translation_v2.csv')
+        from issue8_context_verified_patch import correct_context_verified_names
+        correct_context_verified_names(translations, HERE / 'canonical_translation_v2.csv')
     menu_gmsts = load_utf8_menu_gmsts(HERE / 'menu_gmst_new_821.csv')
     menu_formids = frozenset(item[0] for item in menu_gmsts)
 

@@ -40,3 +40,16 @@
 ## Release validation
 
 GitHub Actions regression success is not an original plugin build or game test. Verify inventory names, DIAL/INFO, BOOK, QUST/CNAM, world/map, UOP overrides and installation before release. Keep issue #8 open until remaining candidates are triaged.
+
+
+## Subsequent source-backed continuation (2026-10-31)
+
+- [Draft #15](https://github.com/munument1/Oblivion-KR-Translation/pull/15): read-only source audit; 1,503 named-term occurrences across the published official canonical and location CSVs. [Inspectable artifact](https://github.com/munument1/Oblivion-KR-Translation/actions/runs/41182797631/artifacts/13035697528).
+- [Draft #16](https://github.com/munument1/Oblivion-KR-Translation/pull/16): 424 name corrections in official-text translations (Ayleid 173, Crucible 74, Jauffre 29, Staff of Sheogorath 3, Arquen 10, Modryn Oreyn 21, Vicente Valtieri 15, Mankar Camoran 19, Golden Saint 39, Dark Seducer 41). One additional physical location CELL, Modryn Oreyn's House, changes Unicode and NUL-terminated UTF-8 hex. Full regression **PASS**.
+- [Draft #17](https://github.com/munument1/Oblivion-KR-Translation/pull/17): original-identity-scoped corrections of the Shivering Isles named Gatekeeper (231), Marauder enemy / quest name (16), and Bands of the Chosen (25) to match the real ARMO FULL name 선택받은 자의 팔찌. Full regression **PASS**.
+- **Cupboard remains unresolved**. In real records English `Cupboard` is translated `선반` in 48 base CONT/FULL records but `찬장` in 6 official DLC CONT/FULL records. The active glossary `Cupboard → 선반` has only `SEED` provenance, not CONFIRMED. A cupboard and a shelf are not the same container, so forcing `선반` on otherwise correct `찬장` without explicit data review is unsafe. Book passages using English `Clothing Cupboard` and `Set of Shelves` in the same paragraph must never receive a global substitution. Specific source / FormID review or a new glossary policy is required.
+- Source terms and references still missing recognized Korean wording, plus the issue's wider 631 name mentions, remain open for human/game verification. Do not treat all static flags as errors.
+
+**Merge order for dependent code PRs:** #9 → #10 → #11 → #14 → #16 → #17. #12 and #15 are read-only independent audit PRs; #13 is a separate one-book title correction and must be retested with the stacked builder before release.
+
+CI tests source data but cannot confirm a packaged EXE, obCJK runtime, or real gameplay. Do not claim completed release.
