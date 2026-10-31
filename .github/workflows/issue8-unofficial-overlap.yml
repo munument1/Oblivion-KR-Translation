@@ -42,6 +42,7 @@ jobs:
             '5a13d90dcd2deb96060d1fd0fe55a316be6d47dc89dc712a1ed77e945b005723  released/USIP_KR_UTF8_obCJK_1.6.2_KR1.9_20261031.zip' \
             '39ec7cd6ad8d0a83090b8fd6752d7d3fe7dd0378099969b227694d455eb65240  released/UODP_KR_UTF8_obCJK_v27_KR1.10_20261025.zip' |
             sha256sum -c -
+      # Source-only baseline for changed world/cell/map names.
       - name: Read pinned v1.1.9 location baseline
         run: git show v1.1.9:canonical_locations_v2.csv > previous_locations.csv
       - name: Analyze exact original-FormID and subrecord override collisions
