@@ -1,0 +1,200 @@
+name: Publish v1.2.0 unofficial KR terminology sync
+
+on:
+  pull_request:
+    paths:
+      - 'unofficial_text_forwarding.py'
+      - 'scripts/refresh_unofficial_issue8_v120.py'
+      - 'release_notes_v1.2.0_unofficial_sync.md'
+      - '.github/workflows/issue8-unofficial-release.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'unofficial_text_forwarding.py'
+      - 'scripts/refresh_unofficial_issue8_v120.py'
+      - 'release_notes_v1.2.0_unofficial_sync.md'
+      - '.github/workflows/issue8-unofficial-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: issue8-unofficial-v120-release
+  cancel-in-progress: false
+
+jobs:
+  verify-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run full test suite including unofficial forwarding regression
+        run: python -m unittest discover -s tests -q
+      - name: Obtain pinned current public Korean ESP packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p released
+          gh release download v1.2.0 --dir released \
+            --pattern 'UOP_*zip' --pattern 'USIP_*zip' --pattern 'UODP_*zip'
+          git show v1.1.9:canonical_locations_v2.csv > previous_locations.csv
+      - name: Independently audit and selectively patch all 495 fields
+        run: |
+          python scripts/audit_issue8_unofficial_overlap.py --release-dir released --outdir audit
+          python scripts/audit_issue8_unofficial_locations.py --baseline previous_locations.csv --released released --outdir audit
+          python scripts/refresh_unofficial_issue8_v120.py --release-dir released --audit audit --outdir dist
+          (cd dist && sha256sum --check *.zip.sha256)
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('dist/ISSUE8_UNOFFICIAL_RELEASE_QA.json').read_text(encoding='utf-8'))
+          expected={'UOP':288,'USIP':131,'UODP':76}
+          for label,total in expected.items():
+              actual=sum(v['changed_fields'] for v in d[label]['plugins'].values())
+              assert actual==total,(label,actual)
+          assert sum(expected.values())==495
+          print('UOP/USIP/UODP 495 source-pinned ESP field changes verified')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unofficial-v120-compat-published-packages
+          path: dist/*
+          if-no-files-found: error
+
+  publish:
+    needs: verify-and-build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: unofficial-v120-compat-published-packages
+          path: dist
+      - name: Create companion patch-only GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find dist -maxdepth 1 -name '*.zip' | wc -l)" -eq 3
+          (cd dist && sha256sum --check *.zip.sha256)
+          if gh release view v1.2.0-unofficial-sync >/dev/null 2>&1; then
+            echo 'Companion release already exists; refuse duplicate mutation'
+            exit 1
+          fi
+          gh release view v1.2.0 --json tagName --jq '.tagName' | grep -Fx v1.2.0
+          gh release create v1.2.0-unofficial-sync dist/* \
+            --target "$GITHUB_SHA" --latest=false \
+            --title 'Oblivion v1.2.0 — UOP/USIP/UODP 한국어 용어 호환 패치' \
+            --notes-file release_notes_v1.2.0_unofficial_sync.md
+          test "$(gh release view v1.2.0-unofficial-sync --json assets --jq '.assets | length')" -eq 7
+          echo 'Published companion https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.2.0-unofficial-sync' >> "$GITHUB_STEP_SUMMARY"
+
+  nexus:
+    needs: publish
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        patch: [UOP, USIP, UODP]
+    steps:
+      - name: Select precise package and existing Nexus file
+        id: target
+        shell: bash
+        env:
+          PATCH: ${{ matrix.patch }}
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+        run: |
+          set -euo pipefail
+          case "$PATCH" in
+            UOP)
+              name='UOP_KR_UTF8_obCJK_3.5.9a_KR1.13_20261031.zip'
+              file_id=8036688
+              mod_id=433791753535
+              version='3.5.9a-KR1.13'
+              display='UOP KR UTF8 obCJK'
+              ;;
+            UODP)
+              name='UODP_KR_UTF8_obCJK_v27_KR1.11_20261031.zip'
+              file_id=8036709
+              mod_id=433791753537
+              version='27-KR1.11'
+              display='UODP KR UTF8 obCJK'
+              ;;
+            USIP)
+              name='USIP_KR_UTF8_obCJK_1.6.2_KR1.10_20261031.zip'
+              version='1.6.2-KR1.10'
+              display='Unofficial Shivering Isles Patch KR'
+              prior=$(curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" \
+                'https://api.nexusmods.com/v3/games/oblivion/mod-file-versions/1000046772')
+              file_id=$(jq -r '.data.file.id // empty' <<< "$prior")
+              [[ $(jq -r '.data.version' <<< "$prior") == '1.6.2-KR1.5' ]]
+              mod=$(curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" \
+                'https://api.nexusmods.com/v3/games/oblivion/mods/56640')
+              mod_id=$(jq -r '.data.id // empty' <<< "$mod")
+              [[ $(jq -r '.data.name' <<< "$mod") == *'Unofficial Shivering Isles Patch'* ]]
+              ;;
+            *) exit 1 ;;
+          esac
+          [[ "$file_id" =~ ^[0-9]+$ && "$mod_id" =~ ^[0-9]+$ ]]
+          printf 'filename=%s\nfile_id=%s\nmod_id=%s\nversion=%s\ndisplay_name=%s\n' \
+            "$name" "$file_id" "$mod_id" "$version" "$display" >> "$GITHUB_OUTPUT"
+      - name: Verify exact public package ZIP and SHA-256
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          FILENAME: ${{ steps.target.outputs.filename }}
+        run: |
+          set -euo pipefail
+          gh release download v1.2.0-unofficial-sync \
+            --pattern "$FILENAME" --pattern "$FILENAME.sha256"
+          sha256sum --check "$FILENAME.sha256"
+      - name: Publish only named Korean ESP on existing Nexus mod file
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        id: nexus
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ steps.target.outputs.file_id }}
+          mod_id: ${{ steps.target.outputs.mod_id }}
+          filename: ${{ steps.target.outputs.filename }}
+          version: ${{ steps.target.outputs.version }}
+          display_name: ${{ steps.target.outputs.display_name }}
+          description: 'Oblivion Original KR v1.2.0 이슈 #8 용어 통일 대응. UOP/USIP/UODP 중 해당 패치가 덮어쓰던 본편 명칭 및 위치를 수정했습니다. 컴파일된 스크립트와 다른 필드는 변경하지 않았습니다. 실제 게임 테스트는 미실시.'
+          changelog: 'v1.2.0 용어 호환 업데이트. UOP 288건 / USIP 131건 / UODP 76건 교정. 체이딘할·생크 토르·미식 던·에일리드·성기사 등 표기 통일. 레코드·스크립트 구조 및 ZIP SHA 검증. 본편 설치기 1.2.0은 그대로 유지.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Verify new Nexus version through authenticated API
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          EXPECTED_FILE: ${{ steps.target.outputs.file_id }}
+          EXPECTED_VERSION: ${{ steps.target.outputs.version }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$VERSION_ID" =~ ^[0-9]+$ ]]
+          curl --fail-with-body --silent --show-error --retry 2 \
+            --header "apikey: $NEXUS_API_KEY" \
+            "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" --output uploaded.json
+          jq -e --arg version "$EXPECTED_VERSION" --arg file "$EXPECTED_FILE" \
+            '.data.version == $version and (.data.file.id | tostring) == $file' uploaded.json
+          echo "Verified Nexus $VERSION_ID ($EXPECTED_VERSION)" >> "$GITHUB_STEP_SUMMARY"
