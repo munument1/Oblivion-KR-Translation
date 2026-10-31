@@ -34,8 +34,12 @@ class InstallerTests(unittest.TestCase):
             for half in (1, 2):
                 fields = ini['UTF8'][f'FontParam{slot}_{half}'].split(',')
                 self.assertEqual((fields[0], fields[6]), ('Source Han Serif KR Medium', '500'))
-        for slot in (1, 3, 5, 7, 8, 33, 34, 35, 36, 37):
+        for slot in (1, 3, 5, 7, 8):
             self.assertEqual(ini['UTF8'][f'FontParam{slot}_OutlineMode'], '0')
+        for slot in (33, 34, 35, 36, 37):
+            self.assertEqual(ini['UTF8'][f'FontParam{slot}_OutlineMode'], '2')
+            self.assertEqual(ini['UTF8'][f'FontParam{slot}_OutlineSize'], '1')
+            self.assertEqual(ini['UTF8'][f'FontParam{slot}_OutlineAlpha'], '100')
         self.assertEqual(ini['UTF8']['FontParam2_OutlineMode'], '2')
         self.assertEqual(ini['UTF8']['FontParam2_OutlineSize'], '2')
         self.assertEqual(ini['UTF8']['FontParam2_OutlineAlpha'], '100')
