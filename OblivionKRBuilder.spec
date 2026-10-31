@@ -14,7 +14,11 @@ a = Analysis(['install_obcjk.py'], pathex=[], binaries=[],
         ('assets', 'assets'), ('video_subtitles', 'video_subtitles')],
     hiddenimports=['build_vanilla_overlay', 'build_obcjk_release', 'build_obcjk_locations',
                    'build_gate_messages', 'diagnose_display',
-                   'master_layout', 'build_script_messages', 'build_shrine_messages', 'build_video_subtitles', 'obcjk_runtime', 'winreg'],
+                   'master_layout', 'build_script_messages', 'build_shrine_messages', 'build_video_subtitles', 'obcjk_runtime', 'winreg',
+                   'claude_issue8_crate', 'claude_issue8_amber',
+                   'issue8_reporter_term_patch', 'issue8_remaining_term_patch',
+                   'issue8_context_verified_patch', 'issue8_cupboard_patch',
+                   'issue8_glossary_exceptions'],
     hookspath=[], hooksconfig={}, runtime_hooks=[], excludes=[], noarchive=False, optimize=0)
 pyz = PYZ(a.pure)
 exe = EXE(pyz, a.scripts, a.binaries, a.datas, [], name='OblivionKRBuilder',

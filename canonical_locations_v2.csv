@@ -37,7 +37,7 @@ DLCFrostcrag - Unofficial Patch.esp,CELL,00027D57,FULL,Skingrad Mages Guild,Skin
 DLCFrostcrag - Unofficial Patch.esp,CELL,0002C163,FULL,Mystic Emporium,ICMarketDistrictMysticEmporium,신비한 대상점,ec8ba0ebb984ed959c20eb8c80ec8381eca09000,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,0002CA2F,FULL,Bravil Mages Guild,BravilMagesGuild,브라빌 메이지 길드,ebb88ceb9dbcebb98c20eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,0002D068,FULL,Anvil Mages Guild,AnvilMagesGuild,앤빌 메이지 길드,ec95a4ebb98c20eba994ec9db4eca78020eab8b8eb939c00,verified
-DLCFrostcrag - Unofficial Patch.esp,CELL,0002E545,FULL,Cheydinhal Mages Guild,CheydinhalMagesGuild,셰이딘홀 메이지 길드,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c00,verified
+DLCFrostcrag - Unofficial Patch.esp,CELL,0002E545,FULL,Cheydinhal Mages Guild,CheydinhalMagesGuild,체이딘할 메이지 길드,ecb2b4ec9db4eb9498ed95a020eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,00030534,FULL,Leyawiin Mages Guild,LeyawiinMagesGuild,레이야윈 메이지 길드,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,00049E29,FULL,Mystic Emporium Basement,ICMarketDistrictMysticEmporiumBasement,신비한 대상점 지하실,ec8ba0ebb984ed959c20eb8c80ec8381eca09020eca780ed9598ec8ba400,verified
 DLCFrostcrag - Unofficial Patch.esp,CELL,0004B953,FULL,Mystic Emporium Private Quarters,ICMarketDistrictMysticEmporiumUpstairs,신비한 대상점 개인 숙소,ec8ba0ebb984ed959c20eb8c80ec8381eca09020eab09cec9db820ec8899ec868c00,verified
@@ -51,7 +51,7 @@ DLCFrostcrag.esp,CELL,00027D57,FULL,Skingrad Mages Guild,SkingradMagesGuild,스�
 DLCFrostcrag.esp,CELL,0002C163,FULL,Mystic Emporium,ICMarketDistrictMysticEmporium,신비한 대상점,ec8ba0ebb984ed959c20eb8c80ec8381eca09000,verified
 DLCFrostcrag.esp,CELL,0002CA2F,FULL,Bravil Mages Guild,BravilMagesGuild,브라빌 메이지 길드,ebb88ceb9dbcebb98c20eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag.esp,CELL,0002D068,FULL,Anvil Mages Guild,AnvilMagesGuild,앤빌 메이지 길드,ec95a4ebb98c20eba994ec9db4eca78020eab8b8eb939c00,verified
-DLCFrostcrag.esp,CELL,0002E545,FULL,Cheydinhal Mages Guild,CheydinhalMagesGuild,셰이딘홀 메이지 길드,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c00,verified
+DLCFrostcrag.esp,CELL,0002E545,FULL,Cheydinhal Mages Guild,CheydinhalMagesGuild,체이딘할 메이지 길드,ecb2b4ec9db4eb9498ed95a020eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag.esp,CELL,00030534,FULL,Leyawiin Mages Guild,LeyawiinMagesGuild,레이야윈 메이지 길드,eba088ec9db4ec95bcec9c8820eba994ec9db4eca78020eab8b8eb939c00,verified
 DLCFrostcrag.esp,CELL,00049E29,FULL,Mystic Emporium Basement,ICMarketDistrictMysticEmporiumBasement,신비한 대상점 지하실,ec8ba0ebb984ed959c20eb8c80ec8381eca09020eca780ed9598ec8ba400,verified
 DLCFrostcrag.esp,CELL,0004B953,FULL,Mystic Emporium Private Quarters,ICMarketDistrictMysticEmporiumUpstairs,신비한 대상점 개인 숙소,ec8ba0ebb984ed959c20eb8c80ec8381eca09020eab09cec9db820ec8899ec868c00,verified
@@ -190,7 +190,7 @@ Knights - Unofficial Patch.esp,CELL,020019C5,FULL,Priory of the Nine Chapel,NDPr
 Knights - Unofficial Patch.esp,CELL,02001A82,FULL,Priory Basement,NDPrioryoftheNineBasement,수도원 지하실,ec8898eb8f84ec9b9020eca780ed9598ec8ba400,verified
 Knights - Unofficial Patch.esp,CELL,02001C58,FULL,Priory Undercroft,NDPrioryoftheNineUndercroft,수도원 지하 감옥,ec8898eb8f84ec9b9020eca780ed959820eab090ec98a500,verified
 Knights - Unofficial Patch.esp,CELL,02001CF2,FULL,Fort Bulwark,NDFortBulwark03,불워크 요새,ebb688ec9b8ced81ac20ec9a94ec838800,verified
-Knights - Unofficial Patch.esp,CELL,02001E1A,FULL,The Shrine of the Crusader,NDVanua02,성전사의 성소,ec84b1eca084ec82acec9d9820ec84b1ec868c00,verified
+Knights - Unofficial Patch.esp,CELL,02001E1A,FULL,The Shrine of the Crusader,NDVanua02,성기사의 성소,ec84b1eab8b0ec82acec9d9820ec84b1ec868c00,verified
 Knights - Unofficial Patch.esp,CELL,02002277,FULL,Priory of the Nine,NDPrioryoftheNineHouse,나인 디바인 수도원,eb8298ec9db820eb9494ebb094ec9db820ec8898eb8f84ec9b9000,verified
 Knights - Unofficial Patch.esp,CELL,020023C0,FULL,"Garlas Malatar, Carac Abaran",NDGarlasMalatar03,"가르라스 말라타르, 카라크 아바란",eab080eba5b4eb9dbcec8aa420eba790eb9dbced8380eba5b42c20ecb9b4eb9dbced81ac20ec9584ebb094eb9e8000,verified
 Knights - Unofficial Patch.esp,WRLD,0001C31A,FULL,Anvil,AnvilWorld,앤빌,ec95a4ebb98c00,verified
@@ -228,7 +228,7 @@ Knights.esp,CELL,01001C57,FULL,Dummy cell,NDGarlasMalatar,더미 셀,eb8d94ebafb
 Knights.esp,CELL,01001C58,FULL,Priory Undercroft,NDPrioryoftheNineUndercroft,수도원 지하 감옥,ec8898eb8f84ec9b9020eca780ed959820eab090ec98a500,verified
 Knights.esp,CELL,01001CF1,FULL,Dummy cell,NDPrioryoftheNine,더미 셀,eb8d94ebafb820ec858000,verified
 Knights.esp,CELL,01001CF2,FULL,Fort Bulwark,NDFortBulwark03,불워크 요새,ebb688ec9b8ced81ac20ec9a94ec838800,verified
-Knights.esp,CELL,01001E1A,FULL,The Shrine of the Crusader,NDVanua02,성전사의 성소,ec84b1eca084ec82acec9d9820ec84b1ec868c00,verified
+Knights.esp,CELL,01001E1A,FULL,The Shrine of the Crusader,NDVanua02,성기사의 성소,ec84b1eab8b0ec82acec9d9820ec84b1ec868c00,verified
 Knights.esp,CELL,01002214,FULL,Kynareth's Grotto,NDKynarethCave,키나레스의 동굴,ed82a4eb8298eba088ec8aa4ec9d9820eb8f99eab5b400,verified
 Knights.esp,CELL,01002277,FULL,Priory of the Nine,NDPrioryoftheNineHouse,나인 디바인 수도원,eb8298ec9db820eb9494ebb094ec9db820ec8898eb8f84ec9b9000,verified
 Knights.esp,CELL,010023C0,FULL,"Garlas Malatar, Carac Abaran",NDGarlasMalatar03,"가르라스 말라타르, 카라크 아바란",eab080eba5b4eb9dbcec8aa420eba790eb9dbced8380eba5b42c20ecb9b4eb9dbced81ac20ec9584ebb094eb9e8000,verified
@@ -271,7 +271,7 @@ Oblivion.esm,CELL,00000827,FULL,Eugal Belette's House,ChorrolEugalBelettesHouse,
 Oblivion.esm,CELL,00000828,FULL,Casta Scribonia's House,ChorrolCastaScriboniasHouse,카스타 스크리보니아의 집,ecb9b4ec8aa4ed838020ec8aa4ed81aceba6acebb3b4eb8b88ec9584ec9d9820eca79100,verified
 Oblivion.esm,CELL,00000829,FULL,Reynald Jemane's House,ChorrolReynaldJemanesHouse,레이날드 저메인 집,eba088ec9db4eb82a0eb939c20eca080eba994ec9db820eca79100,verified
 Oblivion.esm,CELL,0000082A,FULL,Valus Odiil's House,ChorrolValusOdiilsHouse,발루스 오딜의 집,ebb09ceba3a8ec8aa420ec98a4eb949cec9d9820eca79100,verified
-Oblivion.esm,CELL,0000082B,FULL,Modryn Oreyn's House,ChorrolModrynOreynsHouse,모드린 오레인의 집,ebaaa8eb939ceba6b020ec98a4eba088ec9db8ec9d9820eca79100,verified
+Oblivion.esm,CELL,0000082B,FULL,Modryn Oreyn's House,ChorrolModrynOreynsHouse,모드윈 오레인의 집,ebaaa8eb939cec9c8820ec98a4eba088ec9db8ec9d9820eca79100,verified
 Oblivion.esm,CELL,00000885,FULL,Chorrol Mages Guild,ChorrolMagesGuild,코롤 메이지 길드,ecbd94eba1a420eba994ec9db4eca78020eab8b8eb939c00,verified
 Oblivion.esm,CELL,000008C1,FULL,Misc Clutter Warehouse,WarehouseMisc,기타 잡동사니 창고,eab8b0ed838020ec9ea1eb8f99ec82aceb8b8820ecb0bdeab3a000,verified
 Oblivion.esm,CELL,00000ADC,FULL,Temple Armory,CloudRulerTempleArmory,사원 무기고,ec82acec9b9020ebacb4eab8b0eab3a000,verified
@@ -298,7 +298,7 @@ Oblivion.esm,CELL,00003AAF,FULL,Fighters Guild Basement,BrumaFightersGuildBaseme
 Oblivion.esm,CELL,00005290,FULL,Dummy cell,ImperialDungeon,임페리얼 지하감옥,ec9e84ed8e98eba6acec96bc20eca780ed9598eab090ec98a500,verified
 Oblivion.esm,CELL,000055BC,FULL,Collapsed Mine - Breakthrough,TestKurtDetection,무너진 광산 - 돌파,ebacb4eb8488eca78420eab491ec82b0202d20eb8f8ced8c8c00,verified
 Oblivion.esm,CELL,00006917,FULL,Mages Guild Basement,CheydinhalMagesGuildBasement,셰이딘홀 메이지 길드 지하실,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c20eca780ed9598ec8ba400,verified
-Oblivion.esm,CELL,0000691B,FULL,Cheydinhal Fighters Guild Basement,CheydinhalFightersGuildBasement,셰이딘홀 파이터 길드 지하실,ec85b0ec9db4eb9498ed998020ed8c8cec9db4ed84b020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Oblivion.esm,CELL,0000691B,FULL,Cheydinhal Fighters Guild Basement,CheydinhalFightersGuildBasement,체이딘할 파이터 길드 지하실,ecb2b4ec9db4eb9498ed95a020ed8c8cec9db4ed84b020eab8b8eb939c20eca780ed9598ec8ba400,verified
 Oblivion.esm,CELL,00007945,FULL,Dungeon,AnvilCastleDungeon,지하감옥,eca780ed9598eab090ec98a500,verified
 Oblivion.esm,CELL,00007946,FULL,Castle Barracks,AnvilCastleBarracks,성 막사,ec84b120eba789ec82ac00,verified
 Oblivion.esm,CELL,00007947,FULL,Dining Hall,AnvilCastleDiningHallandServantQuarters,식당,ec8b9deb8bb900,verified
@@ -744,7 +744,7 @@ Oblivion.esm,CELL,0001EB91,FULL,Hrol Ulfgar's House,BleakersWayHrolUlfgarsHouse,
 Oblivion.esm,CELL,0001EB92,FULL,Nivan Dalvilu's House,BleakersWayNivalDalvilusHouse,니반 달빌루의 집,eb8b88ebb09820eb8bacebb98ceba3a8ec9d9820eca79100,verified
 Oblivion.esm,CELL,0001EB93,FULL,Peryite World TEMP,PeryiteWorldTEMP,페리아이트 세계 TEMP,ed8e98eba6acec9584ec9db4ed8ab820ec84b8eab3842054454d5000,verified
 Oblivion.esm,CELL,0001EB9C,FULL,Arkved's Tower,ArkvedsTower01,아크베드의 탑,ec9584ed81acebb2a0eb939cec9d9820ed839100,verified
-Oblivion.esm,CELL,0001EC36,FULL,Cheydinhal Lords' Private Quarters,CheydinhalCastleLordsQuarters,셰이딘홀 영주의 개인 방,ec85b0ec9db4eb9498ed998020ec9881eca3bcec9d9820eab09cec9db820ebb0a900,verified
+Oblivion.esm,CELL,0001EC36,FULL,Cheydinhal Lords' Private Quarters,CheydinhalCastleLordsQuarters,체이딘할 영주의 개인 방,ecb2b4ec9db4eb9498ed95a020ec9881eca3bcec9d9820eab09cec9db820ebb0a900,verified
 Oblivion.esm,CELL,0001ED42,FULL,Fort Alessia Assembly Hall,FortAlessia02,알레시아 요새 회의실,ec958ceba088ec8b9cec958420ec9a94ec838820ed9a8cec9d98ec8ba400,verified
 Oblivion.esm,CELL,0001EFC1,FULL,Dummy cell for GetInCell,KvatchChapel,크바치 예배당,ed81acebb094ecb99820ec9888ebb0b0eb8bb900,verified
 Oblivion.esm,CELL,0001EFDB,FULL,Dummy cell for GetInCell,CloudRulerTemple,클라우드 룰러 사원,ed81b4eb9dbcec9ab0eb939c20eba3b0eb9fac20ec82acec9b9000,verified
@@ -1074,7 +1074,7 @@ Oblivion.esm,CELL,0002FF55,FULL,Silverhome on the Water,BravilSilverHomeonthewat
 Oblivion.esm,CELL,00030058,FULL,Alval Uvani's House ,LeyawiinAlvalUvanisHouse,알발 우바니의 집,ec958cebb09c20ec9ab0ebb094eb8b88ec9d9820eca79100,verified
 Oblivion.esm,CELL,00030059,FULL,Flooded Mine,FloodedMine,침수된 광산,ecb9a8ec8898eb909c20eab491ec82b000,verified
 Oblivion.esm,CELL,00030066,FULL,J'Ghasta's House,BrumaJGhastasHouse,즈'가스타의 집,eca68827eab080ec8aa4ed8380ec9d9820eca79100,verified
-Oblivion.esm,CELL,00030213,FULL,Cheydinhal Bridge Inn,CheydinhalBridgeInn,셰이딘홀 다리 여관,ec85b0ec9db4eb9498ed998020eb8ba4eba6ac20ec97aceab48000,verified
+Oblivion.esm,CELL,00030213,FULL,Cheydinhal Bridge Inn,CheydinhalBridgeInn,체이딘할 다리 여관,ecb2b4ec9db4eb9498ed95a020eb8ba4eba6ac20ec97aceab48000,verified
 Oblivion.esm,CELL,000302E1,FULL,Brotch Calus' House,BrumaBrotchCalusHouse,브로치 칼루스의 집,ebb88ceba19cecb99820ecb9bceba3a8ec8aa4ec9d9820eca79100,verified
 Oblivion.esm,CELL,000302E2,FULL,Helvius Cecia's House,BrumaHelviusCeciasHouse,헬비우스 세시아의 집,ed97acebb984ec9ab0ec8aa420ec84b8ec8b9cec9584ec9d9820eca79100,verified
 Oblivion.esm,CELL,000302E3,FULL,Regner's House,BrumaRegnersHouse,레그너르의 집,eba088eab7b8eb8488eba5b4ec9d9820eca79100,verified
@@ -1104,8 +1104,8 @@ Oblivion.esm,CELL,00030420,FULL,Magrum gra-Orum's House,CheydinhalOrumHouse,마�
 Oblivion.esm,CELL,00030421,FULL,Rythe Lythandas's House,CheydinhalRythesHouse,라이스 리탄다스의 집,eb9dbcec9db4ec8aa420eba6aced8384eb8ba4ec8aa4ec9d9820eca79100,verified
 Oblivion.esm,CELL,00030422,FULL,Willow Bank,CheydinhalWillowBank,버드나무 제방,ebb284eb939ceb8298ebacb420eca09cebb0a900,verified
 Oblivion.esm,CELL,00030423,FULL,House for Sale,CheydinhalHouseForSale,매물 주택,eba7a4ebacbc20eca3bced839d00,verified
-Oblivion.esm,CELL,00030425,FULL,Cheydinhal Fighter's Guild,CheydinhalFightersGuild,셰이딘홀 파이터 길드,ec85b0ec9db4eb9498ed998020ed8c8cec9db4ed84b020eab8b8eb939c00,verified
-Oblivion.esm,CELL,00030426,FULL,Cheydinhal Castle Dungeon,CheydinhalCastleDungeon,셰이딘홀 성 지하감옥,ec85b0ec9db4eb9498ed998020ec84b120eca780ed9598eab090ec98a500,verified
+Oblivion.esm,CELL,00030425,FULL,Cheydinhal Fighter's Guild,CheydinhalFightersGuild,체이딘할 파이터 길드,ecb2b4ec9db4eb9498ed95a020ed8c8cec9db4ed84b020eab8b8eb939c00,verified
+Oblivion.esm,CELL,00030426,FULL,Cheydinhal Castle Dungeon,CheydinhalCastleDungeon,체이딘할 성 지하감옥,ecb2b4ec9db4eb9498ed95a020ec84b120eca780ed9598eab090ec98a500,verified
 Oblivion.esm,CELL,00030428,FULL,The March Rider,CheydinhalTheMarchRider,3월의 기수,33ec9b94ec9d9820eab8b0ec889800,verified
 Oblivion.esm,CELL,00030429,FULL,Mach-Na's Books,CheydinhalMachNasBooks,마크-나의 서점,eba788ed81ac2deb8298ec9d9820ec849ceca09000,verified
 Oblivion.esm,CELL,0003042A,FULL,Borba's Goods and Stores,CheydinhalBorbasGoodsandStores,보르바의 상품점,ebb3b4eba5b4ebb094ec9d9820ec8381ed9288eca09000,verified
@@ -1195,10 +1195,10 @@ Oblivion.esm,CELL,00031A4F,FULL,Castle Bravil Barracks,BravilCastleBarracks,브�
 Oblivion.esm,CELL,00031A50,FULL,Lord's Manor North Wing,BravilCastlePrivateQuartersNorthWing,영주의 저택 북쪽 날개,ec9881eca3bcec9d9820eca080ed839d20ebb681ecaabd20eb82a0eab09c00,verified
 Oblivion.esm,CELL,00031A51,FULL,Castle Bravil Dungeon,BravilCastleDungeon,브라빌 성 지하감옥 ,ebb88ceb9dbcebb98c20ec84b120eca780ed9598eab090ec98a52000,verified
 Oblivion.esm,CELL,00031B27,FULL,Leafrot Cave,LeafrotCave,부패한 잎사귀 동굴,ebb680ed8ca8ed959c20ec9e8eec82aceab78020eb8f99eab5b400,verified
-Oblivion.esm,CELL,00031B55,FULL,Cheydinhal Castle Great Hall,CheydinhalCastleGreatHall,셰이딘홀 성 대연회장,ec85b0ec9db4eb9498ed998020ec84b120eb8c80ec97b0ed9a8cec9ea500,verified
-Oblivion.esm,CELL,00031B56,FULL,Cheydinhal Castle Private Quarters,CheydinhalCastlePrivateQuarters,셰이딘홀 성 개인 방,ec85b0ec9db4eb9498ed998020ec84b120eab09cec9db820ebb0a900,verified
-Oblivion.esm,CELL,00031B58,FULL,Cheydinhal Castle Guard Barracks,CheydinhalCastleGuardBarracks,셰이딘홀 성 경비대 막사,ec85b0ec9db4eb9498ed998020ec84b120eab2bdebb984eb8c8020eba789ec82ac00,verified
-Oblivion.esm,CELL,00031B59,FULL,Cheydinhal Castle County Hall,CheydinhalCastleCountyHall,셰이딘홀 성 주회당,ec85b0ec9db4eb9498ed998020ec84b120eca3bced9a8ceb8bb900,verified
+Oblivion.esm,CELL,00031B55,FULL,Cheydinhal Castle Great Hall,CheydinhalCastleGreatHall,체이딘할 성 대연회장,ecb2b4ec9db4eb9498ed95a020ec84b120eb8c80ec97b0ed9a8cec9ea500,verified
+Oblivion.esm,CELL,00031B56,FULL,Cheydinhal Castle Private Quarters,CheydinhalCastlePrivateQuarters,체이딘할 성 개인 방,ecb2b4ec9db4eb9498ed95a020ec84b120eab09cec9db820ebb0a900,verified
+Oblivion.esm,CELL,00031B58,FULL,Cheydinhal Castle Guard Barracks,CheydinhalCastleGuardBarracks,체이딘할 성 경비대 막사,ecb2b4ec9db4eb9498ed95a020ec84b120eab2bdebb984eb8c8020eba789ec82ac00,verified
+Oblivion.esm,CELL,00031B59,FULL,Cheydinhal Castle County Hall,CheydinhalCastleCountyHall,체이딘할 성 주회당,ecb2b4ec9db4eb9498ed95a020ec84b120eca3bced9a8ceb8bb900,verified
 Oblivion.esm,CELL,00032483,FULL,Umbacano's  Attic,ICTalosPlazaUmbacanoManorTop,움바카노의 다락방,ec9b80ebb094ecb9b4eb85b8ec9d9820eb8ba4eb9dbdebb0a900,verified
 Oblivion.esm,CELL,00032484,FULL,Imperial Trading Company Private Storage,ICWaterfrontImpTradingCo02WarehouseUpstairs,제국 무역 회사 창고,eca09ceab5ad20ebacb4ec97ad20ed9a8cec82ac20ecb0bdeab3a000,verified
 Oblivion.esm,CELL,00032485,FULL,Ulen Athram's Study,ICTalosPlazaUlenAthramsHouseTop,울렌 아트람의 서재,ec9ab8eba08c20ec9584ed8ab8eb9e8cec9d9820ec849cec9eac00,verified
@@ -1224,16 +1224,16 @@ Oblivion.esm,CELL,000338A2,FULL,Abandoned Mine Caverns,AbandonedMine02,버려진
 Oblivion.esm,CELL,000338EB,FULL,Dagon Shrine,LakeArriusShrineDagon,데이건 성소,eb8db0ec9db4eab1b420ec84b1ec868c00,verified
 Oblivion.esm,CELL,00033912,FULL,Shrine Antechamber,LakeArriusShrineAntechamber01,성소 안방,ec84b1ec868c20ec9588ebb0a900,verified
 Oblivion.esm,CELL,00033B5E,FULL,Reapers Sprawl,OblivionMqKvatchSmallTower01,사신들의 확산,ec82acec8ba0eb93a4ec9d9820ed9995ec82b000,verified
-Oblivion.esm,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생커 토르, 지하 묘지",ec839decbba420ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
-Oblivion.esm,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생커 토르, 레만 황제의 무덤",ec839decbba420ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
+Oblivion.esm,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생크 토르, 지하 묘지",ec839ded81ac20ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
+Oblivion.esm,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생크 토르, 레만 황제의 무덤",ec839ded81ac20ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
 Oblivion.esm,CELL,00033C7D,FULL,Darkfathom Cave,DarkfathomCave,어두운 측연 동굴,ec96b4eb9190ec9ab420ecb8a1ec97b020eb8f99eab5b400,verified
 Oblivion.esm,CELL,00033D33,FULL,Leafrot Hollow,LeafrotCave02,부패한 잎사귀 공동,ebb680ed8ca8ed959c20ec9e8eec82aceab78020eab3b5eb8f9900,verified
 Oblivion.esm,CELL,00033D34,FULL,Nisin Cave,TestFrank,니신 동굴,eb8b88ec8ba020eb8f99eab5b400,verified
 Oblivion.esm,CELL,00033F23,FULL,Southern Books 2nd Floor,LeyawiinSouthernBooks2ndFloor,남부 서점 2층,eb82a8ebb68020ec849ceca0902032ecb8b500,verified
-Oblivion.esm,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생커 토르,ec839decbba420ed86a0eba5b400,verified
-Oblivion.esm,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생커 토르, 입구 회랑",ec839decbba420ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
+Oblivion.esm,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생크 토르,ec839ded81ac20ed86a0eba5b400,verified
+Oblivion.esm,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생크 토르, 입구 회랑",ec839ded81ac20ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
 Oblivion.esm,CELL,0003427D,FULL,North Country Stables,ChorrolNorthCountryStables,노스 컨트리 마구간,eb85b8ec8aa420ecbba8ed8ab8eba6ac20eba788eab5aceab08400,verified
-Oblivion.esm,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생커 토르, 심판의 전당",ec839decbba420ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
+Oblivion.esm,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생크 토르, 심판의 전당",ec839ded81ac20ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
 Oblivion.esm,CELL,000345A8,FULL,Anutwyll Inner Chambers,Anutwyll02,아누트윌의 안방,ec9584eb8884ed8ab8ec9c8cec9d9820ec9588ebb0a900,verified
 Oblivion.esm,CELL,0003483E,FULL,The Bloated Float Inn Deck,ICWaterfrontTheBloatedFloatBelowDeck,부푼 부표 여관 갑판,ebb680ed91bc20ebb680ed919c20ec97aceab48020eab091ed8c9000,verified
 Oblivion.esm,CELL,00034E1D,FULL,Caverns,TestCave01,동굴,eb8f99eab5b400,verified
@@ -1256,7 +1256,7 @@ Oblivion.esm,CELL,00035681,FULL,Hrota Cave,HrotaCave,호로타 동굴,ed98b8eba1
 Oblivion.esm,CELL,00035687,FULL,Glademist Cave,GlademistCave,공터안개 동굴,eab3b5ed84b0ec9588eab09c20eb8f99eab5b400,verified
 Oblivion.esm,CELL,000359DC,FULL,Interior Cave Test,TestJuanGoblinLair,동굴 내부 테스트,eb8f99eab5b420eb82b4ebb68020ed858cec8aa4ed8ab800,verified
 Oblivion.esm,CELL,00035C31,FULL,Chamber of the Lost,SkingradCastleChamberOfTheLost,잃어버린 자들의 방,ec9e83ec96b4ebb284eba6b020ec9e90eb93a4ec9d9820ebb0a900,verified
-Oblivion.esm,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생커 토르, 감옥",ec839decbba420ed86a0eba5b42c20eab090ec98a500,verified
+Oblivion.esm,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생크 토르, 감옥",ec839ded81ac20ed86a0eba5b42c20eab090ec98a500,verified
 Oblivion.esm,CELL,00035DB0,FULL,Anvil Lighthouse,AnvilLighthouse,앤빌 등대,ec95a4ebb98c20eb93b1eb8c8000,verified
 Oblivion.esm,CELL,00035E3D,FULL,Dummy cell,ImperialLegionCompound,더미 셀,eb8d94ebafb820ec858000,verified
 Oblivion.esm,CELL,00035EFC,FULL,Vahtacen,Vahtacen,바타켄,ebb094ed8380ecbc8400,verified
@@ -1860,7 +1860,7 @@ Oblivion.esm,CELL,00094ECD,FULL,The Sleeping Mare,PellGateTheSleepingMare,잠자
 Oblivion.esm,CELL,00094ECE,FULL,Irroki the Wide's House,PellGateIrrokitheWidesHouse,넓은 이로키의 집,eb8493ec9d8020ec9db4eba19ced82a4ec9d9820eca79100,verified
 Oblivion.esm,CELL,00095347,FULL,Weatherleah,WeatherleahInterior02,웨더리아,ec9ba8eb8d94eba6acec958400,verified
 Oblivion.esm,CELL,00095348,FULL,Drakelowe,DrakeloweFarmCOPY0000,드레이클로,eb939ceba088ec9db4ed81b4eba19c00,verified
-Oblivion.esm,CELL,00095349,FULL,Cheydinhal Bridge Inn Basement,CheydinhalBridgeInnBasement,셰이딘홀 다리 여관 지하실,ec85b0ec9db4eb9498ed998020eb8ba4eba6ac20ec97aceab48020eca780ed9598ec8ba400,verified
+Oblivion.esm,CELL,00095349,FULL,Cheydinhal Bridge Inn Basement,CheydinhalBridgeInnBasement,체이딘할 다리 여관 지하실,ecb2b4ec9db4eb9498ed95a020eb8ba4eba6ac20ec97aceab48020eca780ed9598ec8ba400,verified
 Oblivion.esm,CELL,0009534A,FULL,Willow Bank Basement,CheydinhalWillowBankBasement,버드나무 제방 지하실,ebb284eb939ceb8298ebacb420eca09cebb0a920eca780ed9598ec8ba400,verified
 Oblivion.esm,CELL,00095EDB,FULL,Wenyandawik Edesel,Wenyandawik02,웬얀다윅 에데셀,ec9bacec9680eb8ba4ec9c8520ec9790eb8db0ec858000,verified
 Oblivion.esm,CELL,00096226,FULL,The Temple Sewers,ImperialSewerSystemTempleDistrict,사원 하수도,ec82acec9b9020ed9598ec8898eb8f8400,verified
@@ -2373,10 +2373,10 @@ Oblivion.esm,REFR,00020096,FULL,Castle Chorrol,ChorrolMasterMapMarker,코롤 성
 Oblivion.esm,REFR,00020097,FULL,Anvil Main Gate,AnvilMapMarkerNEW,앤빌 정문,ec95a4ebb98c20eca095ebacb800,verified
 Oblivion.esm,REFR,00020098,FULL,Bravil,BravilMapMarker,브라빌,ebb88ceb9dbcebb98c00,verified
 Oblivion.esm,REFR,00020099,FULL,Bruma East Gate,BrumaMapMarkerNEW,브루마 동문,ebb88ceba3a8eba78820eb8f99ebacb800,verified
-Oblivion.esm,REFR,0002009A,FULL,Cheydinhal - West Gate,CheydinhalWestGateMapMarker,셰이딘홀 - 서문,ec85b0ec9db4eb9498ed9980202d20ec849cebacb800,verified
+Oblivion.esm,REFR,0002009A,FULL,Cheydinhal - West Gate,CheydinhalWestGateMapMarker,체이딘할 - 서문,ecb2b4ec9db4eb9498ed95a0202d20ec849cebacb800,verified
 Oblivion.esm,REFR,0002009B,FULL,Leyawiin - North East Gate,LeyawiinMapMarker,레이야윈 - 북동문,eba088ec9db4ec95bcec9c88202d20ebb681eb8f99ebacb800,verified
 Oblivion.esm,REFR,00024B3D,FULL,Frostfire Glade,FrostfireGladeMapMarker,타는 듯한 서리 공터,ed8380eb8a9420eb93afed959c20ec849ceba6ac20eab3b5ed84b000,verified
-Oblivion.esm,REFR,00026EBD,FULL,Sancre Tor,SancreTorMapMarker,생커 토르,ec839decbba420ed86a0eba5b400,verified
+Oblivion.esm,REFR,00026EBD,FULL,Sancre Tor,SancreTorMapMarker,생크 토르,ec839ded81ac20ed86a0eba5b400,verified
 Oblivion.esm,REFR,00028552,FULL,Hackdirt,HackdirtMapMarker,핵더트,ed95b5eb8d94ed8ab800,verified
 Oblivion.esm,REFR,0002A829,FULL,Rock Bottom Caverns,RockBottomCavernsMapMarker,바위 바닥 동굴,ebb094ec9c8420ebb094eb8ba520eb8f99eab5b400,verified
 Oblivion.esm,REFR,0002AA16,FULL,Redguard Valley Cave,RedguardValleyCaveMapMarker,레드가드 계곡 동굴,eba088eb939ceab080eb939c20eab384eab3a120eb8f99eab5b400,verified
@@ -2486,8 +2486,8 @@ Oblivion.esm,REFR,000CD529,FULL,Cadlew Chapel,,캐드류 예배당,ecba90eb939ce
 Oblivion.esm,REFR,000E78DF,FULL,Leyawiin - West Gate,LeyawiinWestGateMapMarker,레이야윈 - 서문,eba088ec9db4ec95bcec9c88202d20ec849cebacb800,verified
 Oblivion.esm,REFR,000E9C98,FULL,Anvil Dock Gate,AnvilCityDockGate,앤빌 부두 성문,ec95a4ebb98c20ebb680eb919020ec84b1ebacb800,verified
 Oblivion.esm,REFR,000E9C9D,FULL,Anvil Castle Gate,AnvilCityCastleGateMarker,앤빌 성문,ec95a4ebb98c20ec84b1ebacb800,verified
-Oblivion.esm,REFR,000FF19A,FULL,Castle Cheydinhal,CheydinhalCastleMapMarker,셰이딘홀 성,ec85b0ec9db4eb9498ed998020ec84b100,verified
-Oblivion.esm,REFR,000FF19B,FULL,Cheydinhal - East Gate,CheydinhalEastGateMapMarker,셰이딘홀 - 동문,ec85b0ec9db4eb9498ed9980202d20eb8f99ebacb800,verified
+Oblivion.esm,REFR,000FF19A,FULL,Castle Cheydinhal,CheydinhalCastleMapMarker,체이딘할 성,ecb2b4ec9db4eb9498ed95a020ec84b100,verified
+Oblivion.esm,REFR,000FF19B,FULL,Cheydinhal - East Gate,CheydinhalEastGateMapMarker,체이딘할 - 동문,ecb2b4ec9db4eb9498ed95a0202d20eb8f99ebacb800,verified
 Oblivion.esm,REFR,000FF19C,FULL,Chorrol South Gate,ChorrolCharGenMapMarker,코롤 남문,ecbd94eba1a420eb82a8ebacb800,verified
 Oblivion.esm,REFR,00103637,FULL,Leyawiin - Castle,LeyawiinCastleMapMarkerNEW,레이야윈 - 성,eba088ec9db4ec95bcec9c88202d20ec84b100,verified
 Oblivion.esm,REFR,0010D74E,FULL,Castle Bruma,,브루마 성,ebb88ceba3a8eba78820ec84b100,verified
@@ -2644,7 +2644,7 @@ Oblivion.esm,WRLD,0001C318,FULL,Bruma,BrumaWorld,브루마,ebb88ceba3a8eba78800,
 Oblivion.esm,WRLD,0001C319,FULL,Bravil,BravilWorld,브라빌,ebb88ceb9dbcebb98c00,verified
 Oblivion.esm,WRLD,0001C31A,FULL,Anvil,AnvilWorld,앤빌,ec95a4ebb98c00,verified
 Oblivion.esm,WRLD,0001C31B,FULL,Leyawiin,LeyawiinWorld,레이야윈,eba088ec9db4ec95bcec9c8800,verified
-Oblivion.esm,WRLD,0001C31C,FULL,Cheydinhal,CheydinhalWorld,셰이딘홀,ec85b0ec9db4eb9498ed998000,verified
+Oblivion.esm,WRLD,0001C31C,FULL,Cheydinhal,CheydinhalWorld,체이딘할,ecb2b4ec9db4eb9498ed95a000,verified
 Oblivion.esm,WRLD,0001C31D,FULL,Skingrad,SkingradWorld,스킨그라드,ec8aa4ed82a8eab7b8eb9dbceb939c00,verified
 Oblivion.esm,WRLD,0001D0BC,FULL,Plane of Oblivion,OblivionMQKvatch,오블리비언 차원,ec98a4ebb894eba6acebb984ec96b820ecb0a8ec9b9000,verified
 Oblivion.esm,WRLD,00025B2B,FULL,Frostfire Glade,MS37World,타는 듯한 서리 공터,ed8380eb8a9420eb93afed959c20ec849ceba6ac20eab3b5ed84b000,verified
@@ -2713,7 +2713,7 @@ Unofficial Oblivion Patch.esp,CELL,00002908,FULL,Atatar Haelia Anga,Atatar03,아
 Unofficial Oblivion Patch.esp,CELL,00002E3D,FULL,Brittlerock Cave,BrittlerockCave,취약한 바위 동굴,ecb7a8ec95bded959c20ebb094ec9c8420eb8f99eab5b400,verified
 Unofficial Oblivion Patch.esp,CELL,0000391D,FULL,Sedor,Sedor,세도르,ec84b8eb8f84eba5b400,verified
 Unofficial Oblivion Patch.esp,CELL,00003990,FULL,Bloodcrust Cavern,BloodcrustCavern,피딱지 동굴,ed94bceb94b1eca78020eb8f99eab5b400,verified
-Unofficial Oblivion Patch.esp,CELL,0000691B,FULL,Cheydinhal Fighters Guild Basement,CheydinhalFightersGuildBasement,셰이딘홀 파이터 길드 지하실,ec85b0ec9db4eb9498ed998020ed8c8cec9db4ed84b020eab8b8eb939c20eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0000691B,FULL,Cheydinhal Fighters Guild Basement,CheydinhalFightersGuildBasement,체이딘할 파이터 길드 지하실,ecb2b4ec9db4eb9498ed95a020ed8c8cec9db4ed84b020eab8b8eb939c20eca780ed9598ec8ba400,verified
 Unofficial Oblivion Patch.esp,CELL,00007947,FULL,Castle Anvil Dining Hall,AnvilCastleDiningHallandServantQuarters,식당,ec8b9deb8bb900,verified
 Unofficial Oblivion Patch.esp,CELL,000091B0,FULL,Amelion Tomb,AmelionFamilyTomb,아멜리온 무덤,ec9584eba99ceba6acec98a820ebacb4eb8da400,verified
 Unofficial Oblivion Patch.esp,CELL,0000965E,FULL,Anvil Lighthouse Tower,AnvilLighthouseUpperRoom,앤빌 등대 탑,ec95a4ebb98c20eb93b1eb8c8020ed839100,verified
@@ -3110,7 +3110,7 @@ Unofficial Oblivion Patch.esp,CELL,0002DC01,FULL,Brina Cross Inn,BrinaCrossInn,�
 Unofficial Oblivion Patch.esp,CELL,0002DC0A,FULL,Chapel Undercroft,SkingradChapelUndercroft,예배당 납골당,ec9888ebb0b0eb8bb920eb82a9eab3a8eb8bb900,verified
 Unofficial Oblivion Patch.esp,CELL,0002DC0B,FULL,Chapel Hall,SkingradChapelHall,예배당 회당,ec9888ebb0b0eb8bb920ed9a8ceb8bb900,verified
 Unofficial Oblivion Patch.esp,CELL,0002DD9B,FULL,Lazare Milvan's Basement,SkingradLazareMilvansBasement,라자르 밀반의 집 지하실,eb9dbcec9e90eba5b420ebb080ebb098ec9d9820eca79120eca780ed9598ec8ba400,verified
-Unofficial Oblivion Patch.esp,CELL,0002E545,FULL,Cheydinhal Mages Guild,CheydinhalMagesGuild,셰이딘홀 메이지 길드,ec85b0ec9db4eb9498ed998020eba994ec9db4eca78020eab8b8eb939c00,verified
+Unofficial Oblivion Patch.esp,CELL,0002E545,FULL,Cheydinhal Mages Guild,CheydinhalMagesGuild,체이딘할 메이지 길드,ecb2b4ec9db4eb9498ed95a020eba994ec9db4eca78020eab8b8eb939c00,verified
 Unofficial Oblivion Patch.esp,CELL,0002E57B,FULL,Nonwyll Cavern,NonwyllCavern,논윌 동굴,eb85bcec9c8c20eb8f99eab5b400,verified
 Unofficial Oblivion Patch.esp,CELL,0002E5B2,FULL,Herminia Cinna's House,ICElvenGardensHerminiaCinnasHouse,헤르미니아 시나의 집,ed97a4eba5b4ebafb8eb8b88ec958420ec8b9ceb8298ec9d9820eca79100,verified
 Unofficial Oblivion Patch.esp,CELL,0002E9A1,FULL,Two Sisters Lodge Cellar,SkingradTwoSistersLodgeCellar,두 자매의 오두막 지하실,eb919020ec9e90eba7a4ec9d9820ec98a4eb9190eba78920eca780ed9598ec8ba400,verified
@@ -3141,7 +3141,7 @@ Unofficial Oblivion Patch.esp,CELL,0002FF53,FULL,A Warlock's Luck,BravilaWarlock
 Unofficial Oblivion Patch.esp,CELL,0002FF55,FULL,Silverhome on the Water,BravilSilverHomeonthewater,물 위의 은빛집,ebacbc20ec9c84ec9d9820ec9d80ebb99beca79100,verified
 Unofficial Oblivion Patch.esp,CELL,00030058,FULL,Alval Uvani's House ,LeyawiinAlvalUvanisHouse,알발 우바니의 집,ec958cebb09c20ec9ab0ebb094eb8b88ec9d9820eca79100,verified
 Unofficial Oblivion Patch.esp,CELL,00030066,FULL,J'Ghasta's House,BrumaJGhastasHouse,즈'가스타의 집,eca68827eab080ec8aa4ed8380ec9d9820eca79100,verified
-Unofficial Oblivion Patch.esp,CELL,00030213,FULL,Cheydinhal Bridge Inn,CheydinhalBridgeInn,셰이딘홀 다리 여관,ec85b0ec9db4eb9498ed998020eb8ba4eba6ac20ec97aceab48000,verified
+Unofficial Oblivion Patch.esp,CELL,00030213,FULL,Cheydinhal Bridge Inn,CheydinhalBridgeInn,체이딘할 다리 여관,ecb2b4ec9db4eb9498ed95a020eb8ba4eba6ac20ec97aceab48000,verified
 Unofficial Oblivion Patch.esp,CELL,000302E1,FULL,Brotch Calus' House,BrumaBrotchCalusHouse,브로치 칼루스의 집,ebb88ceba19cecb99820ecb9bceba3a8ec8aa4ec9d9820eca79100,verified
 Unofficial Oblivion Patch.esp,CELL,000302E2,FULL,Helvius Cecia's House,BrumaHelviusCeciasHouse,헬비우스 세시아의 집,ed97acebb984ec9ab0ec8aa420ec84b8ec8b9cec9584ec9d9820eca79100,verified
 Unofficial Oblivion Patch.esp,CELL,000302E3,FULL,Regner's House,BrumaRegnersHouse,레그너르의 집,eba088eab7b8eb8488eba5b4ec9d9820eca79100,verified
@@ -3254,14 +3254,14 @@ Unofficial Oblivion Patch.esp,CELL,000338A2,FULL,Abandoned Mine Caverns,Abandone
 Unofficial Oblivion Patch.esp,CELL,000338EB,FULL,Dagon Shrine,LakeArriusShrineDagon,데이건 성소,eb8db0ec9db4eab1b420ec84b1ec868c00,verified
 Unofficial Oblivion Patch.esp,CELL,00033912,FULL,Shrine Antechamber,LakeArriusShrineAntechamber01,성소 안방,ec84b1ec868c20ec9588ebb0a900,verified
 Unofficial Oblivion Patch.esp,CELL,00033B5E,FULL,Reapers Sprawl,OblivionMqKvatchSmallTower01,사신들의 확산,ec82acec8ba0eb93a4ec9d9820ed9995ec82b000,verified
-Unofficial Oblivion Patch.esp,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생커 토르, 지하 묘지",ec839decbba420ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
-Unofficial Oblivion Patch.esp,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생커 토르, 레만 황제의 무덤",ec839decbba420ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
+Unofficial Oblivion Patch.esp,CELL,00033C05,FULL,"Sancre Tor, Catacombs",SancreTor04,"생크 토르, 지하 묘지",ec839ded81ac20ed86a0eba5b42c20eca780ed959820ebac98eca78000,verified
+Unofficial Oblivion Patch.esp,CELL,00033C06,FULL,"Sancre Tor, Tomb of the Reman Emperors",SancreTorTomb,"생크 토르, 레만 황제의 무덤",ec839ded81ac20ed86a0eba5b42c20eba088eba78c20ed99a9eca09cec9d9820ebacb4eb8da400,verified
 Unofficial Oblivion Patch.esp,CELL,00033D33,FULL,Leafrot Hollow,LeafrotCave02,부패한 잎사귀 공동,ebb680ed8ca8ed959c20ec9e8eec82aceab78020eab3b5eb8f9900,verified
 Unofficial Oblivion Patch.esp,CELL,00033F23,FULL,Southern Books 2nd Floor,LeyawiinSouthernBooks2ndFloor,남부 서점 2층,eb82a8ebb68020ec849ceca0902032ecb8b500,verified
-Unofficial Oblivion Patch.esp,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생커 토르,ec839decbba420ed86a0eba5b400,verified
-Unofficial Oblivion Patch.esp,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생커 토르, 입구 회랑",ec839decbba420ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
+Unofficial Oblivion Patch.esp,CELL,00033FD1,FULL,Sancre Tor,SancreTor01,생크 토르,ec839ded81ac20ed86a0eba5b400,verified
+Unofficial Oblivion Patch.esp,CELL,000341F2,FULL,"Sancre Tor, Entry Hall",SancreTorHub,"생크 토르, 입구 회랑",ec839ded81ac20ed86a0eba5b42c20ec9e85eab5ac20ed9a8ceb9e9100,verified
 Unofficial Oblivion Patch.esp,CELL,0003427D,FULL,North Country Stables,ChorrolNorthCountryStables,노스 컨트리 마구간,eb85b8ec8aa420ecbba8ed8ab8eba6ac20eba788eab5aceab08400,verified
-Unofficial Oblivion Patch.esp,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생커 토르, 심판의 전당",ec839decbba420ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
+Unofficial Oblivion Patch.esp,CELL,0003447B,FULL,"Sancre Tor, Hall of Judgement",SancreTor02,"생크 토르, 심판의 전당",ec839ded81ac20ed86a0eba5b42c20ec8baced8c90ec9d9820eca084eb8bb900,verified
 Unofficial Oblivion Patch.esp,CELL,000345A8,FULL,Anutwyll Inner Chambers,Anutwyll02,아누트윌의 안방,ec9584eb8884ed8ab8ec9c8cec9d9820ec9588ebb0a900,verified
 Unofficial Oblivion Patch.esp,CELL,0003483E,FULL,The Bloated Float Inn Deck,ICWaterfrontTheBloatedFloatBelowDeck,부푼 부표 여관 갑판,ebb680ed91bc20ebb680ed919c20ec97aceab48020eab091ed8c9000,verified
 Unofficial Oblivion Patch.esp,CELL,00034EC1,FULL,Chapel Undercroft,AnvilChapelUndercroft,예배당 납골당,ec9888ebb0b0eb8bb920eb82a9eab3a8eb8bb900,verified
@@ -3281,7 +3281,7 @@ Unofficial Oblivion Patch.esp,CELL,0003563D,FULL,Methredhel's House,ICWaterfront
 Unofficial Oblivion Patch.esp,CELL,00035681,FULL,Hrota Cave,HrotaCave,호로타 동굴,ed98b8eba19ced838020eb8f99eab5b400,verified
 Unofficial Oblivion Patch.esp,CELL,00035687,FULL,Glademist Cave,GlademistCave,공터안개 동굴,eab3b5ed84b0ec9588eab09c20eb8f99eab5b400,verified
 Unofficial Oblivion Patch.esp,CELL,00035C31,FULL,Chamber of the Lost,SkingradCastleChamberOfTheLost,잃어버린 자들의 방,ec9e83ec96b4ebb284eba6b020ec9e90eb93a4ec9d9820ebb0a900,verified
-Unofficial Oblivion Patch.esp,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생커 토르, 감옥",ec839decbba420ed86a0eba5b42c20eab090ec98a500,verified
+Unofficial Oblivion Patch.esp,CELL,00035D91,FULL,"Sancre Tor, Prison",SancreTor03,"생크 토르, 감옥",ec839ded81ac20ed86a0eba5b42c20eab090ec98a500,verified
 Unofficial Oblivion Patch.esp,CELL,00035DB0,FULL,Anvil Lighthouse,AnvilLighthouse,앤빌 등대,ec95a4ebb98c20eb93b1eb8c8000,verified
 Unofficial Oblivion Patch.esp,CELL,00035EFC,FULL,Vahtacen,Vahtacen,바타켄,ebb094ed8380ecbc8400,verified
 Unofficial Oblivion Patch.esp,CELL,00035FC3,FULL,Chapel Hall,BrumaChapelHall,예배당 회당,ec9888ebb0b0eb8bb920ed9a8ceb8bb900,verified
@@ -3694,7 +3694,7 @@ Unofficial Oblivion Patch.esp,CELL,00094930,FULL,Clarabella Lower Deck,AnvilTheS
 Unofficial Oblivion Patch.esp,CELL,00094931,FULL,The Sea Tub Clarabella,AnvilTheSeaTubClarabella,바다 욕조 클라라벨라,ebb094eb8ba420ec9a95eca1b020ed81b4eb9dbceb9dbcebb2a8eb9dbc00,verified
 Unofficial Oblivion Patch.esp,CELL,00094C44,FULL,Hanz gro-Hubrag's House,BlankenMarchHouse02,한즈 그로-후브라그의 집,ed959ceca68820eab7b8eba19c2ded9b84ebb88ceb9dbceab7b8ec9d9820eca79100,verified
 Unofficial Oblivion Patch.esp,CELL,00094ECD,FULL,The Sleeping Mare,PellGateTheSleepingMare,잠자는 암말 여관,ec9ea0ec9e90eb8a9420ec9594eba79020ec97aceab48000,verified
-Unofficial Oblivion Patch.esp,CELL,00095349,FULL,Cheydinhal Bridge Inn Basement,CheydinhalBridgeInnBasement,셰이딘홀 다리 여관 지하실,ec85b0ec9db4eb9498ed998020eb8ba4eba6ac20ec97aceab48020eca780ed9598ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,00095349,FULL,Cheydinhal Bridge Inn Basement,CheydinhalBridgeInnBasement,체이딘할 다리 여관 지하실,ecb2b4ec9db4eb9498ed95a020eb8ba4eba6ac20ec97aceab48020eca780ed9598ec8ba400,verified
 Unofficial Oblivion Patch.esp,CELL,0009534A,FULL,Willow Bank Basement,CheydinhalWillowBankBasement,버드나무 제방 지하실,ebb284eb939ceb8298ebacb420eca09cebb0a920eca780ed9598ec8ba400,verified
 Unofficial Oblivion Patch.esp,CELL,00096226,FULL,The Temple Sewers,ImperialSewerSystemTempleDistrict,사원 하수도,ec82acec9b9020ed9598ec8898eb8f8400,verified
 Unofficial Oblivion Patch.esp,CELL,00096228,FULL,The South West Tunnel,ImperialSewerSystemSW,남서쪽 터널,eb82a8ec849cecaabd20ed84b0eb849000,verified
@@ -3771,7 +3771,7 @@ Unofficial Oblivion Patch.esp,WRLD,0001C318,FULL,Bruma,BrumaWorld,브루마,ebb8
 Unofficial Oblivion Patch.esp,WRLD,0001C319,FULL,Bravil,BravilWorld,브라빌,ebb88ceb9dbcebb98c00,verified
 Unofficial Oblivion Patch.esp,WRLD,0001C31A,FULL,Anvil,AnvilWorld,앤빌,ec95a4ebb98c00,verified
 Unofficial Oblivion Patch.esp,WRLD,0001C31B,FULL,Leyawiin,LeyawiinWorld,레이야윈,eba088ec9db4ec95bcec9c8800,verified
-Unofficial Oblivion Patch.esp,WRLD,0001C31C,FULL,Cheydinhal,CheydinhalWorld,셰이딘홀,ec85b0ec9db4eb9498ed998000,verified
+Unofficial Oblivion Patch.esp,WRLD,0001C31C,FULL,Cheydinhal,CheydinhalWorld,체이딘할,ecb2b4ec9db4eb9498ed95a000,verified
 Unofficial Oblivion Patch.esp,WRLD,0001C31D,FULL,Skingrad,SkingradWorld,스킨그라드,ec8aa4ed82a8eab7b8eb9dbceb939c00,verified
 Unofficial Oblivion Patch.esp,WRLD,0001D0BC,FULL,Plane of Oblivion,OblivionMQKvatch,오블리비언 차원,ec98a4ebb894eba6acebb984ec96b820ecb0a8ec9b9000,verified
 Unofficial Oblivion Patch.esp,WRLD,00025B2B,FULL,Frostfire Glade,MS37World,타는 듯한 서리 공터,ed8380eb8a9420eb93afed959c20ec849ceba6ac20eab3b5ed84b000,verified

@@ -89,7 +89,25 @@ def build(args):
     translations = load_translations(
         args.csv.resolve(), extra_tables,
         encoded_column='obcjk_utf8_hex')
+    # Issue #8: correct only the 38 source-verified container labels, in memory.
+    # Keep the immutable canonical CSV and any unrelated user CSV untouched.
+    if args.csv.resolve() == (HERE / 'canonical_translation_v2.csv').resolve():
+        from claude_issue8_crate import correct_crate_names
+        correct_crate_names(translations)
+        from claude_issue8_amber import correct_amber_equipment_names
+        correct_amber_equipment_names(translations)
     apply_book_title_overrides(translations, HERE / 'canonical_book_title_overrides_v1.csv')
+    if args.csv.resolve() == (HERE / 'canonical_translation_v2.csv').resolve():
+        from issue8_reporter_term_patch import correct_reporter_terms
+        correct_reporter_terms(translations, HERE / 'canonical_translation_v2.csv')
+        from issue8_remaining_term_patch import correct_remaining_glossary_names
+        correct_remaining_glossary_names(translations, HERE / 'canonical_translation_v2.csv')
+        from issue8_context_verified_patch import correct_context_verified_names
+        correct_context_verified_names(translations, HERE / 'canonical_translation_v2.csv')
+        from issue8_cupboard_patch import correct_cupboard_names
+        correct_cupboard_names(translations, HERE / 'canonical_translation_v2.csv')
+        from issue8_glossary_exceptions import correct_glossary_exceptions
+        correct_glossary_exceptions(translations, HERE / 'canonical_translation_v2.csv')
     menu_gmsts = load_utf8_menu_gmsts(HERE / 'menu_gmst_new_821.csv')
     menu_formids = frozenset(item[0] for item in menu_gmsts)
 
