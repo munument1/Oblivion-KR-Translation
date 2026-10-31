@@ -1,0 +1,36 @@
+name: Issue 8 Remaining Names Source Audit
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_issue8_remaining_terms.py'
+      - 'tests/test_issue8_remaining_terms.py'
+      - '.github/workflows/issue8-remaining-names.yml'
+  push:
+    paths:
+      - 'scripts/audit_issue8_remaining_terms.py'
+      - 'tests/test_issue8_remaining_terms.py'
+      - '.github/workflows/issue8-remaining-names.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test no mutation and context gating
+        run: python -m unittest discover -s tests -p 'test_issue8_remaining_terms.py' -v
+      - name: Audit actual 47k+ source records and location overrides
+        run: python scripts/audit_issue8_remaining_terms.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: issue8-remaining-name-candidates
+          path: issue8_remaining_term_review/
+          if-no-files-found: error
