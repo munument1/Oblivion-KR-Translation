@@ -183,7 +183,7 @@ jobs:
           cd ..
           (cd dist && sha256sum -c Oblivion_Original_KR_Installer_v1.2.0.zip.sha256)
           gh release view v1.2.0 --json assets --jq '.assets[].name' | sort > before-assets.txt
-          test "$(wc -l < before-assets.txt)" -eq 10
+          test "$(wc -l < before-assets.txt)" -eq 8
           printf '%s\n' 'Oblivion_Original_KR_Installer_v1.2.0.zip' 'Oblivion_Original_KR_Installer_v1.2.0.zip.sha256' | sort > expected-changed.txt
           grep -Fxf expected-changed.txt before-assets.txt | sort | cmp - expected-changed.txt
       - name: Replace only the existing v1.2.0 installer and checksum
@@ -217,7 +217,7 @@ jobs:
           EOF
           fi
           gh release edit v1.2.0 --notes-file release-notes.txt
-          echo 'v1.2.0 same-tag installer refreshed; other 8 assets preserved.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'v1.2.0 same-tag installer refreshed; other 6 assets preserved.' >> "$GITHUB_STEP_SUMMARY"
 
   nexus:
     needs: publish
