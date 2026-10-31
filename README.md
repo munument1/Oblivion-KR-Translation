@@ -65,7 +65,7 @@ NorthernUI **Full**에서 기존 한글 패치의 검은 윤곽선이 없어져 
 - 일반 배포 `NorthernUI.dll` 기준 `OBSE\\plugins\\obCJK\\obCJK.ini`의 `[obCJK] NorthernUIEnable = 1`을 사용합니다. 값 2는 별도로 재컴파일한 메시징 지원 NorthernUI DLL용입니다.
 - `[UTF8]`의 `FontParam33_OutlineMode`부터 `FontParam37_OutlineMode`까지 모두 `2`(Outline), 각 `OutlineSize = 1`, `OutlineAlpha = 100`으로 설정합니다. 다른 글꼴 설정은 바꾸지 않습니다.
 - 모드 관리자를 사용할 때는 **실제 적용되는 최종 obCJK.ini**를 확인하고, 기존 파일을 백업한 뒤 게임을 재시작하세요.
-- 이 변경은 기존에 배포된 **v1.2.0 설치기 ZIP을 소급 수정하지 않습니다.** 신규 설치기 배포 전에는 해당 설정을 직접 변경해 확인해야 합니다.
+- **v1.2.0 동일 버전 재배포 완료(2026-10-31):** GitHub 설치기 ZIP과 체크섬 및 Nexus 본편 설치기 파일을 갱신했습니다. 이전에 내려받은 v1.2.0 ZIP은 자동 갱신되지 않으므로 **다시 다운로드**해 새 출력 폴더에 한글 모드를 재생성하세요. UOP/USIP/UODP 배포 파일은 변경하지 않았습니다.
 
 정확한 슬롯 목록과 공식/수정 NorthernUI DLL의 차이는 [글꼴 슬롯 안내](docs/obcjk/font_slots_guide.md)를 참고하세요.
 
