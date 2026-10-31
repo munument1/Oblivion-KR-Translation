@@ -106,7 +106,7 @@ def load_text_forwarding(root: Path):
                             if x.source == owner and (x.editor_id or b'') == key[4]
                             and x.occurrence == int(row['base_occurrence'])
                             and source_sha(x.english) == row['base_source_sha256']]
-                if len(reviewed) != 1:
+                if not reviewed:
                     raise ValueError(f'Missing corrected source for patch target: {key}')
                 old_base, corrected = items[-1].korean, reviewed[-1].korean
                 if target == old_base:
