@@ -37,7 +37,7 @@ jobs:
           p = Path("assets/obcjk_fonts/obCJK.ini")
           original = p.read_bytes()
           def gitblob(b):
-              return sha1(b"blob " + str(len(b)).encode() + b"\\0" + b).hexdigest()
+              return sha1(b"blob " + str(len(b)).encode() + bytes([0]) + b).hexdigest()
           assert gitblob(original) == "86d43eb345fb1b81c26ea43b393c1a06d63f130f", "Original v1.2.0 preset changed"
           patched = original
           changes = {b"NorthernUIEnable = 2": b"NorthernUIEnable = 1"}
