@@ -1,13 +1,13 @@
-# Oblivion Original 한국어 번역 v1.1.8
+# Oblivion Original 한국어 번역 v1.1.9
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
 
-[v1.1.8 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.8)는 움바카노 대사·대학 출입문 안내·공개 알림을 수정하고, 비공식 패치에 남아 있던 이전 번역을 최신 본편 기준으로 갱신합니다. UOP 3.5.9a-KR1.11 / USIP 1.6.2-KR1.8 / UODP v27-KR1.10의 대사·일지·서적·장소명 등 349개 필드를 보완했습니다. 비공식 패치의 실제 내용 변경과 기존 모피·서적·철문·성소 메시지 수정은 유지합니다.
+[v1.1.9 설치기](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.1.9)는 이슈 #6의 아레나 계급·대사·이름·채집 재료 표기를 통일하고, 책·상점 전단에서 글자로 보이던 줄바꿈 태그를 보정합니다. 별도 한국어판 UOP 3.5.9a-KR1.12 / USIP 1.6.2-KR1.9의 설정 두루마리 영문 메뉴도 교정했으며, UODP v27-KR1.10은 기존 배포본을 유지합니다. 기존 모피·서적·철문·성소 메시지 수정과 이전 번역은 보존합니다.
 
 ## 설치
 
 1. MO2를 준비하고 [xOBSE](https://www.nexusmods.com/oblivion/mods/37952)와 [obCJK](https://www.nexusmods.com/oblivion/mods/56434) **20261003 이상**을 별도로 설치합니다.
-2. 제공받거나 직접 빌드한 v1.1.8 설치기 ZIP의 전체 압축을 풉니다.
+2. 제공받거나 직접 빌드한 v1.1.9 설치기 ZIP의 전체 압축을 풉니다.
 3. `install.bat`을 실행하고 원본 게임의 **Data 폴더**를 지정합니다. Python은 필요하지 않습니다.
 4. 생성된 `output\Oblivion_KR_Mod` 폴더를 MO2에 모드로 넣고 활성화합니다.
 5. MO2 왼쪽 목록에서 obCJK보다 아래에 두고, 기존 바이트 방식 한글 패치와 시험판 번역 모드는 끕니다.
@@ -16,6 +16,8 @@
 설치기는 원본 게임 Data를 읽고 별도 번역 모드 폴더를 만듭니다. 여기에 ESM/ESP, 메뉴 문자열, 수정된 `OBSE\plugins\obCJK.dll`과 `OBSE\plugins\obCJK\obCJK.ini`가 들어갑니다. 인트로·엔딩 한국어 자막 영상은 설치기와 분리해 Nexus에서 별도 배포합니다. 프로필과 세이브는 생성하거나 포함하지 않습니다.
 
 v1.1.8 설치기에는 일부 모드의 한글 물음표와 능력치 이름 끝 글자 잘림을 수정한 **비공식 obCJK 임시 해결본 2**를 포함합니다. obCJK 원제작자는 AophMiSaki이며 공식 업데이트가 아닙니다. 생성한 번역 모드의 DLL과 INI가 기존 obCJK보다 우선하도록 두고, 이전 별도 임시 해결본 모드는 끄세요. `XOBSEStringUtf8Enable = 1`은 기본 적용됩니다. 확인된 xOBSE 22.13 빌드에서만 보정이 작동하며, Ultimate Leveling 알림·능력치 이름의 정상 표시는 게임에서 확인했습니다. 저장·재로드와 장시간 플레이는 미검증입니다. 출처·수정 소스와 검증 정보는 설치기 ZIP의 `obcjk_runtime`에서 확인할 수 있습니다.
+
+xOBSE 업데이트 뒤 일부 한글이 `?`로 표시되면 [obCJK Nexus 파일 탭](https://www.nexusmods.com/oblivion/mods/56434?tab=files)의 **Optional DLL (2026-10-29)**을 별도로 설치해 보세요. 이 DLL은 xOBSE의 CJK/UTF-8 문자열 처리 문제를 수정하기 위해 배포된 별도 xOBSE 플러그인이며, 이슈 #6의 제보자는 설치 후 증상이 해결됐다고 확인했습니다. obCJK 본체 `obCJK.dll`과 구별되는 파일이므로 MO2에서 해당 플러그인이 실제 활성화되었는지 확인하세요.
 
 기존 설치기와 같이 문서 폴더의 `My Games\Oblivion\Oblivion.ini`를 자동으로 찾습니다. 찾은 기존 파일에서 글꼴 경로만 복원하고 최초 변경 전 파일을 백업합니다. INI 주소 입력 단계는 없습니다. INI가 없으면 새 파일을 만들지 않습니다.
 

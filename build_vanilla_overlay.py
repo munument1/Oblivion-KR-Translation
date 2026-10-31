@@ -20,6 +20,8 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
+from issue6_book_markup_fix import correct_selected_book, load_manifest as load_issue6_book_manifest
+
 from build_video_subtitles import build_videos
 
 HERE = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
@@ -451,6 +453,11 @@ def patch_record(data: bytes, filename: str, record_type: bytes, formid: int,
                 output.append(original)
                 continue
         replacement = replacements.pop()
+        if (utf8_untranslated and filename == MASTER and record_type == b"BOOK"
+                and field == b"DESC"):
+            replacement = correct_selected_book(
+                filename, formid, editor_id, value, replacement,
+                load_issue6_book_manifest())
         if replacement == value:
             output.append(original)
             continue

@@ -6,12 +6,12 @@ on:
       tag:
         description: Published GitHub release tag
         required: true
-        default: v1.1.5
+        default: v1.1.9
         type: string
       changelog:
         description: Nexus changelog for this version
         required: true
-        default: '루시엔의 오계명 대사, 생귄 퀘스트 로그, 졸링 대사와 오웬의 싸움꾼 표현을 교정했습니다. 주요 길드 계급명 누락 20필드와 쉬버링 아일즈 궁정 계급명 7필드를 보완하고 마법사 길드 실내 지명 2곳을 수정했습니다. 새 설치기로 번역 모드를 다시 생성하고 UOP/USIP/UODP 한국어 ESP도 갱신하세요.'
+        default: '이슈 #6: 루시엔 대사 어투, 아레나 계급명, 마법사 길드 명칭, 라셰다 이름, 채집 재료 표기를 수정하고 책·상점 전단의 줄바꿈 태그를 보정했습니다. xOBSE 22.14 이후 한글 물음표 현상은 obCJK 2026-10-29 Optional DLL을 별도로 설치하면 해결됩니다. 새 설치기로 본편 번역 모드를 재생성하고 UOP KR1.12·USIP KR1.9를 함께 갱신하세요. MOO 수배서는 수정하지 않았습니다.'
         type: string
 
 permissions:
