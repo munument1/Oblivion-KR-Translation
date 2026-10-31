@@ -53,7 +53,7 @@ class ObCJKRuntimeTests(unittest.TestCase):
             exe.write_bytes(b'MZ test packaging fixture')
             output = root / 'installer.zip'
             with redirect_stdout(io.StringIO()):
-                package(exe, output)
+                package(exe, output, version='1.1.9')
             with ZipFile(output) as archive:
                 manifest = json.loads(archive.read('obcjk_runtime/manifest.json'))
                 self.assertEqual(manifest['sha256'], VERIFIED_SHA256)

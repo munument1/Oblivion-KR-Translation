@@ -1,0 +1,31 @@
+name: Installer explicit version guard
+
+on:
+  pull_request:
+    paths:
+      - 'package_obcjk_installer.py'
+      - 'tests/test_installer_explicit_version.py'
+      - '.github/workflows/installer-explicit-version.yml'
+  push:
+    paths:
+      - 'package_obcjk_installer.py'
+      - 'tests/test_installer_explicit_version.py'
+      - '.github/workflows/installer-explicit-version.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Explicit version safety test
+        run: python -m unittest discover -s tests -p 'test_installer_explicit_version.py' -v
+      - name: Existing regression suite
+        run: python -m unittest discover -s tests -q

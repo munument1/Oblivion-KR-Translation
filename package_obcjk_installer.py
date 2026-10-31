@@ -10,7 +10,7 @@ from obcjk_runtime import BUNDLE as RUNTIME_BUNDLE, bundle_manifest as runtime_m
 ROOT = Path(__file__).resolve().parent
 
 
-def package(exe, output, version='1.1.7'):
+def package(exe, output, version):
     bundle_manifest()
     runtime_manifest()
     exe, output = Path(exe), Path(output)
@@ -48,6 +48,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--exe', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--version', default='1.1.7')
+    parser.add_argument('--version', required=True, help='명시적인 릴리즈 버전 (예: 1.1.10)')
     args = parser.parse_args()
     package(args.exe, args.output, args.version)
