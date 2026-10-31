@@ -1,0 +1,35 @@
+name: Issue 8 Reporter Terminology QA
+
+on:
+  pull_request:
+    paths:
+      - 'issue8_reporter_term_patch.py'
+      - 'canonical_locations_v2.csv'
+      - 'build_obcjk_release.py'
+      - 'tests/test_issue8_reporter_terms.py'
+      - '.github/workflows/issue8-reporter-terminology.yml'
+  push:
+    paths:
+      - 'issue8_reporter_term_patch.py'
+      - 'canonical_locations_v2.csv'
+      - 'build_obcjk_release.py'
+      - 'tests/test_issue8_reporter_terms.py'
+      - '.github/workflows/issue8-reporter-terminology.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  terminology:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate real canonical and location records
+        run: python -m unittest discover -s tests -p 'test_issue8_reporter_terms.py' -v
+      - name: Full translation regression
+        run: python -m unittest discover -s tests -q
