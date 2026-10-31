@@ -57,6 +57,18 @@ v1.1.3의 경갑 오역과 v1.1.4의 성소 메시지 수정 및 이전 버전�
 
 본명조 Regular/Medium과 이롭게바탕체를 현재 Windows 사용자에게 등록합니다. 관리자 권한은 필요하지 않습니다. OFL 원문은 설치기 ZIP의 `licenses`, 출처와 해시는 `font_sources.json`에 있습니다. [슬롯별 글꼴 안내](https://github.com/munument1/-KR-Oblivion-Translation/blob/main/docs/obcjk/font_slots_guide.md)를 참고하세요.
 
+
+### NorthernUI Full 글자 윤곽선
+
+NorthernUI **Full**에서 기존 한글 패치의 검은 윤곽선이 없어져 흰색·회색 글자가 잘 보이지 않는 문제를 완화하기 위해, 2026-10-31 **소스 프리셋**에서 NorthernUI 전용 슬롯 33~37에 1px 검은 윤곽선을 설정했습니다. 기존 바닐라 자막/HUD 슬롯 2의 2px 윤곽선은 유지합니다. 실제 Full/Away 게임 화면 검증은 아직 완료되지 않았습니다.
+
+- 일반 배포 `NorthernUI.dll` 기준 `OBSE\\plugins\\obCJK\\obCJK.ini`의 `[obCJK] NorthernUIEnable = 1`을 사용합니다. 값 2는 별도로 재컴파일한 메시징 지원 NorthernUI DLL용입니다.
+- `[UTF8]`의 `FontParam33_OutlineMode`부터 `FontParam37_OutlineMode`까지 모두 `2`(Outline), 각 `OutlineSize = 1`, `OutlineAlpha = 100`으로 설정합니다. 다른 글꼴 설정은 바꾸지 않습니다.
+- 모드 관리자를 사용할 때는 **실제 적용되는 최종 obCJK.ini**를 확인하고, 기존 파일을 백업한 뒤 게임을 재시작하세요.
+- 이 변경은 기존에 배포된 **v1.2.0 설치기 ZIP을 소급 수정하지 않습니다.** 신규 설치기 배포 전에는 해당 설정을 직접 변경해 확인해야 합니다.
+
+정확한 슬롯 목록과 공식/수정 NorthernUI DLL의 차이는 [글꼴 슬롯 안내](docs/obcjk/font_slots_guide.md)를 참고하세요.
+
 ## 언오피셜 패치
 
 GitHub 설치기는 본편·공식 DLC용입니다. Nexus용 언오피셜 번역은 세 ZIP으로 따로 제공합니다.
