@@ -6,6 +6,7 @@ on:
       - 'scripts/audit_issue8_unofficial_overlap.py'
       - 'scripts/audit_issue8_unofficial_locations.py'
       - 'scripts/refresh_unofficial_issue8_v120.py'
+      - 'unofficial_text_forwarding.py'
       - '.github/workflows/issue8-unofficial-overlap.yml'
   pull_request:
     paths:
@@ -46,6 +47,8 @@ jobs:
       # Source-only baseline for changed world/cell/map names.
       - name: Read pinned v1.1.9 location baseline
         run: git show v1.1.9:canonical_locations_v2.csv > previous_locations.csv
+      - name: Verify source forwarding with all existing translation and patch checks
+        run: python -m unittest discover -s tests -q
       - name: Analyze exact original-FormID and subrecord override collisions
         run: |
           python scripts/audit_issue8_unofficial_overlap.py --release-dir released --outdir issue8_unofficial_overlap
