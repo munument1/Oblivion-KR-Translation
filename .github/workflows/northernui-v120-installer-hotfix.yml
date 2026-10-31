@@ -1,0 +1,254 @@
+name: v1.2.0 NorthernUI Full outline-only installer refresh
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/northernui-v120-installer-hotfix.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: oblivion-kr-v120-northernui-hotfix
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out the original v1.2.0 release sources
+        uses: actions/checkout@v4
+        with:
+          ref: v1.2.0
+          persist-credentials: false
+      - name: Install Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Change exactly six obCJK preset values, anchored to v1.2.0
+        shell: pwsh
+        run: |
+          @'
+          from pathlib import Path
+          from hashlib import sha1
+          p = Path("assets/obcjk_fonts/obCJK.ini")
+          original = p.read_bytes()
+          def gitblob(b):
+              return sha1(b"blob " + str(len(b)).encode() + b"\\0" + b).hexdigest()
+          assert gitblob(original) == "86d43eb345fb1b81c26ea43b393c1a06d63f130f", "Original v1.2.0 preset changed"
+          patched = original
+          changes = {b"NorthernUIEnable = 2": b"NorthernUIEnable = 1"}
+          changes.update({
+              f"FontParam{slot}_OutlineMode = 0".encode(): f"FontParam{slot}_OutlineMode = 2".encode()
+              for slot in range(33, 38)
+          })
+          for old, new in changes.items():
+              assert patched.count(old) == 1, f"Missing/duplicate expected key: {old!r}"
+              patched = patched.replace(old, new, 1)
+          assert len(patched) == len(original), "Unexpected preset length"
+          assert gitblob(patched) == "fed5233dad8d063c141aaeb03ffa39a501e15eaa", "Non-target changes found"
+          p.write_bytes(patched)
+          print("PASS: exactly six anchored v1.2.0 preset values changed")
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $changed = @(git diff --name-only)
+          if ($changed.Count -ne 1 -or $changed[0] -ne 'assets/obcjk_fonts/obCJK.ini') {
+            throw "Only the obCJK.ini preset may change in v1.2.0"
+          }
+      - name: Full original regression suite and Korean font regression
+        shell: pwsh
+        run: |
+          python -m unittest discover -s tests -q
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @'
+          import configparser
+          from pathlib import Path
+          from obcjk_fonts import preset_ini
+          b = Path("assets/obcjk_fonts/obCJK.ini").read_bytes()
+          c = configparser.ConfigParser(interpolation=None)
+          c.read_string(b.decode("utf-8-sig"))
+          assert preset_ini() == b
+          assert c.getint("obCJK", "NorthernUIEnable") == 1
+          assert c.get("obCJK", "ActiveCodePage") == "UTF8"
+          assert c.getint("obCJK", "AsciiRenderEnable") == 0
+          for slot in range(33, 38):
+              assert [c.getint("UTF8", f"FontParam{slot}_Outline{suffix}")
+                      for suffix in ("Mode", "Size", "Alpha")] == [2, 1, 100]
+          for slot in (1, 3, 5, 7, 8):
+              assert c.getint("UTF8", f"FontParam{slot}_OutlineMode") == 0
+          assert [c.getint("UTF8", f"FontParam2_Outline{suffix}")
+                  for suffix in ("Mode", "Size", "Alpha")] == [2, 2, 100]
+          print("PASS: installer preset parity, NorthernUI 33-37 and vanilla slots unchanged")
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Build original version 1.2.0 Windows installer with corrected preset
+        shell: pwsh
+        run: |
+          python -m pip install pyinstaller
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -m PyInstaller --noconfirm --clean OblivionKRBuilder.spec
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @'
+          from PyInstaller.archive.readers import CArchiveReader
+          from hashlib import sha1
+          archive = CArchiveReader("dist/OblivionKRBuilder.exe")
+          pyz = archive.open_embedded_archive("PYZ.pyz")
+          modules = ("claude_issue8_crate", "claude_issue8_amber",
+                     "issue8_reporter_term_patch", "issue8_remaining_term_patch",
+                     "issue8_context_verified_patch", "issue8_cupboard_patch",
+                     "issue8_glossary_exceptions")
+          assert not [m for m in modules if m not in pyz.toc]
+          for item in ("canonical_translation_v2.csv", "canonical_locations_v2.csv",
+                       "canonical_book_title_overrides_v1.csv",
+                       "assets/obcjk_fonts/obCJK.ini"):
+              assert item in archive.toc, f"Missing bundled input: {item}"
+          print("PASS: frozen installer includes all original translation corrections and preset")
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & dist/OblivionKRBuilder.exe --help
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -c "import tempfile,subprocess,json; t=tempfile.TemporaryDirectory(); r=json.loads(subprocess.check_output(['dist/OblivionKRBuilder.exe','--diagnose-display','--data-dir',t.name])); assert r['read_only'] and r['inspected_plugins']==0; t.cleanup()"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.2.0.zip --version 1.2.0
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @'
+          import hashlib
+          from pathlib import Path
+          from zipfile import ZipFile
+          p = Path("dist/Oblivion_Original_KR_Installer_v1.2.0.zip")
+          check = p.with_suffix(".zip.sha256").read_text(encoding="ascii").split()[0]
+          assert hashlib.sha256(p.read_bytes()).hexdigest() == check
+          with ZipFile(p) as z:
+              assert z.testzip() is None
+              assert {"OblivionKRBuilder.exe", "CHANGELOG.md"}.issubset(z.namelist())
+              assert b"v1.2.0" in z.read("CHANGELOG.md")
+              assert not any(Path(n).suffix.lower() in {".esm", ".esp", ".dll"} for n in z.namelist())
+          print("PASS: v1.2.0 ZIP SHA-256, archive integrity, original changelog")
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v1.2.0-northernui-outline-only-installer
+          path: |
+            dist/Oblivion_Original_KR_Installer_v1.2.0.zip
+            dist/Oblivion_Original_KR_Installer_v1.2.0.zip.sha256
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: v1.2.0-northernui-outline-only-installer
+          path: dist
+      - name: Verify existing v1.2.0 release and back up the old installer
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          test "$(gh release view v1.2.0 --json tagName --jq .tagName)" = 'v1.2.0'
+          mkdir previous
+          gh release download v1.2.0 --dir previous \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip' \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip.sha256'
+          cd previous
+          sha256sum -c Oblivion_Original_KR_Installer_v1.2.0.zip.sha256
+          printf '%s\n' \
+            'ef2e541c0150f7c438e779ba8d38a5b38f9eef31948566ec32162de54d4c6c3e  Oblivion_Original_KR_Installer_v1.2.0.zip' | sha256sum -c -
+          cd ..
+          (cd dist && sha256sum -c Oblivion_Original_KR_Installer_v1.2.0.zip.sha256)
+          gh release view v1.2.0 --json assets --jq '.assets[].name' | sort > before-assets.txt
+          test "$(wc -l < before-assets.txt)" -eq 10
+          printf '%s\n' 'Oblivion_Original_KR_Installer_v1.2.0.zip' 'Oblivion_Original_KR_Installer_v1.2.0.zip.sha256' | sort > expected-changed.txt
+          grep -Fxf expected-changed.txt before-assets.txt | sort | cmp - expected-changed.txt
+      - name: Replace only the existing v1.2.0 installer and checksum
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh release upload v1.2.0 \
+            dist/Oblivion_Original_KR_Installer_v1.2.0.zip \
+            dist/Oblivion_Original_KR_Installer_v1.2.0.zip.sha256 \
+            --clobber
+          gh release view v1.2.0 --json assets --jq '.assets[].name' | sort > after-assets.txt
+          cmp before-assets.txt after-assets.txt
+          mkdir verify
+          gh release download v1.2.0 --dir verify \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip' \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip.sha256'
+          (cd verify && sha256sum -c Oblivion_Original_KR_Installer_v1.2.0.zip.sha256)
+          cmp dist/Oblivion_Original_KR_Installer_v1.2.0.zip verify/Oblivion_Original_KR_Installer_v1.2.0.zip
+          gh release view v1.2.0 --json body --jq .body > release-notes.txt
+          if ! grep -Fq 'NorthernUI Full 표시 보정 (v1.2.0 동일 버전 재배포)' release-notes.txt; then
+            cat >> release-notes.txt <<'EOF'
+
+          ## NorthernUI Full 표시 보정 (v1.2.0 동일 버전 재배포)
+          - 기존 v1.2.0 설치기만 재빌드했습니다. 기존 릴리즈 태그와 번역 원문·레코드, UOP·USIP·UODP ZIP, 게임 파일은 변경하지 않았습니다.
+          - obCJK 원본 NorthernUI DLL용 호환 모드 1 적용 및 NorthernUI 폰트 슬롯 33–37에 검은 윤곽선 1px/100% 적용. 기존 바닐라 대사·HUD 슬롯 2(2px)는 유지합니다.
+          - 정적 검증과 Windows 설치기 검사를 완료했습니다. NorthernUI Full/Away 실제 화면 비교는 미검증입니다.
+          - 이전에 v1.2.0 설치기를 내려받은 분은 같은 버전의 새 ZIP을 다시 받아 기존 한글 모드 출력 폴더를 새로 생성해야 변경된 폰트 설정이 적용됩니다.
+          EOF
+          fi
+          gh release edit v1.2.0 --notes-file release-notes.txt
+          echo 'v1.2.0 same-tag installer refreshed; other 8 assets preserved.' >> "$GITHUB_STEP_SUMMARY"
+
+  nexus:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Download and verify v1.2.0 refreshed installer
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh release download v1.2.0 \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip' \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip.sha256'
+          sha256sum -c Oblivion_Original_KR_Installer_v1.2.0.zip.sha256
+      - name: Update existing Nexus v1.2.0 installer without bumping version
+        id: upload
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: '8110293'
+          mod_id: '433791753584'
+          filename: Oblivion_Original_KR_Installer_v1.2.0.zip
+          version: '1.2.0'
+          display_name: Oblivion Original KR Installer
+          description: 'v1.2.0 동일 버전: NorthernUI Full 한글 글자 윤곽선 1px 적용 및 원본 NorthernUI.dll 호환 모드 수정. 번역 데이터와 UOP/USIP/UODP는 이전 v1.2.0과 동일. 기존 설치기 사용자도 다시 받아 모드를 재생성해야 합니다. 실게임 검증은 제외.'
+          changelog: 'v1.2.0 NorthernUI Full hotfix (2026-10-31): 원본 v1.2.0 대비 obCJK.ini 설정 6개만 변경. 기존 번역/언오피셜 패치/태그 그대로. 정적·설치기 검증 통과, 실게임 미검증.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Confirm same Nexus file ID and version
+        shell: bash
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.upload.outputs.version_id }}
+        run: |
+          set -euo pipefail
+          [[ "$VERSION_ID" =~ ^[0-9]+$ ]]
+          curl --fail-with-body --silent --show-error --retry 2 \
+            --header "apikey: $NEXUS_API_KEY" \
+            "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" \
+            --output uploaded.json
+          jq -e '.data.version == "1.2.0" and (.data.file.id | tostring) == "8110293"' uploaded.json
+          echo 'Nexus v1.2.0 same-file update verified' >> "$GITHUB_STEP_SUMMARY"
