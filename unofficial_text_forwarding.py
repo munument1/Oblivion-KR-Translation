@@ -18,7 +18,23 @@ def main_translations(root):
         extra_paths=(root / 'canonical_ui_supplement_v1.csv',
                      root / 'canonical_nexus_56688_fur_v1.csv'),
         encoded_column='obcjk_utf8_hex')
+    # Mirror exactly the v1.2.0 main OBCJK build order, otherwise UOP/USIP/UODP
+    # reintroduce obsolete names when their source records override the game.
+    from claude_issue8_crate import correct_crate_names
+    from claude_issue8_amber import correct_amber_equipment_names
+    from issue8_reporter_term_patch import correct_reporter_terms
+    from issue8_remaining_term_patch import correct_remaining_glossary_names
+    from issue8_context_verified_patch import correct_context_verified_names
+    from issue8_cupboard_patch import correct_cupboard_names
+    from issue8_glossary_exceptions import correct_glossary_exceptions
+    correct_crate_names(table)
+    correct_amber_equipment_names(table)
     apply_book_title_overrides(table, root / 'canonical_book_title_overrides_v1.csv')
+    correct_reporter_terms(table, root / 'canonical_translation_v2.csv')
+    correct_remaining_glossary_names(table, root / 'canonical_translation_v2.csv')
+    correct_context_verified_names(table, root / 'canonical_translation_v2.csv')
+    correct_cupboard_names(table, root / 'canonical_translation_v2.csv')
+    correct_glossary_exceptions(table, root / 'canonical_translation_v2.csv')
     with (root / 'canonical_locations_v2.csv').open(encoding='utf-8-sig', newline='') as stream:
         for row in csv.DictReader(stream):
             item = Translation(row['effective_source'], row['record_type'].encode(),
