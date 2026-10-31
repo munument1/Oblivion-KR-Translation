@@ -36,6 +36,8 @@ RULES = (
      "Mysterium Xarxes", "자서스 신비", "작시스의 신비", 1),
     ("knights_of_nine_book_body", "Knights.esp", b"BOOK", 0x01000ED2, b"DESC",
      "The Knights of the Nine", "나인 디바인 기사단", "나인의 기사단", 13),
+    ("crusader_relics_book_body", "Knights.esp", b"BOOK", 0x01000ED2, b"DESC",
+     "Crusader", "성전사의", "성기사의", 3),
     ("knights_of_nine_quest_reference", "Knights.esp", b"QUST", 0x01002D3F, b"CNAM",
      "former Knights of the Nine", "전 성기사 기사들의 유령", "나인의 기사단 선대 기사들의 유령", 1),
     ("mankar_quest_reference", "Oblivion.esm", b"QUST", 0x0001E728, b"CNAM",
