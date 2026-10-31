@@ -1,0 +1,35 @@
+name: Issue 8 Cupboard Semantic QA
+
+on:
+  pull_request:
+    paths:
+      - 'issue8_cupboard_patch.py'
+      - 'docs/v2_review/OBLIVION_GLOSSARY_V2_ACTIVE.csv'
+      - 'build_obcjk_release.py'
+      - 'tests/test_issue8_cupboard_semantics.py'
+      - '.github/workflows/issue8-cupboard-semantics.yml'
+  push:
+    paths:
+      - 'issue8_cupboard_patch.py'
+      - 'docs/v2_review/OBLIVION_GLOSSARY_V2_ACTIVE.csv'
+      - 'build_obcjk_release.py'
+      - 'tests/test_issue8_cupboard_semantics.py'
+      - '.github/workflows/issue8-cupboard-semantics.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Source-bound 51 Cupboard terms and protected shelves
+        run: python -m unittest discover -s tests -p 'test_issue8_cupboard_semantics.py' -v
+      - name: Whole repository Python regression
+        run: python -m unittest discover -s tests -q
