@@ -20,6 +20,8 @@ import zlib
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from issue6_book_markup_fix import correct_selected_book, load_manifest as load_issue6_book_manifest
+
 from build_vanilla_overlay import (Translation, decode_english, encode_subrecord, load_quest_loading_translations,
                                    load_translations, parse_subrecords, sha256_file,
                                    structure_signature)
@@ -344,6 +346,11 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
                 replacement = aligned
                 counts["canonical_text_forwarded"] += 1
 
+            if key[0] == b"BOOK" and field == b"DESC":
+                replacement = correct_selected_book(
+                    original.name, key[1], old_editor, old, replacement,
+                    load_issue6_book_manifest())
+
             # Reject catastrophic future truncation: BOOK/DESC cannot silently
             # become just the title, even when it is non-empty valid UTF-8.
             if key[0] == b"BOOK" and field == b"DESC" and replacement is not None:
@@ -559,6 +566,18 @@ def main():
                 temporary.replace(destination)
                 report[original.name]['shrine_messages'] = shrine_report
                 report[original.name]['output_sha256'] = shrine_report['output_sha256']
+            if original.name in ('Unofficial Oblivion Patch.esp',
+                                 'Unofficial Shivering Isles Patch.esp'):
+                # The patch configuration scroll is emitted by compiled SCPT
+                # menu literals, which normal text forwarding cannot reach.
+                # Translate only hash-pinned fixed-length literals, after the
+                # ordinary layout-and-script integrity audit has passed.
+                from issue6_unofficial_menu_scripts import build as build_menu_script
+                temporary = destination.with_suffix('.esp.menu-building')
+                menu_report = build_menu_script(destination, temporary, original.name)
+                temporary.replace(destination)
+                report[original.name]['menu_script_translation'] = menu_report
+                report[original.name]['output_sha256'] = menu_report['output_sha256']
             print(f"{original.name}: {applied} Korean fields; reviewed-base {counts['reviewed_base_translation']} (overrode prior KR {counts['reviewed_base_overrode_prior_kr']}), forwarded-base {counts['forwarded_base_translation']}; locations base {counts['canonical_base_location']} + direct {counts['canonical_direct_location']} + patch {counts['canonical_patch_location']}")
     (args.output / "release_audit.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 

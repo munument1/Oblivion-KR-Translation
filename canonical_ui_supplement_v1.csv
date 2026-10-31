@@ -137,10 +137,10 @@ Oblivion.esm,FACT,000299B9,MNAM,Pit Dog,투견,ed88aceab2ac00,ArenaCombatants,0
 Oblivion.esm,FACT,000299B9,FNAM,Pit Dog,투견,ed88aceab2ac00,ArenaCombatants,0
 Oblivion.esm,FACT,000299B9,MNAM,Brawler,싸움꾼,ec8bb8ec9b80eabebc00,ArenaCombatants,1
 Oblivion.esm,FACT,000299B9,FNAM,Brawler,싸움꾼,ec8bb8ec9b80eabebc00,ArenaCombatants,1
-Oblivion.esm,FACT,000299B9,MNAM,Bloodletter,블러드레터,ebb894eb9faceb939ceba088ed84b000,ArenaCombatants,2
-Oblivion.esm,FACT,000299B9,FNAM,Bloodletter,블러드레터,ebb894eb9faceb939ceba088ed84b000,ArenaCombatants,2
-Oblivion.esm,FACT,000299B9,MNAM,Myrmidon,미르미돈,ebafb8eba5b4ebafb8eb8f8800,ArenaCombatants,3
-Oblivion.esm,FACT,000299B9,FNAM,Myrmidon,미르미돈,ebafb8eba5b4ebafb8eb8f8800,ArenaCombatants,3
+Oblivion.esm,FACT,000299B9,MNAM,Bloodletter,유혈자,ec9ca0ed9888ec9e9000,ArenaCombatants,2
+Oblivion.esm,FACT,000299B9,FNAM,Bloodletter,유혈자,ec9ca0ed9888ec9e9000,ArenaCombatants,2
+Oblivion.esm,FACT,000299B9,MNAM,Myrmidon,용사,ec9aa9ec82ac00,ArenaCombatants,3
+Oblivion.esm,FACT,000299B9,FNAM,Myrmidon,용사,ec9aa9ec82ac00,ArenaCombatants,3
 Oblivion.esm,FACT,000299B9,MNAM,Warrior,전사,eca084ec82ac00,ArenaCombatants,4
 Oblivion.esm,FACT,000299B9,FNAM,Warrior,전사,eca084ec82ac00,ArenaCombatants,4
 Oblivion.esm,FACT,000299B9,MNAM,Gladiator,검투사,eab280ed88acec82ac00,ArenaCombatants,5

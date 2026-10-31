@@ -92,8 +92,8 @@ class UISupplementTests(unittest.TestCase):
         ranks = {
             0: ("Pit Dog", "투견"),
             1: ("Brawler", "싸움꾼"),
-            2: ("Bloodletter", "블러드레터"),
-            3: ("Myrmidon", "미르미돈"),
+            2: ("Bloodletter", "유혈자"),
+            3: ("Myrmidon", "용사"),
             4: ("Warrior", "전사"),
             5: ("Gladiator", "검투사"),
             6: ("Hero", "영웅"),

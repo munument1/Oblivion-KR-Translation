@@ -5,6 +5,7 @@ tables = [
     'canonical_nexus_56688_fur_v1.csv',
     'canonical_book_title_overrides_v1.csv',
     'canonical_locations_v2.csv',
+    'issue6_book_markup_manifest_v1.json',
     'menu_gmst_existing_105.csv',
     'menu_gmst_new_821.csv',
 ]
