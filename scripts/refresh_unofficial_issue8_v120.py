@@ -172,7 +172,7 @@ def refresh(release_dir,audit,outdir):
       "See validation.json for input/output hashes and record identities.\n")
   with ZipFile(output) as z:
    if z.testzip():raise ValueError("Corrupt output")
-   for name,file in new_esps.items():
+   for name in new_esps:
     if digest(z.read(name))!=zip_report["plugins"][name]["after_sha256"]:raise ValueError("ZIP ESP hash")
   final_hash=digest(output.read_bytes())
   output.with_suffix(".zip.sha256").write_text(f"{final_hash}  {output.name}\n",encoding="ascii")
