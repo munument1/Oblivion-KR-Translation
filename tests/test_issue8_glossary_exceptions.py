@@ -36,7 +36,7 @@ class GlossaryExceptionsTests(unittest.TestCase):
 
     def test_expected_counts_from_actual_original(self):
         self.assertEqual(self.out["terms"], EXPECTED)
-        self.assertEqual(sum(EXPECTED.values()), 25)
+        self.assertEqual(sum(EXPECTED.values()), 28)
         self.assertEqual(self.out["changed_rows"],12)
 
     def test_source_ids_and_unrelated_fields_untouched(self):
@@ -60,9 +60,11 @@ class GlossaryExceptionsTests(unittest.TestCase):
 
     def test_mysterium_name_and_mankar_in_journal(self):
         t=self.table[("Oblivion.esm",b"QUST",0x0001E728,b"CNAM")]
-        matches=[item for item in t if item.english.startswith("Mankar Camoran escaped to his realm of Paradise") and "Mysterium Xarxes" in item.english]
-        self.assertEqual(len(matches),1)
-        ko=matches[0].korean[:-1].decode("utf-8")
+        old_items=self.before[("Oblivion.esm",b"QUST",0x0001E728,b"CNAM")]
+        changed=[new for old,new in zip(old_items,t)
+                 if old.korean!=new.korean and "Mysterium Xarxes" in old.english]
+        self.assertEqual(len(changed),1)
+        ko=changed[0].korean[:-1].decode("utf-8")
         self.assertIn("작시스의 신비",ko)
         self.assertIn("맨카 캐모런",ko)
         self.assertNotIn("미스테리움 자르크시스",ko)
@@ -77,6 +79,8 @@ class GlossaryExceptionsTests(unittest.TestCase):
         text=knights[0].korean[:-1].decode("utf-8")
         self.assertEqual(text.count("나인 디바인 기사단"),0)
         self.assertGreaterEqual(text.count("나인의 기사단"),14)
+        self.assertNotIn("성전사의",text)
+        self.assertIn("성기사의 장갑",text)
 
     def test_empty_corpus_is_rejected(self):
         with self.assertRaisesRegex(ValueError,"source drift"):
