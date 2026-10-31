@@ -1,0 +1,221 @@
+name: Release v1.2.0 — Oblivion glossary correction and Nexus installer
+
+on:
+  pull_request:
+    paths:
+      - 'release_notes_v1.2.0.md'
+      - '.github/workflows/release-v1.2.0.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'release_notes_v1.2.0.md'
+      - '.github/workflows/release-v1.2.0.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: oblivion-kr-v1.2.0-release
+  cancel-in-progress: false
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: All Python translation and installer tests
+        run: python -m unittest discover -s tests -q
+      - name: Source-anchored 1.2.0 integrated translation dry-run
+        run: |
+          python scripts/qa_issue8_integrated_overlay.py --outdir issue8_integrated_qa
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('issue8_integrated_qa/ISSUE8_INTEGRATED_DATA_QA.json').read_text(encoding='utf-8'))
+          assert report['changed_distinct_records'] == 1486, report['changed_distinct_records']
+          assert report['steps']['book_title'] == 2, report['steps']
+          assert report['canonical_input_unchanged'] is True
+          assert report['original_formid_record_field_and_english_preserved'] is True
+          assert report['original_placeholders_markup_newlines_preserved'] is True
+          print('v1.2.0 data-stage pass: 1486 records, all source identities preserved')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v1.2.0-translation-data-provenance
+          path: issue8_integrated_qa/
+          if-no-files-found: error
+
+  installer:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Freeze corrected Windows builder
+        shell: pwsh
+        run: |
+          python -m pip install pyinstaller
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -m PyInstaller --noconfirm --clean OblivionKRBuilder.spec
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Validate all correction modules and frozen executable
+        shell: pwsh
+        run: |
+          @'
+          from PyInstaller.archive.readers import CArchiveReader
+          archive = CArchiveReader("dist/OblivionKRBuilder.exe")
+          pyz = archive.open_embedded_archive("PYZ.pyz")
+          modules = (
+              "claude_issue8_crate", "claude_issue8_amber",
+              "issue8_reporter_term_patch", "issue8_remaining_term_patch",
+              "issue8_context_verified_patch", "issue8_cupboard_patch",
+              "issue8_glossary_exceptions"
+          )
+          assert not [m for m in modules if m not in pyz.toc], "Missing issue #8 correction module"
+          for item in ("canonical_translation_v2.csv", "canonical_locations_v2.csv",
+                       "canonical_book_title_overrides_v1.csv"):
+              assert item in archive.toc, f"Missing source table {item}"
+          print("All source term patches and canonical tables are bundled")
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & dist/OblivionKRBuilder.exe --help
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -c "import tempfile,subprocess,json; t=tempfile.TemporaryDirectory(); r=json.loads(subprocess.check_output(['dist/OblivionKRBuilder.exe','--diagnose-display','--data-dir',t.name])); assert r['read_only'] and r['inspected_plugins']==0; t.cleanup()"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Build explicit v1.2.0 ZIP and SHA-256
+        shell: pwsh
+        run: |
+          python package_obcjk_installer.py --exe dist/OblivionKRBuilder.exe --output dist/Oblivion_Original_KR_Installer_v1.2.0.zip --version 1.2.0
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          @'
+          import hashlib
+          from pathlib import Path
+          from zipfile import ZipFile
+          zipfile = Path("dist/Oblivion_Original_KR_Installer_v1.2.0.zip")
+          checksum = zipfile.with_suffix(".zip.sha256").read_text(encoding="ascii").split()[0]
+          assert hashlib.sha256(zipfile.read_bytes()).hexdigest() == checksum
+          with ZipFile(zipfile) as archive:
+              assert archive.testzip() is None
+              names = set(archive.namelist())
+              assert "OblivionKRBuilder.exe" in names
+              assert "CHANGELOG.md" in names
+              assert b"v1.2.0" in archive.read("CHANGELOG.md")
+              assert not any(Path(name).suffix.lower() in {".esm", ".esp", ".dll"} for name in names)
+          print("v1.2.0 ZIP and checksum validated, no game binaries distributed")
+          '@ | python -
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-installer-v1.2.0
+          path: |
+            dist/Oblivion_Original_KR_Installer_v1.2.0.zip
+            dist/Oblivion_Original_KR_Installer_v1.2.0.zip.sha256
+          if-no-files-found: error
+
+  publish:
+    needs: [regression, installer]
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: windows-installer-v1.2.0
+          path: dist
+      - name: Verify pinned unchanged unofficial archives from v1.1.9
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release download v1.1.9 --dir dist \
+            --pattern 'UOP_*.zip*' --pattern 'USIP_*.zip*' --pattern 'UODP_*.zip*'
+          (
+            cd dist
+            sha256sum --check *.sha256
+            printf '%s\n' \
+              'ee4f6e8089d8410a3b9de5709bfed05022f4d81dcd6e5293ae1a6b91d506fd1c  UOP_KR_UTF8_obCJK_3.5.9a_KR1.12_20261031.zip' \
+              '5a13d90dcd2deb96060d1fd0fe55a316be6d47dc89dc712a1ed77e945b005723  USIP_KR_UTF8_obCJK_1.6.2_KR1.9_20261031.zip' \
+              '39ec7cd6ad8d0a83090b8fd6752d7d3fe7dd0378099969b227694d455eb65240  UODP_KR_UTF8_obCJK_v27_KR1.10_20261025.zip' | sha256sum -c -
+          )
+          test "$(find dist -maxdepth 1 -type f | wc -l)" -eq 8
+      - name: Publish v1.2.0 on verified main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v1.2.0 >/dev/null 2>&1; then
+            echo 'v1.2.0 already exists, refuse duplicate publication'
+            exit 1
+          fi
+          git fetch origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          gh release create v1.2.0 dist/* --target "$GITHUB_SHA" \
+            --title 'Oblivion Original 한국어 번역 v1.2.0' \
+            --notes-file release_notes_v1.2.0.md --latest
+          test "$(gh release view v1.2.0 --json assets --jq '.assets | length')" -eq 8
+          echo 'Published https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.2.0' >> "$GITHUB_STEP_SUMMARY"
+
+  nexus:
+    needs: publish
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Download and verify published v1.2.0 installer
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release download v1.2.0 \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip' \
+            --pattern 'Oblivion_Original_KR_Installer_v1.2.0.zip.sha256'
+          sha256sum --check Oblivion_Original_KR_Installer_v1.2.0.zip.sha256
+      - name: Update existing Nexus installer file to v1.2.0
+        id: upload
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: '8110293'
+          mod_id: '433791753584'
+          filename: Oblivion_Original_KR_Installer_v1.2.0.zip
+          version: '1.2.0'
+          display_name: Oblivion Original KR Installer
+          description: 'v1.2.0: 이슈 #8 용어집과 1,486개 원문 번역 레코드의 명칭을 통일했습니다. 체이딘할, 미식 던, 작시스의 신비, 나인의 기사단, 에일리드, 크루시블, 죠프리 등과 책·일지·장비명을 교정했습니다. Crate=상자, Cupboard=찬장, Amber=호박석. UOP KR1.12·USIP KR1.9·UODP KR1.10은 기존과 동일합니다. 새 설치기로 본편 번역 모드를 재생성하세요.'
+          changelog: 'v1.2.0 (2026-10-31): 이슈 #8 제보 기준 용어 통일, 1,486개 번역 레코드 교정, 지도·아이템·대사·일지·책 이름 정리. 원문·FormID·포맷·UTF-8 및 Windows 설치기 검사 통과. 실게임 테스트 제외. UOP/USIP/UODP 최신 한국어 ZIP은 종전 공개본 유지.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Verify Nexus file and version via API
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.upload.outputs.version_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$VERSION_ID" =~ ^[0-9]+$ ]]
+          curl --fail-with-body --silent --show-error --retry 2 \
+            --header "apikey: $NEXUS_API_KEY" \
+            "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" \
+            --output uploaded.json
+          jq -e '.data.version == "1.2.0" and (.data.file.id | tostring) == "8110293"' uploaded.json
+          printf 'Nexus 1.2.0 verified: https://www.nexusmods.com/oblivion/mods/56688?tab=files (version_id=%s)\n' "$VERSION_ID" >> "$GITHUB_STEP_SUMMARY"
