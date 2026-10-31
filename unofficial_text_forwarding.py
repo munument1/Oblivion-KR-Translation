@@ -13,12 +13,28 @@ from book_title_overrides import apply_book_title_overrides
 from unofficial_target_variants import load_variants, apply_variant
 
 
-def main_translations(root):
+def main_translations(root, *, include_issue8=False):
     table = load_translations(root / 'canonical_translation_v2.csv',
         extra_paths=(root / 'canonical_ui_supplement_v1.csv',
                      root / 'canonical_nexus_56688_fur_v1.csv'),
         encoded_column='obcjk_utf8_hex')
+    if include_issue8:
+        from claude_issue8_crate import correct_crate_names
+        from claude_issue8_amber import correct_amber_equipment_names
+        correct_crate_names(table)
+        correct_amber_equipment_names(table)
     apply_book_title_overrides(table, root / 'canonical_book_title_overrides_v1.csv')
+    if include_issue8:
+        from issue8_reporter_term_patch import correct_reporter_terms
+        from issue8_remaining_term_patch import correct_remaining_glossary_names
+        from issue8_context_verified_patch import correct_context_verified_names
+        from issue8_cupboard_patch import correct_cupboard_names
+        from issue8_glossary_exceptions import correct_glossary_exceptions
+        correct_reporter_terms(table, root / 'canonical_translation_v2.csv')
+        correct_remaining_glossary_names(table, root / 'canonical_translation_v2.csv')
+        correct_context_verified_names(table, root / 'canonical_translation_v2.csv')
+        correct_cupboard_names(table, root / 'canonical_translation_v2.csv')
+        correct_glossary_exceptions(table, root / 'canonical_translation_v2.csv')
     with (root / 'canonical_locations_v2.csv').open(encoding='utf-8-sig', newline='') as stream:
         for row in csv.DictReader(stream):
             item = Translation(row['effective_source'], row['record_type'].encode(),
@@ -36,6 +52,18 @@ def source_sha(text):
 
 def load_text_forwarding(root: Path):
     table = main_translations(root)
+    current = main_translations(root, include_issue8=True)
+    # Correct reviewed variant outputs AFTER old-language replacements are
+    # applied. Applying glossary fixes before apply_variant invalidates its
+    # pinned patch-specific old-wording checks and can delete patch repairs.
+    context = {
+        ("Unofficial Oblivion Patch.esp", b"QUST", 0x0001E72D, b"CNAM"): ("미씩 던", "미식 던"),
+        ("Unofficial Oblivion Patch.esp", b"BOOK", 0x00024549, b"DESC"): ("셰이딘홀", "체이딘할"),
+        ("Unofficial Oblivion Patch.esp", b"BOOK", 0x00024561, b"DESC"): ("셰이딘홀", "체이딘할"),
+        ("Unofficial Oblivion Patch.esp", b"INFO", 0x0002B09F, b"NAM1"): ("아일레이드", "에일리드"),
+        ("Unofficial Oblivion Patch.esp", b"QUST", 0x00036337, b"CNAM"): ("쉐이딘홀", "체이딘할"),
+        ("Unofficial Shivering Isles Patch.esp", b"BOOK", 0x0007F3E7, b"DESC"): ("약탈자", "습격자"),
+    }
     variants = load_variants(root)
     patch_rows = {}
     for name in ('canonical_unofficial_translation_v2.csv', 'canonical_unofficial_locations_v2.csv', 'canonical_locations_v2.csv', 'unofficial_extra_sources_v1.csv'):
@@ -73,6 +101,29 @@ def load_text_forwarding(root: Path):
                 if variant_target is not None:
                     target = variant_target
                     policy = 'forward'
+            if policy == 'forward':
+                reviewed = [x for x in current.get((owner, key[1], base_fid, key[3]), ())
+                            if x.source == owner and (x.editor_id or b'') == key[4]
+                            and x.occurrence == int(row['base_occurrence'])
+                            and source_sha(x.english) == row['base_source_sha256']]
+                if not reviewed:
+                    raise ValueError(f'Missing corrected source for patch target: {key}')
+                old_base, corrected = items[-1].korean, reviewed[-1].korean
+                if target == old_base:
+                    target = corrected
+                elif corrected != old_base:
+                    patch_context = context.get(key[:4])
+                    if patch_context:
+                        old_word, new_word = patch_context
+                        if old_word in target[:-1].decode('utf-8'):
+                            target = target[:-1].decode('utf-8').replace(old_word, new_word).encode('utf-8') + b'\0'
+                        # Deliberately abbreviated journal omits the city; do not restore omitted text.
+                    else:
+                        # A different reviewed translation may deliberately omit or
+                        # reword the mentioned name; do not force the main string.
+                        # The released-ESP compatibility audit handles exact overlap
+                        # records and preserves other reviewed patch-specific prose.
+                        pass
             result[key] = (owner, base_fid, row['patch_source_sha256'], target, policy)
     if variants:
         raise ValueError('Reviewed variants have no audited forwarding identity')

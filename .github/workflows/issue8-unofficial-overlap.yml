@@ -1,0 +1,69 @@
+name: Issue 8 v1.2.0 Unofficial Override Cross-Audit
+
+on:
+  push:
+    paths:
+      - 'scripts/audit_issue8_unofficial_overlap.py'
+      - 'scripts/audit_issue8_unofficial_locations.py'
+      - 'scripts/refresh_unofficial_issue8_v120.py'
+      - 'unofficial_text_forwarding.py'
+      - '.github/workflows/issue8-unofficial-overlap.yml'
+  pull_request:
+    paths:
+      - 'scripts/audit_issue8_unofficial_overlap.py'
+      - '.github/workflows/issue8-unofficial-overlap.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  overlap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download exact released UOP USIP UODP assets (no edits)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          mkdir released
+          gh release download v1.2.0 --dir released \
+            --pattern 'UOP_*zip' \
+            --pattern 'USIP_*zip' \
+            --pattern 'UODP_*zip'
+          printf '%s\n' \
+            'ee4f6e8089d8410a3b9de5709bfed05022f4d81dcd6e5293ae1a6b91d506fd1c  released/UOP_KR_UTF8_obCJK_3.5.9a_KR1.12_20261031.zip' \
+            '5a13d90dcd2deb96060d1fd0fe55a316be6d47dc89dc712a1ed77e945b005723  released/USIP_KR_UTF8_obCJK_1.6.2_KR1.9_20261031.zip' \
+            '39ec7cd6ad8d0a83090b8fd6752d7d3fe7dd0378099969b227694d455eb65240  released/UODP_KR_UTF8_obCJK_v27_KR1.10_20261025.zip' |
+            sha256sum -c -
+      # Source-only baseline for changed world/cell/map names.
+      - name: Read pinned v1.1.9 location baseline
+        run: git show v1.1.9:canonical_locations_v2.csv > previous_locations.csv
+      - name: Verify source forwarding with all existing translation and patch checks
+        run: python -m unittest discover -s tests -q
+      - name: Analyze exact original-FormID and subrecord override collisions
+        run: |
+          python scripts/audit_issue8_unofficial_overlap.py --release-dir released --outdir issue8_unofficial_overlap
+          python scripts/audit_issue8_unofficial_locations.py --baseline previous_locations.csv --released released --outdir issue8_unofficial_overlap
+      - name: Build unofficial patch compatibility ZIPs (no publish)
+        run: |
+          python scripts/refresh_unofficial_issue8_v120.py --release-dir released --audit issue8_unofficial_overlap --outdir unofficial_issue8_updated
+          (cd unofficial_issue8_updated && sha256sum -c *.zip.sha256)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: issue8-unofficial-fixed-ESP-qa-only
+          path: unofficial_issue8_updated/
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: issue8-v120-unofficial-override-audit
+          path: issue8_unofficial_overlap/
+          if-no-files-found: error
