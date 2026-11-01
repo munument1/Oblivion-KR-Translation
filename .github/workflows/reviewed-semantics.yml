@@ -1,0 +1,22 @@
+name: Reviewed translation semantics regression
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - '**reviewed_semantics*'
+      - '**reviewed_semantics**'
+      - '.github/workflows/reviewed-semantics.yml'
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -q

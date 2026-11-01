@@ -18,7 +18,7 @@ a = Analysis(['install_obcjk.py'], pathex=[], binaries=[],
                    'claude_issue8_crate', 'claude_issue8_amber',
                    'issue8_reporter_term_patch', 'issue8_remaining_term_patch',
                    'issue8_context_verified_patch', 'issue8_cupboard_patch',
-                   'issue8_glossary_exceptions'],
+                   'issue8_glossary_exceptions', 'reviewed_semantics'],
     hookspath=[], hooksconfig={}, runtime_hooks=[], excludes=[], noarchive=False, optimize=0)
 pyz = PYZ(a.pure)
 exe = EXE(pyz, a.scripts, a.binaries, a.datas, [], name='OblivionKRBuilder',

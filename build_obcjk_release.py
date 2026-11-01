@@ -108,6 +108,8 @@ def build(args):
         correct_cupboard_names(translations, HERE / 'canonical_translation_v2.csv')
         from issue8_glossary_exceptions import correct_glossary_exceptions
         correct_glossary_exceptions(translations, HERE / 'canonical_translation_v2.csv')
+        from reviewed_semantics import correct_reviewed_semantics
+        correct_reviewed_semantics(translations)
     menu_gmsts = load_utf8_menu_gmsts(HERE / 'menu_gmst_new_821.csv')
     menu_formids = frozenset(item[0] for item in menu_gmsts)
 

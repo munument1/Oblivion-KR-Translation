@@ -432,7 +432,8 @@ def main():
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     patch_table = load_patch_canonical(root / "canonical_unofficial_translation_v2.csv")
-    text_forwarding = load_text_forwarding(root)
+    from reviewed_semantics import correct_forwarding
+    text_forwarding = correct_forwarding(load_text_forwarding(root))
     book_restorations = load_restorations(
         root / "uop_book_body_restore_v1.csv",
         root / "canonical_translation_v2.csv")

@@ -1,3 +1,5 @@
+> 최신 본편 설치기: [v1.2.1](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.2.1). UOP KR1.14 포함. 자세한 변경은 release_notes_v1.2.1.md 참조.
+
 # Oblivion Original 한국어 번역 v1.2.0
 
 오리지널 Oblivion (2006) 본편과 공식 확장팩/DLC용 한국어 번역입니다. obCJK UTF-8 방식과 한글 위치명을 적용하며, 본명조·이롭게바탕체를 자동 설치합니다.
