@@ -1,0 +1,110 @@
+name: Upload OOO Enhanced Korean to Nexus Mods
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Inspect Nexus file groups or upload the verified release
+        required: true
+        type: choice
+        options: [inspect, upload]
+      tag:
+        description: Published GitHub release tag
+        required: true
+        default: ooo-enhanced-6.9-kr1.0
+        type: string
+      file_id:
+        description: Nexus v3 file-group ID from inspect (required for upload)
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nexus-ooo-enhanced-upload
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Inspect existing OOO Enhanced Korean file groups
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          OPERATION: ${{ inputs.operation }}
+          FILE_ID: ${{ inputs.file_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" 'https://api.nexusmods.com/v3/mods/433791753638/files' --output groups.json
+          jq '.data.mod_files | map({id, name, is_active, versions_count})' groups.json | tee -a "$GITHUB_STEP_SUMMARY"
+          if [[ "$OPERATION" == upload ]]; then
+            [[ "$FILE_ID" =~ ^[0-9]+$ ]]
+            jq -e --arg id "$FILE_ID" '.data.mod_files[] | select((.id | tostring) == $id and (.name | test("OOO Enhanced"; "i")))' groups.json
+          fi
+
+      - name: Download and verify OOO Enhanced release
+        if: inputs.operation == 'upload'
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^ooo-enhanced-([0-9]+\.[0-9]+)-kr([0-9]+\.[0-9]+)$ ]]
+          version="${BASH_REMATCH[1]}-KR${BASH_REMATCH[2]}"
+          filename="OOO_Enhanced_Korean_UTF8_${BASH_REMATCH[1]}_KR${BASH_REMATCH[2]}.zip"
+          gh release download "$RELEASE_TAG" --pattern "$filename" --pattern "$filename.sha256"
+          sha256sum --check "$filename.sha256"
+          python - "$filename" <<'PY'
+          import json, sys, zipfile
+          with zipfile.ZipFile(sys.argv[1]) as z:
+              assert z.testzip() is None
+              assert len([n for n in z.namelist() if n.endswith('.esp')]) == 24
+              assert not any(n.lower().endswith(('.bsa', '.dds', '.nif')) for n in z.namelist())
+              audit = json.loads(z.read('_한국어패치_안내/STATIC_VALIDATION.json'))
+              assert audit['version'] == '6.9-KR1.0' and len(audit['plugins']) == 24
+              import hashlib
+              for path, report in audit['plugins'].items():
+                  assert hashlib.sha256(z.read(path)).hexdigest() == report['output_sha256']
+          PY
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "filename=$filename" >> "$GITHUB_OUTPUT"
+
+      - name: Upload verified Korean ESP package
+        if: inputs.operation == 'upload'
+        id: nexus
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ inputs.file_id }}
+          mod_id: '433791753638'
+          filename: ${{ steps.release.outputs.filename }}
+          version: ${{ steps.release.outputs.version }}
+          display_name: OOO Enhanced Korean UTF8
+          description: 'OOO Enhanced 6.9 한국어 패치. 기존 번역을 보존하고 새 창 계열, 여명의 빛 신전·서적·일지, 나미라 신명 및 살인 요구 횟수 60회를 반영했습니다. 원본 폴더 구조의 ESP 24개 교체본이며, 원본 6.9와 UTF-8 한국어 환경이 필요합니다. 한영 대조표·빌더·정적 검증은 GitHub mods/ooo_enhanced에서 확인할 수 있습니다. 게임 실행·xEdit 검증은 미실시입니다.'
+          changelog: '6.9-KR1.0: Enhanced 6.9 대응. 추가·변경 112개 고유 문구/134개 항목 검토. 24개 ESP, 76,802개 레코드 및 1,331개 스크립트 구조 검사 통과. 기존 번역 유지, 새 창 계열과 여명의 빛 관련 내용 및 조건 수정 반영.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+
+      - name: Verify uploaded version
+        if: inputs.operation == 'upload'
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          EXPECTED_VERSION: ${{ steps.release.outputs.version }}
+          EXPECTED_FILE: ${{ inputs.file_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$VERSION_ID" =~ ^[0-9]+$ ]]
+          curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" --output uploaded.json
+          jq -e --arg version "$EXPECTED_VERSION" --arg file "$EXPECTED_FILE" '.data.version == $version and (.data.file.id | tostring) == $file' uploaded.json
+          printf 'Verified Nexus version %s (%s), file %s.\n\nhttps://www.nexusmods.com/oblivion/mods/56742?tab=files\n' "$EXPECTED_VERSION" "$VERSION_ID" "$EXPECTED_FILE" >> "$GITHUB_STEP_SUMMARY"

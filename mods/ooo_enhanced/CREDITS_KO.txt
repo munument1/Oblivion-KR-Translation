@@ -1,0 +1,15 @@
+﻿번역 출처 및 제작 정보
+OOO Enhanced 원작: https://www.nexusmods.com/oblivion/mods/47187
+OOO Shivering Isles 원작: https://www.nexusmods.com/oblivion/mods/46508
+OOO 본체 원작: https://www.nexusmods.com/oblivion/mods/46199
+기준 OOO 본체 한국어판: Oscuros Oblivion Overhaul Korean UTF8 1.7.2-kr1.1
+https://www.nexusmods.com/oblivion/mods/56710
+한국어판 배포자: Party1Noodle (잔치국수)
+
+본편·DLC·비공식 패치 및 위 OOO 본체 한국어판에서 원문이 일치하는 번역을 재사용했습니다.
+추가·변경 문구는 GPT 작업자 3명과 주 작업자가 영문 원문에서 한국어로 직접 재번역했습니다.
+책·퀘스트·대화·이름·화면 메시지를 분담했으며, 기존 번역의 변경본은 영문 차이를 확인해 반영했습니다.
+이번 빌드는 이전 Google 자동번역 초벌 결과를 번역 입력으로 사용하지 않았습니다.
+기존 OOO 한국어판의 일부 서적은 '탐리엘의 서고' 번역을 재사용하고 있습니다.
+그 출처 및 기존 한국어판의 설명은 동봉한 OOO_BASE_TRANSLATION_README.txt를 참고하세요.
+원작자와 기존 번역 기여자의 권리는 각 기여자에게 있습니다.

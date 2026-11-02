@@ -15,3 +15,5 @@ assets/obcjk_fonts/** -text
 assets/obcjk_fonts/** whitespace=cr-at-eol
 # Upstream README spacing is retained verbatim.
 assets/obcjk_fonts/licenses/** whitespace=cr-at-eol,-blank-at-eol
+# Exact ESP source strings include meaningful trailing whitespace in CSV cells.
+mods/ooo_enhanced/translations_6.9.csv whitespace=cr-at-eol,-blank-at-eol
