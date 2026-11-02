@@ -1,0 +1,17 @@
+{
+  "version": "6.9-KR1.0",
+  "published_date_kst": "2026-11-02",
+  "build_commit": "ef798fd1e74b9df3f39f7c3b9ebf79e7dcf63398",
+  "release": "https://github.com/munument1/Oblivion-KR-Translation/releases/tag/ooo-enhanced-6.9-kr1.0",
+  "asset": "OOO_Enhanced_Korean_UTF8_6.9_KR1.0.zip",
+  "bytes": 9582226,
+  "sha256": "54df9e68a75dbbb5cb2fefb2c8b8cf069719eafbf108606211fde19ef9500030",
+  "nexus_page": "https://www.nexusmods.com/oblivion/mods/56742?tab=files",
+  "nexus_mod_uid": "433791753638",
+  "nexus_file_group_id": "8217540",
+  "nexus_version_id": "434791744039",
+  "upload_and_api_verification": "https://github.com/munument1/Oblivion-KR-Translation/actions/runs/41380846286",
+  "api_verified_version": "6.9-KR1.0",
+  "in_game_tested": false,
+  "xedit_tested": false
+}

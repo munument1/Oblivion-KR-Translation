@@ -16,6 +16,7 @@ on:
       file_id:
         description: Nexus v3 file-group ID from inspect (required for upload)
         required: false
+        default: '8217540'
         type: string
 
 permissions:

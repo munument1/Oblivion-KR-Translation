@@ -28,6 +28,8 @@ python mods/ooo_enhanced/test_build.py
 3. 워크플로의 `inspect`를 실행해 Nexus v3 파일 그룹 ID를 확인합니다. 이 ID는 웹페이지의 구형 다운로드 파일 ID와 다릅니다.
 4. 같은 워크플로를 `upload`, 릴리즈 태그, 확인한 `file_id`로 실행합니다. 기존 배포본을 유지한 채 새 버전을 올리고 Nexus 응답의 버전·파일 ID를 재검증합니다.
 
+현재 한국어판 파일 그룹 ID `8217540`은 워크플로 기본값에 저장했습니다. [6.9-KR1.0 릴리즈](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/ooo-enhanced-6.9-kr1.0)와 [Nexus 업로드·API 검증 성공 기록](https://github.com/munument1/Oblivion-KR-Translation/actions/runs/41380846286)을 확인할 수 있습니다.
+
 현재 업로드 검사기는 이번 6.9 패키지 구성과 검증 기록을 확인합니다. 다음 버전에서는 대조표·원본 해시·빌드 검증 기록과 워크플로의 버전·ESP 개수 검사를 함께 갱신하세요.
 
 기존 번역 출처와 기여자 안내는 배포 ZIP의 `CREDITS_KO.txt`와 `OOO_BASE_TRANSLATION_README.txt`에 그대로 동봉합니다.
