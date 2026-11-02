@@ -1,0 +1,47 @@
+name: Fetch optional masters for OOO xEdit QA
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Download the two original optional masters through Nexus API
+        env:
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir masters
+          python - <<'PY'
+          import hashlib, json, os, pathlib, subprocess, urllib.request
+          headers = {'apikey': os.environ['NEXUS_API_KEY']}
+          def get(url):
+              with urllib.request.urlopen(urllib.request.Request(url, headers=headers)) as response:
+                  return json.load(response)
+          manifest = []
+          for mod, plugin in [(45249, 'BalancedMagic.esp'), (25078, 'Enhanced Economy.esp')]:
+              base = f'https://api.nexusmods.com/v1/games/oblivion/mods/{mod}'
+              files = get(base + '/files.json')['files']
+              candidates = [f for f in files if f.get('category_id') == 1]
+              print('Main files:', json.dumps([{k: f.get(k) for k in ['file_id','name','version','file_name']} for f in candidates]))
+              assert len(candidates) == 1, 'Choose the main file explicitly if upstream adds multiple main files'
+              selected = candidates[0]
+              links = get(base + f'/files/{selected["file_id"]}/download_link.json')
+              assert links
+              archive = pathlib.Path(str(mod) + '.archive')
+              with urllib.request.urlopen(links[0]['URI']) as response:
+                  archive.write_bytes(response.read())
+              subprocess.run(['7z', 'e', str(archive), '-omasters', '-r', plugin, '-y'], check=True, stdout=subprocess.DEVNULL)
+              result = pathlib.Path('masters') / plugin
+              assert result.is_file(), plugin
+              manifest.append(dict(mod=mod, file_id=selected['file_id'], version=selected['version'], plugin=plugin, sha256=hashlib.sha256(result.read_bytes()).hexdigest()))
+          pathlib.Path('masters/sources.json').write_text(json.dumps(manifest, indent=2), encoding='utf8')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ooo-xedit-optional-masters
+          path: masters/
+          retention-days: 1
