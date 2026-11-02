@@ -16,7 +16,7 @@ jobs:
           set -euo pipefail
           mkdir masters
           python - <<'PY'
-          import hashlib, json, os, pathlib, subprocess, urllib.request, urllib.parse
+          import hashlib, json, os, pathlib, shutil, subprocess, urllib.request, urllib.parse
           headers = {'apikey': os.environ['NEXUS_API_KEY']}
           def get(url):
               with urllib.request.urlopen(urllib.request.Request(url, headers=headers)) as response:
@@ -36,8 +36,12 @@ jobs:
               uri = urllib.parse.urlunsplit(link._replace(path=urllib.parse.quote(link.path, safe='/%')))
               with urllib.request.urlopen(uri) as response:
                   archive.write_bytes(response.read())
-              subprocess.run(['7z', 'e', str(archive), '-omasters', '-r', plugin, '-y'], check=True, stdout=subprocess.DEVNULL)
+              extracted = pathlib.Path('extract-' + str(mod))
+              subprocess.run(['7z', 'x', str(archive), '-o' + str(extracted), '-r', plugin, '-y'], check=True, stdout=subprocess.DEVNULL)
+              matches = [p for p in extracted.rglob(plugin) if p.is_file()]
+              assert len(matches) == 1, matches
               result = pathlib.Path('masters') / plugin
+              shutil.copy2(matches[0], result)
               assert result.is_file(), plugin
               manifest.append(dict(mod=mod, file_id=selected['file_id'], version=selected['version'], plugin=plugin, sha256=hashlib.sha256(result.read_bytes()).hexdigest()))
           pathlib.Path('masters/sources.json').write_text(json.dumps(manifest, indent=2), encoding='utf8')
