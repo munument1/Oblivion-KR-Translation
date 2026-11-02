@@ -37,4 +37,6 @@
 
 SHA-256: `54df9e68a75dbbb5cb2fefb2c8b8cf069719eafbf108606211fde19ef9500030`
 
+[GitHub 릴리즈에 보고서 첨부](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/ooo-enhanced-6.9-kr1.0) 및 [Nexus 기존 버전 변경 기록에 추가·API 응답 검증](https://github.com/munument1/Oblivion-KR-Translation/actions/runs/41384454158)을 완료했습니다. 기존 ZIP은 그대로 유지했습니다.
+
 **실제 게임 실행은 검증하지 않았습니다.** 이 보고서는 xEdit 레코드 검사 및 영문 대비 추가 진단 확인 결과이며, 게임 내 동작이나 원본의 위 진단들이 무해하다는 보증은 아닙니다.

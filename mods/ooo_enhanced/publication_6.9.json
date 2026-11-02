@@ -18,5 +18,6 @@
   "xedit_translation_added_diagnostics": 0,
   "xedit_original_diagnostics": 140,
   "xedit_korean_diagnostics": 140,
-  "xedit_test_did_not_change_published_archive": true
+  "xedit_test_did_not_change_published_archive": true,
+  "xedit_nexus_changelog_update": "https://github.com/munument1/Oblivion-KR-Translation/actions/runs/41384454158"
 }
