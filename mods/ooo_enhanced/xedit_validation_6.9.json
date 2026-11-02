@@ -1,0 +1,551 @@
+{
+  "version": "6.9-KR1.0",
+  "validation_date_kst": "2026-11-02",
+  "tool": "TES4Edit 4.1.6r9 Lite x64, BB-84C automation fork",
+  "tool_sha256": "36fcb8d4ef683a0fbbcd30c3652978a93b20d06d21f06fd762aa08116e1d80ef",
+  "tool_source": "https://github.com/BB-84C/TES5Edit/tree/v4.1.6-automation.9",
+  "method": "Native recursive validation.check_for_errors (same element.Check traversal as GUI Check for Errors), read-only, no reverse-reference cache build",
+  "validated_asset": "OOO_Enhanced_Korean_UTF8_6.9_KR1.0.zip",
+  "validated_asset_sha256": "54df9e68a75dbbb5cb2fefb2c8b8cf069719eafbf108606211fde19ef9500030",
+  "file_count": 24,
+  "clean_files": 23,
+  "xedit_checked_records": 76801,
+  "raw_binary_records": 76802,
+  "english_error_count": 140,
+  "korean_error_count": 140,
+  "translation_added_error_count": 0,
+  "translation_removed_error_count": 0,
+  "identical_load_order": true,
+  "identical_plugin_timestamps": true,
+  "plugin_bytes_match_published_zip": true,
+  "all_files_unmodified": true,
+  "normalization": "Only replace exact quoted Korean FULL display names with their English originals; preserve FormIDs, paths, stage numbers, error text and duplicate counts.",
+  "engine_count_note": "Both original and Korean native xEdit traversals count 76,801 records; the binary parser counts 76,802. This difference is present in both versions.",
+  "in_game_tested": false,
+  "diagnostic_categories": [
+    {
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value",
+      "count": 21
+    },
+    {
+      "signature": "ALCH",
+      "path": "ALCH \\ Effects \\ Effect \\ Script Effect \\ SCIT - Script Effect Data \\ Script effect",
+      "count": 1
+    },
+    {
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference",
+      "count": 6
+    },
+    {
+      "signature": "LAND",
+      "path": "LAND \\ Cell",
+      "count": 1
+    },
+    {
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2",
+      "count": 106
+    },
+    {
+      "signature": "PACK",
+      "path": "PACK \\ Conditions \\ CTDA - Condition \\ Parameter #2",
+      "count": 5
+    }
+  ],
+  "files": [
+    {
+      "fileName": "OOO - DLCFrostcrag Adaptation.esp",
+      "checkedRecords": 20,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO - DLCHorseArmor Adaptation.esp",
+      "checkedRecords": 35,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO - DLCOrrery Adaptation.esp",
+      "checkedRecords": 54,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - Balanced Magic Rebalanced.esp",
+      "checkedRecords": 109,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - DLCBattlehornCastle Adaptation.esp",
+      "checkedRecords": 72,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - DLCMehrunesRazor Adaptation.esp",
+      "checkedRecords": 179,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - DLCThievesDen Adaptation.esp",
+      "checkedRecords": 46,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - DLCVileLair Adaptation.esp",
+      "checkedRecords": 67,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - EE patch.esp",
+      "checkedRecords": 2,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - Easy Difficulty.esp",
+      "checkedRecords": 148,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - Hard Difficulty.esp",
+      "checkedRecords": 145,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - Knights of the Nine Adaptation.esp",
+      "checkedRecords": 582,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - Longer Essential Unconscious Time Disabled.esp",
+      "checkedRecords": 2,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - No Brown Goblins.esp",
+      "checkedRecords": 2,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - No Bubbultures.esp",
+      "checkedRecords": 6,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - No Buffalos.esp",
+      "checkedRecords": 3,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - No Frost Trolls.esp",
+      "checkedRecords": 20,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - No Hill Giants.esp",
+      "checkedRecords": 7,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - No Snakes.esp",
+      "checkedRecords": 15,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - No Tigers.esp",
+      "checkedRecords": 18,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - Normal Sigil Stones.esp",
+      "checkedRecords": 2,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced - Shivering Isles.esp",
+      "checkedRecords": 699,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "OOO Enhanced.esp",
+      "checkedRecords": 74517,
+      "findingCount": 140,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    },
+    {
+      "fileName": "SM Plugin Refurbish Lite.esp",
+      "checkedRecords": 51,
+      "findingCount": 1,
+      "dirtyBefore": false,
+      "dirtyAfter": false,
+      "dirtyChanged": false
+    }
+  ],
+  "load_order": [
+    {
+      "load_order": 0,
+      "file": "Oblivion.esm"
+    },
+    {
+      "load_order": 1,
+      "file": "Oscuro's_Oblivion_Overhaul.esm"
+    },
+    {
+      "load_order": 2,
+      "file": "DLCFrostcrag.esp"
+    },
+    {
+      "load_order": 3,
+      "file": "OOO - DLCFrostcrag Adaptation.esp"
+    },
+    {
+      "load_order": 4,
+      "file": "Unofficial Oblivion Patch.esp"
+    },
+    {
+      "load_order": 5,
+      "file": "DLCShiveringIsles.esp"
+    },
+    {
+      "load_order": 6,
+      "file": "DLCVileLair.esp"
+    },
+    {
+      "load_order": 7,
+      "file": "DLCVileLair - Unofficial Patch.esp"
+    },
+    {
+      "load_order": 8,
+      "file": "Unofficial Shivering Isles Patch.esp"
+    },
+    {
+      "load_order": 9,
+      "file": "Oscuro's_Oblivion_Overhaul.esp"
+    },
+    {
+      "load_order": 10,
+      "file": "OOO Enhanced.esp"
+    },
+    {
+      "load_order": 11,
+      "file": "OOO Enhanced - DLCVileLair Adaptation.esp"
+    },
+    {
+      "load_order": 12,
+      "file": "OOO Enhanced - Hard Difficulty.esp"
+    },
+    {
+      "load_order": 13,
+      "file": "BalancedMagic.esp"
+    },
+    {
+      "load_order": 14,
+      "file": "OOO Enhanced - Balanced Magic Rebalanced.esp"
+    },
+    {
+      "load_order": 15,
+      "file": "OOOShiveringIsles.esp"
+    },
+    {
+      "load_order": 16,
+      "file": "OOO Enhanced - Shivering Isles.esp"
+    },
+    {
+      "load_order": 17,
+      "file": "DLCHorseArmor.esp"
+    },
+    {
+      "load_order": 18,
+      "file": "DLCOrrery.esp"
+    },
+    {
+      "load_order": 19,
+      "file": "DLCOrrery - Unofficial Patch.esp"
+    },
+    {
+      "load_order": 20,
+      "file": "DLCMehrunesRazor.esp"
+    },
+    {
+      "load_order": 21,
+      "file": "DLCMehrunesRazor - Unofficial Patch.esp"
+    },
+    {
+      "load_order": 22,
+      "file": "DLCThievesDen.esp"
+    },
+    {
+      "load_order": 23,
+      "file": "DLCThievesDen - Unofficial Patch.esp"
+    },
+    {
+      "load_order": 24,
+      "file": "DLCBattlehornCastle.esp"
+    },
+    {
+      "load_order": 25,
+      "file": "DLCBattlehornCastle - Unofficial Patch.esp"
+    },
+    {
+      "load_order": 26,
+      "file": "Knights.esp"
+    },
+    {
+      "load_order": 27,
+      "file": "Knights - Unofficial Patch.esp"
+    },
+    {
+      "load_order": 28,
+      "file": "OOO Enhanced - Knights of the Nine Adaptation.esp"
+    },
+    {
+      "load_order": 29,
+      "file": "OOO Enhanced - Longer Essential Unconscious Time Disabled.esp"
+    },
+    {
+      "load_order": 30,
+      "file": "OOO - DLCOrrery Adaptation.esp"
+    },
+    {
+      "load_order": 31,
+      "file": "OOO - DLCHorseArmor Adaptation.esp"
+    },
+    {
+      "load_order": 32,
+      "file": "OOO Enhanced - Normal Sigil Stones.esp"
+    },
+    {
+      "load_order": 33,
+      "file": "Enhanced Economy.esp"
+    },
+    {
+      "load_order": 34,
+      "file": "OOO Enhanced - EE patch.esp"
+    },
+    {
+      "load_order": 35,
+      "file": "OOO Enhanced - DLCMehrunesRazor Adaptation.esp"
+    },
+    {
+      "load_order": 36,
+      "file": "OOO Enhanced - No Hill Giants.esp"
+    },
+    {
+      "load_order": 37,
+      "file": "OOO Enhanced - No Frost Trolls.esp"
+    },
+    {
+      "load_order": 38,
+      "file": "OOO Enhanced - No Bubbultures.esp"
+    },
+    {
+      "load_order": 39,
+      "file": "OOO Enhanced - No Tigers.esp"
+    },
+    {
+      "load_order": 40,
+      "file": "OOO Enhanced - No Buffalos.esp"
+    },
+    {
+      "load_order": 41,
+      "file": "OOO Enhanced - No Brown Goblins.esp"
+    },
+    {
+      "load_order": 42,
+      "file": "OOO Enhanced - No Snakes.esp"
+    },
+    {
+      "load_order": 43,
+      "file": "SM Plugin Refurbish Lite.esp"
+    },
+    {
+      "load_order": 44,
+      "file": "OOO Enhanced - DLCThievesDen Adaptation.esp"
+    },
+    {
+      "load_order": 45,
+      "file": "OOO Enhanced - DLCBattlehornCastle Adaptation.esp"
+    },
+    {
+      "load_order": 46,
+      "file": "OOO Enhanced - Easy Difficulty.esp"
+    }
+  ],
+  "master_sources": [
+    {
+      "file": "DLCBattlehornCastle.esp",
+      "sha256": "f8bd2baa13f17f8994c0e737146097bc320f28c0d9821a00516bcec53fc6e28d"
+    },
+    {
+      "file": "DLCMehrunesRazor - Unofficial Patch.esp",
+      "sha256": "dcb552e4c82474f3f193700534f289fab0173aafb3356da53b7d81130b086b0a"
+    },
+    {
+      "file": "Unofficial Oblivion Patch.esp",
+      "sha256": "2a71820bd290f25eee0b839d133d5df4b60e71398ed692654cbc49333536e044"
+    },
+    {
+      "file": "DLCBattlehornCastle - Unofficial Patch.esp",
+      "sha256": "8bb80ee95b93c0458f98c17304d661482e107fd61e0a081eee7ef5bcd2684a17"
+    },
+    {
+      "file": "BalancedMagic.esp",
+      "sha256": "66a41fb350b17474c3a6bafe9b0c436d05c4402b794b4623038e619545c9d68c"
+    },
+    {
+      "file": "Oscuro's_Oblivion_Overhaul.esp",
+      "sha256": "de46c371ebd681d6a7c05b5f836d60113d987679ffd13da36b11970b3d81037e"
+    },
+    {
+      "file": "DLCThievesDen - Unofficial Patch.esp",
+      "sha256": "39b695bf9fdf7db56d79fd6d2ffba5be4a14a24096016b799d29fdf89faa0cdc"
+    },
+    {
+      "file": "DLCOrrery.esp",
+      "sha256": "b1533ce31acdeb0c0385ab15c898b1c59c730e1d9b05848c8b4b76f2aaf3ad7d"
+    },
+    {
+      "file": "DLCOrrery - Unofficial Patch.esp",
+      "sha256": "63528afc444bdb02ccfe416403aa5120b30ebf9153e021392f03d65023eb8608"
+    },
+    {
+      "file": "OOOShiveringIsles.esp",
+      "sha256": "b1ec0f8899a11cc4e3bf3d2f89e86d2d9cef84d4370dcccfc30bdb15d11933d4"
+    },
+    {
+      "file": "Knights - Unofficial Patch.esp",
+      "sha256": "e88b26e972d736b22926cef9178f70268da038cb44feb8c5e9208569db9ba25e"
+    },
+    {
+      "file": "Unofficial Shivering Isles Patch.esp",
+      "sha256": "a68d3ea9aa7ee40e9a95575263e72f90549cebe02919e75488257d060d3fbbce"
+    },
+    {
+      "file": "Enhanced Economy.esp",
+      "sha256": "05c9e1f304a01b757b7b14dc90208998713dcdd562fe803b3d35f591bfceb220"
+    },
+    {
+      "file": "DLCFrostcrag.esp",
+      "sha256": "ade51332829033c95f9ba73fbbb3ee31f44dd62f12fbf8e0066dd6384a65b6c0"
+    },
+    {
+      "file": "Oblivion.esm",
+      "sha256": "a26e21ea8c3041f8737ffb3a266129dedb7f8a88590625ecfecd5eb7f66b4a70"
+    },
+    {
+      "file": "Knights.esp",
+      "sha256": "a0b48c54ef788fd17a3c042c24795e52aefa76050d226448b91005b36f5d681b"
+    },
+    {
+      "file": "DLCHorseArmor.esp",
+      "sha256": "d20d968a3492a73aa3f6c7ba033604f32b3aee7ea4e7447ae90881a25267b305"
+    },
+    {
+      "file": "Oscuro's_Oblivion_Overhaul.esm",
+      "sha256": "17ecd3d3f3419fb7f66e923fbc1d45f6bd50acb6d9004302c58c41784efb2771"
+    },
+    {
+      "file": "DLCShiveringIsles.esp",
+      "sha256": "7725fc1cf14f60b258aeb089a112b518ab904acb3c3f549487d6e554fb873bcb"
+    },
+    {
+      "file": "DLCThievesDen.esp",
+      "sha256": "bade981f2c6665a934afb3ece481c4bba358d8114389a7f811403534e506407d"
+    },
+    {
+      "file": "DLCMehrunesRazor.esp",
+      "sha256": "8d52b80c7ceb9f18aae3f48815a5b0468b8479992eb69fa3cbf910f8b66b7971"
+    },
+    {
+      "file": "DLCVileLair.esp",
+      "sha256": "fa174924ff2b44e69d1d27dc2a4c99e757d90c7b34109138d2b1ed9f430d5002"
+    },
+    {
+      "file": "DLCVileLair - Unofficial Patch.esp",
+      "sha256": "61c2b62a59216a10be1e82520c44392a9e3d1794ca789d1053fdc34480b3148d"
+    }
+  ],
+  "optional_master_provenance": [
+    {
+      "mod": 45249,
+      "file_id": 1000014200,
+      "version": "2.5",
+      "plugin": "BalancedMagic.esp",
+      "sha256": "66a41fb350b17474c3a6bafe9b0c436d05c4402b794b4623038e619545c9d68c"
+    },
+    {
+      "mod": 25078,
+      "file_id": 84856,
+      "version": "5.4.3",
+      "plugin": "Enhanced Economy.esp",
+      "sha256": "05c9e1f304a01b757b7b14dc90208998713dcdd562fe803b3d35f591bfceb220"
+    }
+  ]
+}

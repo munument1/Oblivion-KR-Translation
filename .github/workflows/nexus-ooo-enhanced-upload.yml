@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       operation:
-        description: Inspect Nexus file groups or upload the verified release
+        description: Inspect, upload, or append the completed xEdit QA result
         required: true
         type: choice
-        options: [inspect, upload]
+        options: [inspect, upload, qa-note]
       tag:
         description: Published GitHub release tag
         required: true
@@ -41,13 +41,13 @@ jobs:
           set -euo pipefail
           curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $NEXUS_API_KEY" 'https://api.nexusmods.com/v3/mods/433791753638/files' --output groups.json
           jq '.data.mod_files | map({id, name, is_active, versions_count})' groups.json | tee -a "$GITHUB_STEP_SUMMARY"
-          if [[ "$OPERATION" == upload ]]; then
+          if [[ "$OPERATION" != inspect ]]; then
             [[ "$FILE_ID" =~ ^[0-9]+$ ]]
             jq -e --arg id "$FILE_ID" '.data.mod_files[] | select((.id | tostring) == $id and (.name | test("OOO Enhanced"; "i")))' groups.json
           fi
 
       - name: Download and verify OOO Enhanced release
-        if: inputs.operation == 'upload'
+        if: inputs.operation != 'inspect'
         id: release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -75,6 +75,32 @@ jobs:
           PY
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "filename=$filename" >> "$GITHUB_OUTPUT"
+
+      - name: Append verified xEdit result to the existing Nexus changelog
+        if: inputs.operation == 'qa-note'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          NEXUS_API_KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          FILENAME: ${{ steps.release.outputs.filename }}
+          VERSION: ${{ steps.release.outputs.version }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api "repos/$GH_REPO/contents/mods/ooo_enhanced/xedit_validation_6.9.json?ref=$GITHUB_SHA" --jq .content | base64 --decode > xedit_validation.json
+          python - <<'PY'
+          import hashlib, json, os, pathlib
+          report = json.loads(pathlib.Path('xedit_validation.json').read_text(encoding='utf8'))
+          assert report['version'] == os.environ['VERSION']
+          assert report['file_count'] == 24 and report['translation_added_error_count'] == 0
+          assert report['identical_load_order'] and report['all_files_unmodified']
+          assert hashlib.sha256(pathlib.Path(os.environ['FILENAME']).read_bytes()).hexdigest() == report['validated_asset_sha256']
+          text = '2026-11-02 xEdit 검증 완료: TES4Edit 4.1.6r9에서 ESP 24개를 영문 원본과 동일한 마스터·로드 순서로 비교했습니다. 선택 ESP 23개는 오류 없음. 본편은 원본과 한국어판 모두 동일한 진단 140건이며, 번역으로 추가된 진단은 0건입니다. 검증한 ESP는 배포 ZIP과 바이트 단위로 일치합니다. 원본 게임플레이 데이터와 기존 배포 파일은 수정하지 않았습니다. 실제 게임 실행 검증은 미실시입니다. 상세 보고서: https://github.com/munument1/Oblivion-KR-Translation/blob/main/mods/ooo_enhanced/XEDIT_QA_6.9.md'
+          pathlib.Path('qa-note.json').write_text(json.dumps({'version': os.environ['VERSION'], 'changelog': text}, ensure_ascii=False), encoding='utf8')
+          PY
+          curl --fail-with-body --silent --show-error --header "apikey: $NEXUS_API_KEY" --header 'Content-Type: application/json' --data-binary @qa-note.json 'https://api.nexusmods.com/v3/mods/433791753638/changelogs' --output changelog-result.json
+          jq -e --slurpfile expected qa-note.json '.data.version == $expected[0].version and .data.changelog == $expected[0].changelog' changelog-result.json
+          echo 'Appended verified xEdit QA result to the existing 6.9-KR1.0 Nexus changelog. Original archive retained.' >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload verified Korean ESP package
         if: inputs.operation == 'upload'

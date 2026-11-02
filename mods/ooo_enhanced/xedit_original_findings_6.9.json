@@ -1,0 +1,2564 @@
+[
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO - DLCFrostcrag Adaptation.esp",
+    "target": {
+      "file": "OOO - DLCFrostcrag Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO - DLCHorseArmor Adaptation.esp",
+    "target": {
+      "file": "OOO - DLCHorseArmor Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO - DLCOrrery Adaptation.esp",
+    "target": {
+      "file": "OOO - DLCOrrery Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Balanced Magic Rebalanced.esp",
+    "target": {
+      "file": "OOO Enhanced - Balanced Magic Rebalanced.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCBattlehornCastle Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCBattlehornCastle Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCMehrunesRazor Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCMehrunesRazor Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCThievesDen Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCThievesDen Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCVileLair Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCVileLair Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - EE patch.esp",
+    "target": {
+      "file": "OOO Enhanced - EE patch.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Easy Difficulty.esp",
+    "target": {
+      "file": "OOO Enhanced - Easy Difficulty.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Hard Difficulty.esp",
+    "target": {
+      "file": "OOO Enhanced - Hard Difficulty.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Knights of the Nine Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - Knights of the Nine Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Longer Essential Unconscious Time Disabled.esp",
+    "target": {
+      "file": "OOO Enhanced - Longer Essential Unconscious Time Disabled.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Brown Goblins.esp",
+    "target": {
+      "file": "OOO Enhanced - No Brown Goblins.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Bubbultures.esp",
+    "target": {
+      "file": "OOO Enhanced - No Bubbultures.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Buffalos.esp",
+    "target": {
+      "file": "OOO Enhanced - No Buffalos.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Frost Trolls.esp",
+    "target": {
+      "file": "OOO Enhanced - No Frost Trolls.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Hill Giants.esp",
+    "target": {
+      "file": "OOO Enhanced - No Hill Giants.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Snakes.esp",
+    "target": {
+      "file": "OOO Enhanced - No Snakes.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Tigers.esp",
+    "target": {
+      "file": "OOO Enhanced - No Tigers.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Normal Sigil Stones.esp",
+    "target": {
+      "file": "OOO Enhanced - Normal Sigil Stones.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Shivering Isles.esp",
+    "target": {
+      "file": "OOO Enhanced - Shivering Isles.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0000185C",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001873",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001875",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001876",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001877",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001879",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0000187A",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0000187C",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001883",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001886",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0000188A",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0000188E",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0000188F",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001890",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001891",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001892",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001893",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001894",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001895",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "00001896",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Unknown: 255 $FF>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0000189C",
+      "signature": "MGEF",
+      "path": "MGEF \\ DATA - Data \\ Resist value"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "[05004327] <Error: Could not be resolved>",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00431C",
+      "signature": "ALCH",
+      "path": "ALCH \\ Effects \\ Effect \\ Script Effect \\ SCIT - Script Effect Data \\ Script effect"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A008664",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00866A",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "09011454",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0901145A",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0901144D",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "09011453",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Found a REFR reference, expected: CELL",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A002B5F",
+      "signature": "LAND",
+      "path": "LAND \\ Cell"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [234] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A14A",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [170] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A14A",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [234] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A14B",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [170] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A14B",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [233] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CC",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [165] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CC",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [232] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [186] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00B6B3",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00B6B3",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A14C",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A14C",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E437",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3F",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [249] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDDE",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [250] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDDE",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDDE",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [249] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3E",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3E",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [249] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDDD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDDD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [252] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDDD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [250] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDDD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDFD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [249] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00BDFD",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [249] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E434",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E434",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [250] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E434",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [249] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3D",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3D",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [250] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3D",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [253] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D1",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [170] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D1",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D1",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [186] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D1",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D1",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [251] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D1",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [253] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [165] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [186] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [170] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [251] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [253] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CB",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CB",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [251] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CB",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01BDD5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01BDD6",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01B669",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01B661",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01B668",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CE",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4CF",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E43A",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E43A",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [230] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E43A",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [240] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00E43A",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01BDD7",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01BDD7",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [230] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01BDD7",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [240] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01BDD7",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C583",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C583",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [240] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C583",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [230] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C583",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D0",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [247] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D0",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [240] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D0",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [230] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D0",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [253] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C582",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [165] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C582",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [170] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C582",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C582",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C582",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [251] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C582",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [253] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D4",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [165] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D4",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [170] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D4",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [186] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D4",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D4",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [251] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D4",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [253] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [165] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [186] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [248] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [251] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01C4D5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C5B2",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C5B3",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C59F",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C5B0",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C5B1",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C5B9",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00CCD4",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00CCD5",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00CCD6",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00CCD7",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00CCD8",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [236] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00CCD9",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A843",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [185] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A843",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A845",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [185] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A845",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [180] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A847",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [185] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01A847",
+      "signature": "INFO",
+      "path": "INFO \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [185] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0104A332",
+      "signature": "PACK",
+      "path": "PACK \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C590",
+      "signature": "PACK",
+      "path": "PACK \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [235] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00C591",
+      "signature": "PACK",
+      "path": "PACK \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [185] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3C",
+      "signature": "PACK",
+      "path": "PACK \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "<Warning: Quest Stage [190] not found in \"OOOSlaversAndSmugglers \"Slavers and Smugglers\" [QUST:0101C22D]\">",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A01AF3C",
+      "signature": "PACK",
+      "path": "PACK \\ Conditions \\ CTDA - Condition \\ Parameter #2"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in SM Plugin Refurbish Lite.esp",
+    "target": {
+      "file": "SM Plugin Refurbish Lite.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  }
+]

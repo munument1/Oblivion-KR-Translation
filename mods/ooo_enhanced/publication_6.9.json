@@ -13,5 +13,10 @@
   "upload_and_api_verification": "https://github.com/munument1/Oblivion-KR-Translation/actions/runs/41380846286",
   "api_verified_version": "6.9-KR1.0",
   "in_game_tested": false,
-  "xedit_tested": false
+  "xedit_tested": true,
+  "xedit_report": "https://github.com/munument1/Oblivion-KR-Translation/blob/main/mods/ooo_enhanced/XEDIT_QA_6.9.md",
+  "xedit_translation_added_diagnostics": 0,
+  "xedit_original_diagnostics": 140,
+  "xedit_korean_diagnostics": 140,
+  "xedit_test_did_not_change_published_archive": true
 }
