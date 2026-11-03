@@ -10,7 +10,7 @@ import csv, hashlib, json
 from oblivion_korean_codec import encode_legacy,decode_legacy
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/"canonical_translation_v2.csv"
-EXPECTED_SHA="db73d95fe31e58f569da8f364546ae6beba562259ccac5deade2838dd4da1862"
+EXPECTED_SHA="97072941553ae611903c604cf6c14d78e5afbf61cae4ffc45016950e01b060c1"
 REPORT=ROOT/"docs/translation_memory/legacy_codec_exception_policy.json"
 TECHNICAL={("Oblivion.esm","BOOK","00088935","DESC","testqabook"),
            ("Oblivion.esm","BOOK","000C810E","DESC","testFonts")}
