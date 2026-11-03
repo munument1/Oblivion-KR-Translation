@@ -1,0 +1,98 @@
+{
+  "canonical_sha256": "db73d95fe31e58f569da8f364546ae6beba562259ccac5deade2838dd4da1862",
+  "total": 8,
+  "technical_font_test_cases": 2,
+  "quotation_fallback_cases": 6,
+  "unexplained_legacy_mismatches": 0,
+  "conclusion": "All 8 discrepancies are accounted for by historical codec constraints. Do not blindly rewrite.",
+  "cases": [
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00088935",
+      "field": "DESC",
+      "editor_id": "testqabook",
+      "occurrence": "0",
+      "english_sha256": "90a9d9f1c7825befc7e01e4784ddfa1cc108c24f2d1df06e10492ea24fee5128",
+      "utf8_target_sha256": "98a11dc4cdcdc15ac74cd28a67f44fba436d57c476c48f3047eefd4e88830b05",
+      "policy": "technical_test_bytes_unchanged"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000C810E",
+      "field": "DESC",
+      "editor_id": "testFonts",
+      "occurrence": "0",
+      "english_sha256": "c2f20533b4317a74109e0ad0632cfa8707a5d0c31aaa28a30dd13487114a266b",
+      "utf8_target_sha256": "8b17f99d72d6af92a0d033280c0444a987b41abf2ed0fa52472ecea9cf622564",
+      "policy": "technical_test_bytes_unchanged"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "INFO",
+      "formid": "00022B39",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "0",
+      "english_sha256": "ab6fc2771290f5283557dd402ef01f7b6e2bcb120c18b82c1baa447f021e9d16",
+      "utf8_target_sha256": "5f4553c29fd3ea904da8e4ae2189453a809b57f22770701bbf199b713d2f7db6",
+      "policy": "legacy_ascii_quotes_for_unencodable_unicode_marks"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "INFO",
+      "formid": "00022B42",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "2",
+      "english_sha256": "320693940cdfa2a59f1bebba694a5a1743255a22e0190e1721ea97f4ef34e10f",
+      "utf8_target_sha256": "0739c37fe22837fa5c81e086ecb58255867486b8e3aa830f9d976b59e4014b02",
+      "policy": "legacy_ascii_quotes_for_unencodable_unicode_marks"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "INFO",
+      "formid": "00022B4F",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "0",
+      "english_sha256": "f4121a0718e3f487610c7f8ae8a7b61f1ba518e76fe121cc52419aa804180bf3",
+      "utf8_target_sha256": "1025a592004480b6b91c1df001c481ab51a1eb09be7cf3918d49dc899c2b45e3",
+      "policy": "legacy_ascii_quotes_for_unencodable_unicode_marks"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "INFO",
+      "formid": "000302D5",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "1",
+      "english_sha256": "25345297e3ee03c72e3f1843db992d37e28095d20d9712a76cf60d4d4de6ff3c",
+      "utf8_target_sha256": "6a6921542a2aed0133a2fa985481f9ba710f71e3200b1cd59bddae78470be146",
+      "policy": "legacy_ascii_quotes_for_unencodable_unicode_marks"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "INFO",
+      "formid": "00033FCB",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "0",
+      "english_sha256": "b1004e1841acce2c2c5f6afdbf59f0519d9868818a526be1935e1dcfd34be6a3",
+      "utf8_target_sha256": "781a83235b40d060d3ab9ea510816a751a9bd999d16997cd88af4d7907a5a482",
+      "policy": "legacy_ascii_quotes_for_unencodable_unicode_marks"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "INFO",
+      "formid": "00035C60",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "0",
+      "english_sha256": "0922dc40366d3eb95366d4554ef998e08a1377f3e5bdde2b136315a830ba21a7",
+      "utf8_target_sha256": "40ab8f62040c05398a4e9517bbd5d48b1b0704efa6e041e796c2d0f0af4c91b2",
+      "policy": "legacy_ascii_quotes_for_unencodable_unicode_marks"
+    }
+  ]
+}
