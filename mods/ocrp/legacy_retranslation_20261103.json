@@ -1,0 +1,493 @@
+{
+  "date": "2026-11-03",
+  "source": "OCRP translations_ocrp_1.3.csv",
+  "issue": "Previous canonical memory still contained old bilingual Korean(English) quest text, untranslated proper nouns and semantic errors",
+  "parenthetical_english_retranslated": 42,
+  "other_raw_english_retranslated": 5,
+  "total_changed_rows": 47,
+  "remaining_latin_outside_markup": 0,
+  "corrections": [
+    {
+      "row": 67,
+      "kind": "QUST",
+      "formid": "00036333",
+      "field": "CNAM",
+      "english": "A beggar reminded me that S'krivva can be found at the Lonely Suitor Lodge and at the Arena. I'll need to speak with her to see if there are any special Thieves Guild assignments available.",
+      "previous_korean": "한 거지가 내게 말하길, 스크리바(S'krivva)는 아레나의 외로운 남자의 여관(Lonely Suitors Lodge)에서 만날 수 있을 것이라고 했다. 혹시 도둑 길드(Thievs Guild)에서의 뭔가 특별한 임무는 없는지 물어봐야 겠다.",
+      "reviewed_korean": "거지에게서 스크리바를 외로운 구혼자 여관과 아레나에서 만날 수 있다는 말을 들었다. 도둑 길드에 특별한 임무가 있는지 그녀에게 물어봐야겠다."
+    },
+    {
+      "row": 70,
+      "kind": "QUST",
+      "formid": "00036333",
+      "field": "CNAM",
+      "english": "I tried to bribe my way into the jail to see Theranis, but the jailor is too honest. Either that or he is terrified of Count Hassildor. It's too bad I can't get a job in the castle. What do you have to do in this town to see the inside of the jail? Get arrested?",
+      "previous_korean": "감옥에 있는 써라니스(Theranis)를 만나기 위해서는 뇌물을 먹일 필요가 있는데, 아무래도 간수가 너무 정직한 사람인 듯싶다. 게다가, 그는 하실도르 백작(Count Hassildor)을 무서워한다. 내가 성 안에서 직업을 구할 수 없는 것이 매우 안타깝다. 이 도시에서 감옥 안을 들어가 볼 방법은 어떤 것이 있을까? 체포 되어야 할까?",
+      "reviewed_korean": "테라니스를 만나려고 감옥 간수에게 뇌물을 건네려 했지만 통하지 않았다. 간수가 너무 정직하거나 하실도르 백작을 몹시 두려워하는 모양이다. 성에서 일자리를 구할 수만 있다면 좋으련만. 이 마을에서 감옥에 들어가려면 대체 어떻게 해야 할까? 체포라도 당해야 하나?"
+    },
+    {
+      "row": 614,
+      "kind": "INFO",
+      "formid": "03027D6C",
+      "field": "NAM1",
+      "english": "Welcome to Black Waterside Stables. Finest horses in all Cyrodiil. And I'm speaking literally. I'm Tovas Selvani, the owner.",
+      "previous_korean": "검은 물가의 마구간(Black Waterside Stables)에 오신 걸 환영합니다. 시로딜 최고의 명마가 갖추어져 있지요. 거짓말이 아닙니다. 난 마구간 주인 Tovas Selvani입니다.",
+      "reviewed_korean": "검은 물가 마구간에 오신 걸 환영합니다. 시로딜 최고의 말을 갖추고 있죠. 말 그대로 최고예요. 저는 마구간 주인 토바스 셀바니입니다."
+    },
+    {
+      "row": 622,
+      "kind": "INFO",
+      "formid": "000335D4",
+      "field": "NAM1",
+      "english": "What are you doing in here? This is the headquarters for the Knights of the Thorn. No one else is allowed inside.",
+      "previous_korean": "당신 여기서 뭘 하는 거요? 여긴 가시 기사단(Knights of the Thorn)의 본부란 말입니다. 아무나 여기 들어오면 안된다구요.",
+      "reviewed_korean": "여기서 뭐 하시는 거죠? 이곳은 가시 기사단의 본부입니다. 관계자 외에는 출입할 수 없어요."
+    },
+    {
+      "row": 746,
+      "kind": "INFO",
+      "formid": "0002D6E4",
+      "field": "NAM1",
+      "english": "I hear Adrienne is sending you out to get Erthor. Is that right?",
+      "previous_korean": "Adrienne이 당신을 보내 에르토르를 데리고 오라고 했다 들었는데 맞나요?",
+      "reviewed_korean": "아드리엔이 당신을 보내 에르토르를 데려오라고 했다던데, 맞나요?"
+    },
+    {
+      "row": 925,
+      "kind": "INFO",
+      "formid": "0302AD88",
+      "field": "NAM1",
+      "english": "She fancies herself a student of the Ayleids, although she sadly lacks any aesthetic instinct whatsoever.",
+      "previous_korean": "그녀는 Ayleid 학자를 자처하고 있지만, 애처롭게도 그녀의 미적감각은 그에 미치지 못하죠. ",
+      "reviewed_korean": "그녀는 아일레이드 연구자라고 자처하지만, 안타깝게도 미적 감각은 전혀 없어요."
+    },
+    {
+      "row": 1063,
+      "kind": "QUST",
+      "formid": "0001351B",
+      "field": "CNAM",
+      "english": "Kithlan has told me that Lady Syl is especially reclusive lately, but I should be able to catch her when she's holding court during the day.",
+      "previous_korean": "키슬란(Kithlan)은 최근 실(Syl) 공작부인께서 적적하게 지내신다고 말해 주었다. 한밤중에 정원에서 그녀를 만나볼 수 있을 것이다.",
+      "reviewed_korean": "키슬란은 실 공작부인이 요즘 특히 사람을 만나지 않는다고 했다. 그래도 낮에 공작부인이 알현을 받을 때라면 만날 수 있을 것이다."
+    },
+    {
+      "row": 1077,
+      "kind": "QUST",
+      "formid": "0001351B",
+      "field": "CNAM",
+      "english": "I have found the items Ma'zaddha hid in his house in the upstairs cupboard. There is evidence of Muurine's involvement; this should be enough to get her to confess. The cupboard where I found the evidence looks like it would be a safe place to store items I've collected, but I wouldn't trust any others here.",
+      "previous_korean": "마자다(Ma'zaddha)가 숨겨놓은 아이템을 찾아냈다. 뮤린(Muurene)이 연관되었다는 증거이다. 이것으로 그녀가 털어놓게 할 수 있을 것이다.",
+      "reviewed_korean": "마자다가 집 위층 찬장에 숨겨둔 물건들을 찾았다. 뮤린이 연루되었다는 증거가 있으니 그녀에게 자백을 받아낼 수 있을 것이다. 증거가 있던 찬장은 내가 모은 물건을 보관하기에 안전해 보이지만, 이 집의 다른 보관함은 믿지 않는 편이 좋겠다."
+    },
+    {
+      "row": 1078,
+      "kind": "QUST",
+      "formid": "0001351B",
+      "field": "CNAM",
+      "english": "I have found the items Ma'zaddha hid in his house in the upstairs cupboard. The evidence points to Nelrene, and I should confront her about it. The cupboard where I found the evidence looks like it would be a safe place to store items I've collected, but I wouldn't trust any others here.",
+      "previous_korean": "마자다(Ma'zaddha)가 숨겨놓은 아이템을 찾아냈다. 증거는 넬린(Nelrene)을 가리키니, 이것으로 넬린(Nelrene)과 대면해 봐야겠다.",
+      "reviewed_korean": "마자다가 집 위층 찬장에 숨겨둔 물건들을 찾았다. 증거는 넬레네를 가리키고 있으니 그녀를 직접 추궁해야겠다. 증거가 있던 찬장은 내가 모은 물건을 보관하기에 안전해 보이지만, 이 집의 다른 보관함은 믿지 않는 편이 좋겠다."
+    },
+    {
+      "row": 1109,
+      "kind": "QUST",
+      "formid": "0001D21C",
+      "field": "CNAM",
+      "english": "Roland tells me that he thought his lover was having an affair, so he followed her one night on a walk. He came across Seridur draining the blood from her neck. Roland says he attacked Seridur, and in the chaos, Roland's lover was killed. Seridur got away. Knowing Seridur was a respected member of the Imperial City, he panicked and ran to the cabin here to collect his thoughts and decide what to do next. I need to decide what to do about this.",
+      "previous_korean": "롤랜드(Roland)는 그의 애인이 누군가와 바람이 났다고 생각하고는, 어느날 밤 어디론가 걸어가는 그녀를 따라갔다고 말했다. 그는 그녀의 목에서 피를 빨고 있는 쎄러루르(Seridur)를 목격하게 되었다. 롤랜드(Roland)는 그가 쎄러루르(Seridur)를 공격했고, 혼란한 와중에 애인이 살해되었다고 했다. 쎄러루르(Seridur)는 사라졌다. 쎄러루르(Seridur)는 임페리얼시티의 존경받는 인물임을 알고 있기에, 그는 겁에 질려 다음 행보를 모색하기 위해 이곳 오두막으로 달려왔다. 이 일을 어떻게 할지 결정해야 한다.",
+      "reviewed_korean": "롤랜드는 애인이 바람을 피운다고 의심해 어느 날 밤 그녀의 뒤를 밟았다고 했다. 그러다 세리두르가 애인의 목에서 피를 빨아들이는 모습을 목격했다. 롤랜드는 세리두르를 공격했지만 혼란스러운 와중에 애인이 죽었고, 세리두르는 도망쳤다고 한다. 세리두르가 임페리얼 시티에서 존경받는 인물이라는 사실을 알고 겁에 질린 롤랜드는 생각을 정리하고 다음 행동을 결정하려고 이 오두막으로 달려왔다. 이 일을 어떻게 처리할지 결정해야 한다."
+    },
+    {
+      "row": 1161,
+      "kind": "QUST",
+      "formid": "000224E1",
+      "field": "CNAM",
+      "english": "I've found the book titled \"Fingers of the Mountain\"; I need to deliver it to either Earana at the Grey Mare tavern in Chorrol, or to Teekeeus at the Chorrol Mages Guild.",
+      "previous_korean": "\"핑거스 오브 더 마운틴(Fingers of the Mountain)\" 이란 제목을 가진 책을 찾았다. 코롤의 그레이 메어(Grey Mare)선술집의 이라나(Earana)에게 가져다 주거나 코롤 메이지길드의 티키어스(Teekeeus)에게 가져다 줘야한다.",
+      "reviewed_korean": "'산의 손가락'이라는 책을 찾았다. 코롤의 회색 암말 여관에 있는 에라나에게 건네주거나 코롤 메이지 길드의 티키우스에게 가져다줘야 한다."
+    },
+    {
+      "row": 1169,
+      "kind": "QUST",
+      "formid": "00022E5A",
+      "field": "CNAM",
+      "english": "I've purchased Knightfall from Phintias at the First Edition Bookshop in the Market District. I should read it to find out more about Garridan's Tears.",
+      "previous_korean": "상가지역의 퍼스트에디션 서점의 핀티아즈에게 나이트폴(Knightfall)을 구입했다. 게리든(Garridan)의 눈물에 대하여 더 많은 것을 찾기 위해 이것을 읽어봐야 한다.",
+      "reviewed_korean": "시장 지구의 퍼스트 에디션 서점에서 핀티아스에게 '기사의 최후'를 구입했다. 개리든의 눈물에 대해 더 알아보려면 읽어 봐야겠다."
+    },
+    {
+      "row": 1198,
+      "kind": "QUST",
+      "formid": "000253BB",
+      "field": "CNAM",
+      "english": "Faelian lives at the Tiber Septim Hotel, in the Talos Plaza District of the Imperial City. I should ask around for him there. I can feel myself getting closer. But I must remember, I will forfeit my bonus if Faelian is killed in an insecure location. The hotel simply will not do.",
+      "previous_korean": "페일리언(Faelian)은 임페리얼시티의 탈로스광장의 타이버셉팀 호텔에서 묵고 있다. 그 곳에서 그의 행방을 물어야한다. 점점 목표에 다가가는 것이 느껴진다. 그러나 페일리언(Faelian)이 엉뚱한 장소에서 죽게 된다면 보수가 형편없이 줄어들 것이란 점을 명심해야만 한다. 호텔은 적당한 장소가 아니다.",
+      "reviewed_korean": "파엘리엔은 임페리얼 시티 탈로스 광장 지구의 타이버 셉팀 호텔에 묵고 있다. 그곳에서 그의 행방을 물어봐야겠다. 목표에 점점 가까워지고 있다. 하지만 목격자가 생길 만한 장소에서 파엘리엔을 죽이면 추가 보상을 받지 못한다는 점을 기억해야 한다. 호텔은 적절한 장소가 아니다."
+    },
+    {
+      "row": 1199,
+      "kind": "QUST",
+      "formid": "000253BB",
+      "field": "CNAM",
+      "english": "Faelian lives at the Tiber Septim Hotel, in the Talos Plaza District of the Imperial City. I should ask the publican, Augusta Calidia, if she has any information. I can feel myself getting closer. But I must remember, I will forfeit my bonus if Faelian is killed in an insecure location. The hotel simply will not do.",
+      "previous_korean": "페일리언(Faelian)은 임페리얼시티의 탈로스광장의 타이버셉팀 호텔에서 묵고 있다. 펍의 주인 어우구스터스 칼리디아(Augustus Calidia)라면 정보를 줄지도 모른다. 그녀와 이야기 해보는 것이 좋을 듯 하다. 좀 더 목표에 가까워진 듯한 느낌이다. 그러나 페일리언(Faelian)이 엉뚱한 장소에서 죽게 된다면 보수가 형편없이 줄어들 것이란 점을 명심해야만 한다. 적어도 호텔은 적당한 장소가 아니다.",
+      "reviewed_korean": "파엘리엔은 임페리얼 시티 탈로스 광장 지구의 타이버 셉팀 호텔에 묵고 있다. 여관 주인 오거스타 칼리디아에게 정보를 물어보는 게 좋겠다. 목표에 점점 가까워지고 있다. 하지만 목격자가 생길 만한 장소에서 파엘리엔을 죽이면 추가 보상을 받지 못한다는 점을 기억해야 한다. 호텔은 적절한 장소가 아니다."
+    },
+    {
+      "row": 1210,
+      "kind": "QUST",
+      "formid": "00028C05",
+      "field": "CNAM",
+      "english": "Teekeeus has asked that I re-acquire the book \"Fingers of the Mountain\" from Earana. I need to get the book and return it to him.",
+      "previous_korean": "티키어스(Teeekeeus)는 \"핑거스 오브 더 마운틴(Fingers of the Mountain)\"을 이라나(Earana)로부터 되찾아올것을 요구했다. 난 그 책을 되찾아줘야 한다.",
+      "reviewed_korean": "티키우스는 에라나에게서 '산의 손가락' 책을 되찾아 오라고 했다. 책을 찾아서 그에게 돌려줘야 한다."
+    },
+    {
+      "row": 1217,
+      "kind": "QUST",
+      "formid": "00028C05",
+      "field": "CNAM",
+      "english": "Teekeeus has asked that I re-acquire the book \"Fingers of the Mountain\" from Earana. I need to get the book and return it to him.",
+      "previous_korean": "티키어스(Teeekeeus)는 \"핑거스 오브 더 마운틴(Fingers of the Mountain)\"을 이라나(Earana)로부터 되찾아올것을 요구했다. 난 그 책을 되찾아줘야 한다.",
+      "reviewed_korean": "티키우스는 에라나에게서 '산의 손가락' 책을 되찾아 오라고 했다. 책을 찾아서 그에게 돌려줘야 한다."
+    },
+    {
+      "row": 1222,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've heard that Kud-Ei at the Mages Guild in Bravil is searching for assistance in locating a missing friend. A reward is being offered, so I've decided to find out more information.",
+      "previous_korean": "브라빌 메이지길드의 쿠드-아이(Kud-Ei)가 잃어버린 친구를 찾는데 도움을 필요로 한다는 말을 들었다. 보상이 있다는 말에 정보를 더 찾아보기로 결심했다.",
+      "reviewed_korean": "브라빌 메이지 길드의 쿠드-아이가 실종된 친구를 찾는 데 도움을 구한다는 소식을 들었다. 보상도 준다고 하니 자세한 사정을 알아봐야겠다."
+    },
+    {
+      "row": 1223,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've spoken to Kud-Ei of the Mages Guild in Bravil. It seems that her friend, Henantier isn't missing after all, but trapped somewhere and Kud-Ei needs my help liberating him. Kud-Ei said to return to her when I'm ready and she'll take me to him.",
+      "previous_korean": "브라빌 메이지길드의 쿠드-아이(Kud-Ei)와 얘기를 했다. 그녀의 친구 헤넌티어(Henantier)는 결국 실종된 것이 아니라 어딘가에 갇혀 있는듯 하고, 쿠드-아이(Kud-Ei)는 그를 자유롭게 하는데 내 도움이 필요하다. 쿠드-아이(Kud-Ei)는 내가 그녀를 도와줄 준비가 되면 다시 와달라고 했고, 그때 헤넌티어(Henantier)에게 데려다 주겠다고 말했다.",
+      "reviewed_korean": "브라빌 메이지 길드의 쿠드-아이와 이야기했다. 그녀의 친구 헤난티어는 실종된 게 아니라 어딘가에 갇혀 있다고 한다. 쿠드-아이는 그를 구하는 데 내 도움이 필요하다며, 준비가 되면 다시 찾아오라고 했다. 그러면 헤난티어가 있는 곳으로 데려다주겠다고 한다."
+    },
+    {
+      "row": 1232,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Resolve, the second Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 두 번째 속성인 결의의 속성(Element of Resolve)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 두 번째 원소인 결의의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1233,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Patience, the second Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 두 번째 속성인 인내의 속성(Element of Patience)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 두 번째 원소인 인내의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1234,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Courage, the second Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 두 번째 속성인 용기의 속성(Element of Courage)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 두 번째 원소인 용기의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1235,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Perception, the second Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 두 번째 속성인 지각의 속성(Element of Perception)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 두 번째 원소인 지각의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1236,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Resolve, the third Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 세 번째 속성인 결의의 속성(Element of Resolve)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 세 번째 원소인 결의의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1237,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Patience, the third Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 세 번째 속성인 인내의 속성(Element of Patience)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 세 번째 원소인 인내의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1238,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Courage, the third Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 세 번째 속성인 용기의 속성(Element of Courage)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 세 번째 원소인 용기의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1239,
+      "kind": "QUST",
+      "formid": "0002CA50",
+      "field": "CNAM",
+      "english": "I've located the Element of Perception, the third Element to be found in Henantier's Dreamworld. I should continue searching for more elements.",
+      "previous_korean": "헤넌티어의 드림월드(Henantier's Dreamword)안에서 발견된 세 번째 속성인 지각의 속성(Element of Perception)을 찾아냈다. 다른 속성들을 더 찾아내기 위해 탐색을 계속해야 한다.",
+      "reviewed_korean": "헤난티어의 꿈속 세계에서 세 번째 원소인 지각의 원소를 찾았다. 다른 원소들도 계속 찾아봐야겠다."
+    },
+    {
+      "row": 1250,
+      "kind": "QUST",
+      "formid": "0002CD10",
+      "field": "CNAM",
+      "english": "I have spoken with Teekeeus in Chorrol. He has told me that  I must not be a wanted criminal if I wish to join the Mages Guild,",
+      "previous_korean": "코롤(Chorro)의 티키아스(Teekeus)는 메이지길드에 가입하기 위해서는 지명수배자가 되지 말아야 한다고 말했다.",
+      "reviewed_korean": "코롤의 티키우스와 이야기했다. 메이지 길드에 가입하려면 지명수배 중인 범죄자여서는 안 된다고 한다."
+    },
+    {
+      "row": 1272,
+      "kind": "QUST",
+      "formid": "0002D936",
+      "field": "CNAM",
+      "english": "I've been given a charm scroll, and need to use it to help persuade Varon Vamori in Bravil to return Ardaline's staff.",
+      "previous_korean": "매혹의 스크롤(charm scroll)을 받았다. 이것은 아달린의 스태프(Ardaline's staff)를 찾기 위하여 바론 바모리(Varon Varmori)를 설득하는데 사용할 수 있을 것이다.",
+      "reviewed_korean": "매혹 주문 두루마리를 받았다. 이를 사용해 브라빌의 바론 바모리를 설득하고 아달린의 지팡이를 돌려받아야 한다."
+    },
+    {
+      "row": 1281,
+      "kind": "QUST",
+      "formid": "000356C9",
+      "field": "CNAM",
+      "english": "Modryn Oreyn would like me to join the Blackwood Company. I am to go to their headquarters in Leyawiin, infiltrate their ranks, and follow them on a mission to find out the secret of their effectiveness.",
+      "previous_korean": "마드런 오리언(Modryn Oreyn)은 내가 블랙우드 컴패니(Blackwood Company)에 가입하기를 원했다. 난 레이어윈에 있는 그들의 본부로 가서 그들의 조직에 잠입한 뒤, 그들의 임무를 수행하면서 그들의 힘에 얽힌 비밀을 조사해야 한다.",
+      "reviewed_korean": "모드린 오레인이 블랙우드 용병단에 가입하라고 했다. 레이아윈에 있는 그들의 본부로 가서 조직에 잠입하고 임무에 동행하며, 그들이 뛰어난 실적을 내는 비결을 알아내야 한다."
+    },
+    {
+      "row": 1303,
+      "kind": "QUST",
+      "formid": "00036332",
+      "field": "CNAM",
+      "english": "S'krivva tells me that Hieronymus Lex, Captain of the Imperial Watch, has pulled guards from all over the Imperial City to lock down the Waterfront. He has vowed to remain there until someone rats out the Gray Fox. If I want to help I have to find Methredhel. She is hiding somewhere in the Imperial City.",
+      "previous_korean": "스크리바(S'krivva)는 임페리얼 순찰대(Imperial Watch) 대장인 히로너머스 렉스(Hieronymus Lex)가, 임페리얼시티의 가드를 모두 소집해 선창가(Waterfront)를 격리시켰다. 그것은 누군가가 그레이 폭스(Gray Fox)를 잡을 때까지 지속될 것이라 했다. 돕고 싶다면 메쓰레델(Methredhel)을 찾아보라고 했다. 그녀는 임페리얼시티 어딘가에 숨어있다고 했다.",
+      "reviewed_korean": "스크리바에게서 임페리얼 경비대장 히에로니무스 렉스가 임페리얼 시티 전역에서 경비병을 불러 모아 선창가를 봉쇄했다는 말을 들었다. 누군가 그레이 폭스를 밀고할 때까지 철수하지 않겠다고 맹세했다고 한다. 도우려면 임페리얼 시티 어딘가에 숨어 있는 메스레델을 찾아야 한다."
+    },
+    {
+      "row": 1304,
+      "kind": "QUST",
+      "formid": "00036332",
+      "field": "CNAM",
+      "english": "Methredhel has a plan to force Hieronymus Lex to lift his siege of the Waterfront. Myself and four other Thieves Guild operatives will go on a crime spree. Each of us is assigned a high-profile item to steal. I am to steal Hrormir's staff from the Arch-Mage's room at the Arcane University. I have a note I am supposed to leave in his nightstand.",
+      "previous_korean": "메쓰레델(Methredhel)은 히로너머스 렉스(Hieronymus)가 선창가(Waterfront)에 대한 공세를 강화했다고 했다. 나를 비롯해 네 명의 다른 도둑길드원(Thieves Guild)들이 움직일 것이라고 했다. 우리들에게는 각각 훔쳐야 할 것들이 할당되었다. 난 아케인 대학 아크메이지(Archmage)의 침실에 있는 흐로어마이어(Hrormir)의 지팡이를 훔쳐야 한다. 그리고 도망쳐 나올 때 그곳 서랍장에 두고나올 쪽지 하나를 받았다.",
+      "reviewed_korean": "메스레델에게는 히에로니무스 렉스가 선창가 포위를 풀도록 강제할 계획이 있다. 나와 도둑 길드원 네 명이 연달아 도둑질을 벌이고, 각자 눈에 띄는 귀중품을 하나씩 훔치기로 했다. 내 목표는 아케인 대학의 대마법사 방에서 흐로르미르의 지팡이를 훔치는 것이다. 그의 침대 옆 탁자에 남겨 둘 쪽지도 받았다."
+    },
+    {
+      "row": 1308,
+      "kind": "QUST",
+      "formid": "00036332",
+      "field": "CNAM",
+      "english": "I slid the note into the Arch-Mage's nightstand. Now to get the staff back to Methredhel.",
+      "previous_korean": "아크메이지의 침실 서랍장에 쪽지를 넣어뒀다. 이제 스태프를 메쓰레델(Methredhel)에게 가져다 주면 된다.",
+      "reviewed_korean": "대마법사의 침대 옆 탁자에 쪽지를 넣어 두었다. 이제 지팡이를 메스레델에게 돌려주면 된다."
+    },
+    {
+      "row": 1311,
+      "kind": "QUST",
+      "formid": "00036332",
+      "field": "CNAM",
+      "english": "While spying on Hieronymus Lex, I saw a Dremora deliver a note to him. Lex has begun moving his watchmen out of the Waterfront. I think this is the signal for me to report back to Methredhel. Lex dropped that note. I wonder if I can find it?",
+      "previous_korean": "히로너머스 렉스(Hieronymus Lex)를 염탐하고 있을 때 드러모라족 하나가 그에게 쪽지를 건내줬다. 렉스(Lex)는 쪽지를 보자 감시병들과 함께 선창가(Waterfront)에서 나가기 시작했다. 이것이 지금 내가 메쓰레델(Methredhel)에게 보고해야 할 신호 같다. 렉스(Lex)는 종이쪽지를 떨어뜨렸다. 좀 봐도 괜찮겠지?",
+      "reviewed_korean": "히에로니무스 렉스를 염탐하던 중 드레모라가 그에게 쪽지를 건네는 모습을 보았다. 렉스가 경비병들을 선창가에서 철수시키기 시작했다. 이제 메스레델에게 보고하라는 신호인 것 같다. 렉스가 쪽지를 떨어뜨렸는데, 찾아볼 수 있을까?"
+    },
+    {
+      "row": 1314,
+      "kind": "QUST",
+      "formid": "00036332",
+      "field": "CNAM",
+      "english": "Methredhel has one last task for me. It's too dangerous to return Hrormir's Icestaff directly to the Arcane University. Instead, I have to put the Icestaff into a chest in Ontus Vanin's home. He is a researcher for the Arcane University and will certainly find it there.",
+      "previous_korean": "메쓰레델(Methredhel)은 한가지 더 부탁을 했다. 흐로어마이어의 아이스 스태프(Hrormir's Icestaff)를 아케인 대학에 바로 가져다 놓는 건 너무 위험하니 온터스 베닌(Ontus Vanin)의 집에 있는 상자 안에 가져다 놓으라고 했다. 그는 아케인 대학의 연구원이니 분명 그것을 발견할 것 이라고 했다. ",
+      "reviewed_korean": "메스레델이 마지막 임무를 하나 더 맡겼다. 흐로르미르의 얼음 지팡이를 아케인 대학에 직접 돌려놓기에는 너무 위험하다. 대신 아케인 대학 연구원인 온투스 바닌의 집에 있는 상자에 넣어 두어야 한다. 그러면 그가 발견할 것이다."
+    },
+    {
+      "row": 1319,
+      "kind": "QUST",
+      "formid": "00036333",
+      "field": "CNAM",
+      "english": "A beggar reminded me that S'krivva can be found at the Lonely Suitor Lodge and at the Arena. I'll need to speak with her to see if there are any special Thieves Guild assignments available.",
+      "previous_korean": "한 거지가 내게 말하길, 스크리바(S'krivva)는 아레나의 외로운 남자의 여관(Lonely Suitors Lodge)에서 만날 수 있을 것이라고 했다. 혹시 도둑 길드(Thievs Guild)에서의 뭔가 특별한 임무는 없는지 물어봐야 겠다.",
+      "reviewed_korean": "거지에게서 스크리바를 외로운 구혼자 여관과 아레나에서 만날 수 있다는 말을 들었다. 도둑 길드에 특별한 임무가 있는지 그녀에게 물어봐야겠다."
+    },
+    {
+      "row": 1322,
+      "kind": "QUST",
+      "formid": "00036333",
+      "field": "CNAM",
+      "english": "I tried to bribe my way into the jail to see Theranis, but the jailor is too honest. Either that or he is terrified of Count Hassildor. It's too bad I can't get a job in the castle. What do you have to do in this town to see the inside of the jail? Get arrested?",
+      "previous_korean": "감옥에 있는 써라니스(Theranis)를 만나기 위해서는 뇌물을 먹일 필요가 있는데, 아무래도 간수가 너무 정직한 사람인 듯싶다. 게다가, 그는 하실도르 백작(Count Hassildor)을 무서워한다. 내가 성 안에서 직업을 구할 수 없는 것이 매우 안타깝다. 이 도시에서 감옥 안을 들어가 볼 방법은 어떤 것이 있을까? 체포 되어야 할까?",
+      "reviewed_korean": "테라니스를 만나려고 감옥 간수에게 뇌물을 건네려 했지만 통하지 않았다. 간수가 너무 정직하거나 하실도르 백작을 몹시 두려워하는 모양이다. 성에서 일자리를 구할 수만 있다면 좋으련만. 이 마을에서 감옥에 들어가려면 대체 어떻게 해야 할까? 체포라도 당해야 하나?"
+    },
+    {
+      "row": 1333,
+      "kind": "QUST",
+      "formid": "00036337",
+      "field": "CNAM",
+      "english": "Amusei has given me another message from the Gray Fox. I am to meet him at Ganredhel's house in Cheydinhal.",
+      "previous_korean": "아뮤세이(Amusei)가 나에게 그레이폭스(Gray Fox)로부터의 또 다른 메시지를 전해주었다. 나는 그를 쉐이딘홀의 간렌델(Ganrendel)의 집에서 만날 것이다.",
+      "reviewed_korean": "아뮤세이가 그레이 폭스의 새로운 전갈을 가져왔다. 쉐이딘홀에 있는 간레델의 집에서 그레이 폭스를 만나야 한다."
+    },
+    {
+      "row": 1336,
+      "kind": "QUST",
+      "formid": "00036337",
+      "field": "CNAM",
+      "english": "I found a book of Imbel family genealogy. Very interesting reading. I should ask the Gray Fox about this.",
+      "previous_korean": "나는 임벨(Imbel)가문의 계보에 관한 책을 발견했다. 매우 재미있는 읽을거리였다. 이것에 대해서 그레이폭스(Gray Fox)에게 물어봐야겠다.",
+      "reviewed_korean": "임벨 가문의 족보를 발견했다. 꽤 흥미로운 내용이다. 그레이 폭스에게 이 사실을 물어봐야겠다."
+    },
+    {
+      "row": 1337,
+      "kind": "QUST",
+      "formid": "00036337",
+      "field": "CNAM",
+      "english": "I found a book of Imbel family genealogy. No mention of Springheel Jak's burial location. Maybe the Earl himself can tell me, with a little friendly persuasion.",
+      "previous_korean": "나는 임벨(Imbel)가문의 계보에 관한 책을 발견했다. 스프링힐 잭(Springheel Jak)이 묻힌 장소에 대한 언급은 없었다. 아마 약간의 상냥한 설득이면 백작 스스로 나에게 말할 것이다.",
+      "reviewed_korean": "임벨 가문의 족보를 발견했지만 스프링힐 잭이 묻힌 곳은 적혀 있지 않았다. 적당히 설득한다면 백작에게 직접 알아낼 수 있을지도 모른다."
+    },
+    {
+      "row": 1340,
+      "kind": "QUST",
+      "formid": "00036337",
+      "field": "CNAM",
+      "english": "I have read Jakben Imbel's diary, or should I say Springheel Jak's diary? Now I understand why the boots were not in the tomb. Why bury such a valuable item when you can wear it? Even more shocking, it seems that Springheel Jak may have known the Gray Fox himself! They may have been partners in crime several centuries ago.",
+      "previous_korean": "잭번 임벨(Jakben Imbel) 또는 스프링힐 잭(Springheel Jak)의 일기를 읽었다. 왜 부츠가 무덤 안에 없었는지 이해했다. 그렇게 값진 아이템을 간직한 상태로 묻혔을까? 더 놀라운 것은 스프링힐 잭(Springheel Jak)이 그레이폭스(Gray Fox)를 아는 것같이 보인다는 것이다. 그들은 아마 몇 세기 전에 범죄의 파트너였을 것이다.",
+      "reviewed_korean": "잭벤 임벨의 일기를 읽었다. 아니, 스프링힐 잭의 일기라고 해야 할까? 이제 왜 장화가 무덤에 없었는지 알겠다. 이렇게 귀한 물건을 신고 다닐 수 있는데 굳이 묻어 둘 이유가 없지 않은가? 더욱 놀라운 건 스프링힐 잭이 그레이 폭스를 직접 알았을지도 모른다는 사실이다. 몇 세기 전에는 두 사람이 범죄의 동업자였을지도 모른다."
+    },
+    {
+      "row": 1343,
+      "kind": "QUST",
+      "formid": "00036337",
+      "field": "CNAM",
+      "english": "The Gray Fox thanked me for getting him the boots.",
+      "previous_korean": "그레이폭스(Gray Fox)는 부츠를 가져다 준 것에 대해 고마워했다. 그는 보수로 500골드를 지불했다.",
+      "reviewed_korean": "그레이 폭스는 장화를 찾아준 데 대해 감사했다."
+    },
+    {
+      "row": 1351,
+      "kind": "QUST",
+      "formid": "00066EBE",
+      "field": "CNAM",
+      "english": "Pyke was overjoyed at the return of his Medallion, and has rewarded me with a gift.",
+      "previous_korean": "Pyke는 그의 메달을 되찾아서 매우 기뻐하고, 나에게 선물과 함께 보상을 주었다.",
+      "reviewed_korean": "파이크는 메달을 되찾자 몹시 기뻐했고, 감사의 선물을 주었다."
+    },
+    {
+      "row": 1356,
+      "kind": "QUST",
+      "formid": "0006D602",
+      "field": "CNAM",
+      "english": "I've arrived at the pool Sickly Bernice described. I should get as close as possible to the statue in its center to gather a sample of the aquanostrum.",
+      "previous_korean": "병약한 Bernice가 말해준 곳에 도착했다. 될 수 있는 한 석상으로 가까이 가서 Aquanostrum의 물을 채취해야 겠다.",
+      "reviewed_korean": "병약한 버니스가 말한 연못에 도착했다. 가운데에 있는 석상으로 최대한 가까이 다가가 아쿠아노스트룸을 채취해야겠다."
+    },
+    {
+      "row": 1357,
+      "kind": "QUST",
+      "formid": "0006D602",
+      "field": "CNAM",
+      "english": "I've recovered a sample of aquanostrum from the pool Sickly Bernice described. I should return to New Sheoth and present it to her for my well-deserved reward.",
+      "previous_korean": "병약한 Bernice가 말해준 연못에서 Aquanostrum의 물 한 병을 채취했다. New Sheoth로 돌아가 약을 주고 보답을 받아야겠다.",
+      "reviewed_korean": "병약한 버니스가 말한 연못에서 아쿠아노스트룸 표본을 채취했다. 뉴 셰오스로 돌아가 버니스에게 건네주고 보상을 받아야겠다."
+    },
+    {
+      "row": 1360,
+      "kind": "QUST",
+      "formid": "00185FEE",
+      "field": "CNAM",
+      "english": "Aelwin Merowald at the Weye Settlement west of the Imperial City is looking to acquire 12 Rumare Slaughterfish Scales to sell to a customer. He's asked me to do the legwork, as he's been injured and can't handle the difficult task. The Rumare slaughterfish is a special breed of slaughterfish that can only be found in Lake Rumare, directly north of Weye.",
+      "previous_korean": "임페리얼시티의 남서쪽에 위치한 웨이마을(Weye Settlement)의 에일윈 메로왈드(Aelwin Merowald)는 고객에게 팔기 위해 12개의 루메어 슬로터피쉬의 비늘(Rumare Slaughterfish Scales)을 구하고 있었다. 그는 매우 늙어 어려울 일을 할 수 없었기에 내가 그 일을 해주기를 부탁하였다. 루메어 슬로터피쉬(Rumare slaughterfish)는 슬로터피쉬(slaughterfish)의 희귀종이며, 웨이(Weye) 북쪽에 있는 루메어(Rumare) 호수에서만 발견된다고 한다.",
+      "reviewed_korean": "임페리얼 시티 서쪽 웨이 정착지의 아엘윈 메로월드는 손님에게 팔 루마레 살육어 비늘 12개를 구하고 있다. 부상 때문에 직접 위험한 일을 할 수 없다며 내게 부탁했다. 루마레 살육어는 웨이 바로 북쪽에 있는 루마레 호수에만 서식하는 특별한 종류의 살육어라고 한다."
+    },
+    {
+      "row": 1369,
+      "kind": "QUST",
+      "formid": "03018753",
+      "field": "CNAM",
+      "english": "I've found the book titled \"Fingers of the Mountain\"; I need to deliver it to either Earana at the Grey Mare tavern in Chorrol, or to Teekeeus at the Chorrol Mages Guild.",
+      "previous_korean": "\"핑거스 오브 더 마운틴(Fingers of the Mountain)\" 이란 제목을 가진 책을 찾았다. 코롤의 그레이 메어(Grey Mare)선술집의 이라나(Earana)에게 가져다 주거나 코롤 메이지길드의 티키어스(Teekeeus)에게 가져다 줘야한다.",
+      "reviewed_korean": "'산의 손가락'이라는 책을 찾았다. 코롤의 회색 암말 여관에 있는 에라나에게 건네주거나 코롤 메이지 길드의 티키우스에게 가져다줘야 한다."
+    },
+    {
+      "row": 1378,
+      "kind": "QUST",
+      "formid": "000356C9",
+      "field": "CNAM",
+      "english": "Modryn Oreyn would like me to join the Blackwood Company. I am to go to their headquarters in Leyawiin, infiltrate their ranks, and follow them on a mission to find out the secret of their effectiveness.",
+      "previous_korean": "마드런 오리언(Modryn Oreyn)은 내가 블랙우드 컴패니(Blackwood Company)에 가입하기를 원했다. 난 레이어윈에 있는 그들의 본부로 가서 그들의 조직에 잠입한 뒤, 그들의 임무를 수행하면서 그들의 힘에 얽힌 비밀을 조사해야 한다.",
+      "reviewed_korean": "모드린 오레인이 블랙우드 용병단에 가입하라고 했다. 레이아윈에 있는 그들의 본부로 가서 조직에 잠입하고 임무에 동행하며, 그들이 뛰어난 실적을 내는 비결을 알아내야 한다."
+    }
+  ],
+  "additional_semantic_fixes": [
+    {
+      "row": 1070,
+      "english": "I've been told that Ma'zaddha has been meeting Nelrene late at night in Crucible. I'll need to find them and listen in on their conversation.",
+      "old": "마'자다가 한밤중에 넬렌을 만난다는 것을 알아냈다. 그들을 찾아내 대화를 들어봐야 한다.",
+      "new": "마자다가 밤늦게 크루시블에서 넬레네를 만나고 있다는 말을 들었다. 두 사람을 찾아내어 대화를 엿들어야겠다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    },
+    {
+      "row": 1188,
+      "english": "I have administered the Languorwine antidote, and Francois Motierre has awakened from his poison-induced sleep. I should now speak with him and make sure he's well enough to travel to the Grey Mare.",
+      "old": "랭거와인 해독제를 투여하자 프랑수아 모티에르가 혼수 상태에서 깨어났다. 그는 내게 회색 암말 여관까지 안전하게 데려다 달라고 했다.",
+      "new": "랭거와인 해독제를 투여하자 프랑수아 모티에르가 독으로 인한 잠에서 깨어났다. 이제 그와 이야기를 나누고, 회색 암말 여관까지 이동할 수 있을 만큼 회복했는지 확인해야 한다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    },
+    {
+      "row": 1212,
+      "english": "I've stolen the \"Fingers of the Mountain\" book from Earana's room in the Grey Mare. I need to find Teekeeus, and deliver it to him.",
+      "old": "에라나의 방에서 \"산의 손가락\" 책을 훔쳤다. 티키우스에게 가져다주어야 한다.",
+      "new": "회색 암말 여관에 있는 에라나의 방에서 '산의 손가락' 책을 훔쳤다. 티키우스를 찾아 책을 건네줘야 한다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    },
+    {
+      "row": 1264,
+      "english": "Sulinus Vassinus has offered to complete my task at Bleak Flats Cave for me, at a price. If I'm going to take him up on the offer, I need to bring him 300 gold. Otherwise, I should speak with the other guild mages to find where Erthor is.",
+      "old": "술리누스 바시누스는 돈을 받고 황량한 평원 동굴에서 할 일을 대신 해주겠다고 제안했다. 그러기 위해서는 300골드를 주어야 한다. 그게 싫다면 어소르를 찾기 위해 길드의 다른 마법사에게 말해봐야 한다.",
+      "new": "술리누스 바시누스는 돈을 받으면 블리크 플랫츠 동굴에서 내가 맡은 일을 대신 해주겠다고 제안했다. 이 제안을 받아들이려면 금화 300개를 가져다줘야 한다. 그렇지 않다면 에르토르가 어디 있는지 알아내기 위해 다른 길드 마법사들과 이야기해야 한다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    },
+    {
+      "row": 1285,
+      "english": "We've arrived at Water's Edge, which it seems has been overrun by goblins. I have been given the order to attack.",
+      "old": "고블린에게 습격 당한 워터스 엣지에 도착했다. 난 공격명령을 받았다.",
+      "new": "고블린에게 점령당한 것으로 보이는 워터스 엣지에 도착했다. 공격 명령을 받았다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    },
+    {
+      "row": 1347,
+      "english": "I've recovered an unusual amulet with the markings of a group calling itself The Knights of the Thorn. On the back, there is an inscription that reads \"To Pyke, from Farwil.\" I can only assume that Pyke is here in the Shivering Isles. If I can find him, I'm sure he will be happy to get his medallion back.",
+      "old": "가시 기사단의 표식이 새겨진 특이한 목걸이를 발견했다. 뒷면에는 '파이크에게, 파윌이'라고 새겨져 있다. 파이크가 쉬버링 아일즈에 있는 모양이다. 그를 찾으면 메달을 돌려받고 기뻐할 것이다.",
+      "new": "가시 기사단의 문양이 새겨진 특이한 목걸이를 발견했다. 뒷면에는 '파이크에게, 파윌이'라고 새겨져 있다. 파이크가 쉬버링 아일즈 어딘가에 있다는 뜻일 것이다. 그를 찾으면 메달을 돌려받고 매우 기뻐할 것이다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    },
+    {
+      "row": 1361,
+      "english": "I've acquired 12 Rumare Slaughterfish Scales. I should bring them to Aelwin Merowald at the Weye Settlement as soon as I can.",
+      "old": "12개의 루메어 식인물고기 비늘을 구했다. 빨리 그것들을 웨이 마을의 엘윈 메로왈드에게 가져다 주어야 한다.",
+      "new": "루마레 살육어의 비늘 12개를 구했다. 가능한 한 빨리 웨이 정착지의 아엘윈 메로월드에게 가져다줘야겠다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    },
+    {
+      "row": 1362,
+      "english": "I've given the 12 Rumare Slaughterfish Scales to Aelwin Merowald and he's rewarded me with a magical ring.",
+      "old": "12개의 루메어 식인물고기 비늘을 엘윈 메로왈드에게 주었고, 답례로 마법반지를 나에게 주었다.",
+      "new": "루마레 살육어의 비늘 12개를 아엘윈 메로월드에게 건넸다. 그는 보상으로 마법 반지를 주었다.",
+      "reason": "source_semantics_missing_or_mistranslated"
+    }
+  ],
+  "additional_semantic_fix_count": 8
+}

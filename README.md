@@ -1,6 +1,6 @@
 > 최신 본편 설치기: [v1.2.1](https://github.com/munument1/Oblivion-KR-Translation/releases/tag/v1.2.1). UOP KR1.14 포함. 자세한 변경은 release_notes_v1.2.1.md 참조.
 
-> 모드 번역: [OOO Enhanced 6.9-KR1.0](mods/ooo_enhanced/README.md) — 한영 대조표, 재현 빌더와 Nexus API 배포 작업 포함.
+> 모드 번역: [OOO Enhanced 6.9-KR1.0](mods/ooo_enhanced/README.md) · [Oblivion Content Restoration Project OCRP 한국어 번역](mods/ocrp/README.md) — OCRP 기본판·Reduced·Knights·OOO 호환 패치의 한영 대조표 및 정적 검증 빌더. OCRP는 게임 내 실증 전입니다.
 
 # Oblivion Original 한국어 번역 v1.2.0
 

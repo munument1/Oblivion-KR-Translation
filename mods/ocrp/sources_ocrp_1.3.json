@@ -1,0 +1,104 @@
+{
+  "version": "OCRP-1.3-Reduced-1.0-Knights-1.0-OOO-compat-1.0",
+  "translation_sha256": "48ecbcc62c3fc11f046becd62d789309813c9fbbf9eec89ed5edbe2264fa5b76",
+  "plugins": {
+    "Oblivion Content Restoration Project -- Knights.esp": {
+      "sha256": "d919d2e3a2af51dc2ea78c90353ac8e286df51a39f4f738316aabf694f15f22f",
+      "size": 1707,
+      "records": 5
+    },
+    "Oblivion Content Restoration Project - Reduced.esp": {
+      "sha256": "c322e040c79feaf7c45ac8349aa6add195890a794622216cce050bd3b467e688",
+      "size": 68355,
+      "records": 68
+    },
+    "Oblivion Content Restoration Project.esp": {
+      "sha256": "9dd77f2df4b27de60e0f4858d6a2946f0740a452b47c9a4e08b7c9ba211dbbec",
+      "size": 612801,
+      "records": 1074
+    },
+    "Infiltration Fix for OOO Enhanced and ORP.esp": {
+      "sha256": "fda51065a9a71479a833e543bcf33507ba8f40a40a9db51118592fc125f9c73f",
+      "size": 4337,
+      "records": 2
+    }
+  },
+  "translated": 1388,
+  "excluded_internal": [
+    {
+      "file": "Oblivion Content Restoration Project -- Knights.esp",
+      "kind": "DIAL",
+      "fid": "03002A65",
+      "index": 2,
+      "english": "NDProphetSpeechMain",
+      "reason": "internal_identifier"
+    },
+    {
+      "file": "Oblivion Content Restoration Project.esp",
+      "kind": "DIAL",
+      "fid": "0002D8FF",
+      "index": 2,
+      "english": "MG01SulinusConv",
+      "reason": "internal_identifier"
+    },
+    {
+      "file": "Oblivion Content Restoration Project.esp",
+      "kind": "DIAL",
+      "fid": "0003AA94",
+      "index": 2,
+      "english": "SkingradNQDResponses",
+      "reason": "internal_identifier"
+    },
+    {
+      "file": "Oblivion Content Restoration Project.esp",
+      "kind": "DIAL",
+      "fid": "0005589B",
+      "index": 2,
+      "english": "SE01BelmyneRant",
+      "reason": "internal_identifier"
+    },
+    {
+      "file": "Oblivion Content Restoration Project.esp",
+      "kind": "DIAL",
+      "fid": "000A5642",
+      "index": 2,
+      "english": "FGD09JafazirGr",
+      "reason": "internal_identifier"
+    },
+    {
+      "file": "Oblivion Content Restoration Project.esp",
+      "kind": "DIAL",
+      "fid": "000C9FB4",
+      "index": 2,
+      "english": "TG11TalkToMillona13",
+      "reason": "internal_identifier"
+    },
+    {
+      "file": "Oblivion Content Restoration Project.esp",
+      "kind": "DIAL",
+      "fid": "000C9FB6",
+      "index": 2,
+      "english": "TG11TalkToMillona11",
+      "reason": "internal_identifier"
+    },
+    {
+      "file": "Oblivion Content Restoration Project.esp",
+      "kind": "QUST",
+      "fid": "030090EA",
+      "index": 2,
+      "english": "All necessary changes to be made at runtime go here",
+      "reason": "internal_identifier"
+    }
+  ],
+  "scripts_policy": "Translate verified Message/MessageBox literal operands only; relocate SCDA offsets, update SCHR, recompile matching SCTX. Preserve all other operands; skip debugging and source-only literals.",
+  "ingame_tested": false,
+  "script_translation_sha256": "f57cc19edc83428fca37d57bbac4f2fa9f9d2b55e1ea999057b7e38816b5a65d",
+  "script_entries": 59,
+  "legacy_audit": {
+    "parenthetical_english_retranslated": 42,
+    "other_raw_english_retranslated": 5,
+    "total_changed_rows": 47,
+    "review_report": "legacy_retranslation_20261103.json",
+    "additional_semantic_fix_count": 8
+  }
+}
