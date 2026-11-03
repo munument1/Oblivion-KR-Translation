@@ -1,0 +1,28 @@
+{
+  "source_anchored_reviews": [
+    {
+      "effective_source": "Oblivion.esm",
+      "record_type": "INFO",
+      "raw_formid": "0000BF8A",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "0",
+      "old_english": "If that's Theranis' treasure, I know where it is. But I'm not telling you anything until we're out of here. Get me out of the castle.",
+      "old_korean": "만약 그게 테라니스의 보물이라면, 그게 어디 있는지 내가 알고 있어. 하지만 여기서 벗어나기전까진 너에게 말해주지 않을거야. 성에서 나를 벗어나게 해주게.",
+      "new_korean": "만약 그게 테라니스의 보물이라면, 그게 어디 있는지 내가 알고 있어. 하지만 여기서 벗어나기 전까진 너에게 말해주지 않을 거야. 날 이 성에서 꺼내 줘.",
+      "review_note": "Get me out of the castle is direct request for release; previous Korean unnatural and shifts speech register within sentence."
+    },
+    {
+      "effective_source": "Oblivion.esm",
+      "record_type": "INFO",
+      "raw_formid": "0000C1CE",
+      "field": "NAM1",
+      "editor_id": "",
+      "occurrence": "0",
+      "old_english": "Well, I'm afraid all of this was my fault. They hijacked the Bloated Float because of me. Business has been waning of late, so I invented a story.",
+      "old_korean": "저, 이 일은 전부 제 잘못입니다. 그들이 블로티드 플로트를 납치한 것도 저 때문이에요. 요즘 장사가 잘 안돼서 이야기를 하나 지어냈거든요.",
+      "new_korean": "저, 이 일은 전부 제 잘못입니다. 그들이 블로티드 플로트를 점거한 것도 저 때문이에요. 요즘 장사가 잘 안돼서 이야기를 하나 지어냈거든요.",
+      "review_note": "A ship/inn can be hijacked, seized, or occupied, not kidnapped; preserve the speaker's polite tone."
+    }
+  ]
+}

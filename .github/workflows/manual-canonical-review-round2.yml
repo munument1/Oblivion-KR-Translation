@@ -1,0 +1,32 @@
+name: Stage second source-verified dialogue review
+on:
+  push:
+    paths:
+      - 'scripts/apply_manual_canonical_review_round2.py'
+      - 'docs/translation_memory/manual_source_review_round2.json'
+      - '.github/workflows/manual-canonical-review-round2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Two-key exact-source dry run, no canonical changes
+        run: |
+          PYTHONPATH=. python scripts/apply_manual_canonical_review_round2.py
+          git diff --exit-code -- canonical_translation_v2.csv
+          git diff --check
+      - name: Commit candidate sha and scope report only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/translation_memory/manual_review_round2_report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Preflight second pair of source-reviewed dialogue fixes"
+            git push origin HEAD:main
+          fi
