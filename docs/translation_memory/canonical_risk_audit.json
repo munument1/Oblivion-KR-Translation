@@ -718,5 +718,265 @@
       "english_preview": "A Dance in Fire, v 7",
       "korean_preview": "A Dance in Fire, 7 권"
     }
+  ],
+  "all_english_gloss_candidates": [
+    {
+      "source": "Knights.esp",
+      "type": "BOOK",
+      "formid": "01000EDE",
+      "field": "DESC",
+      "english_sha256": "2100150cf3dbfc2886e55a62d5ab979f94182a2bd22c45b9a4f87f1b569f630a",
+      "english_preview": "<BR>\r\n<font face=5>\r\nThis journal is a record of failure. My failure.\r\n<p>\r\nIn the immediate sense, this is no doubt obvious. If you are reading this, you are probably standing over my body, slain in the depths of the Shrine of the Crusader",
+      "glosses": [
+        {
+          "text": "West weald",
+          "in_original_english": false,
+          "parentheses_in_original": false,
+          "context": "것이다.  <br>\n<br>\n그대가 그 사명을 잇는 자일지도 모른다.<br>\n<br>\n그렇다면,  <br>\n서부 광야(West weald)의 수도원으로 가라.  <br>\n내 반지를 사용하여 수도원 지하 납골당에 들어가라.  <br>\n그곳에 흉갑이 있다. "
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00015727",
+      "field": "DESC",
+      "english_sha256": "55478eb08f0ecf5b6111d89d0679636d74f10868191815c37c51986d9b97d2a3",
+      "english_preview": "<font face= 5>\r\n<BR>\r\n<BR>\r\nLynch,<BR>\r\n<BR>\r\nYour instructions are to make your way to the bottom deck of the ship and secure all of the rooms there. Make sure you don't disturb Minx. She's to be left alone to do her assignment. Remember, ",
+      "glosses": [
+        {
+          "text": "Minx",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "\n<br>\n너에게 내릴 지시는 바닥 갑판의 통로와 거기에 있는 모든 객실과 창고를 엄중히 경계하는 거야. 그리고 밍스(Minx)를 방해하지 말도록. 걔가 할당받은 부분은 혼자하게 내버려 둬. 일이 끝나고 배에서 흩어지면, 3일 이내에 브라빌에서"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243ED",
+      "field": "DESC",
+      "english_sha256": "670ae578f9114afeddf62f92e80e627931ea5f07c6d76e3e029f59782de46223",
+      "english_preview": "<font face=1><br>\r\nFeyfolken, Book Two<br>\r\nby Waughin Jarth<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/a_70x61.dds\" width=70 height=61>fter the test had been given and Vonguldak and Taksim had demonstrated their knowledge of elementary conjurati",
+      "glosses": [
+        {
+          "text": "fortunate",
+          "in_original_english": false,
+          "parentheses_in_original": false,
+          "context": ".<br>\r\n<br>\r\n그녀가 보낸 쪽지에는 이렇게 적혀 있었다. \"지난번 공고문은 조금 나았음. 다음에는 '운 좋은(fortunate)' 대신 '우연한(fortuitous)'이라는 단어를 쓰지 말 것. 사전에서 찾아보면 알겠지만, 두 단어는 동의어가 "
+        },
+        {
+          "text": "fortuitous",
+          "in_original_english": false,
+          "parentheses_in_original": false,
+          "context": "쪽지에는 이렇게 적혀 있었다. \"지난번 공고문은 조금 나았음. 다음에는 '운 좋은(fortunate)' 대신 '우연한(fortuitous)'이라는 단어를 쓰지 말 것. 사전에서 찾아보면 알겠지만, 두 단어는 동의어가 아님.\"<br>\r\n<br>\r\n그에 대한"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024536",
+      "field": "DESC",
+      "english_sha256": "43c8d5c2462bc7022e5b3afe5a4c3fa625c0a0f49c53859f97b481c3fa7725cd",
+      "english_preview": "<font face=1><br>\r\nA Dance in Fire, Chapter 7<br>\r\nby Waughin Jarth<br>\r\n<br>\r\nScene: Silvenar, Valenwood<br>\r\nDate: 13 Sun's Dusk, 3E 397<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/t_52x61.dds\" width=52 height=61>he banquet at the palace of the ",
+      "glosses": [
+        {
+          "text": "Meat Mandate",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "된 고기 즙이지.\" 바스가 미소 지었다. \"자가를 마시라고 경고했어야 했는데.\"<br>\r\n<br>\r\n\"이제 고기 명령(Meat Mandate)은 이해했겠지.\" 주루스가 웃었다. \"이 보스머들은 포도나무나 들판의 열매를 만지느니 차라리 서로를 잡아먹을 거야.\""
+        },
+        {
+          "text": "Undrape",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "달라고 부탁했네!\" 리오데스 주루스가 소리쳤다. \"더 많은 계약과 협상이 필요할지도 모르니까! 그는 우리를 운드레이프(Undrape)로 임명했네, 궁정의 외국인들을 위한 특별한 명예지! 걱정 말게! 참석할 연회도 많아! 바네치와 아트리우스와의 협상은"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024538",
+      "field": "DESC",
+      "english_sha256": "634deba9d5095c7621e66122feb11456c2b479523cc9daeadd6e6773958ef35e",
+      "english_preview": "<<font face=1><br>\r\nSun's Dawn<br>\r\nBook Two of 2920, <br>\r\nThe Last Year of the First Era<br>\r\nby Carlovac Townway<br>\r\n<br>\r\n3 Sun's Dawn, 2920<br>\r\nThe Isle of Artaeum, Summurset<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/s_61x62.dds\" width=61",
+      "glosses": [
+        {
+          "text": "Rijja",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "조에 앉아 그의 발에 자리잡은 혹을 응시하며 중얼거렸다. \"짐의 주위는 전부 배신자와 밀정들이지.\"\r\n\r\n후궁인 리자(Rijja)는 황제의 허리에 다리를 감은 채로, 그 등을 씻겼다. 오랜 시간에 걸쳐 그녀는 언제 관능적이고 육욕적이어야 하는지 "
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024573",
+      "field": "DESC",
+      "english_sha256": "0bccb1f36af68cde8e4a862eb0cc3f51e952f5ab069829183fad58b4600b215f",
+      "english_preview": "<div align=\"center\"><font face=1><br>\r\nThe Real Barenziah, Part 4<br>\r\nAnonymous<br>\r\n<br>\r\n<div align=\"left\"><IMG src=\"Book/fancy_font/e_78x61.dds\" width=78 height=61>verything I have ever loved, I have lost,\" Barenziah thought despondentl",
+      "glosses": [
+        {
+          "text": "no one",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": " 기분이 상했다고 느끼기는 불가능한 것이었다.<br>\n<br>\n\"제 본명 말씀입니까? 여왕님. 저는 아무것도 아닙니다(no one). 아니, 아니 제 부모님들은 제게 노 원(Know Wan)이라고 이름을 붙였지요, 아니 그게 노 버디(No Budd"
+        },
+        {
+          "text": "Know Wan",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "br>\n\"제 본명 말씀입니까? 여왕님. 저는 아무것도 아닙니다(no one). 아니, 아니 제 부모님들은 제게 노 원(Know Wan)이라고 이름을 붙였지요, 아니 그게 노 버디(No Buddy)였던가? 무슨 상관이겠습니까. 부모님들은 자신들이 알지 "
+        },
+        {
+          "text": "No Buddy",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "(no one). 아니, 아니 제 부모님들은 제게 노 원(Know Wan)이라고 이름을 붙였지요, 아니 그게 노 버디(No Buddy)였던가? 무슨 상관이겠습니까. 부모님들은 자신들이 알지 못하는 것에 대해 어떻게 이름을 붙일 수 있을까요? 아! 노우"
+        },
+        {
+          "text": "Know Not",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "가? 무슨 상관이겠습니까. 부모님들은 자신들이 알지 못하는 것에 대해 어떻게 이름을 붙일 수 있을까요? 아! 노우 낫(Know Not), 그게 제 이름이었던 것 같군요. 제가 기억하지 못하는 아주 오래 전부터 저는 나이팅게일이었습니다. 오, 적어도 저"
+        },
+        {
+          "text": "Knoweyr",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": ". 제 자신을 위한 기억은 남겨놓지 않았어요. 정말 저는 대단한 멍청이입니다. 내가 어디서 태어났더라? 아하, 노웨어(Knoweyr)라는 곳이었죠. 거기 가게되면... 던로민에 정착할 계획이지만... 서두르지는 않고 있어요.'<br>\n<br>\n\"그렇"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024575",
+      "field": "DESC",
+      "english_sha256": "b5a57d5b8c053b180b8e00045040a88c9253b795462591d8f5bafc91928e99c8",
+      "english_preview": "<div align=\"center\">The Ruins of Kemel-Ze<br>\r\nBy Rolard Nordssen<br>\r\n<br>\r\n<div align=\"left\"><IMG src=\"Book/fancy_font/w_69x62.dds\" width=69 height=62>ith the acclamations of the Fellows of the Imperial Society still ringing in my ears, I",
+      "glosses": [
+        {
+          "text": "Tuen Panai",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": " 생각이었다. 세이다 닌에서 현지 수비대 사령관의 추천으로 고용한, 다크 엘프치고는 유난히 쾌활한 통역사 투엔 파나이(Tuen Panai)는 현지 마을 사람들이 수 세대 동안 유적을 약탈해 왔기에 케멜-제에 매우 익숙할 것이라고 장담했다. 덧붙여 말하자면"
+        },
+        {
+          "text": "Ten Penny, 우리가 곧 그를 부르게 된 별명으로, 그는 항상 즐거워했다",
+          "in_original_english": false,
+          "parentheses_in_original": false,
+          "context": "을 사람들이 수 세대 동안 유적을 약탈해 왔기에 케멜-제에 매우 익숙할 것이라고 장담했다. 덧붙여 말하자면, 텐 페니(Ten Penny, 우리가 곧 그를 부르게 된 별명으로, 그는 항상 즐거워했다)는 매우 귀중한 인재였으며, 모로윈드의 오지로 비슷한 탐사를 계획하는 동료들에게 주저 없이 그를 추천할 것이다.<br"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024589",
+      "field": "DESC",
+      "english_sha256": "3a5761ef2ea1b0309b5ef766c982e734ceebe10469200cff272ac4e4feb97975",
+      "english_preview": "<font face=1><br>\r\nOn Artaeum<br>\r\nBy Taurce il-Anselma<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/t_52x61.dds\" width=52 height=61>he Isle of Artaeum (ar-TAY-um) is the third largest island in the Summurset archipelago, located south of the Morid",
+      "glosses": [
+        {
+          "text": "ar-TAY-um",
+          "in_original_english": true,
+          "parentheses_in_original": true,
+          "context": "\n<IMG src=\"Book/fancy_font/t_52x61.dds\" width=52 height=61>아테이움 섬(ar-TAY-um)은 서머셋 군도에서 세 번째로 큰 섬으로, 모리두논 마을인 포탄사 남쪽과 본토 마을인 룬시배 서쪽에 위치해 있다. 이"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "0002458E",
+      "field": "DESC",
+      "english_sha256": "f1af3b47644372da4de6af365850f9f29fcbe1cde5f2770468938bb944b886ca",
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">The Old Ways<br>\r\nby Celarus the Loremaster<br>\r\n<br>\r\n<DIV align=\"left\"><IMG src=\"Book/fancy_font/w_69x62.dds\" width=69 height=62>e who know the Old Ways are well aware of the existence of a spiritual",
+      "glosses": [
+        {
+          "text": "seliffrnsae",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "교이다. 하지만 이것이 우리에게 주어진 신성한 의무, 즉 '엄중하고 충실한 조언'을 낮은 자들에게 제공하는 셀리프른새(seliffrnsae)를 수행하는 데 무슨 도움이 되는가? <br>\r\n<br>\r\n무엇보다 좋은 사람에게 큰 힘을 부여하고 강력한 사람을 선"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00073A63",
+      "field": "DESC",
+      "english_sha256": "7e762a30f1b4cef843f70094f51a16a5142f5b58c90c2fd4ed5f4c793986c708",
+      "english_preview": "<font face=1><DIV align=\"center\">Timeline Series - Vol 1<br>\r\nBefore the Ages of Man, by Aicantar of Shimerene<br>\r\n<br>\r\n<DIV align=\"left\"><IMG src=\"Book/fancy_font/b_60x61.dds\" width=60 height=61>efore man came to rule Tamriel, and before",
+      "glosses": [
+        {
+          "text": "et'Ada",
+          "in_original_english": true,
+          "parentheses_in_original": true,
+          "context": "파도메이에 의해 아우비스[혼돈 또는 전체]로부터 형성되었다. 아카토쉬(아우리엘)가 형성되면서 시간이 시작되었다. 신들(et'Ada)이 형성되었다. 로칸은 신들을 설득하거나 속여서 필멸자의 차원인 넌을 창조하게 했다. 당시 필멸자의 차원은 매우 마법"
+        },
+        {
+          "text": "ME2500",
+          "in_original_english": true,
+          "parentheses_in_original": true,
+          "context": "화산이 형성되었다. (신화적 의미에서의) 마법이 사라지자 우주는 안정되었다. 마침내 선형적인 엘프의 역사가 시작되었다(ME2500).<br>\r\n<br>\r\n<br>\r\n<DIV align=\"center\">* 메레스 시대 *<br>\r\n<br>\r\n<DIV"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "0007F3E7",
+      "field": "DESC",
+      "english_sha256": "405be506c085f1fbb3206efc19f8a72d81857038e96b61ef866fa1490eb39e5a",
+      "english_preview": "<font face=5>\r\n<BR>\r\n<BR>\r\n3 Rain's Hand 3E431<BR>\r\n<BR>\r\nWe were finally able to convince that idiot rogue Lewin that it was time to give up that strongbox of money he stole from Lelles' Quality Merchandise in Anvil and ditch it outside th",
+      "glosses": [
+        {
+          "text": "Eyelid",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "리품을 챙겨 북쪽으로 향했다. 그러다 트룸베의 유적에 다다랐다. 신델리우스 말로는 그곳이 에일레이드인지 아니면 눈꺼풀(Eyelid)인지 뭐 그런 오래된 문명이라고 했는데, 내 알 바는 오직 그곳에 금이 얼마나 많이 쌓여 있느냐 뿐이었다. 보통 그런"
+        },
+        {
+          "text": "Akaveery",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "타는 듯한 주황빛과 붉은빛이었다. 신델리우스가 미쳐 날뛰길래 내가 무슨 소란이냐고 물었다. 그가 말하길 그건 아카비어(Akaveery) 뭐시기라나, 뱀 종족인가 사이예시(Sayessie)인가 뭔가 만든 거라고 했다. 내가 이걸 적고 있는 걸 보더니 신"
+        },
+        {
+          "text": "Sayessie",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "날뛰길래 내가 무슨 소란이냐고 물었다. 그가 말하길 그건 아카비어(Akaveery) 뭐시기라나, 뱀 종족인가 사이예시(Sayessie)인가 뭔가 만든 거라고 했다. 내가 이걸 적고 있는 걸 보더니 신델리우스가 방금 사이예시는 T로 시작한다고 우겨댔지만"
+        }
+      ]
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000908C7",
+      "field": "DESC",
+      "english_sha256": "63ec820f5d9ad829998a5e975112fedf1f450c778e21955e675494e44e4b9a4f",
+      "english_preview": "<font face=5>Brugo's take -- 300 ducks. Ready for Middas pickup, after midnight. <br>",
+      "glosses": [
+        {
+          "text": "Brugo",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "<font face=5>\n브루고(Brugo)의 포획 -- 300마리 오리들. 미다스(Middas)에 가지러 가니 준비, 자정후에.<br>"
+        },
+        {
+          "text": "Middas",
+          "in_original_english": true,
+          "parentheses_in_original": false,
+          "context": "<font face=5>\n브루고(Brugo)의 포획 -- 300마리 오리들. 미다스(Middas)에 가지러 가니 준비, 자정후에.<br>"
+        }
+      ]
+    }
   ]
 }
