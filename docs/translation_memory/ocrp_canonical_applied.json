@@ -1,0 +1,96 @@
+{
+  "canonical": "canonical_translation_v2.csv",
+  "audit": "legacy_retranslation_20261103.json",
+  "old_sha256": "57306d322a0cca7d18b452ecb5d0f38bc594d23ed2e6b6040a3eee828c96ca23",
+  "candidate_sha256": "8d06e39e11064c2d880d16d93fad9b20894e08f5395861515aeea1a9c8fcd3a0",
+  "applied": true,
+  "rows": 47227,
+  "corrected": 12,
+  "skipped": {},
+  "changed_record_identities": [
+    {
+      "kind": "INFO",
+      "formid": "0002D6E4",
+      "field": "NAM1",
+      "english_sha256": "2c1210f7e2d54f8a8015fd723207fd69334c8aed2953a70c6aad50f0a8b924c1",
+      "old_korean_sha256": "ad70e733060f13778006b28b15e3f339c908f95ab988c6f6c5de6be035e2d6f1"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0001351B",
+      "field": "CNAM",
+      "english_sha256": "196f25483903d3e34237b5bcdcaea24bda9b322b1b1969aef664c6d4189a7e0a",
+      "old_korean_sha256": "60f7d8bd0a5420f876ab629d7c64b2d2fb88969a87d0fc3c6c9630a9d4f8eb7d"
+    },
+    {
+      "kind": "QUST",
+      "formid": "000253B9",
+      "field": "CNAM",
+      "english_sha256": "ef10a64fdde03577b3107ae2a04d1c69e20482f645f2dc7d9d988995667c1502",
+      "old_korean_sha256": "c1f7f242de4a8e99f0946e6b8fa0b153fa91ea048eb6b93cdd827376ed1c026e"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00028C05",
+      "field": "CNAM",
+      "english_sha256": "6399d88d69fddb5a4dd1f5479dbc2268dd49c6fa9efb861d3e977fbfeabf44a8",
+      "old_korean_sha256": "0586d739f0a4e847c07adfa6510c0c2999497ad016df022b483810c6c0235107"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0002D28B",
+      "field": "CNAM",
+      "english_sha256": "5496ff13391540abec37966e3591946394bde2c8be165b25ed9640f3d3584a39",
+      "old_korean_sha256": "2bdccb269bbb64c6dab428efeb0f743cb97aec862a6b2f457b932cf422f724d1"
+    },
+    {
+      "kind": "QUST",
+      "formid": "000356C9",
+      "field": "CNAM",
+      "english_sha256": "274375787e91a815cc3e423993173b2e265d7b67808cf9d13e94a097467b9ced",
+      "old_korean_sha256": "689bff26bf024886aaf909d1e38a95e827b3640ff6b01e6bca8db5e04cac1bb5"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00066EBE",
+      "field": "CNAM",
+      "english_sha256": "0d82a1f577a03fc76f5a9df14e449358efa4c89edad1aaca0a4e2d24668ee7c3",
+      "old_korean_sha256": "c5ffd54bbbd289d60e1d751214224bc6d7f859e28b2ecaa432cf1d95e68d2c04"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00066EBE",
+      "field": "CNAM",
+      "english_sha256": "db094e129c6e3ecdbef1dbe2be943228ed994ce8a48046324d382539905ea9e8",
+      "old_korean_sha256": "f4965d5c0a3e24ce23b84170e698cc4f58cbbc014a08a8c4b36d568f2d2d731c"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0006D602",
+      "field": "CNAM",
+      "english_sha256": "ceab51befce85cac1460a6a3cc410b26ed6b524f69d47849a38c73db4e24b867",
+      "old_korean_sha256": "692f661049135f523ab03ea2409c6811d17a7653e47f75f020a3e7b225aa79c0"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0006D602",
+      "field": "CNAM",
+      "english_sha256": "b222320180094ab7798c465c34aaf6acb59c538b6ef27ab959c1618ef1b127b7",
+      "old_korean_sha256": "0896b9f11f584c42338004c0eb0535a47d8be37b75e0302f92a37ce58c1e7f91"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00185FEE",
+      "field": "CNAM",
+      "english_sha256": "afea4911381e55e6a43edc401f7a70f6f51362e7ca97eaae2f89da4a719a97c5",
+      "old_korean_sha256": "d86df9448d99a4b32a274056d5319055955fb856436735aa9e45984a4afcc75a"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00185FEE",
+      "field": "CNAM",
+      "english_sha256": "edaf2e829aa4fe784d7da33237aab5de113353cd7e723e52ce5c72fbf1d3be5f",
+      "old_korean_sha256": "b8e81f44bd61b87967de80663c9b8635b5fe4071905bc7f34890003dfee4f765"
+    }
+  ]
+}
