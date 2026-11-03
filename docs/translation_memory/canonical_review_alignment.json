@@ -14,10 +14,9 @@
     "unique": 47227,
     "duplicate_identity_rows": 0,
     "encoding_diagnostics": {
-      "fields_with_any_disagreement": 20,
+      "fields_with_any_disagreement": 8,
       "invalid_legacy_hex": 2,
-      "legacy_hex_disagrees": 6,
-      "unicode_text_disagrees": 12
+      "legacy_hex_disagrees": 6
     },
     "examples": {
       "invalid_legacy_hex": [
@@ -118,152 +117,6 @@
           "english_excerpt": "Very well. I can see you're familiar with Mankar Camoran's \"Commentaries.\"",
           "korean_excerpt": "좋소. 맨카 캐모런의 『논평집』에 어느 정도 익숙한 모양이군.",
           "unicode_excerpt": "좋소. 맨카 캐모런의 『논평집』에 어느 정도 익숙한 모양이군."
-        }
-      ],
-      "unicode_text_disagrees": [
-        {
-          "source": "Oblivion.esm",
-          "record_type": "INFO",
-          "formid": "0002D6E4",
-          "field": "NAM1",
-          "editor_id": "",
-          "occurrence": "0",
-          "english_sha256": "2c1210f7e2d54f8a8015fd723207fd69334c8aed2953a70c6aad50f0a8b924c1",
-          "english_excerpt": "I hear Adrienne is sending you out to get Erthor. Is that right?",
-          "korean_excerpt": "아드리엔이 당신을 보내 에르토르를 데려오라고 했다던데, 맞나요?",
-          "unicode_excerpt": "Adrienne이 당신을 보내 에르토르를 데리고 오라고 했다 들었는데 맞나요?"
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "0001351B",
-          "field": "CNAM",
-          "editor_id": "SE05",
-          "occurrence": "8",
-          "english_sha256": "196f25483903d3e34237b5bcdcaea24bda9b322b1b1969aef664c6d4189a7e0a",
-          "english_excerpt": "I've been told that Ma'zaddha has been meeting Nelrene late at night in Crucible. I'll need to find them and listen in on their conversation.",
-          "korean_excerpt": "마자다가 밤늦게 크루시블에서 넬레네를 만나고 있다는 말을 들었다. 두 사람을 찾아내어 대화를 엿들어야겠다.",
-          "unicode_excerpt": "마'자다가 한밤중에 넬렌을 만난다는 것을 알아냈다. 그들을 찾아내 대화를 들어봐야 한다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "000253B9",
-          "field": "CNAM",
-          "editor_id": "Dark05Assassinated",
-          "occurrence": "4",
-          "english_sha256": "ef10a64fdde03577b3107ae2a04d1c69e20482f645f2dc7d9d988995667c1502",
-          "english_excerpt": "I have administered the Languorwine antidote, and Francois Motierre has awakened from his poison-induced sleep. I should now speak with him and make sure he's well enough to travel",
-          "korean_excerpt": "랭거와인 해독제를 투여하자 프랑수아 모티에르가 독으로 인한 잠에서 깨어났다. 이제 그와 이야기를 나누고, 회색 암말 여관까지 이동할 수 있을 만큼 회복했는지 확인해야 한다.",
-          "unicode_excerpt": "랭거와인 해독제를 투여하자 프랑수아 모티에르가 혼수 상태에서 깨어났다. 그는 내게 회색 암말 여관까지 안전하게 데려다 달라고 했다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "00028C05",
-          "field": "CNAM",
-          "editor_id": "MG05A",
-          "occurrence": "4",
-          "english_sha256": "6399d88d69fddb5a4dd1f5479dbc2268dd49c6fa9efb861d3e977fbfeabf44a8",
-          "english_excerpt": "I've stolen the \"Fingers of the Mountain\" book from Earana's room in the Grey Mare. I need to find Teekeeus, and deliver it to him.",
-          "korean_excerpt": "회색 암말 여관에 있는 에라나의 방에서 '산의 손가락' 책을 훔쳤다. 티키우스를 찾아 책을 건네줘야 한다.",
-          "unicode_excerpt": "에라나의 방에서 \"산의 손가락\" 책을 훔쳤다. 티키우스에게 가져다주어야 한다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "0002D28B",
-          "field": "CNAM",
-          "editor_id": "MG01Destruct",
-          "occurrence": "3",
-          "english_sha256": "5496ff13391540abec37966e3591946394bde2c8be165b25ed9640f3d3584a39",
-          "english_excerpt": "Sulinus Vassinus has offered to complete my task at Bleak Flats Cave for me, at a price. If I'm going to take him up on the offer, I need to bring him 300 gold. Otherwise, I should",
-          "korean_excerpt": "술리누스 바시누스는 돈을 받으면 블리크 플랫츠 동굴에서 내가 맡은 일을 대신 해주겠다고 제안했다. 이 제안을 받아들이려면 금화 300개를 가져다줘야 한다. 그렇지 않다면 에르토르가 어디 있는지 알아내기 위해 다른 길드 마법사들과 이야기해야 한다.",
-          "unicode_excerpt": "술리누스 바시누스는 돈을 받고 황량한 평원 동굴에서 할 일을 대신 해주겠다고 제안했다. 그러기 위해서는 300골드를 주어야 한다. 그게 싫다면 어소르를 찾기 위해 길드의 다른 마법사에게 말해봐야 한다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "000356C9",
-          "field": "CNAM",
-          "editor_id": "FGD08Infiltration",
-          "occurrence": "4",
-          "english_sha256": "274375787e91a815cc3e423993173b2e265d7b67808cf9d13e94a097467b9ced",
-          "english_excerpt": "We've arrived at Water's Edge, which it seems has been overrun by goblins. I have been given the order to attack.",
-          "korean_excerpt": "고블린에게 점령당한 것으로 보이는 워터스 엣지에 도착했다. 공격 명령을 받았다.",
-          "unicode_excerpt": "고블린에게 습격 당한 워터스 엣지에 도착했다. 난 공격명령을 받았다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "00066EBE",
-          "field": "CNAM",
-          "editor_id": "SE34",
-          "occurrence": "0",
-          "english_sha256": "0d82a1f577a03fc76f5a9df14e449358efa4c89edad1aaca0a4e2d24668ee7c3",
-          "english_excerpt": "I've recovered an unusual amulet with the markings of a group calling itself The Knights of the Thorn. On the back, there is an inscription that reads \"To Pyke, from Farwil.\" I can",
-          "korean_excerpt": "가시 기사단의 문양이 새겨진 특이한 목걸이를 발견했다. 뒷면에는 '파이크에게, 파윌이'라고 새겨져 있다. 파이크가 쉬버링 아일즈 어딘가에 있다는 뜻일 것이다. 그를 찾으면 메달을 돌려받고 매우 기뻐할 것이다.",
-          "unicode_excerpt": "가시 기사단의 표식이 새겨진 특이한 목걸이를 발견했다. 뒷면에는 '파이크에게, 파윌이'라고 새겨져 있다. 파이크가 쉬버링 아일즈에 있는 모양이다. 그를 찾으면 메달을 돌려받고 기뻐할 것이다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "00066EBE",
-          "field": "CNAM",
-          "editor_id": "SE34",
-          "occurrence": "4",
-          "english_sha256": "db094e129c6e3ecdbef1dbe2be943228ed994ce8a48046324d382539905ea9e8",
-          "english_excerpt": "Pyke was overjoyed at the return of his Medallion, and has rewarded me with a gift.",
-          "korean_excerpt": "파이크는 메달을 되찾자 몹시 기뻐했고, 감사의 선물을 주었다.",
-          "unicode_excerpt": "Pyke는 그의 메달을 되찾아서 매우 기뻐하고, 나에게 선물과 함께 보상을 주었다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "0006D602",
-          "field": "CNAM",
-          "editor_id": "SE41",
-          "occurrence": "3",
-          "english_sha256": "ceab51befce85cac1460a6a3cc410b26ed6b524f69d47849a38c73db4e24b867",
-          "english_excerpt": "I've arrived at the pool Sickly Bernice described. I should get as close as possible to the statue in its center to gather a sample of the aquanostrum.",
-          "korean_excerpt": "병약한 버니스가 말한 연못에 도착했다. 가운데에 있는 석상으로 최대한 가까이 다가가 아쿠아노스트룸을 채취해야겠다.",
-          "unicode_excerpt": "병약한 Bernice가 말해준 곳에 도착했다. 될 수 있는 한 석상으로 가까이 가서 Aquanostrum의 물을 채취해야 겠다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "0006D602",
-          "field": "CNAM",
-          "editor_id": "SE41",
-          "occurrence": "4",
-          "english_sha256": "b222320180094ab7798c465c34aaf6acb59c538b6ef27ab959c1618ef1b127b7",
-          "english_excerpt": "I've recovered a sample of aquanostrum from the pool Sickly Bernice described. I should return to New Sheoth and present it to her for my well-deserved reward.",
-          "korean_excerpt": "병약한 버니스가 말한 연못에서 아쿠아노스트룸 표본을 채취했다. 뉴 셰오스로 돌아가 버니스에게 건네주고 보상을 받아야겠다.",
-          "unicode_excerpt": "병약한 Bernice가 말해준 연못에서 Aquanostrum의 물 한 병을 채취했다. New Sheoth로 돌아가 약을 주고 보답을 받아야겠다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "00185FEE",
-          "field": "CNAM",
-          "editor_id": "SQ09",
-          "occurrence": "1",
-          "english_sha256": "afea4911381e55e6a43edc401f7a70f6f51362e7ca97eaae2f89da4a719a97c5",
-          "english_excerpt": "I've acquired 12 Rumare Slaughterfish Scales. I should bring them to Aelwin Merowald at the Weye Settlement as soon as I can.",
-          "korean_excerpt": "루마레 살육어의 비늘 12개를 구했다. 가능한 한 빨리 웨이 정착지의 아엘윈 메로월드에게 가져다줘야겠다.",
-          "unicode_excerpt": "12개의 루메어 식인물고기 비늘을 구했다. 빨리 그것들을 웨이 마을의 엘윈 메로왈드에게 가져다 주어야 한다."
-        },
-        {
-          "source": "Oblivion.esm",
-          "record_type": "QUST",
-          "formid": "00185FEE",
-          "field": "CNAM",
-          "editor_id": "SQ09",
-          "occurrence": "2",
-          "english_sha256": "edaf2e829aa4fe784d7da33237aab5de113353cd7e723e52ce5c72fbf1d3be5f",
-          "english_excerpt": "I've given the 12 Rumare Slaughterfish Scales to Aelwin Merowald and he's rewarded me with a magical ring.",
-          "korean_excerpt": "루마레 살육어의 비늘 12개를 아엘윈 메로월드에게 건넸다. 그는 보상으로 마법 반지를 주었다.",
-          "unicode_excerpt": "12개의 루메어 식인물고기 비늘을 엘윈 메로왈드에게 주었고, 답례로 마법반지를 나에게 주었다."
         }
       ]
     }
