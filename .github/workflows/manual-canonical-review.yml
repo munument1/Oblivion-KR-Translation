@@ -1,0 +1,32 @@
+name: Check two source-verified canonical semantic corrections
+on:
+  push:
+    paths:
+      - 'scripts/apply_manual_canonical_review.py'
+      - 'docs/translation_memory/manual_source_review_fixes.json'
+      - '.github/workflows/manual-canonical-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: SHA-pin two record-exact proposed fixes without editing source
+        run: |
+          PYTHONPATH=. python scripts/apply_manual_canonical_review.py
+          git diff --exit-code -- canonical_translation_v2.csv
+          git diff --check
+      - name: Commit candidate SHA
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/translation_memory/manual_review_patch_report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Pin source-verified dialogue semantic corrections"
+            git push origin HEAD:main
+          fi
