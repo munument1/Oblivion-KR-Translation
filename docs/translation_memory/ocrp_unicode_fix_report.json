@@ -1,0 +1,81 @@
+{
+  "rows": 47227,
+  "columns_reconciled": 12,
+  "old_sha256": "8d06e39e11064c2d880d16d93fad9b20894e08f5395861515aeea1a9c8fcd3a0",
+  "candidate_sha256": "80eef8953b24e112470c93d5e7a97f2b2b14ef8feb9c1c8426f9fe7813fcc5ed",
+  "applied": false,
+  "edits": [
+    {
+      "kind": "INFO",
+      "formid": "0002D6E4",
+      "field": "NAM1",
+      "english_sha256": "2c1210f7e2d54f8a8015fd723207fd69334c8aed2953a70c6aad50f0a8b924c1"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0001351B",
+      "field": "CNAM",
+      "english_sha256": "196f25483903d3e34237b5bcdcaea24bda9b322b1b1969aef664c6d4189a7e0a"
+    },
+    {
+      "kind": "QUST",
+      "formid": "000253B9",
+      "field": "CNAM",
+      "english_sha256": "ef10a64fdde03577b3107ae2a04d1c69e20482f645f2dc7d9d988995667c1502"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00028C05",
+      "field": "CNAM",
+      "english_sha256": "6399d88d69fddb5a4dd1f5479dbc2268dd49c6fa9efb861d3e977fbfeabf44a8"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0002D28B",
+      "field": "CNAM",
+      "english_sha256": "5496ff13391540abec37966e3591946394bde2c8be165b25ed9640f3d3584a39"
+    },
+    {
+      "kind": "QUST",
+      "formid": "000356C9",
+      "field": "CNAM",
+      "english_sha256": "274375787e91a815cc3e423993173b2e265d7b67808cf9d13e94a097467b9ced"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00066EBE",
+      "field": "CNAM",
+      "english_sha256": "0d82a1f577a03fc76f5a9df14e449358efa4c89edad1aaca0a4e2d24668ee7c3"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00066EBE",
+      "field": "CNAM",
+      "english_sha256": "db094e129c6e3ecdbef1dbe2be943228ed994ce8a48046324d382539905ea9e8"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0006D602",
+      "field": "CNAM",
+      "english_sha256": "ceab51befce85cac1460a6a3cc410b26ed6b524f69d47849a38c73db4e24b867"
+    },
+    {
+      "kind": "QUST",
+      "formid": "0006D602",
+      "field": "CNAM",
+      "english_sha256": "b222320180094ab7798c465c34aaf6acb59c538b6ef27ab959c1618ef1b127b7"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00185FEE",
+      "field": "CNAM",
+      "english_sha256": "afea4911381e55e6a43edc401f7a70f6f51362e7ca97eaae2f89da4a719a97c5"
+    },
+    {
+      "kind": "QUST",
+      "formid": "00185FEE",
+      "field": "CNAM",
+      "english_sha256": "edaf2e829aa4fe784d7da33237aab5de113353cd7e723e52ce5c72fbf1d3be5f"
+    }
+  ]
+}
