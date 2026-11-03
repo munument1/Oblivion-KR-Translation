@@ -1,4 +1,4 @@
-name: Stage second source-verified dialogue review
+name: Apply second source-verified dialogue review
 on:
   push:
     paths:
@@ -9,24 +9,55 @@ on:
 permissions:
   contents: write
 jobs:
-  stage:
+  apply:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Two-key exact-source dry run, no canonical changes
+      - name: Apply only two source-hash pinned dialogue improvements
         run: |
-          PYTHONPATH=. python scripts/apply_manual_canonical_review_round2.py
-          git diff --exit-code -- canonical_translation_v2.csv
+          PYTHONPATH=. python scripts/apply_manual_canonical_review_round2.py --apply --expected-output-sha 97072941553ae611903c604cf6c14d78e5afbf61cae4ffc45016950e01b060c1
+          PYTHONPATH=. python scripts/audit_canonical_review_alignment.py
+          PYTHONPATH=. python scripts/build_canonical_review_queue.py
+          PYTHONPATH=. python scripts/audit_canonical_memory.py --report docs/translation_memory/canonical_risk_audit.json
+      - name: Strict SHA, text-byte integrity and historical test suite
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          p=Path('canonical_translation_v2.csv')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='97072941553ae611903c604cf6c14d78e5afbf61cae4ffc45016950e01b060c1'
+          j=json.loads(Path('docs/translation_memory/canonical_review_alignment.json').read_text('utf8'))
+          assert j['canonical']['rows']==47227
+          assert j['canonical']['encoding_diagnostics'].get('unicode_text_disagrees',0)==0
+          assert j['canonical']['encoding_diagnostics'].get('invalid_utf8_hex',0)==0
+          assert j['canonical']['encoding_diagnostics'].get('utf8_hex_disagrees',0)==0
+          PY
+          python -m unittest discover -s tests -p test_translation_memory_reconciliation.py -v
+          python -m unittest discover -s tests -p test_reviewed_semantics.py -v
+          python -m unittest discover -s tests -p test_issue8_glossary_exceptions.py -v
+          python -m unittest discover -s tests -p test_issue8_remaining_glossary_names.py -v
+          python -m unittest discover -s tests -p test_issue8_reporter_terms.py -v
           git diff --check
-      - name: Commit candidate sha and scope report only
+      - name: Enforce exactly two physical canonical edits
+        run: |
+          python - <<'PY'
+          import subprocess
+          s=subprocess.check_output(['git','diff','--numstat','--','canonical_translation_v2.csv'],text=True).strip()
+          a,d,_=s.split('\t')
+          if a!='2' or d!='2':
+            raise SystemExit('Unexpected canonical mutation: '+s)
+          PY
+      - name: Commit narrow reviewed changes and QA reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- docs/translation_memory/manual_review_round2_report.json
+          git add -- canonical_translation_v2.csv docs/translation_memory/manual_review_round2_report.json docs/translation_memory/canonical_review_alignment.json docs/translation_memory/canonical_risk_audit.json docs/translation_memory/canonical_review_priority_queue.json
           if ! git diff --cached --quiet; then
-            git commit -m "Preflight second pair of source-reviewed dialogue fixes"
+            git commit -m "Correct ship hijacking and castle-escape dialogue meanings"
             git push origin HEAD:main
           fi

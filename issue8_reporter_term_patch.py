@@ -19,6 +19,7 @@ CANONICAL_OCRP_REVIEWED_SHA256 = "8d06e39e11064c2d880d16d93fad9b20894e08f5395861
 # Exact twelve OCRP Unicode-column repairs verified in read-only candidate build.
 CANONICAL_OCRP_UNICODE_SYNCED_SHA256 = "fd24096fa9cb0d11e60c7904b63ddc8e06a27a63d87415b0b856b9fefab88bb1"
 CANONICAL_MANUAL_SEMANTIC_REVIEW_SHA256 = "db73d95fe31e58f569da8f364546ae6beba562259ccac5deade2838dd4da1862"
+CANONICAL_DIALOGUE_REVIEW_ROUND2_SHA256 = "97072941553ae611903c604cf6c14d78e5afbf61cae4ffc45016950e01b060c1"
 EXPECTED = {
     "Cheydinhal": 219,
     "Mythic Dawn": 106,
@@ -53,7 +54,7 @@ def verify_canonical(path: Path) -> None:
     with path.open("rb") as stream:
         for part in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(part)
-    if digest.hexdigest() not in {CANONICAL_SHA256, CANONICAL_OCRP_REVIEWED_SHA256, CANONICAL_OCRP_UNICODE_SYNCED_SHA256, CANONICAL_MANUAL_SEMANTIC_REVIEW_SHA256}:
+    if digest.hexdigest() not in {CANONICAL_SHA256, CANONICAL_OCRP_REVIEWED_SHA256, CANONICAL_OCRP_UNICODE_SYNCED_SHA256, CANONICAL_MANUAL_SEMANTIC_REVIEW_SHA256, CANONICAL_DIALOGUE_REVIEW_ROUND2_SHA256}:
         raise ValueError("Issue #8 original canonical CSV SHA-256 drift")
 
 
