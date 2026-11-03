@@ -20,7 +20,7 @@ def audit(path):
     with path.open('rb') as f:
         for block in iter(lambda: f.read(1024 * 1024), b''):
             sha.update(block)
-    counts, kinds, sources, examples = Counter(), Counter(), Counter(), []
+    counts, kinds, sources, examples, gloss_entries = Counter(), Counter(), Counter(), [], []
     csv.field_size_limit(100_000_000)
     with path.open(encoding='utf-8-sig', newline='') as f:
         reader = csv.DictReader(f)
@@ -38,6 +38,16 @@ def audit(path):
             if GLOSS.search(ko):
                 counts['english_gloss_candidates'] += 1
                 reasons.append('english_gloss')
+                glosses = []
+                for match in GLOSS.finditer(ko):
+                    gloss = match.group()[1:-1]
+                    glosses.append({'text': gloss, 'in_original_english': gloss in en,
+                                    'parentheses_in_original': match.group() in en,
+                                    'context': ko[max(0,match.start()-65):match.end()+65]})
+                gloss_entries.append({'source': row.get('effective_source',''),
+                    'type': row['record_type'], 'formid': row['raw_formid'],
+                    'field': row['field'], 'english_sha256': hashlib.sha256(en.encode()).hexdigest(),
+                    'english_preview': en[:240], 'glosses': glosses})
             if LATIN.search(HTML.sub('', ko)):
                 counts['target_has_latin_letters'] += 1
                 reasons.append('latin_letters')
@@ -78,6 +88,7 @@ def audit(path):
         'record_types': dict(kinds.most_common(30)),
         'sources': dict(sources.most_common(20)),
         'examples': examples,
+        'all_english_gloss_candidates': gloss_entries,
     }
 
 def main():
