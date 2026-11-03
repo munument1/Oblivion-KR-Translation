@@ -1,0 +1,60 @@
+name: Canonical OCRP safe reconciliation
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/reconcile_canonical_ocrp.py'
+      - 'scripts/reviewed_memory_gate.py'
+      - 'tests/test_translation_memory_reconciliation.py'
+      - '.github/workflows/canonical-ocrp-reconciliation.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Guard and synthetic tests before source change
+        run: python -m unittest discover -s tests -p test_translation_memory_reconciliation.py -v
+      - name: Reconcile only audited source-exact OCRP errors
+        run: |
+          python scripts/reconcile_canonical_ocrp.py --check --report docs/translation_memory/ocrp_canonical_check.json
+          python scripts/reconcile_canonical_ocrp.py --apply --report docs/translation_memory/ocrp_canonical_applied.json
+          python scripts/reconcile_canonical_ocrp.py --check
+      - name: Verify in-memory official correction compatibility
+        run: |
+          python -m unittest discover -s tests -p test_reviewed_semantics.py -v
+          python -m unittest discover -s tests -p test_issue8_glossary_exceptions.py -v
+          python -m unittest discover -s tests -p test_issue8_remaining_glossary_names.py -v
+          python -m unittest discover -s tests -p test_issue8_reporter_terms.py -v
+          git diff --check
+      - name: Refuse huge unrelated CSV rewrites
+        shell: bash
+        run: |
+          python - <<'PY'
+          import subprocess
+          output=subprocess.check_output(['git','diff','--numstat','--','canonical_translation_v2.csv'],text=True).strip()
+          if output:
+              a,d,_=output.split('\t')
+              if not a.isdigit() or not d.isdigit() or int(a)+int(d)>4000:
+                  raise SystemExit('Too many changed physical lines: '+output)
+          PY
+      - name: Commit audited canonical and report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- canonical_translation_v2.csv docs/translation_memory/ocrp_canonical_applied.json
+          if git diff --cached --quiet; then
+            echo "Nothing to change"
+          else
+            git commit -m "Reconcile OCRP-reviewed wording in historical canonical memory"
+            git push origin HEAD:main
+          fi
