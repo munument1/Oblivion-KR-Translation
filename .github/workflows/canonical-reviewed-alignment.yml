@@ -1,0 +1,30 @@
+name: Canonical reviewed-source alignment audit
+on:
+  push:
+    paths:
+      - 'scripts/audit_canonical_review_alignment.py'
+      - '.github/workflows/canonical-reviewed-alignment.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Exact English and record-identity alignment (read only)
+        run: |
+          PYTHONPATH=. python scripts/audit_canonical_review_alignment.py
+          git diff --check
+      - name: Commit audit report only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/translation_memory/canonical_review_alignment.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record exact v2 reviewed versus canonical alignment and encoding QA"
+            git push origin HEAD:main
+          fi
