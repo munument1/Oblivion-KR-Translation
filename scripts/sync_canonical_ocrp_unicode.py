@@ -48,6 +48,9 @@ def repair(path, report_path, legacy_review_path, *, expected_source_sha=BASELIN
     if sha(path)!=expected_source_sha:
         raise ValueError("Source canonical SHA mismatch; no changes made")
     required, rules=corrections(report_path,legacy_review_path)
+    with path.open("rb") as source_file:
+        sample=source_file.read(131072)
+    newline="\r\n" if b"\r\n" in sample else "\n"
     matches=set()
     changed=[]
     count=0
@@ -63,7 +66,7 @@ def repair(path, report_path, legacy_review_path, *, expected_source_sha=BASELIN
                              "obcjk_unicode_text","obcjk_utf8_hex","new_bytes_hex"}
             if not required_fields.issubset(reader.fieldnames or []):
                 raise ValueError("Canonical schema changed")
-            writer=csv.DictWriter(out,fieldnames=reader.fieldnames,lineterminator="\n")
+            writer=csv.DictWriter(out,fieldnames=reader.fieldnames,lineterminator=newline)
             writer.writeheader()
             for row in reader:
                 count+=1
@@ -105,7 +108,8 @@ def repair(path, report_path, legacy_review_path, *, expected_source_sha=BASELIN
                 raise ValueError("Input changed while checking")
             os.replace(tmp,path)
         return {"rows":count,"columns_reconciled":len(changed),"old_sha256":expected_source_sha,
-                "candidate_sha256":candidate,"applied":bool(apply),
+                "candidate_sha256":candidate,"original_bytes":path.stat().st_size,
+                "candidate_bytes":tmp.stat().st_size,"applied":bool(apply),
                 "edits":changed}
     finally:
         if tmp.exists():
