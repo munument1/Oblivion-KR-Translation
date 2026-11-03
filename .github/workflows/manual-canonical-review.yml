@@ -1,4 +1,4 @@
-name: Check two source-verified canonical semantic corrections
+name: Apply two source-verified canonical semantic corrections
 on:
   push:
     paths:
@@ -13,20 +13,50 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: SHA-pin two record-exact proposed fixes without editing source
+      - name: Apply only two SHA-pinned, source-reviewed dialogue fixes
         run: |
-          PYTHONPATH=. python scripts/apply_manual_canonical_review.py
-          git diff --exit-code -- canonical_translation_v2.csv
+          PYTHONPATH=. python scripts/apply_manual_canonical_review.py --apply --expected-output-sha db73d95fe31e58f569da8f364546ae6beba562259ccac5deade2838dd4da1862
+          PYTHONPATH=. python scripts/audit_canonical_review_alignment.py
+          PYTHONPATH=. python scripts/audit_canonical_memory.py --report docs/translation_memory/canonical_risk_audit.json
+      - name: Verify pinned data and regression suite
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          data=Path('canonical_translation_v2.csv').read_bytes()
+          if hashlib.sha256(data).hexdigest()!='db73d95fe31e58f569da8f364546ae6beba562259ccac5deade2838dd4da1862':
+              raise SystemExit('Canonical output differs from reviewed SHA')
+          report=json.loads(Path('docs/translation_memory/canonical_review_alignment.json').read_text('utf-8'))
+          if report['canonical']['encoding_diagnostics'].get('unicode_text_disagrees',0):
+              raise SystemExit('Unicode column inconsistency')
+          PY
+          python -m unittest discover -s tests -p test_translation_memory_reconciliation.py -v
+          python -m unittest discover -s tests -p test_reviewed_semantics.py -v
+          python -m unittest discover -s tests -p test_issue8_glossary_exceptions.py -v
+          python -m unittest discover -s tests -p test_issue8_remaining_glossary_names.py -v
+          python -m unittest discover -s tests -p test_issue8_reporter_terms.py -v
           git diff --check
-      - name: Commit candidate SHA
+      - name: Refuse changes outside reviewed two rows
+        run: |
+          python - <<'PY'
+          import subprocess
+          value=subprocess.check_output(['git','diff','--numstat','--','canonical_translation_v2.csv'],text=True).strip()
+          if value:
+              a,d,_=value.split('\t')
+              if not a.isdecimal() or not d.isdecimal() or int(a)!=2 or int(d)!=2:
+                  raise SystemExit('Expected exactly 2 changed physical CSV rows: '+value)
+          PY
+      - name: Commit approved corpus and reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- docs/translation_memory/manual_review_patch_report.json
+          git add -- canonical_translation_v2.csv docs/translation_memory/manual_review_patch_report.json docs/translation_memory/canonical_review_alignment.json docs/translation_memory/canonical_risk_audit.json
           if ! git diff --cached --quiet; then
-            git commit -m "Pin source-verified dialogue semantic corrections"
+            git commit -m "Correct two independently reviewed original Oblivion dialogue translations"
             git push origin HEAD:main
           fi
