@@ -106,6 +106,7 @@ def repair(path, report_path, legacy_review_path, *, expected_source_sha=BASELIN
         if matches!=expected:
             raise ValueError(f"Missing expected source-anchored corrections: {len(expected-matches)}")
         candidate=sha(tmp)
+        candidate_bytes=tmp.stat().st_size
         if expected_output_sha and candidate!=expected_output_sha:
             raise ValueError("Candidate output SHA mismatch; no changes made")
         if apply:
@@ -116,7 +117,7 @@ def repair(path, report_path, legacy_review_path, *, expected_source_sha=BASELIN
             os.replace(tmp,path)
         return {"rows":count,"columns_reconciled":len(changed),"old_sha256":expected_source_sha,
                 "candidate_sha256":candidate,"original_bytes":original_bytes,
-                "candidate_bytes":tmp.stat().st_size,"applied":bool(apply),
+                "candidate_bytes":candidate_bytes,"applied":bool(apply),
                 "edits":changed}
     finally:
         if tmp.exists():
