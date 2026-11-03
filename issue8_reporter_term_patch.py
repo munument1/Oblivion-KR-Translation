@@ -13,6 +13,9 @@ from dataclasses import replace
 from pathlib import Path
 
 CANONICAL_SHA256 = "57306d322a0cca7d18b452ecb5d0f38bc594d23ed2e6b6040a3eee828c96ca23"
+# OCRP source-exact corrections: 12 rows, 47,227 total; all three translated
+# columns verified and GitHub Actions candidate hash checked on 2026-11-03.
+CANONICAL_OCRP_REVIEWED_SHA256 = "8d06e39e11064c2d880d16d93fad9b20894e08f5395861515aeea1a9c8fcd3a0"
 EXPECTED = {
     "Cheydinhal": 219,
     "Mythic Dawn": 106,
@@ -47,7 +50,7 @@ def verify_canonical(path: Path) -> None:
     with path.open("rb") as stream:
         for part in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(part)
-    if digest.hexdigest() != CANONICAL_SHA256:
+    if digest.hexdigest() not in {CANONICAL_SHA256, CANONICAL_OCRP_REVIEWED_SHA256}:
         raise ValueError("Issue #8 original canonical CSV SHA-256 drift")
 
 

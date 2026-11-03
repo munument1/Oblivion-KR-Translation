@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/reconcile_canonical_ocrp.py'
+      - 'issue8_reporter_term_patch.py'
       - 'scripts/reviewed_memory_gate.py'
       - 'tests/test_translation_memory_reconciliation.py'
       - '.github/workflows/canonical-ocrp-reconciliation.yml'
