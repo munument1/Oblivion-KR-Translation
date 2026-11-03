@@ -1,6 +1,6 @@
 {
   "source": "canonical_translation_v2.csv",
-  "sha256": "fd24096fa9cb0d11e60c7904b63ddc8e06a27a63d87415b0b856b9fefab88bb1",
+  "sha256": "db73d95fe31e58f569da8f364546ae6beba562259ccac5deade2838dd4da1862",
   "status": "unreviewed_historical_memory",
   "notice": "Counts are review candidates, not proven errors; never reuse this CSV alone.",
   "counts": {
