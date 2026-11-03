@@ -1,0 +1,31 @@
+name: Audit OCRP canonical stale Unicode column
+on:
+  push:
+    paths:
+      - 'scripts/sync_canonical_ocrp_unicode.py'
+      - '.github/workflows/canonical-ocrp-unicode-sync.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check all twelve exact audited corrections without modifying canonical
+        run: |
+          PYTHONPATH=. python scripts/sync_canonical_ocrp_unicode.py
+          git diff --exit-code -- canonical_translation_v2.csv
+          git diff --check
+      - name: Commit candidate SHA audit only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- docs/translation_memory/ocrp_unicode_fix_report.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit exact 12 OCRP Unicode-column consistency fixes"
+            git push origin HEAD:main
+          fi
