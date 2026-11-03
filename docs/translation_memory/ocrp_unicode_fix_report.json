@@ -2,7 +2,9 @@
   "rows": 47227,
   "columns_reconciled": 12,
   "old_sha256": "8d06e39e11064c2d880d16d93fad9b20894e08f5395861515aeea1a9c8fcd3a0",
-  "candidate_sha256": "80eef8953b24e112470c93d5e7a97f2b2b14ef8feb9c1c8426f9fe7813fcc5ed",
+  "candidate_sha256": "fd24096fa9cb0d11e60c7904b63ddc8e06a27a63d87415b0b856b9fefab88bb1",
+  "original_bytes": 43492571,
+  "candidate_bytes": 43492796,
   "applied": false,
   "edits": [
     {
