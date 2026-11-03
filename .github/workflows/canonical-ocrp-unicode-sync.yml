@@ -1,4 +1,4 @@
-name: Audit OCRP canonical stale Unicode column
+name: Safe OCRP canonical Unicode reconciliation
 on:
   push:
     paths:
@@ -7,25 +7,59 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: canonical-ocrp-unicode-sync
+  cancel-in-progress: false
 jobs:
-  check:
+  reconcile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Check all twelve exact audited corrections without modifying canonical
+      - name: Apply only source-exact 12-column consistency fixes
         run: |
-          PYTHONPATH=. python scripts/sync_canonical_ocrp_unicode.py
-          git diff --exit-code -- canonical_translation_v2.csv
+          PYTHONPATH=. python scripts/sync_canonical_ocrp_unicode.py --apply --expected-output-sha fd24096fa9cb0d11e60c7904b63ddc8e06a27a63d87415b0b856b9fefab88bb1
+          PYTHONPATH=. python scripts/audit_canonical_review_alignment.py
+          PYTHONPATH=. python scripts/audit_canonical_memory.py --report docs/translation_memory/canonical_risk_audit.json
+      - name: Fail closed on Unicode inconsistency or drift
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          base=Path("canonical_translation_v2.csv").read_bytes()
+          wanted="fd24096fa9cb0d11e60c7904b63ddc8e06a27a63d87415b0b856b9fefab88bb1"
+          if hashlib.sha256(base).hexdigest()!=wanted:
+              raise SystemExit("Canonical content is not the pinned 12-row repair")
+          report=json.loads(Path("docs/translation_memory/canonical_review_alignment.json").read_text("utf-8"))
+          if report["canonical"]["encoding_diagnostics"].get("unicode_text_disagrees",0)!=0:
+              raise SystemExit("Unicode text still differs from Korean text")
+          PY
+          python -m unittest discover -s tests -p test_translation_memory_reconciliation.py -v
+          python -m unittest discover -s tests -p test_reviewed_semantics.py -v
+          python -m unittest discover -s tests -p test_issue8_glossary_exceptions.py -v
+          python -m unittest discover -s tests -p test_issue8_remaining_glossary_names.py -v
+          python -m unittest discover -s tests -p test_issue8_reporter_terms.py -v
           git diff --check
-      - name: Commit candidate SHA audit only
+      - name: Refuse broad canonical rewrites
+        run: |
+          python - <<'PY'
+          import subprocess
+          x=subprocess.check_output(["git","diff","--numstat","--","canonical_translation_v2.csv"],text=True).strip()
+          if x:
+              a,d,_=x.split("\t")
+              if not a.isdecimal() or not d.isdecimal() or int(a)+int(d)>80:
+                  raise SystemExit("Canonical diff exceeds intended 12 rows: "+x)
+          PY
+      - name: Commit pinned corpus repair and QA only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- docs/translation_memory/ocrp_unicode_fix_report.json
+          git add -- canonical_translation_v2.csv docs/translation_memory/ocrp_unicode_fix_report.json docs/translation_memory/canonical_review_alignment.json docs/translation_memory/canonical_risk_audit.json
           if ! git diff --cached --quiet; then
-            git commit -m "Audit exact 12 OCRP Unicode-column consistency fixes"
+            git commit -m "Synchronize twelve source-reviewed canonical Unicode text fields"
             git push origin HEAD:main
           fi

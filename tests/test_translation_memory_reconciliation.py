@@ -24,9 +24,10 @@ class SafeCanonicalReconciliationTests(unittest.TestCase):
                                            "new": self.new}] * 8,
         }, ensure_ascii=False), "utf-8")
         self.columns = ["effective_source", "record_type", "raw_formid", "field",
-                        "old_english", "new_korean", "obcjk_utf8_hex", "new_bytes_hex"]
+                        "old_english", "new_korean", "obcjk_unicode_text", "obcjk_utf8_hex", "new_bytes_hex"]
         self.row = dict(effective_source="Oblivion.esm", record_type="QUST", raw_formid="0001351B",
                         field="CNAM", old_english=self.english, new_korean=self.old,
+                        obcjk_unicode_text=self.old,
                         obcjk_utf8_hex=encode_target(self.old, "utf8"),
                         new_bytes_hex=encode_target(self.old, "legacy"))
         self.write(self.row)
@@ -43,6 +44,7 @@ class SafeCanonicalReconciliationTests(unittest.TestCase):
         with self.path.open(encoding="utf-8", newline="") as f:
             row = next(csv.DictReader(f))
         self.assertEqual(row["new_korean"], self.new)
+        self.assertEqual(row["obcjk_unicode_text"], self.new)
         self.assertEqual(decode_target(row["obcjk_utf8_hex"], "utf8"), self.new)
         self.assertEqual(decode_target(row["new_bytes_hex"], "legacy"), self.new)
         self.assertEqual(reconcile(self.path, self.audit, apply=True)["corrected"], 0)

@@ -17,6 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BASELINE_SHA = "8d06e39e11064c2d880d16d93fad9b20894e08f5395861515aeea1a9c8fcd3a0"
+POST_SYNC_SHA = "fd24096fa9cb0d11e60c7904b63ddc8e06a27a63d87415b0b856b9fefab88bb1"
 
 
 def sha(path):
@@ -43,10 +44,16 @@ def corrections(report_path, legacy_review_path):
 
 
 def repair(path, report_path, legacy_review_path, *, expected_source_sha=BASELINE_SHA,
-           expected_output_sha=None, apply=False):
+           expected_output_sha=POST_SYNC_SHA, apply=False):
     path=Path(path)
-    if sha(path)!=expected_source_sha:
+    actual_sha=sha(path)
+    if actual_sha==expected_output_sha and expected_output_sha==POST_SYNC_SHA:
+        return {"rows":47227,"columns_reconciled":0,"old_sha256":expected_source_sha,
+                "candidate_sha256":actual_sha,"applied":False,
+                "already_aligned":True,"edits":[]}
+    if actual_sha!=expected_source_sha:
         raise ValueError("Source canonical SHA mismatch; no changes made")
+    original_bytes=path.stat().st_size
     required, rules=corrections(report_path,legacy_review_path)
     with path.open("rb") as source_file:
         sample=source_file.read(131072)
@@ -108,7 +115,7 @@ def repair(path, report_path, legacy_review_path, *, expected_source_sha=BASELIN
                 raise ValueError("Input changed while checking")
             os.replace(tmp,path)
         return {"rows":count,"columns_reconciled":len(changed),"old_sha256":expected_source_sha,
-                "candidate_sha256":candidate,"original_bytes":path.stat().st_size,
+                "candidate_sha256":candidate,"original_bytes":original_bytes,
                 "candidate_bytes":tmp.stat().st_size,"applied":bool(apply),
                 "edits":changed}
     finally:
@@ -123,7 +130,7 @@ def main():
     p.add_argument("--review",type=Path,default=ROOT/"mods/ocrp/legacy_retranslation_20261103.json")
     p.add_argument("--output-report",type=Path,default=ROOT/"docs/translation_memory/ocrp_unicode_fix_report.json")
     p.add_argument("--apply",action="store_true")
-    p.add_argument("--expected-output-sha")
+    p.add_argument("--expected-output-sha",default=POST_SYNC_SHA)
     a=p.parse_args()
     result=repair(a.canonical,a.report,a.review,apply=a.apply,
                   expected_output_sha=a.expected_output_sha)

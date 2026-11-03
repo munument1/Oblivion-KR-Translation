@@ -78,7 +78,7 @@ def reconcile(path, audit, apply=False):
         head = f.read(131072)
     newline = "\r\n" if b"\r\n" in head else "\n"
     required = {"record_type", "field", "raw_formid", "old_english", "new_korean",
-                "obcjk_utf8_hex", "new_bytes_hex"}
+                "obcjk_utf8_hex", "new_bytes_hex", "obcjk_unicode_text"}
     count = 0
     changed = []
     skipped = Counter()
@@ -103,6 +103,9 @@ def reconcile(path, audit, apply=False):
                         skipped["wrong_record_field"] += 1
                     else:
                         valid = True
+                        if row["obcjk_unicode_text"] != old:
+                            valid = False
+                            skipped["unicode_column_disagrees"] += 1
                         for column, mode in (("obcjk_utf8_hex", "utf8"), ("new_bytes_hex", "legacy")):
                             if row[column]:
                                 try:
@@ -128,6 +131,7 @@ def reconcile(path, audit, apply=False):
                                 skipped["unencodable_legacy"] += 1
                             else:
                                 row["new_korean"] = replacement
+                                row["obcjk_unicode_text"] = replacement
                                 row["obcjk_utf8_hex"] = utf8_hex
                                 row["new_bytes_hex"] = legacy_hex
                                 changed.append({"kind": row["record_type"], "formid": row["raw_formid"],
