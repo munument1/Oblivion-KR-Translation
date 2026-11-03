@@ -1,0 +1,722 @@
+{
+  "source": "canonical_translation_v2.csv",
+  "sha256": "8d06e39e11064c2d880d16d93fad9b20894e08f5395861515aeea1a9c8fcd3a0",
+  "status": "unreviewed_historical_memory",
+  "notice": "Counts are review candidates, not proven errors; never reuse this CSV alone.",
+  "counts": {
+    "rows": 47227,
+    "target_has_latin_letters": 240,
+    "flagged_rows_union": 240,
+    "english_gloss_candidates": 12
+  },
+  "record_types": {
+    "INFO": 25119,
+    "DIAL": 3570,
+    "QUST": 2788,
+    "NPC_": 2641,
+    "BOOK": 2185,
+    "WEAP": 1403,
+    "SPEL": 1359,
+    "ARMO": 1111,
+    "CREA": 959,
+    "CONT": 948,
+    "CLOT": 635,
+    "ACTI": 624,
+    "DOOR": 525,
+    "KEYM": 473,
+    "MISC": 421,
+    "FACT": 412,
+    "LSCR": 341,
+    "ALCH": 278,
+    "FURN": 186,
+    "INGR": 183,
+    "FLOR": 158,
+    "SGST": 150,
+    "MGEF": 146,
+    "CLAS": 139,
+    "AMMO": 133,
+    "GMST": 105,
+    "HAIR": 57,
+    "ENCH": 46,
+    "SLGM": 29,
+    "BSGN": 26
+  },
+  "sources": {
+    "Oblivion.esm": 43809,
+    "Knights.esp": 1777,
+    "DLCSpellTomes.esp": 640,
+    "DLCBattlehornCastle.esp": 327,
+    "DLCMehrunesRazor.esp": 212,
+    "DLCThievesDen.esp": 186,
+    "DLCVileLair.esp": 103,
+    "DLCFrostcrag.esp": 80,
+    "DLCHorseArmor.esp": 55,
+    "DLCOrrery.esp": 38
+  },
+  "examples": [
+    {
+      "source": "DLCBattlehornCastle.esp",
+      "type": "BOOK",
+      "formid": "0100BB0D",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<p>\r\n<FONT face=5>I can make the following wines for you in about 24 hours, provided I have the necessary ingredients.<BR>\r\n<",
+      "korean_preview": "<FONT face=5>\n필요한 재료만 준비되어 있다면, 아래 와인들은 대략 하루 정도면 만들어드릴 수 있습니다.<br>\n<br>\n프로스트듀 블랑:  <br>\n알로에 베라 잎 x2, 녹색 얼룩 잔 버섯 x2  <br>\n생명력"
+    },
+    {
+      "source": "DLCBattlehornCastle.esp",
+      "type": "FACT",
+      "formid": "0100B09E",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "Faction for Battlehorn NPCs",
+      "korean_preview": "배틀혼 NPC 세력"
+    },
+    {
+      "source": "DLCMehrunesRazor.esp",
+      "type": "BOOK",
+      "formid": "01001582",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=5><br>\r\nDear Diary<br>\r\nToday I go to see my cousin!  Mother said it was a blest day, which I think means she's go",
+      "korean_preview": "<font face=5>\n오늘의 일기<br>\n오늘은 사촌을 만나러 가는 날이에요! 엄마는 오늘이 축복받은 날이라고 했어요. 아마 저를 그리워할 거라는 뜻인 것 같아요. 저도 엄마가 그리울 거예요. 하지만 사촌인 드로산을 다시"
+    },
+    {
+      "source": "DLCMehrunesRazor.esp",
+      "type": "BOOK",
+      "formid": "01001995",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<DIV align=\"center\"><font face=1>\r\nDrothmeri Army; Forward Detachment<br>\r\nRegistry of Departures and Arrivals<br> \r\nSecond S",
+      "korean_preview": "<DIV align=\"center\">\n<font face=1>드로스메리 군 - 전방 파견대<br>\n출입 기록부  <br>\n둘째 파종의 5월 ~ _________<br>\n<br>\n<DIV align=\"left\">\n<font f"
+    },
+    {
+      "source": "DLCMehrunesRazor.esp",
+      "type": "FACT",
+      "formid": "01002530",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "DL9 Commander Special Faction",
+      "korean_preview": "DL9 사령관 특수 세력"
+    },
+    {
+      "source": "DLCThievesDen.esp",
+      "type": "CONT",
+      "formid": "000664E5",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "Test DLC",
+      "korean_preview": "DLC 테스트"
+    },
+    {
+      "source": "DLCThievesDen.esp",
+      "type": "DIAL",
+      "formid": "01006FDD",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "DLC06SecurityTopic01",
+      "korean_preview": "DLC06보안 주제 01"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "BOOK",
+      "formid": "01000EDE",
+      "field": "DESC",
+      "reasons": [
+        "english_gloss",
+        "latin_letters"
+      ],
+      "english_preview": "<BR>\r\n<font face=5>\r\nThis journal is a record of failure. My failure.\r\n<p>\r\nIn the immediate sense, this is no doubt obvious.",
+      "korean_preview": "<font face=5>\n<br>\n이 일기는 실패의 기록이다.  <br>\n내 실패의 기록이다.<br>\n<br>\n지금 이 글을 읽고 있다면,  <br>\n너는 아마 내가 쓰러진 자리에 서 있을 것이다--  <br>\n성자의 성소 "
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002A65",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "NDProphetSpeechMain",
+      "korean_preview": "ND예언자 연설 메인"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002B9D",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "NDRumorAttackResponse2",
+      "korean_preview": "ND소문 공격 대응 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002BA1",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "NDRumorAttackResponse",
+      "korean_preview": "ND소문 공격 대응"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002C96",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirThedretSpeech01",
+      "korean_preview": "ND10 테드렛 경의 연설 01"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002CB0",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirThedretSpeech04",
+      "korean_preview": "ND10 테드렛 경의 연설 04"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002CB4",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirThedretSpeech03",
+      "korean_preview": "ND10 테드렛 경의 연설 03"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002CB6",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirThedretSpeech02",
+      "korean_preview": "ND10 테드렛 경의 연설 02"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002CBA",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirAmielSpeech07",
+      "korean_preview": "ND10 아미엘 경의 연설 07"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002CBC",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirAmielSpeech06",
+      "korean_preview": "ND10 아미엘 경의 연설 06"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002CBF",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirAmielSpeech05",
+      "korean_preview": "ND10 아미엘 경의 연설 05"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002CC1",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10SirAmielSpeech04",
+      "korean_preview": "ND10 아미엘 경의 연설 04"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002D0E",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "NDProphetSpeechMQ4",
+      "korean_preview": "ND예언자 연설 MQ4"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "DIAL",
+      "formid": "01002D11",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "NDProphetSpeechMQ3",
+      "korean_preview": "ND예언자 연설 MQ3"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F4D",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "Umaril's voice NPC",
+      "korean_preview": "우마릴 음성 NPC"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F4E",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 2",
+      "korean_preview": "ND 대화 NPC 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F4F",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 2",
+      "korean_preview": "ND 대화 NPC 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F50",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 2",
+      "korean_preview": "ND 대화 NPC 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F51",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 2",
+      "korean_preview": "ND 대화 NPC 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F52",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 2",
+      "korean_preview": "ND 대화 NPC 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F53",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 2",
+      "korean_preview": "ND 대화 NPC 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F65",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 2",
+      "korean_preview": "ND 대화 NPC 2"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "NPC_",
+      "formid": "01000F66",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversation Guy 1",
+      "korean_preview": "ND 대화 NPC 1"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "QUST",
+      "formid": "01002D32",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND10 Post-Quest Scene",
+      "korean_preview": "ND10 퀘스트 후 장면"
+    },
+    {
+      "source": "Knights.esp",
+      "type": "QUST",
+      "formid": "01002D36",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "ND Conversations quest",
+      "korean_preview": "ND 대화 퀘스트"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "ACTI",
+      "formid": "00081B12",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "Gnarl Chrysalis [TEMP]",
+      "korean_preview": "그나르 번데기 [TEMP]"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "ARMO",
+      "formid": "000819AF",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "SE Order Widget (unplayable)",
+      "korean_preview": "SE 질서 위젯 (착용 불가)"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "0000A2B3",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<p>\r\n<br>\r\n<DIV align=\"center\">Glories and Laments<br>\r\nAmong the Ayleid Ruins<br>\r\nBy Alexandre Hetrard<br>\r\n<br>\r\n<DIV alig",
+      "korean_preview": "<DIV align=\"center\">\n영광과 탄식<br>\n아일레이드 유적들 위에서<br>\n<br>\n<br>\n알렉산드르 헤트라드 지음<br>\n<br>\n<HR>\n<DIV align=\"left\">\n고틀스폰트 수도원으로 향하는 스킨"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00015727",
+      "field": "DESC",
+      "reasons": [
+        "english_gloss",
+        "latin_letters"
+      ],
+      "english_preview": "<font face= 5>\r\n<BR>\r\n<BR>\r\nLynch,<BR>\r\n<BR>\r\nYour instructions are to make your way to the bottom deck of the ship and secur",
+      "korean_preview": "<font face=5>\n린치,<br>\n<br>\n<br>\n<br>\n너에게 내릴 지시는 바닥 갑판의 통로와 거기에 있는 모든 객실과 창고를 엄중히 경계하는 거야. 그리고 밍스(Minx)를 방해하지 말도록. 걔가 할당받은 부분은"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "0001F13E",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=5>\r\nLady Benoch's\r\nWords and Philosophy\r\n\r\nLady Allena Benoch, former master of the Valenwood Fighter's Guild and ",
+      "korean_preview": "<font face=5>\r\n베노크 부인의\r\n단어와 철학\r\n\r\n발렌우드 파이터 길드의 전 마스터이자 임페리얼 시티에 있는 황제의 개인 경호대장인 알레나 베노크 부인은 탐리엘의 군인들에게 검을 다시 익히게 하는 캠페인을 이끌고 "
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00022173",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "You sleep rather soundly for a cold-blooded killer. That's good. You'll need a clear conscience for what I'd like to propose.",
+      "korean_preview": "<font face=5>피도 눈물도 없는 살인자치곤, 꽤 편안히 자는군. 좋아.  \r\n내가 제안하려는 일에는 맑은 양심이 필요하니까.  \r\n내가 그대에게 줄 수 있는 것은 많다. 생명을 빼앗는 행위에는 그 자체만의 쾌락이 따"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00022B06",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<p>\r\n<font face=3>\r\n<DIV align=\"center\">COMMENTARIES ON THE MYSTERIUM XARXES</div>\r\n<p>\r\n<DIV align=\"center\">BOOK THREE</div>",
+      "korean_preview": "<font face=3><DIV align=\"center\">\r\n작시스의 신비 주해\r\n\r\n<DIV align=\"center\">\r\n제3서\r\n\r\n<DIV align=\"center\">\r\n맨카 캐모런 저\r\n\r\n<HR>\r\n<DIV al"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00022B07",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<p>\r\n<font face=3>\r\n<DIV align=\"center\">COMMENTARIES ON THE MYSTERIUM XARXES</div>\r\n<p>\r\n<DIV align=\"center\">BOOK FOUR</div>\r",
+      "korean_preview": "<font face=3><DIV align=\"center\">\r\n신비의 작시스 주해\r\n\r\n<DIV align=\"center\">\r\n제4서\r\n\r\n<DIV align=\"center\">\r\n맨카 캐모런 저\r\n\r\n<DIV align=\"c"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243CB",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<<font face=1><br>\r\nA Dance In Fire, Chapter I <br>\r\nby Waughin Jarth<br>\r\n<br>\r\nScene: The Imperial City, Cyrodiil<br>\r\nDate",
+      "korean_preview": "<<font face=1><br>\r\n불 속의 춤, 제1장 <br>\r\n와우인 자스 지음<br>\r\n<br>\r\n장소: 임페리얼 시티, 시로딜(시로딜)<br>\r\n날짜: 3E 397년, 서리 내리는 달 7일<br>\r\n<br>\r\n<IM"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243CE",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">The Mystery of<br>\r\nPrincess Talara, Part I<br>\r\nBy Mera Llykith<br>\r\n<br>\r\n<DIV align",
+      "korean_preview": "<font face=1>\n<DIV align=\"center\">\n탈라라 공주의 미스터리, 제 1권<br>\n<br>\n메라 릴키스 지음<br>\n<HR>\n<DIV align=\"left\">\n제3시대 405년. 때는 캠론의 브레튼 왕국"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243D1",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">The Song of the Alchemists<br>\r\nAncient Tales of the Dwemer, Part V<br>\r\nBy Marobar Su",
+      "korean_preview": "<font face=1><br>\r\n<DIV align=\"center\">연금술사의 노래<br>\r\n드웨머의 고대 설화, 제5부<br>\r\n마로바 술 지음<br>\r\n<br>\r\n<DIV align=\"left\">   마라네온 왕의 연금"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243D6",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n <br>\r\n<DIV align=\"center\">Sithis<br>\r\n<br>\r\n<DIV align=\"left\">Sithis is the start of the house. Before hi",
+      "korean_preview": "<font face=1><br>\r\n <br>\r\n<DIV align=\"center\">시디스<br>\r\n<br>\r\n<DIV align=\"left\">시디스는 가문의 시작이다. 그 이전에는 아무것도 없었으나, 어리석은 알트머들은 이 "
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243DC",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\nInterviews With Tapestrists<br>\r\nVolume Eighteen<br>\r\n<br>\r\nCherim's Heart of Anequina<br>\r\nby Livillus Pe",
+      "korean_preview": "<font face=1><br>\r\n태피스트리 장인들과의 인터뷰<br>\r\n제18권<br>\r\n<br>\r\n셰림의 아네퀴나의 심장<br>\r\n제국 대학 교수, 리빌루스 페루스 저<br>\r\n<br>\r\n<IMG src=\"Book/fanc"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243E3",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">Lady Benoch's<br>\r\nWords and Philosophy<br>\r\n<DIV align=\"left\"><IMG src=\"Book/fancy_fo",
+      "korean_preview": "<font face=1><br>\r\n<DIV align=\"center\">베노크 부인의<br>\r\n단어와 철학<br>\r\n<DIV align=\"left\"><IMG src=\"Book/fancy_font/l_61x61.dds\" widt"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243E8",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">The Death Blow of Abernanit<br>\r\nWith Explains by the sage<br>\r\nGeocrates Varnus<br>\r\n",
+      "korean_preview": "<font face=1><br>\r\n<DIV align=\"center\">아베르나닛의 죽음의 일격<br>\r\n현자의 설명과 함께<br>\r\n지오크라테스 바르누스<br>\r\n<br>\r\n<DIV align=\"left\">   부서진 성벽과"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243ED",
+      "field": "DESC",
+      "reasons": [
+        "english_gloss",
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\nFeyfolken, Book Two<br>\r\nby Waughin Jarth<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/a_70x61.dds\" width=70 heigh",
+      "korean_preview": "<font face=1><br>\r\n페이폴켄, 제2권<br>\r\n와그힌 자스 저<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/a_70x61.dds\" width=70 height=61>시험이 끝나고 본굴닥과 "
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243F1",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\nFeyfolken, Book 3<br>\r\nby Waughin Jarth<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/t_52x61.dds\" width=52 height=",
+      "korean_preview": "<font face=1><br>\r\n페이폴켄, 3권<br>\r\n와우인 자스 저<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/t_52x61.dds\" width=52 height=61>\"타우르바드는 마침내 깃펜"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243F3",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">The Third Door<br>\r\nby Annanar Orme<br>\r\n<br>\r\nI.<br>\r\n<DIV align=\"left\">   I sing of ",
+      "korean_preview": "<font face=1><br>\r\n<DIV align=\"center\">세 번째 문의<br>\r\n안나나르 오름 저<br>\r\n<br>\r\nI.<br>\r\n<DIV align=\"left\">   나는 도끼의 여왕 엘라베스의 노래를 부르네"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243FB",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "Mystery of Talara, v 3",
+      "korean_preview": "Mystery of Talara, 3권"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "000243FF",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">The Seed<br>\r\nAncient Tales of the Dwemer, Part II<br>\r\nBy Marobar Sul<br>\r\n<br>\r\n<DIV",
+      "korean_preview": "<font face=1><br>\r\n<DIV align=\"center\">씨앗<br>\r\n드웨머의 고대 이야기, 제2부<br>\r\n마로바 술 지음<br>\r\n<br>\r\n<DIV align=\"left\"><IMG src=\"Book/fan"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024403",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\nChimarvamidium<br>\r\nAncient Tales of the Dwemer, Part VI<br>\r\nBy Marobar Sul<br>\r\n<br>\r\n<IMG src=\"Book/fan",
+      "korean_preview": "<font face=1><br>\r\n카이마바미디움<br>\r\n드웨머의 고대 이야기, 제6부<br>\r\n마로바 술 저<br>\r\n<br>\r\n<IMG src=\"Book/fancy_font/a_70x61.dds\" width=70 heig"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024404",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">How Orsinium Passed<br>\r\nto the Orcs<br>\r\nby Menyna Gsost<br>\r\n<DIV align=\"left\"><IMG ",
+      "korean_preview": "<font face=1><br>\r\n<DIV align=\"center\">오르시니움이 어떻게<br>\r\n오크에게 넘어갔는가<br>\r\n메니나 그소스 저<br>\r\n<DIV align=\"left\"><IMG src=\"Book/fancy_"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "0002440A",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "Mystery of Talara, v 4",
+      "korean_preview": "Mystery of Talara, 4권"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "0002440D",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\nLord Jornibret's Last Dance<br>\r\n(Traditional)<br>\r\n<br>\r\nWomen's Verse I:<br>\r\n   Every winter season,<br",
+      "korean_preview": "<font face=1><br>\r\n요른이브렛 경의 마지막 춤<br>\r\n(전통)<br>\r\n<br>\r\n여성들의 구절 I:<br>\r\n   매년 겨울철이면,<br>\r\n   이런저런 전쟁 때문에<br>\r\n   (정말 성가신 일이지)<"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024410",
+      "field": "DESC",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\n<DIV align=\"center\">The Gold Ribbon of Merit<br>\r\nby Ampyrian Brum<br>\r\n<br>\r\n<DIV align=\"left\"><IMG src=\"",
+      "korean_preview": "<font face=1><br>\r\n<DIV align=\"center\">공훈의 황금 리본<br>\r\n암피리안 브럼 지음<br>\r\n<br>\r\n<DIV align=\"left\"><IMG src=\"Book/fancy_font/i_51x"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024534",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "2920, Sun's Height (v7)",
+      "korean_preview": "2920, Sun's Height (7권)"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024536",
+      "field": "DESC",
+      "reasons": [
+        "english_gloss",
+        "latin_letters"
+      ],
+      "english_preview": "<font face=1><br>\r\nA Dance in Fire, Chapter 7<br>\r\nby Waughin Jarth<br>\r\n<br>\r\nScene: Silvenar, Valenwood<br>\r\nDate: 13 Sun's",
+      "korean_preview": "<font face=1><br>\r\n불 속의 춤, 제7장<br>\r\n와우인 자스 저<br>\r\n<br>\r\n장면: 실베나르, 발렌우드<br>\r\n날짜: 3E 397년 11월 13일<br>\r\n<br>\r\n<IMG src=\"Book/fan"
+    },
+    {
+      "source": "Oblivion.esm",
+      "type": "BOOK",
+      "formid": "00024536",
+      "field": "FULL",
+      "reasons": [
+        "latin_letters"
+      ],
+      "english_preview": "A Dance in Fire, v 7",
+      "korean_preview": "A Dance in Fire, 7 권"
+    }
+  ]
+}
