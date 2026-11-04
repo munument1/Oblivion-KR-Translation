@@ -1,0 +1,31 @@
+name: Issue 8 Mythic Dawn Book 2 Title QA
+
+on:
+  pull_request:
+    paths:
+      - 'canonical_book_title_overrides_v1.csv'
+      - 'tests/test_book_title_overrides.py'
+      - '.github/workflows/issue8-mythic-dawn-book2.yml'
+  push:
+    paths:
+      - 'canonical_book_title_overrides_v1.csv'
+      - 'tests/test_book_title_overrides.py'
+      - '.github/workflows/issue8-mythic-dawn-book2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  book-title:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check the real original record and source-scoped title
+        run: python -m unittest discover -s tests -p 'test_book_title_overrides.py' -v
+      - name: Whole Python regression suite
+        run: python -m unittest discover -s tests -q
