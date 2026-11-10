@@ -17,3 +17,6 @@ assets/obcjk_fonts/** whitespace=cr-at-eol
 assets/obcjk_fonts/licenses/** whitespace=cr-at-eol,-blank-at-eol
 # Exact ESP source strings include meaningful trailing whitespace in CSV cells.
 mods/ooo_enhanced/translations_6.9.csv whitespace=cr-at-eol,-blank-at-eol
+mods/ooo_enhanced/translations_6.9a.csv whitespace=cr-at-eol,-blank-at-eol
+mods/ooo_enhanced/updates_6.9a.csv whitespace=cr-at-eol,-blank-at-eol
+mods/ooo_enhanced/reviewed_memory_6.9a.csv whitespace=cr-at-eol,-blank-at-eol

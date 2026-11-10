@@ -1,4 +1,12 @@
-# OOO Enhanced 6.9 Korean UTF-8
+# OOO Enhanced Korean UTF-8
+
+**최신: [6.9a-KR1.0](RELEASE_6.9a.md) (2026-11-10)** — [설치 안내](README_KO_6.9a.txt) · [한영 대조표](translations_6.9a.csv) · [변경 150행](updates_6.9a.csv) · [xEdit 검증](XEDIT_QA_6.9a.md)
+
+본편의 일지 추가·변경과 관문 알림 수정을 반영했습니다. ESP 24개, 76,829개 레코드와 1,422개 스크립트 구간의 정적 검증을 통과했고 xEdit의 번역 추가 진단은 0건입니다. 원본과 한국어판에 비영속 참조 진단 6건이 동일하게 남습니다. 선택 ESP 23개는 이전 번역판과 같습니다. 게임 실행은 미검증입니다.
+
+현재 빌더의 기본 버전은 `6.9a`입니다. 아래 `6.9` 자료는 이전 배포본 재현과 비교용으로 보존합니다.
+
+## 이전 6.9 자료
 
 [한국어 설치 안내](README_KO.txt) · [한영 대조표](translations_6.9.csv) · [정적 검증 기록](validation_6.9.json)
 
@@ -11,7 +19,8 @@
 Python 3 표준 라이브러리만 사용합니다. 원본 리소스와 플러그인은 저장소에 포함하지 않습니다.
 
 ```powershell
-python mods/ooo_enhanced/build.py '원본 6.9 압축 해제 폴더' '새 출력 폴더'
+python mods/ooo_enhanced/build.py '원본 6.9a 압축 해제 폴더' '새 출력 폴더'
+python mods/ooo_enhanced/build.py '이전 6.9 원본 폴더' '다른 새 출력 폴더' --version 6.9
 python mods/ooo_enhanced/test_build.py
 ```
 
@@ -33,5 +42,7 @@ python mods/ooo_enhanced/test_build.py
 `qa-note`는 배포 ZIP의 SHA-256과 완료된 xEdit 검증 기록을 확인한 뒤, 기존 6.9-KR1.0의 Nexus 변경 기록에 검증 결과를 덧붙입니다. 새 ESP 버전은 올리지 않습니다. Nexus 변경 기록 API는 추가 방식이므로 같은 보고서를 중복 실행하지 마세요.
 
 현재 업로드 검사기는 이번 6.9 패키지 구성과 검증 기록을 확인합니다. 다음 버전에서는 대조표·원본 해시·빌드 검증 기록과 워크플로의 버전·ESP 개수 검사를 함께 갱신하세요.
+
+현재 업로드 기본 태그는 `ooo-enhanced-6.9a-kr1.0`입니다. 6.9a 업로드 시 ZIP에 동봉한 완료된 xEdit 보고서까지 확인합니다. 파일 이름의 버전 부분은 `6.9a`입니다.
 
 기존 번역 출처와 기여자 안내는 배포 ZIP의 `CREDITS_KO.txt`와 `OOO_BASE_TRANSLATION_README.txt`에 그대로 동봉합니다.

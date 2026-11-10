@@ -1,0 +1,420 @@
+[
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO - DLCFrostcrag Adaptation.esp",
+    "target": {
+      "file": "OOO - DLCFrostcrag Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO - DLCHorseArmor Adaptation.esp",
+    "target": {
+      "file": "OOO - DLCHorseArmor Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO - DLCOrrery Adaptation.esp",
+    "target": {
+      "file": "OOO - DLCOrrery Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Balanced Magic Rebalanced.esp",
+    "target": {
+      "file": "OOO Enhanced - Balanced Magic Rebalanced.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCBattlehornCastle Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCBattlehornCastle Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCMehrunesRazor Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCMehrunesRazor Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCThievesDen Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCThievesDen Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - DLCVileLair Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - DLCVileLair Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - EE patch.esp",
+    "target": {
+      "file": "OOO Enhanced - EE patch.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Easy Difficulty.esp",
+    "target": {
+      "file": "OOO Enhanced - Easy Difficulty.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Hard Difficulty.esp",
+    "target": {
+      "file": "OOO Enhanced - Hard Difficulty.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Knights of the Nine Adaptation.esp",
+    "target": {
+      "file": "OOO Enhanced - Knights of the Nine Adaptation.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Longer Essential Unconscious Time Disabled.esp",
+    "target": {
+      "file": "OOO Enhanced - Longer Essential Unconscious Time Disabled.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Brown Goblins.esp",
+    "target": {
+      "file": "OOO Enhanced - No Brown Goblins.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Bubbultures.esp",
+    "target": {
+      "file": "OOO Enhanced - No Bubbultures.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Buffalos.esp",
+    "target": {
+      "file": "OOO Enhanced - No Buffalos.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Frost Trolls.esp",
+    "target": {
+      "file": "OOO Enhanced - No Frost Trolls.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Hill Giants.esp",
+    "target": {
+      "file": "OOO Enhanced - No Hill Giants.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Snakes.esp",
+    "target": {
+      "file": "OOO Enhanced - No Snakes.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - No Tigers.esp",
+    "target": {
+      "file": "OOO Enhanced - No Tigers.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Normal Sigil Stones.esp",
+    "target": {
+      "file": "OOO Enhanced - Normal Sigil Stones.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in OOO Enhanced - Shivering Isles.esp",
+    "target": {
+      "file": "OOO Enhanced - Shivering Isles.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A008664",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0A00866A",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "09011454",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0901145A",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "0901144D",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "error",
+    "code": "xedit_check_error",
+    "message": "Target is not persistent",
+    "target": {
+      "file": "OOO Enhanced.esp",
+      "formId": "09011453",
+      "signature": "REFR",
+      "path": "REFR \\ XESP - Enable Parent \\ Reference"
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  },
+  {
+    "severity": "info",
+    "code": "no_errors_found",
+    "message": "No xEdit check errors found in SM Plugin Refurbish Lite.esp",
+    "target": {
+      "file": "SM Plugin Refurbish Lite.esp",
+      "path": ""
+    },
+    "source": "validation.check_for_errors",
+    "action": {
+      "kind": "none",
+      "reason": "validation_only"
+    }
+  }
+]

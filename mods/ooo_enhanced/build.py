@@ -1,6 +1,6 @@
-"""Rebuild the UTF-8 Korean overlay from exact OOO Enhanced 6.9 sources.
+"""Rebuild the UTF-8 Korean overlay from exact OOO Enhanced sources.
 
-Usage: python mods/ooo_enhanced/build.py ORIGINAL_DIRECTORY NEW_OUTPUT_DIRECTORY
+Usage: python mods/ooo_enhanced/build.py ORIGINAL_DIRECTORY NEW_OUTPUT_DIRECTORY [--version 6.9|6.9a]
 """
 from pathlib import Path
 import csv, hashlib, json, re, struct, sys, zlib
@@ -69,10 +69,11 @@ def verify_script(old,new,mapping):
             assert ap==bp,'Changed nontext command arguments'
         else:assert ap==bp,'Changed nontext command payload'
 
-def build(source,output):
+def build(source,output,version='6.9a'):
+    if version not in ('6.9','6.9a'):raise ValueError('Unsupported source version')
     if output.exists():raise FileExistsError(output)
-    manifest=json.loads((HERE/'sources_6.9.json').read_text(encoding='utf8'))
-    table=HERE/'translations_6.9.csv'
+    manifest=json.loads((HERE/f'sources_{version}.json').read_text(encoding='utf8'))
+    table=HERE/f'translations_{version}.csv'
     assert sha(table.read_bytes())==manifest['translation_sha256']
     with table.open(encoding='utf-8-sig',newline='') as stream:
         rows=list(csv.DictReader(stream))
@@ -84,7 +85,7 @@ def build(source,output):
     for rel,info in manifest['plugins'].items():
         assert sha((source/rel).read_bytes())==info['sha256'],f'Wrong source version: {rel}'
     output.mkdir(parents=True)
-    report={'version':'6.9-KR1.0','plugins':{},'in_game_tested':False}
+    report={'version':f'{version}-KR1.0','plugins':{},'in_game_tested':False}
     for rel,info in manifest['plugins'].items():
         original=(source/rel).read_bytes();lookup=defaultdict(list)
         for r in by_file[rel]:lookup[(r['kind'].encode(),int(r['fid'],16))].append(r)
@@ -158,5 +159,10 @@ def build(source,output):
     return report
 
 if __name__=='__main__':
-    if len(sys.argv)!=3:raise SystemExit(__doc__)
-    build(Path(sys.argv[1]),Path(sys.argv[2]))
+    import argparse
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('source',type=Path)
+    parser.add_argument('output',type=Path)
+    parser.add_argument('--version',choices=('6.9','6.9a'),default='6.9a')
+    args=parser.parse_args()
+    build(args.source,args.output,args.version)

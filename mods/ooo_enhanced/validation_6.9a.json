@@ -1,0 +1,237 @@
+{
+  "version": "6.9a-KR1.0",
+  "plugins": {
+    "00 Base (No main resources)/OOO Enhanced.esp": {
+      "source_sha256": "86828428caca46f06c48a3a7ebfbc2a838170a9680931282407a799cf1719e17",
+      "output_sha256": "e1765edc78f279e2ebedaa44f3d978a2c4ce82b102d6b94fd34e69c1c7153d93",
+      "records": 74545,
+      "translated_fields": 14017,
+      "script_literal_edits": 628,
+      "scripts_checked": 1294,
+      "source_only_literals": [
+        {
+          "fid": "06006059",
+          "english": "Continue."
+        }
+      ]
+    },
+    "10 DLCs/OOO - DLCFrostcrag Adaptation.esp": {
+      "source_sha256": "035db7469dff05e778044cce035819973c3c98c7e39edfaad88ba909c69e70dc",
+      "output_sha256": "6d959cb51f611ee4e5510ea7e0153359098e9f369cdbc8177653c19c1703bf84",
+      "records": 20,
+      "translated_fields": 29,
+      "script_literal_edits": 2,
+      "scripts_checked": 8,
+      "source_only_literals": []
+    },
+    "10 DLCs/OOO - DLCHorseArmor Adaptation.esp": {
+      "source_sha256": "93e975e9280a4e706e1e7bedba674bb5a300b28d81ce87392615a664409d0032",
+      "output_sha256": "bb089cf4f13efcea724de8fd3d9279cd233c62030d322096d221d0039a697566",
+      "records": 35,
+      "translated_fields": 45,
+      "script_literal_edits": 42,
+      "scripts_checked": 10,
+      "source_only_literals": []
+    },
+    "10 DLCs/OOO - DLCOrrery Adaptation.esp": {
+      "source_sha256": "eab0f28bd2c7ac1fa468906a6068c3cbe87fc377c1c7723b72f22f751d5a4e2c",
+      "output_sha256": "298b097020a4e0d6a73b9d261a544c0ba8db05d9e949be95b0c8495168c229ba",
+      "records": 54,
+      "translated_fields": 21,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "10 DLCs/OOO Enhanced - DLCBattlehornCastle Adaptation.esp": {
+      "source_sha256": "a1eaa5c7d179e9629b5f0d1b0cc8e4a9183e5d4afa30c4baea6f4c0725a1ccae",
+      "output_sha256": "2457b9c5e737036cbbe1cd547d332b12150708ec41213b1297de9d9e2e9a9bfb",
+      "records": 72,
+      "translated_fields": 70,
+      "script_literal_edits": 2,
+      "scripts_checked": 23,
+      "source_only_literals": []
+    },
+    "10 DLCs/OOO Enhanced - DLCMehrunesRazor Adaptation.esp": {
+      "source_sha256": "ff9195b4c1a96a6269756ba29b40c5c02485251bbd49558bec1d7e903b0d11c4",
+      "output_sha256": "05cd24bc811003440269383e944e5bfac6ffd60551972dbca54f5669d0767751",
+      "records": 179,
+      "translated_fields": 93,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "10 DLCs/OOO Enhanced - DLCThievesDen Adaptation.esp": {
+      "source_sha256": "90dc73907992a4f80f3699f7f605ac2b794dd4c443bd4232e84bc8ca5909745c",
+      "output_sha256": "218761524319e5af4c7a319c80241fda417630518c7ac601dae42bd0c6de34f3",
+      "records": 46,
+      "translated_fields": 56,
+      "script_literal_edits": 5,
+      "scripts_checked": 12,
+      "source_only_literals": []
+    },
+    "10 DLCs/OOO Enhanced - DLCVileLair Adaptation.esp": {
+      "source_sha256": "002b1e9c0a16fee78510a89fb495570354d2ba7fc120007c940af27abdc83eb9",
+      "output_sha256": "9369d82eb63875197370378f98e82e6aba4a4a9c22b808e39041aafd263f69dd",
+      "records": 67,
+      "translated_fields": 43,
+      "script_literal_edits": 5,
+      "scripts_checked": 6,
+      "source_only_literals": []
+    },
+    "10 DLCs/OOO Enhanced - Knights of the Nine Adaptation.esp": {
+      "source_sha256": "871c30a54ba5ffbbd4b01d890381eaf01eed005146d4346002bd8509dcd8fe28",
+      "output_sha256": "9b348d37ad236cc09284d221a88394270ee9ca0dc4893fcdc219742da4931b4c",
+      "records": 582,
+      "translated_fields": 253,
+      "script_literal_edits": 7,
+      "scripts_checked": 21,
+      "source_only_literals": []
+    },
+    "15 SM DLC Plugin Refurbish Compatible Version (Load BEFORE the DLC- OOO Adaptations)/SM Plugin Refurbish Lite.esp": {
+      "source_sha256": "06aa46d3d94adbeeef7d343efa4c99182dae8bb2284854af23349d251d6b7219",
+      "output_sha256": "eda632a84f7fa31743a3004bd73c7caa1a9df489eb39ae6796a7144a25bfd0a5",
+      "records": 51,
+      "translated_fields": 74,
+      "script_literal_edits": 10,
+      "scripts_checked": 43,
+      "source_only_literals": []
+    },
+    "20 No Specific Creatures/OOO Enhanced - No Brown Goblins.esp": {
+      "source_sha256": "756f7cd7dae63904c77729a8c8a24ece690017e123d012326eea04a2e9d970c4",
+      "output_sha256": "4ed1cf70adafdc03b33bf13b2d8f555e0a40e952bc2b2eb9f446dd9d0a92969e",
+      "records": 2,
+      "translated_fields": 1,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "20 No Specific Creatures/OOO Enhanced - No Bubbultures.esp": {
+      "source_sha256": "9687363e40b5353c67af5af08cae110b0cfedf4b0111c70f1bf147156a70c14e",
+      "output_sha256": "9687363e40b5353c67af5af08cae110b0cfedf4b0111c70f1bf147156a70c14e",
+      "records": 6,
+      "translated_fields": 0,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "20 No Specific Creatures/OOO Enhanced - No Buffalos.esp": {
+      "source_sha256": "27486929b2ad403be15a4c3fac7079b578c0e2e762880366152b6a0c24f67a7d",
+      "output_sha256": "27486929b2ad403be15a4c3fac7079b578c0e2e762880366152b6a0c24f67a7d",
+      "records": 3,
+      "translated_fields": 0,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "20 No Specific Creatures/OOO Enhanced - No Frost Trolls.esp": {
+      "source_sha256": "34b6b0d576e612702b239061152cf91cf45d90de77b235ac9fd127c25fbee716",
+      "output_sha256": "56655a8ca674d51608deaaf64973f4f4945aad6dd67bd41cb664cb6d5987ba38",
+      "records": 20,
+      "translated_fields": 3,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "20 No Specific Creatures/OOO Enhanced - No Hill Giants.esp": {
+      "source_sha256": "18d0ffcc73539ed7f1f17ff0a28016802f0f9d99c176c523226d8c2aeb4d4ad3",
+      "output_sha256": "18d0ffcc73539ed7f1f17ff0a28016802f0f9d99c176c523226d8c2aeb4d4ad3",
+      "records": 7,
+      "translated_fields": 0,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "20 No Specific Creatures/OOO Enhanced - No Snakes.esp": {
+      "source_sha256": "4984aa7e1fe846e6bac910602c259d2205f96cefff309001a04322d2c3cdb3a9",
+      "output_sha256": "4984aa7e1fe846e6bac910602c259d2205f96cefff309001a04322d2c3cdb3a9",
+      "records": 15,
+      "translated_fields": 0,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "20 No Specific Creatures/OOO Enhanced - No Tigers.esp": {
+      "source_sha256": "6bdcb1d64eec6c943b1917d52663e38ca3ca029655c419674cb5a8e7754486ee",
+      "output_sha256": "88b34ce5297110be6ebece3fb56c9e68bd94b3d7a7557b243bbdaa1247354d9b",
+      "records": 18,
+      "translated_fields": 2,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "30 Harder Shivering Isles (REQUIRES OOO SI)/OOO Enhanced - Shivering Isles.esp": {
+      "source_sha256": "708d46b9abb9fa6b7061bb37357b84946a2a3863f95b60452ed0b748fd5d334c",
+      "output_sha256": "80391363158bab8f38561115df914c1ee692ecc7d05ff7c9d1d20ac474060eed",
+      "records": 699,
+      "translated_fields": 696,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "40 Balanced Magic Rebalanced (load after OOOEnhanced)/OOO Enhanced - Balanced Magic Rebalanced.esp": {
+      "source_sha256": "01b3f6cd9c90f8345115a02d4cae0ba939e7a3e33f9a68055c4d59d908f7a580",
+      "output_sha256": "113d42ff0b8a268e6b15c9c0fb1d38dbbef660f3a60eb2440fba020683a34a5a",
+      "records": 109,
+      "translated_fields": 108,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "50 Easy Difficuty/OOO Enhanced - Easy Difficulty.esp": {
+      "source_sha256": "cc789656e5f922f8a4956cab095dbc014cf0c7665f92522efc495f1c9521a2f7",
+      "output_sha256": "a26241323941fd42a5793fe2d704d5bc2ec8df3c4bb22ae5586836b666069e16",
+      "records": 148,
+      "translated_fields": 167,
+      "script_literal_edits": 0,
+      "scripts_checked": 2,
+      "source_only_literals": []
+    },
+    "50 Hard Difficulty/OOO Enhanced - Hard Difficulty.esp": {
+      "source_sha256": "00127d79579ae6af81742f17c432f6a3d77ca740d90b005273f095cb09416bc6",
+      "output_sha256": "3cbff04214f6b08e9d584157c5074c0d7041fdc5e8fafe6adf2bbafc3b6b3327",
+      "records": 145,
+      "translated_fields": 165,
+      "script_literal_edits": 0,
+      "scripts_checked": 1,
+      "source_only_literals": []
+    },
+    "60 Normal Sigil Stones (They don't fire spells + you can do the reload exploit)/OOO Enhanced - Normal Sigil Stones.esp": {
+      "source_sha256": "2a57b91fe2c2914883931d284e58793ae6eadf2af5f63fc8132efcfb0e4d0817",
+      "output_sha256": "33948a030df5d5d91d95022dc89a316a10350c03e8c4268c5cbc89b8e6f1ff27",
+      "records": 2,
+      "translated_fields": 3,
+      "script_literal_edits": 1,
+      "scripts_checked": 1,
+      "source_only_literals": []
+    },
+    "70 Longer Essential death time disabled/OOO Enhanced - Longer Essential Unconscious Time Disabled.esp": {
+      "source_sha256": "f52aea2b3d6ea3ed7fbebeab73bcd09ae39209aef45d68584ed0fac440fac650",
+      "output_sha256": "f52aea2b3d6ea3ed7fbebeab73bcd09ae39209aef45d68584ed0fac440fac650",
+      "records": 2,
+      "translated_fields": 0,
+      "script_literal_edits": 0,
+      "scripts_checked": 0,
+      "source_only_literals": []
+    },
+    "80 Enhanced Economy House Prices Patch/OOO Enhanced - EE patch.esp": {
+      "source_sha256": "6c359339bf24b7a9442471ce8e6f80f23fd2fe4f4b5e7a96aebd08c0c7b66fa3",
+      "output_sha256": "6c359339bf24b7a9442471ce8e6f80f23fd2fe4f4b5e7a96aebd08c0c7b66fa3",
+      "records": 2,
+      "translated_fields": 0,
+      "script_literal_edits": 0,
+      "scripts_checked": 1,
+      "source_only_literals": []
+    }
+  },
+  "in_game_tested": false,
+  "bilingual_rows": 15970,
+  "unchanged_optional_esps": 23,
+  "changed_translation_rows": 150,
+  "added_or_changed_quest_journal_rows": 148,
+  "reviewed_memory_unique_strings": 140,
+  "xedit_tested": true,
+  "xedit_original_errors": 6,
+  "xedit_korean_errors": 6,
+  "xedit_translation_added_errors": 0,
+  "xedit_summary_file": "xedit_validation_6.9a.json"
+}

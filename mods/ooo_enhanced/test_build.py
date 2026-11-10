@@ -28,7 +28,7 @@ class BuildTests(unittest.TestCase):
     def test_wrong_source_does_not_create_output(self):
         with tempfile.TemporaryDirectory() as temp:
             source=Path(temp)/'source';source.mkdir();output=Path(temp)/'output'
-            manifest=__import__('json').loads((HERE/'sources_6.9.json').read_text(encoding='utf8'))
+            manifest=__import__('json').loads((HERE/'sources_6.9a.json').read_text(encoding='utf8'))
             for name in manifest['plugins']:
                 p=source/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b'wrong version')
             with self.assertRaises(AssertionError):build.build(source,output)

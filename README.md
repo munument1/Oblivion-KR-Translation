@@ -2,7 +2,7 @@
 
 > **번역 데이터 주의:** `canonical_translation_v2.csv`에는 과거 초안이 혼재합니다. 신규 모드 번역 메모리로 직접 쓰지 마세요. [검수 출처 규칙](docs/translation_memory/README.md)을 따르세요.
 
-> 모드 번역: [OOO Enhanced 6.9-KR1.0](mods/ooo_enhanced/README.md) · [Oblivion Content Restoration Project OCRP 한국어 번역](mods/ocrp/README.md) — OCRP 기본판·Reduced·Knights·OOO 호환 패치의 한영 대조표 및 정적 검증 빌더. OCRP는 게임 내 실증 전입니다.
+> 모드 번역: [OOO Enhanced 6.9a-KR1.0](mods/ooo_enhanced/README.md) · [Oblivion Content Restoration Project OCRP 한국어 번역](mods/ocrp/README.md) — 한영 대조표·검증 빌더 포함. OOO 6.9a는 xEdit 원본 대비 추가 진단 0건이며 게임 실행은 미검증입니다. OCRP는 게임 내 실증 전입니다.
 
 # Oblivion Original 한국어 번역 v1.2.0
 
