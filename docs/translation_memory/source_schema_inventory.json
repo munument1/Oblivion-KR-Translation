@@ -1,7 +1,7 @@
 {
   "canonical_translation_v2.csv": {
-    "bytes": 43492571,
-    "sha256": "8d06e39e11064c2d880d16d93fad9b20894e08f5395861515aeea1a9c8fcd3a0",
+    "bytes": 43492658,
+    "sha256": "97072941553ae611903c604cf6c14d78e5afbf61cae4ffc45016950e01b060c1",
     "rows": 47227,
     "columns": [
       "effective_source",
