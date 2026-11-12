@@ -1,0 +1,37 @@
+name: Issue 8 Name Chain Review (Non-mutating)
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_issue8_name_chains.py'
+      - 'tests/test_issue8_name_chains.py'
+      - '.github/workflows/issue8-name-chain-review.yml'
+  push:
+    paths:
+      - 'scripts/audit_issue8_name_chains.py'
+      - 'tests/test_issue8_name_chains.py'
+      - '.github/workflows/issue8-name-chain-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test classification and non-mutation
+        run: python -m unittest discover -s tests -p 'test_issue8_name_chains.py' -v
+      - name: Inspect original canonical and location tables
+        run: python scripts/audit_issue8_name_chains.py --outdir issue8_name_review
+      - name: Upload source-backed candidate sheet and summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: issue8-name-chain-review
+          path: issue8_name_review/
+          if-no-files-found: error
