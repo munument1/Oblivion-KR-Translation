@@ -113,6 +113,8 @@ def build(args):
         issue_fixes = HERE / 'canonical_issue24_25_fixes_v1.csv'
         for key, entries in load_translations(issue_fixes, encoded_column='obcjk_utf8_hex').items():
             translations[key].extend(entries)
+        from issue24_25_followup import correct_table
+        correct_table(translations)
     for path in args.extra_csv:
         for key, entries in load_translations(path.resolve(), encoded_column='obcjk_utf8_hex').items():
             translations[key].extend(entries)

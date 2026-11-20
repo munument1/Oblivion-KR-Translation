@@ -1,8 +1,8 @@
 # OOO Enhanced Korean UTF-8
 
-**최신: [6.9a-KR1.1](RELEASE_6.9a_KR1.1.md)** — [설치 안내](README_KO_6.9a.txt) · [한영 대조표](translations_6.9a.csv) · [xEdit 검증](xedit_validation_6.9a-KR1.1.json)
+**최신: [6.9a-KR1.2](RELEASE_6.9a_KR1.2.md)** — [설치 안내](README_KO_6.9a.txt) · [한영 대조표](translations_6.9a.csv) · [xEdit 검증](xedit_validation_6.9a-KR1.2.json)
 
-KR1.1은 제보된 한국어 문구 6곳을 교정했습니다. 이전 릴리스의 변경 내용과 검증 기록은 [6.9a-KR1.0](RELEASE_6.9a.md)에서 볼 수 있습니다.
+KR1.2는 무기·퀘스트·장소 표기를 본편과 맞췄습니다. 앞선 문구 교정은 [6.9a-KR1.1](RELEASE_6.9a_KR1.1.md)을 참고하세요. 이전 릴리스의 변경 내용과 검증 기록은 [6.9a-KR1.0](RELEASE_6.9a.md)에서 볼 수 있습니다.
 
 현재 빌더의 기본 버전은 `6.9a`입니다. 아래 `6.9` 자료는 이전 배포본 재현과 비교용으로 보존합니다.
 

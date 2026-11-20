@@ -86,6 +86,9 @@ jobs:
           if [[ "$version" == '6.9a-KR1.1' ]]; then
             echo 'description=OOO Enhanced 6.9a의 한국어 번역 교정. 원작자는 Saldron이며 원본이 필요합니다. https://www.nexusmods.com/oblivion/mods/47187 · 생성형 AI로 한국어 문구를 교정했습니다. 실게임 플레이 검증은 생략했습니다.' >> "$GITHUB_OUTPUT"
             echo 'changelog=GitHub #24·#25 관련 오탈자와 퀘스트 문구 6곳을 수정했습니다. 변경된 본편 ESP는 xEdit으로 다시 확인했고, 선택 ESP 23개는 이전 검증본과 해시가 일치합니다.' >> "$GITHUB_OUTPUT"
+          elif [[ "$version" == '6.9a-KR1.2' ]]; then
+            echo 'description=OOO Enhanced 6.9a 한국어판. 원작 Saldron https://www.nexusmods.com/oblivion/mods/47187 · 원본과 리소스가 필요합니다. 생성형 AI로 한국어 문구를 교정했습니다.' >> "$GITHUB_OUTPUT"
+            echo 'changelog=#24·#25 후속 교정으로 본편 v1.2.3과 무기·퀘스트·장소 표기를 맞췄습니다. xEdit 대조와 해시 검증을 수행했고 실게임 검증은 생략했습니다.' >> "$GITHUB_OUTPUT"
           fi
 
       - name: Append verified xEdit result to the existing Nexus changelog

@@ -11587,7 +11587,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000091FB,FGC07AmelionSword,1,FULL,0,Brusef Amelion's Sword,브루세프 아멜리온의 검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0000BEA6,FGC09RugdumphSword,1,FULL,0,Rugdumph's Claymore,러그덤프의 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0000CF1D,SQ10AfterRockshatter15,1,FULL,0,Rockshatter,바위분쇄기,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00012D17,SE32SilverDaggerAbsMagicka,1,FULL,0,Dagger of Depletion,고갈의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00012D17,SE32SilverDaggerAbsMagicka,1,FULL,0,Dagger of Depletion,고갈의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00014960,DremoraLongSwordEnchWeakFire,1,FULL,0,Heat of Sinfulness,죄악의 열기,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00014961,DremoraLongSwordEnchFireDmg,1,FULL,0,Purging Flame,정화의 불꽃,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00014962,DremoraLongSwordEnchWeakFireAndFireDmg,1,FULL,0,Oblivion's Caress,오블리비언의 손길,existing-6.9-context
@@ -11611,7 +11611,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00014D6A,OBDaedricBowHatred6,1,FULL,0,Hatred's Soul,증오의 영혼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00014F14,TG11ElvenLongSword,1,FULL,0,Ayleid Longsword,에일리드 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00014F15,TG11ElvenMace,1,FULL,0,Ayleid Mace,아일레이드 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00019171,WeapIronDagger,1,FULL,0,Iron Dagger,철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00019171,WeapIronDagger,1,FULL,0,Iron Dagger,철 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00019172,WeapIronWarhammer,1,FULL,0,Iron Warhammer,철 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0001C14B,TG01RohssansSword,1,FULL,0,Rohssan's Antique Cutlass,로산의 골동품 커틀러스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0001C6CD,WeapIronClaymore,1,FULL,0,Iron Claymore,철 클레이모어,existing-6.9-context
@@ -11620,18 +11620,18 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000220A8,EnchDwarvenBattleAxeFreeze,1,FULL,0,Battle Axe of Cold,냉기의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000220F6,EnchDwarvenBowFreeze,1,FULL,0,Bow of Cold,냉기의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002224D,EnchDwarvenClaymoreFreeze,1,FULL,0,Claymore of Cold,냉기의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002257F,EnchDwarvenDaggerFreeze,1,FULL,0,Dagger of Cold,냉기의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002257F,EnchDwarvenDaggerFreeze,1,FULL,0,Dagger of Cold,냉기의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002258C,EnchDwarvenMaceFreeze,1,FULL,0,Mace of Cold,냉기의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002259C,EnchDwarvenShortSwordFreeze,1,FULL,0,Shortsword of Cold,냉기의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002259C,EnchDwarvenShortSwordFreeze,1,FULL,0,Shortsword of Cold,냉기의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000225B4,EnchDwarvenWarAxeFreeze,1,FULL,0,War Axe of Cold,냉기의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000225D8,EnchDwarvenWarHammerFreeze,1,FULL,0,Warhammer of Cold,냉기의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000225D9,EnchElvenBattleAxePolar,1,FULL,0,Battle Axe of Freezing,빙결의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000225DA,EnchElvenBowPolar,1,FULL,0,Bow of Freezing,빙결의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000225F6,EnchElvenClaymorePolar,1,FULL,0,Claymore of Freezing,빙결의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000225FC,EnchElvenDaggerPolar,1,FULL,0,Dagger of Freezing,빙결의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000225FC,EnchElvenDaggerPolar,1,FULL,0,Dagger of Freezing,빙결의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002263D,EnchElvenLongSwordPolar,1,FULL,0,Longsword of Freezing,빙결의 엘프제 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022642,EnchElvenMacePolar,1,FULL,0,Mace of Freezing,빙결의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022643,EnchElvenShortswordPolar,1,FULL,0,Shortsword of Freezing,빙결의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022643,EnchElvenShortswordPolar,1,FULL,0,Shortsword of Freezing,빙결의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022647,EnchElvenWarAxePolar,1,FULL,0,War Axe of Freezing,빙결의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022650,EnchElvenWarHammerPolar,1,FULL,0,Warhammer of Freezing,빙결의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022738,EnchGlassBattleAxePolar,1,FULL,0,Battle Axe of the Glacier,빙하의 전투도끼,existing-6.9-context
@@ -11641,47 +11641,47 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229B6,WeapSteelBattleAxe,1,FULL,0,Steel Battle Axe,강철 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229B7,WeapSteelBow,1,FULL,0,Steel Bow,강철 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229B8,WeapSteelClaymore,1,FULL,0,Steel Claymore,강철 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229B9,WeapSteelDagger,1,FULL,0,Steel Dagger,강철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229B9,WeapSteelDagger,1,FULL,0,Steel Dagger,강철 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229BA,WeapSteelLongsword,1,FULL,0,Steel Longsword,강철 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229BB,WeapSteelMace,1,FULL,0,Steel Mace,강철 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229BC,WeapSteelShortsword,1,FULL,0,Steel Shortsword,강철 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229BC,WeapSteelShortsword,1,FULL,0,Steel Shortsword,강철 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229BD,WeapSteelWarAxe,1,FULL,0,Steel War Axe,강철 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229BE,WeapSteelWarhammer,1,FULL,0,Steel Warhammer,강철 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000229BF,WeapElvenBow,1,FULL,0,Elven Bow,엘프제 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022A2B,EnchGlassClaymorePolar,1,FULL,0,Claymore of the Glacier,빙하의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022A2C,EnchGlassDaggerPolar,1,FULL,0,Dagger of the Glacier,빙하의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022A2C,EnchGlassDaggerPolar,1,FULL,0,Dagger of the Glacier,빙하의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022A2E,EnchGlassLongswordPolar,1,FULL,0,Longsword of the Glacier,빙하의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022A2F,EnchGlassMacePolar,1,FULL,0,Mace of the Glacier,빙하의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022BA8,Dark01KnifeBlade,1,FULL,0,Ruined Ancient Dagger,망가진 고대 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022EBD,EnchGlassShortswordPolar,1,FULL,0,Shortsword of the Glacier,빙하의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022BA8,Dark01KnifeBlade,1,FULL,0,Ruined Ancient Dagger,망가진 고대 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022EBD,EnchGlassShortswordPolar,1,FULL,0,Shortsword of the Glacier,빙하의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00022F82,CGAkaviriLongSwordGlenroy,1,FULL,0,Glenroy's Akaviri Katana,글렌로이의 아카비르 카타나,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00023003,EnchGlassWarAxePolar,1,FULL,0,War Axe of the Glacier,빙하의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00023087,EnchGlassWarHammerPolar,1,FULL,0,Warhammer of the Glacier,빙하의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002308B,EnchEbonyBattleAxeBlizzard,1,FULL,0,Battle Axe of Blizzards,눈보라의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002308D,EnchEbonyBowBlizzard,1,FULL,0,Bow of Blizzards,눈보라의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00023095,EnchEbonyClaymoreBlizzard,1,FULL,0,Claymore of Blizzards,눈보라의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00023098,EnchEbonyDaggerBlizzard,1,FULL,0,Dagger of Blizzards,눈보라의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00023098,EnchEbonyDaggerBlizzard,1,FULL,0,Dagger of Blizzards,눈보라의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230A6,EnchEbonyLongswordBlizzard,1,FULL,0,Longsword of Blizzards,눈보라의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230AB,EnchEbonyMaceBlizzard,1,FULL,0,Mace of Blizzards,눈보라의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230AC,EnchEbonyShortswordBlizzard,1,FULL,0,Shortsword of Blizzards,눈보라의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230AC,EnchEbonyShortswordBlizzard,1,FULL,0,Shortsword of Blizzards,눈보라의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230AD,EnchEbonyWarAxeBlizzard,1,FULL,0,War Axe of Blizzards,눈보라의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230D3,EnchEbonyWarHammerBlizzard,1,FULL,0,Warhammer of Blizzards,눈보라의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230D9,EnchDaedricBattleAxeBlizzard,1,FULL,0,Battle Axe of Winter,겨울의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230DD,EnchDaedricBowBlizzard,1,FULL,0,Bow of Winter,겨울의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230DE,EnchDaedricClaymoreBlizzard,1,FULL,0,Claymore of Winter,겨울의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230DF,EnchDaedricDaggerBlizzard,1,FULL,0,Dagger of Winter,겨울의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230DF,EnchDaedricDaggerBlizzard,1,FULL,0,Dagger of Winter,겨울의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230E0,EnchDaedricLongswordBlizzard,1,FULL,0,Longsword of Winter,겨울의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230E1,EnchDaedricMaceBlizzard,1,FULL,0,Mace of Winter,겨울의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230E2,EnchDaedricShortswordBlizzard,1,FULL,0,Shortsword of Winter,겨울의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230E2,EnchDaedricShortswordBlizzard,1,FULL,0,Shortsword of Winter,겨울의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230E3,EnchDaedricWarAxeBlizzard,1,FULL,0,War Axe of Winter,겨울의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000230E4,EnchDaedricWarHammerBlizzard,1,FULL,0,Warhammer of Winter,겨울의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00024DCA,WeapAkaviriLongSword,1,FULL,0,Old Akaviri Katana,낡은 아카비르 카타나,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002521F,WeapSilverLongsword,1,FULL,0,Silver Longsword,은제 롱소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025220,WeapSilverShortsword,1,FULL,0,Silver Shortsword,은제 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025220,WeapSilverShortsword,1,FULL,0,Silver Shortsword,은제 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025221,WeapSilverBattleAxe,1,FULL,0,Silver Battle Axe,은제 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025222,WeapSilverWarAxe,1,FULL,0,Silver War Axe,은 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025223,WeapSilverMace,1,FULL,0,Silver Mace,은제 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025224,WeapSilverDagger,1,FULL,0,Silver Dagger,은제 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025224,WeapSilverDagger,1,FULL,0,Silver Dagger,은제 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025225,WeapSilverWarhammer,1,FULL,0,Silver Warhammer,은제 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025226,WeapSilverClaymore,1,FULL,0,Silver Claymore,은제 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00025227,WeapSilverBow,1,FULL,0,Silver Bow,은제 활,existing-6.9-context
@@ -11689,28 +11689,28 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00026273,BoundSword,1,FULL,0,Bound Claymore,속박 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00026274,BoundMace,1,FULL,0,Bound Mace,마법 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00026276,BoundAxe,1,FULL,0,Bound Axe,마법 전투 도끼 소환,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002627C,BoundDagger,1,FULL,0,Bound Dagger,마법 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002627C,BoundDagger,1,FULL,0,Bound Dagger,마법 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002627D,BoundBow,1,FULL,0,Bound Bow,마법 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00026B22,DAClavicusUmbraSword,1,FULL,0,Umbra,움브라,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00027105,DAGoldbrand,1,FULL,0,Goldbrand,골드브랜드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00027117,DAMolagBalMace,1,FULL,0,Mace of Molag Bal,몰락 발의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B558,EnchEbonyBowSilence,1,FULL,0,Bow of Quietus,안식의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B559,EnchGlassBowSilence,1,FULL,0,Bow of Silence,침묵의 활,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B55F,EnchEbonyShortswordParalyze,1,FULL,0,Shortsword of Paralysis,마비의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B560,EnchDaedricDaggerParalyze,1,FULL,0,Dagger of Paralysis,마비의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B55F,EnchEbonyShortswordParalyze,1,FULL,0,Shortsword of Paralysis,마비의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B560,EnchDaedricDaggerParalyze,1,FULL,0,Dagger of Paralysis,마비의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B561,EnchIronBattleAxeSpark,1,FULL,0,Battle Axe of Sparks,전광의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B562,EnchIronBowSpark,1,FULL,0,Bow of Sparks,전광의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B563,EnchIronClaymoreSpark,1,FULL,0,Claymore of Sparks,전광의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B564,EnchIronDaggerSpark,1,FULL,0,Dagger of Sparks,전광의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B564,EnchIronDaggerSpark,1,FULL,0,Dagger of Sparks,전광의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B565,EnchIronLongswordSpark,1,FULL,0,Longsword of Sparks,전광의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B566,EnchIronMaceSpark,1,FULL,0,Mace of Sparks,전광의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B567,EnchIronShortswordSpark,1,FULL,0,Shortsword of Sparks,전광의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B567,EnchIronShortswordSpark,1,FULL,0,Shortsword of Sparks,전광의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B571,EnchIronWarAxeSpark,1,FULL,0,War Axe of Sparks,전광의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B572,EnchIronWarhammerSpark,1,FULL,0,Warhammer of Sparks,전광의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B573,EnchSteelBattleAxeSpark,1,FULL,0,Battle Axe of Jolts,고품질 전격의 강철 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B585,EnchSteelBowSpark,1,FULL,0,Bow of Jolts,충격의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B586,EnchSteelClaymoreSpark,1,FULL,0,Claymore of Jolts,충격의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B588,EnchSteelDaggerSpark,1,FULL,0,Dagger of Jolts,충격의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B588,EnchSteelDaggerSpark,1,FULL,0,Dagger of Jolts,충격의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B589,EnchSteelLongswordSpark,1,FULL,0,Longsword of Jolts,충격의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B58A,EnchSteelMaceSpark,1,FULL,0,Mace of Jolts,충격의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B58B,EnchSteelWarAxeSpark,1,FULL,0,War Axe of Jolts,충격의 도끼,existing-6.9-context
@@ -11718,48 +11718,48 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B8D6,EnchDwarvenBattleAxeBolt,1,FULL,0,Battle Axe of Shocking,감전의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B8D7,EnchDwarvenBowBolt,1,FULL,0,Bow of Shocking,감전의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B8D8,EnchDwarvenClaymoreBolt,1,FULL,0,Claymore of Shocking,감전의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B8D9,EnchDwarvenDaggerBolt,1,FULL,0,Dagger of Shocking,감전의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002B8D9,EnchDwarvenDaggerBolt,1,FULL,0,Dagger of Shocking,감전의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BAAA,EnchDwarvenMaceBolt,1,FULL,0,Mace of Shocking,감전의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BB17,EnchDwarvenShortSwordBolt,1,FULL,0,Shortsword of Shocking,감전의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BB17,EnchDwarvenShortSwordBolt,1,FULL,0,Shortsword of Shocking,감전의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BD0F,EnchDwarvenWarAxeBolt,1,FULL,0,War Axe of Shocking,감전의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BD6B,EnchDwarvenWarHammerBolt,1,FULL,0,Warhammer of Shocking,감전의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BDDD,EnchElvenBattleAxeLightning,1,FULL,0,Battle Axe of Voltage,전기의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BEB2,EnchElvenBowLightning,1,FULL,0,Bow of Voltage,전기의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF3,EnchElvenClaymoreLightning,1,FULL,0,Claymore of Voltage,전기의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF4,EnchElvenDaggerLightning,1,FULL,0,Dagger of Voltage,전기의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF4,EnchElvenDaggerLightning,1,FULL,0,Dagger of Voltage,전기의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF5,EnchElvenLongSwordLightning,1,FULL,0,Longsword of Voltage,전압의 엘프제 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF6,EnchElvenMaceLightning,1,FULL,0,Mace of Voltage,전기의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF7,EnchElvenShortswordLightning,1,FULL,0,Shortsword of Voltage,전기의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF7,EnchElvenShortswordLightning,1,FULL,0,Shortsword of Voltage,전기의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF8,EnchElvenWarAxeLightning,1,FULL,0,War Axe of Voltage,전기의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFF9,EnchElvenWarHammerLightning,1,FULL,0,Warhammer of Voltage,전기의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFFA,EnchGlassBattleAxeLightning,1,FULL,0,Battle Axe of the Dynamo,다이너모의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFFB,EnchGlassBowLightning,1,FULL,0,Bow of the Dynamo,다이너모의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFFC,EnchGlassClaymoreLightning,1,FULL,0,Claymore of the Dynamo,다이너모의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFFD,EnchGlassDaggerLightning,1,FULL,0,Dagger of the Dynamo,다이너모의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002BFFD,EnchGlassDaggerLightning,1,FULL,0,Dagger of the Dynamo,다이너모의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C00C,enchGlassLongswordLightning,1,FULL,0,Longsword of the Dynamo,다이너모의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C00D,EnchGlassMaceLightning,1,FULL,0,Mace of the Dynamo,다이너모의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C00E,EnchGlassShortswordLightning,1,FULL,0,Shortsword of the Dynamo,다이너모의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C00E,EnchGlassShortswordLightning,1,FULL,0,Shortsword of the Dynamo,다이너모의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C020,EnchGlassWarAxeLightning,1,FULL,0,War Axe of the Dynamo,다이너모의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C025,EnchGlassWarHammerLightning,1,FULL,0,Warhammer of the Dynamo,다이너모의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C278,EnchEbonyBattleAxeStorm,1,FULL,0,Battle Axe of Lightning,번개의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C27A,EnchEbonyBowStorm,1,FULL,0,Bow of Lightning,번개의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C27B,EnchEbonyClaymoreStorm,1,FULL,0,Claymore of Lightning,번개의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C27D,EnchEbonyDaggerStorm,1,FULL,0,Dagger of Lightning,번개의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C27D,EnchEbonyDaggerStorm,1,FULL,0,Dagger of Lightning,번개의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C27E,EnchEbonyLongswordStorm,1,FULL,0,Longsword of Lightning,번개의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C280,EnchEbonyMaceStorm,1,FULL,0,Mace of Lightning,번개의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C281,EnchEbonyShortswordStorm,1,FULL,0,Shortsword of Lightning,번개의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C281,EnchEbonyShortswordStorm,1,FULL,0,Shortsword of Lightning,번개의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C283,EnchEbonyWarAxeStorm,1,FULL,0,War Axe of Lightning,번개의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C284,EnchEbonyWarHammerStorm,1,FULL,0,Warhammer of Lightning,번개의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C286,EnchDaedricBattleAxeStorm,1,FULL,0,Battle Axe of Storms,폭풍의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C287,EnchDaedricBowStorm,1,FULL,0,Bow of Storms,폭풍의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C289,EnchDaedricClaymoreStorm,1,FULL,0,Claymore of Storms,폭풍의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C28D,EnchDaedricDaggerStorm,1,FULL,0,Dagger of Storms,폭풍의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C28D,EnchDaedricDaggerStorm,1,FULL,0,Dagger of Storms,폭풍의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C28F,EnchDaedricLongswordStorm,1,FULL,0,Longsword of Storms,폭풍의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C290,EnchDaedricMaceStorm,1,FULL,0,Mace of Storms,폭풍의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C292,EnchDaedricShortswordStorm,1,FULL,0,Shortsword of Storms,폭풍의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C292,EnchDaedricShortswordStorm,1,FULL,0,Shortsword of Storms,폭풍의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C296,EnchDaedricWarAxeStorm,1,FULL,0,War Axe of Storms,폭풍의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002C298,EnchDaedricWarHammerStorm,1,FULL,0,Warhammer of Storms,폭풍의 전투 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002D72E,EnchSteelShortswordSpark,1,FULL,0,Shortsword of Jolts,충격의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0002D72E,EnchSteelShortswordSpark,1,FULL,0,Shortsword of Jolts,충격의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000347EB,DBDaggerReward01,1,FULL,0,Sufferthorn,고통의 가시,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000347EC,DBDaggerReward05,1,FULL,0,Sufferthorn,고통의 가시,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000347ED,DBDaggerReward10,1,FULL,0,Sufferthorn,고통의 가시,existing-6.9-context
@@ -11800,36 +11800,36 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DCD,WeapDwarvenBattleAxe,1,FULL,0,Dwemer Battle Axe,드웨머 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DCE,WeapDwarvenBow,1,FULL,0,Dwemer Bow,드웨머 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DCF,WeapDwarvenClaymore,1,FULL,0,Dwemer Claymore,드웨머 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DD0,WeapDwarvenDagger,1,FULL,0,Dwemer Dagger,드웨머 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DD0,WeapDwarvenDagger,1,FULL,0,Dwemer Dagger,드웨머 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DD2,WeapDwarvenMace,1,FULL,0,Dwemer Mace,드웨머 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DD3,WeapDwarvenShortSword,1,FULL,0,Dwemer Shortsword,드웨머 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DD4,WeapDwarvenWarAxe,1,FULL,0,Dwemer War Axe,드웨머 손도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035DD5,WeapDwarvenWarHammer,1,FULL,0,Dwemer Warhammer,드웨머 전투망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E5B,WeapGlassDagger,1,FULL,0,Glass Dagger,글래스 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E5C,WeapGlassShortsword,1,FULL,0,Glass Shortsword,글래스 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E5B,WeapGlassDagger,1,FULL,0,Glass Dagger,글래스 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E5C,WeapGlassShortsword,1,FULL,0,Glass Shortsword,글래스 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E5D,WeapGlassWarAxe,1,FULL,0,Glass War Axe,글래스 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E5E,WeapGlassMace,1,FULL,0,Glass Mace,글래스 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E5F,WeapGlassLongsword,1,FULL,0,Glass Longsword,글래스 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E60,WeapGlassBattleAxe,1,FULL,0,Glass Battle Axe,글래스 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E61,WeapGlassClaymore,1,FULL,0,Glass Claymore,글래스 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E62,WeapGlassWarHammer,1,FULL,0,Glass Warhammer,글래스 전투 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E63,WeapElvenDagger,1,FULL,0,Elven Dagger,엘프제 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E64,WeapElvenShortsword,1,FULL,0,Elven Shortsword,엘프제 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E63,WeapElvenDagger,1,FULL,0,Elven Dagger,엘프제 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E64,WeapElvenShortsword,1,FULL,0,Elven Shortsword,엘프제 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E65,WeapElvenWarAxe,1,FULL,0,Elven War Axe,엘프제 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E66,WeapElvenMace,1,FULL,0,Elven Mace,엘프제 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E67,WeapElvenBattleAxe,1,FULL,0,Elven Battle Axe,엘프제 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E68,WeapElvenClaymore,1,FULL,0,Elven Claymore,엘프제 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E69,WeapElvenWarHammer,1,FULL,0,Elven Warhammer,엘프제 전투 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6A,WeapEbonyDagger,1,FULL,0,Ebony Dagger,에보니 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6B,WeapEbonyShortsword,1,FULL,0,Ebony Shortsword,에보니 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6A,WeapEbonyDagger,1,FULL,0,Ebony Dagger,에보니 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6B,WeapEbonyShortsword,1,FULL,0,Ebony Shortsword,에보니 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6C,WeapEbonyWarAxe,1,FULL,0,Ebony War Axe,에보니 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6D,WeapEbonyMace,1,FULL,0,Ebony Mace,에보니 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6E,WeapEbonyLongsword,1,FULL,0,Ebony Longsword,에보니 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E6F,WeapEbonyBattleAxe,1,FULL,0,Ebony Battle Axe,에보니 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E70,WeapEbonyClaymore,1,FULL,0,Ebony Claymore,에보니 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E71,WeapEbonyWarHammer,1,FULL,0,Ebony Warhammer,에보니 전투 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E72,WeapDaedricDagger,1,FULL,0,Daedric Dagger,데이드라제 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E73,WeapDaedricShortsword,1,FULL,0,Daedric Shortsword,데이드라제 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E72,WeapDaedricDagger,1,FULL,0,Daedric Dagger,데이드라제 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E73,WeapDaedricShortsword,1,FULL,0,Daedric Shortsword,데이드라제 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E74,WeapDaedricWarAxe,1,FULL,0,Daedric War Axe,데이드라제 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E75,WeapDaedricMace,1,FULL,0,Daedric Mace,데이드라제 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E76,WeapDaedricLongsword,1,FULL,0,Daedric Longsword,데이드라제 장검,existing-6.9-context
@@ -11839,19 +11839,19 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E7A,WeapGlassBow,1,FULL,0,Glass Bow,글래스 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E7B,WeapEbonyBow,1,FULL,0,Ebony Bow,에보니 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00035E7C,WeapDaedricBow,1,FULL,0,Daedric Bow,데이드라제 활,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841A,EnchGlassDaggerAbsIntelligence,1,FULL,0,Dagger of Absorption,흡수의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841A,EnchGlassDaggerAbsIntelligence,1,FULL,0,Dagger of Absorption,흡수의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841B,EnchGlassWarhammerAbsStrength,1,FULL,0,Warhammer of Absorption,흡수의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841C,EnchGlassMaceAbsWillpower,1,FULL,0,Mace of Absorption,흡수의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841D,EnchGlassLongswordAbsAgility,1,FULL,0,Longsword of Absorption,흡수의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841E,EnchGlassShortswordAbsSpeed,1,FULL,0,Shortsword of Absorption,흡수의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841E,EnchGlassShortswordAbsSpeed,1,FULL,0,Shortsword of Absorption,흡수의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003841F,EnchGlassBattleaxeAbsEndurance,1,FULL,0,Battle Axe of Absorption,흡수의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00038420,EnchGlassWaraxeAbsLuck,1,FULL,0,War Axe of Absorption,흡수의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387A6,EnchElvenWarhammerAbsFatigue,1,FULL,0,Warhammer of Siphoning,착취의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387A7,EnchElvenMaceAbsFatigue,1,FULL,0,Mace of Siphoning,착취의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387A8,EnchEbonyMaceAbsHealth,1,FULL,0,Mace of Feeding,포식의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387A9,EnchEbonyWarhammerAbsHealth,1,FULL,0,Warhammer of Feeding,포식의 전투 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387AA,EnchSilverDaggerAbsMagicka,1,FULL,0,Dagger of Depletion,고갈의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387AB,EnchSilverShortswordAbsMagicka,1,FULL,0,Shortsword of Depletion,고갈의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387AA,EnchSilverDaggerAbsMagicka,1,FULL,0,Dagger of Depletion,고갈의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387AB,EnchSilverShortswordAbsMagicka,1,FULL,0,Shortsword of Depletion,고갈의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387AC,EnchSilverLongswordAbsMagicka,1,FULL,0,Longsword of Depletion,고갈의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387AD,EnchSilverMaceAbsMagicka,1,FULL,0,Mace of Depletion,고갈의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387AE,EnchSilverBattleaxeAbsMagicka,1,FULL,0,Battle Axe of Depletion,고갈의 전투도끼,existing-6.9-context
@@ -11871,44 +11871,44 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387BC,EnchEbonyMaceBurden,1,FULL,0,Mace of Excess,과잉의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387BD,EnchDaedricWarhammerBurden,1,FULL,0,Warhammer of Deadweight,사중의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000387BE,EnchDaedricMaceBurden,1,FULL,0,Mace of Deadweight,사중의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000389E6,EnchDwarvenDaggerDamIntelligence,1,FULL,0,Dagger of Enfeeblement,쇠약의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000389E7,EnchDwarvenShortswordDamSpeed,1,FULL,0,Shortsword of Enfeeblement,쇠약의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000389E6,EnchDwarvenDaggerDamIntelligence,1,FULL,0,Dagger of Enfeeblement,쇠약의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000389E7,EnchDwarvenShortswordDamSpeed,1,FULL,0,Shortsword of Enfeeblement,쇠약의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000389E9,EnchDwarvenMaceDamWillpower,1,FULL,0,Mace of Enfeeblement,쇠약의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000389EA,EnchDwarvenWarhammerDamStrength,1,FULL,0,Warhammer of Enfeeblement,쇠약의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000389EB,EnchDwarvenWaraxeDamLuck,1,FULL,0,War Axe of Enfeeblement,쇠약의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A856,WeapSteelBattleAxeFine,1,FULL,0,Fine Steel Battle Axe,정교한 강철 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A857,WeapSteelBowFine,1,FULL,0,Fine Steel Bow,정교한 강철 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A858,WeapSteelClaymoreFine,1,FULL,0,Fine Steel Claymore,정교한 강철 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A859,WeapSteelDaggerFine,1,FULL,0,Fine Steel Dagger,정교한 강철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A859,WeapSteelDaggerFine,1,FULL,0,Fine Steel Dagger,정교한 강철 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A85A,WeapSteelLongswordFine,1,FULL,0,Fine Steel Longsword,정교한 강철 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A85B,WeapSteelMaceFine,1,FULL,0,Fine Steel Mace,정교한 강철 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A85C,WeapSteelShortswordFine,1,FULL,0,Fine Steel Shortsword,정교한 강철 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A85C,WeapSteelShortswordFine,1,FULL,0,Fine Steel Shortsword,정교한 강철 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A85D,WeapSteelWarAxeFine,1,FULL,0,Fine Steel War Axe,정교한 강철 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A85E,WeapSteelWarhammerFine,1,FULL,0,Fine Steel Warhammer,정교한 강철 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A85F,WeapIronBattleAxeFine,1,FULL,0,Fine Iron Battle Axe,정교한 철 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A860,WeapIronBowFine,1,FULL,0,Fine Iron Bow,정교한 철 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A861,WeapIronClaymoreFine,1,FULL,0,Fine Iron Claymore,정교한 철 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A862,WeapIronDaggerFine,1,FULL,0,Fine Iron Dagger,정교한 철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A862,WeapIronDaggerFine,1,FULL,0,Fine Iron Dagger,정교한 철 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A863,WeapIronLongswordFine,1,FULL,0,Fine Iron Longsword,정교한 철 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A864,WeapIronMaceFine,1,FULL,0,Fine Iron Mace,정교한 철 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A865,WeapIronShortswordFine,1,FULL,0,Fine Iron Shortsword,정교한 철 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A865,WeapIronShortswordFine,1,FULL,0,Fine Iron Shortsword,정교한 철 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A866,WeapIronWarAxeFine,1,FULL,0,Fine Iron War Axe,정교한 철 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003A867,WeapIronWarhammerFine,1,FULL,0,Fine Iron Warhammer,정교한 철 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AA82,WeapSteelCutlass,1,FULL,0,Steel Cutlass,강철 커틀러스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB3E,EnchElvenWarhammerDamStrength,1,FULL,0,Warhammer of Weakness,약화의 전투 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB3F,EnchElvenDaggerDamIntelligence,1,FULL,0,Dagger of Weakness,약화의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB3F,EnchElvenDaggerDamIntelligence,1,FULL,0,Dagger of Weakness,약화의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB40,EnchElvenMaceDamWillpower,1,FULL,0,Mace of Weakness,약화의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB41,EnchElvenLongswordDamAgility,1,FULL,0,Longsword of Weakness,약화의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB42,EnchElvenShortswordDamSpeed,1,FULL,0,Shortsword of Weakness,약화의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB42,EnchElvenShortswordDamSpeed,1,FULL,0,Shortsword of Weakness,약화의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB43,EnchElvenBattleaxeDamEndurance,1,FULL,0,Battle Axe of Weakness,약화의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB44,EnchElvenWaraxeDamLuck,1,FULL,0,War Axe of Weakness,약화의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB6B,EnchDwarvenBowDamFatigue,1,FULL,0,Bow of Weariness,피로의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB6C,EnchGlassBowDamHealth,1,FULL,0,Bow of Harm,피해의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB6D,EnchSilverWarhammerDamMagicka,1,FULL,0,Warhammer of Jinxing,불운의 전투 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB6E,EnchSilverDaggerDamMagicka,1,FULL,0,Dagger of Jinxing,불운의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB6E,EnchSilverDaggerDamMagicka,1,FULL,0,Dagger of Jinxing,불운의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB6F,EnchSilverBattleaxeDamMagicka,1,FULL,0,Battle Axe of Jinxing,불운의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB70,EnchSilverLongswordDamMagicka,1,FULL,0,Longsword of Jinxing,불운의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB71,EnchSilverShortswordDamMagicka,1,FULL,0,Shortsword of Jinxing,불운의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB71,EnchSilverShortswordDamMagicka,1,FULL,0,Shortsword of Jinxing,불운의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB72,EnchSilverWaraxeDamMagicka,1,FULL,0,War Axe of Jinxing,불운의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB73,EnchSilverMaceDamMagicka,1,FULL,0,Mace of Jinxing,불운의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003AB74,EnchSilverClaymoreDamMagicka,1,FULL,0,Claymore of Jinxing,불운의 클레이모어,existing-6.9-context
@@ -11944,13 +11944,13 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003B40E,EnchEbonyBattleAxeDisArmor,1,FULL,0,Battle Axe of Rending,파열의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003B40F,EnchEbonyWarAxeDisArmor,1,FULL,0,War Axe of Rending,파열의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF60,EnchElvenLongSwordFieryLight,1,FULL,0,Blade of Fiery Light,타오르는 빛의 검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF61,EnchIronDaggerPacification,1,FULL,0,Dagger of Pacification,평정의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF61,EnchIronDaggerPacification,1,FULL,0,Dagger of Pacification,평정의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF62,EnchEbonyMaceVoltag,1,FULL,0,Voltag,볼타그,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF63,EnchIronLongswordSubmission,1,FULL,0,Sword of Submission,복종의 검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF64,EnchGlassWarAxeIcyDarkness,1,FULL,0,Axe of Icy Darkness,얼어붙은 어둠의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF65,EnchIronMaceLegion,1,FULL,0,Mace of Legion,군단의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003BF66,EnchDwarvenWarHammerPounder,1,FULL,0,Pounder,분쇄기,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CB6A,EnchSilverShortswordVampiresFang,1,FULL,0,Shortsword of the Fang,송곳니의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CB6A,EnchSilverShortswordVampiresFang,1,FULL,0,Shortsword of the Fang,송곳니의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CB6B,EnchSilverWarAxeDefiler,1,FULL,0,Defiler,모독자,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CCFE,EnchEbonyClaymoreTempest,1,FULL,0,Tempest,템페스트,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CCFF,EnchDwarvenBattleAxeHazards,1,FULL,0,Battle Axe of Hazards,재해의 드워프제 전투 도끼,existing-6.9-context
@@ -11962,138 +11962,138 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CD07,EnchSilverWarAxeGhost,1,FULL,0,Ghost Axe,도끼 유령,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CD08,EnchElvenBowStorm,1,FULL,0,Storm Bow,폭풍의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003CD09,EnchDwarvenBattleAxeDamEndurance,1,FULL,0,Battle Axe of Enfeeblement,쇠약의 전투도끼,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7B7,EnchDwarvenDaggerDisWeapon,1,FULL,0,Dagger of Fragments,파편의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7B7,EnchDwarvenDaggerDisWeapon,1,FULL,0,Dagger of Fragments,파편의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7B8,EnchDwarvenClaymoreDisWeapon,1,FULL,0,Claymore of Fragments,파편의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BA,EnchDwarvenShortSwordDisWeapon,1,FULL,0,Shortsword of Fragments,파편의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BA,EnchDwarvenShortSwordDisWeapon,1,FULL,0,Shortsword of Fragments,파편의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BB,EnchElvenClaymoreDisWeapon,1,FULL,0,Claymore of Brittleness,취약의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BC,EnchElvenDaggerDisWeapon,1,FULL,0,Dagger of Brittleness,취약의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BC,EnchElvenDaggerDisWeapon,1,FULL,0,Dagger of Brittleness,취약의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BD,EnchElvenLongSwordDisWeapon,1,FULL,0,Longsword of Brittleness,무기 분해의 엘프제 롱소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BE,EnchElvenShortswordDisWeapon,1,FULL,0,Shortsword of Brittleness,취약의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BE,EnchElvenShortswordDisWeapon,1,FULL,0,Shortsword of Brittleness,취약의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7BF,EnchGlassClaymoreDisWeapon,1,FULL,0,Claymore of Fracturing,파쇄의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C0,EnchGlassDaggerDisWeapon,1,FULL,0,Dagger of Fracturing,파쇄의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C0,EnchGlassDaggerDisWeapon,1,FULL,0,Dagger of Fracturing,파쇄의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C1,EnchGlassLongswordDisWeapon,1,FULL,0,Longsword of Fracturing,파쇄의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C2,EnchGlassShortswordDisWeapon,1,FULL,0,Shortsword of Fracturing,파쇄의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C2,EnchGlassShortswordDisWeapon,1,FULL,0,Shortsword of Fracturing,파쇄의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C3,EnchEbonyClaymoreDisWeapon,1,FULL,0,Claymore of Shattering,분쇄의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C4,EnchEbonyDaggerDisWeapon,1,FULL,0,Dagger of Shattering,분쇄의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C4,EnchEbonyDaggerDisWeapon,1,FULL,0,Dagger of Shattering,분쇄의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C5,EnchEbonyLongswordDisWeapon,1,FULL,0,Longsword of Shattering,분쇄의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C6,EnchEbonyShortswordDisWeapon,1,FULL,0,Shortsword of Shattering,분쇄의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C6,EnchEbonyShortswordDisWeapon,1,FULL,0,Shortsword of Shattering,분쇄의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C7,EnchDaedricClaymoreDisWeapon,1,FULL,0,Claymore of Disintegration,분해의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C8,EnchDaedricDaggerDisWeapon,1,FULL,0,Dagger of Disintegration,분해의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C8,EnchDaedricDaggerDisWeapon,1,FULL,0,Dagger of Disintegration,분해의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7C9,EnchDaedricLongswordDisWeapon,1,FULL,0,Longsword of Disintegration,분해의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CA,EnchDaedricShortswordDisWeapon,1,FULL,0,Shortsword of Disintegration,분해의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CA,EnchDaedricShortswordDisWeapon,1,FULL,0,Shortsword of Disintegration,분해의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CB,EnchSilverBattleAxeDispel,1,FULL,0,Battle Axe of Dispel,해제의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CC,EnchSilverClaymoreDispel,1,FULL,0,Claymore of Dispel,해제의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CD,EnchSilverDaggerDispel,1,FULL,0,Dagger of Dispel,해제의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CD,EnchSilverDaggerDispel,1,FULL,0,Dagger of Dispel,해제의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CE,EnchSilverLongswordDispel,1,FULL,0,Longsword of Dispel,해제의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7CF,EnchSilverMaceDispel,1,FULL,0,Mace of Dispel,해제의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D0,EnchSilverShortswordDispel,1,FULL,0,Shortsword of Dispel,해제의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D0,EnchSilverShortswordDispel,1,FULL,0,Shortsword of Dispel,해제의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D1,EnchSilverWarAxeDispel,1,FULL,0,War Axe of Dispel,해제의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D2,EnchSilverWarhammerDispel,1,FULL,0,Warhammer of Dispel,해제의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D3,EnchSteelBattleAxeDraEndurance,1,FULL,0,Battle Axe of Diminishing,약화의 전투도끼,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D4,EnchSteelDaggerDraIntelligence,1,FULL,0,Dagger of Diminishing,약화의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D4,EnchSteelDaggerDraIntelligence,1,FULL,0,Dagger of Diminishing,약화의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D5,EnchSteelLongswordDraAgility,1,FULL,0,Longsword of Diminishing,약화의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D6,EnchSteelMaceDraWillpower,1,FULL,0,Mace of Diminishing,약화의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D7,EnchSteelShortswordDraSpeed,1,FULL,0,Shortsword of Diminishing,약화의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D7,EnchSteelShortswordDraSpeed,1,FULL,0,Shortsword of Diminishing,약화의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D8,EnchSteelWarAxeDraLuck,1,FULL,0,War Axe of Diminishing,약화의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7D9,EnchSteelWarhammerDraStrength,1,FULL,0,Warhammer of Diminishing,약화의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DA,EnchIronClaymoreDraFatigue,1,FULL,0,Claymore of Weariness,피로의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DB,EnchIronDaggerDraFatigue,1,FULL,0,Dagger of Weariness,피로의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DB,EnchIronDaggerDraFatigue,1,FULL,0,Dagger of Weariness,피로의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DC,EnchIronLongswordDraFatigue,1,FULL,0,Longsword of Weariness,피로의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DD,EnchIronShortswordDraFatigue,1,FULL,0,Shortsword of Weariness,피로의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DD,EnchIronShortswordDraFatigue,1,FULL,0,Shortsword of Weariness,피로의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DE,EnchDwarvenClaymoreDraHealth,1,FULL,0,Claymore of Pain,고통의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DF,EnchDwarvenDaggerDraHealth,1,FULL,0,Dagger of Pain,고통의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E1,EnchDwarvenShortSwordDraHealth,1,FULL,0,Shortsword of Pain,고통의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7DF,EnchDwarvenDaggerDraHealth,1,FULL,0,Dagger of Pain,고통의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E1,EnchDwarvenShortSwordDraHealth,1,FULL,0,Shortsword of Pain,고통의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E2,EnchSilverBattleAxeDraMagicka,1,FULL,0,Battle Axe of Sapping,흡수의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E3,EnchSilverClaymoreDraMagicka,1,FULL,0,Claymore of Sapping,흡수의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E4,EnchSilverDaggerDraMagicka,1,FULL,0,Dagger of Sapping,흡수의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E4,EnchSilverDaggerDraMagicka,1,FULL,0,Dagger of Sapping,흡수의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E5,EnchSilverLongswordDraMagicka,1,FULL,0,Longsword of Sapping,흡수의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E6,EnchSilverMaceDraMagicka,1,FULL,0,Mace of Sapping,흡수의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E7,EnchSilverShortswordDraMagicka,1,FULL,0,Shortsword of Sapping,흡수의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E7,EnchSilverShortswordDraMagicka,1,FULL,0,Shortsword of Sapping,흡수의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E8,EnchElvenClaymoreDraMagicka,1,FULL,0,Claymore of Depletion,고갈의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E9,EnchElvenDaggerDraMagicka,1,FULL,0,Dagger of Depletion,고갈의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7E9,EnchElvenDaggerDraMagicka,1,FULL,0,Dagger of Depletion,고갈의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7EA,EnchElvenLongSwordDraMagicka,1,FULL,0,Longsword of Depletion,매지카 고갈의 엘프제 롱소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7EB,EnchElvenShortswordDraMagicka,1,FULL,0,Shortsword of Depletion,고갈의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003D7EB,EnchElvenShortswordDraMagicka,1,FULL,0,Shortsword of Depletion,고갈의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAE7,EnchIronBattleAxeEmber,1,FULL,0,Battle Axe of Embers,잉걸불의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAE9,EnchIronBowEmber,1,FULL,0,Bow of Embers,잉걸불의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAEA,EnchIronClaymoreEmber,1,FULL,0,Claymore of Embers,잉걸불의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAEB,EnchIronDaggerEmber,1,FULL,0,Dagger of Embers,잉걸불의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAEB,EnchIronDaggerEmber,1,FULL,0,Dagger of Embers,잉걸불의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAEC,EnchIronLongswordEmber,1,FULL,0,Longsword of Embers,잉걸불의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAED,EnchIronMaceEmber,1,FULL,0,Mace of Embers,잉걸불의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAEE,EnchIronShortswordEmber,1,FULL,0,Shortsword of Embers,잉걸불의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAEE,EnchIronShortswordEmber,1,FULL,0,Shortsword of Embers,잉걸불의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAEF,EnchIronWarAxeEmber,1,FULL,0,War Axe of Embers,잉걸불의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF0,EnchIronWarhammerEmber,1,FULL,0,Warhammer of Embers,잉걸불의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF1,EnchSteelBattleAxeEmber,1,FULL,0,Battle Axe of Burning,고품질 잉걸불의 강철 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF2,EnchSteelBowEmber,1,FULL,0,Bow of Burning,연소의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF3,EnchSteelClaymoreEmber,1,FULL,0,Claymore of Burning,연소의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF4,EnchSteelDaggerEmber,1,FULL,0,Dagger of Burning,연소의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF4,EnchSteelDaggerEmber,1,FULL,0,Dagger of Burning,연소의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF5,EnchSteelLongswordEmber,1,FULL,0,Longsword of Burning,연소의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF6,EnchSteelMaceEmber,1,FULL,0,Mace of Burning,연소의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF7,EnchSteelShortswordEmber,1,FULL,0,Shortsword of Burning,연소의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF7,EnchSteelShortswordEmber,1,FULL,0,Shortsword of Burning,연소의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF8,EnchSteelWarAxeEmber,1,FULL,0,War Axe of Burning,연소의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAF9,EnchSteelWarhammerEmber,1,FULL,0,Warhammer of Burning,연소의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAFA,EnchDwarvenBattleAxeFlame,1,FULL,0,Battle Axe of Scorching,작열의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAFB,EnchDwarvenBowFlame,1,FULL,0,Bow of Scorching,작열의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAFC,EnchDwarvenClaymoreFlame,1,FULL,0,Claymore of Scorching,작열의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAFD,EnchDwarvenDaggerFlame,1,FULL,0,Dagger of Scorching,작열의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAFD,EnchDwarvenDaggerFlame,1,FULL,0,Dagger of Scorching,작열의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DAFF,EnchDwarvenMaceFlame,1,FULL,0,Mace of Scorching,작열의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB00,EnchDwarvenShortSwordFlame,1,FULL,0,Shortsword of Scorching,작열의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB00,EnchDwarvenShortSwordFlame,1,FULL,0,Shortsword of Scorching,작열의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB01,EnchDwarvenWarAxeFlame,1,FULL,0,War Axe of Scorching,작열의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB02,EnchDwarvenWarHammerFlame,1,FULL,0,Warhammer of Scorching,작열의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB03,EnchElvenBattleAxeBlaze,1,FULL,0,Battle Axe of Flames,화염의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB04,EnchElvenBowBlaze,1,FULL,0,Bow of Flames,화염의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB05,EnchElvenClaymoreBlaze,1,FULL,0,Claymore of Flames,화염의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB06,EnchElvenDaggerBlaze,1,FULL,0,Dagger of Flames,화염의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB06,EnchElvenDaggerBlaze,1,FULL,0,Dagger of Flames,화염의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB07,EnchElvenLongSwordBlaze,1,FULL,0,Longsword of Flames,불길의 엘프제 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB08,EnchElvenMaceBlaze,1,FULL,0,Mace of Flames,화염의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB09,EnchElvenShortswordBlaze,1,FULL,0,Shortsword of Flames,화염의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB09,EnchElvenShortswordBlaze,1,FULL,0,Shortsword of Flames,화염의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB0A,EnchElvenWarAxeBlaze,1,FULL,0,War Axe of Flames,화염의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB0B,EnchElvenWarHammerBlaze,1,FULL,0,Warhammer of Flames,화염의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB0C,EnchGlassBattleAxeBlaze,1,FULL,0,Battle Axe of Fire,불꽃의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB0D,EnchGlassBowBlaze,1,FULL,0,Bow of Fire,불꽃의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB0E,EnchGlassClaymoreBlaze,1,FULL,0,Claymore of Fire,불꽃의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB0F,EnchGlassDaggerBlaze,1,FULL,0,Dagger of Fire,불꽃의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB0F,EnchGlassDaggerBlaze,1,FULL,0,Dagger of Fire,불꽃의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB10,EnchGlassLongswordBlaze,1,FULL,0,Longsword of Fire,불꽃의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB11,EnchGlassMaceBlaze,1,FULL,0,Mace of Fire,불꽃의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB12,EnchGlassShortswordBlaze,1,FULL,0,Shortsword of Fire,불꽃의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB12,EnchGlassShortswordBlaze,1,FULL,0,Shortsword of Fire,불꽃의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB13,EnchGlassWarAxeBlaze,1,FULL,0,War Axe of Fire,불꽃의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB14,EnchGlassWarHammerBlaze,1,FULL,0,Warhammer of Fire,불꽃의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB15,EnchEbonyBattleAxeScorch,1,FULL,0,Battle Axe of the Blaze,맹화의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB16,EnchEbonyBowScorch,1,FULL,0,Bow of the Blaze,맹화의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB17,EnchEbonyClaymoreScorch,1,FULL,0,Claymore of the Blaze,맹화의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB18,EnchEbonyDaggerScorch,1,FULL,0,Dagger of the Blaze,맹화의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB18,EnchEbonyDaggerScorch,1,FULL,0,Dagger of the Blaze,맹화의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB19,EnchEbonyLongswordScorch,1,FULL,0,Longsword of the Blaze,맹화의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB1A,EnchEbonyMaceScorch,1,FULL,0,Mace of the Blaze,맹화의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB1B,EnchEbonyShortswordScorch,1,FULL,0,Shortsword of the Blaze,맹화의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB1B,EnchEbonyShortswordScorch,1,FULL,0,Shortsword of the Blaze,맹화의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB1C,EnchEbonyWarAxeScorch,1,FULL,0,War Axe of the Blaze,맹화의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB1D,EnchEbonyWarHammerScorch,1,FULL,0,Warhammer of the Blaze,맹화의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB1E,EnchDaedricBattleAxeScorch,1,FULL,0,Battle Axe of the Inferno,지옥불의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB1F,EnchDaedricBowScorch,1,FULL,0,Bow of the Inferno,지옥불의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB20,EnchDaedricClaymoreScorch,1,FULL,0,Claymore of the Inferno,지옥불의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB21,EnchDaedricDaggerScorch,1,FULL,0,Dagger of the Inferno,지옥불의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB21,EnchDaedricDaggerScorch,1,FULL,0,Dagger of the Inferno,지옥불의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB22,EnchDaedricLongswordScorch,1,FULL,0,Longsword of the Inferno,지옥불의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB23,EnchDaedricMaceScorch,1,FULL,0,Mace of the Inferno,지옥불의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB24,EnchDaedricShortswordScorch,1,FULL,0,Shortsword of the Inferno,지옥불의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB24,EnchDaedricShortswordScorch,1,FULL,0,Shortsword of the Inferno,지옥불의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB25,EnchDaedricWarAxeScorch,1,FULL,0,War Axe of the Inferno,지옥불의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB26,EnchDaedricWarHammerScorch,1,FULL,0,Warhammer of the Inferno,지옥불의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB73,EnchIronClaymoreShiver,1,FULL,0,Claymore of Frost,냉기의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB74,EnchIronDaggerShiver,1,FULL,0,Dagger of Frost,냉기의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB74,EnchIronDaggerShiver,1,FULL,0,Dagger of Frost,냉기의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB75,EnchIronLongswordShiver,1,FULL,0,Longsword of Frost,냉기의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB76,EnchIronMaceShiver,1,FULL,0,Mace of Frost,냉기의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB77,EnchIronShortswordShiver,1,FULL,0,Shortsword of Frost,냉기의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB77,EnchIronShortswordShiver,1,FULL,0,Shortsword of Frost,냉기의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB78,EnchIronWarAxeShiver,1,FULL,0,War Axe of Frost,냉기의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB79,EnchIronWarhammerShiver,1,FULL,0,Warhammer of Frost,냉기의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB7A,EnchSteelBattleAxeShiver,1,FULL,0,Battle Axe of Numbing,고품질 전율의 강철 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB7B,EnchSteelBowShiver,1,FULL,0,Bow of Numbing,감각 마비의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB7C,EnchSteelClaymoreShiver,1,FULL,0,Claymore of Numbing,감각 마비의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB7D,EnchSteelDaggerShiver,1,FULL,0,Dagger of Numbing,감각 마비의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB7D,EnchSteelDaggerShiver,1,FULL,0,Dagger of Numbing,감각 마비의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB7E,EnchSteelLongswordShiver,1,FULL,0,Longsword of Numbing,감각 마비의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB7F,EnchSteelMaceShiver,1,FULL,0,Mace of Numbing,감각 마비의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB80,EnchSteelShortswordShiver,1,FULL,0,Shortsword of Numbing,감각 마비의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB80,EnchSteelShortswordShiver,1,FULL,0,Shortsword of Numbing,감각 마비의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB81,EnchSteelWarAxeShiver,1,FULL,0,War Axe of Numbing,감각 마비의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB82,EnchSteelWarhammerShiver,1,FULL,0,Warhammer of Numbing,감각 마비의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB8F,EnchIronBattleAxeShiver,1,FULL,0,Battle Axe of Frost,냉기의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003DB91,EnchIronBowShiver,1,FULL,0,Bow of Frost,냉기의 활,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003E45C,EnchGlassDaggerThievesDagger,1,FULL,0,Thieves' Dagger,도둑의 글래스 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003E45C,EnchGlassDaggerThievesDagger,1,FULL,0,Thieves' Dagger,도둑의 글래스 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003E45D,EnchElvenMaceMagesMace,1,FULL,0,Mage's Mace,마법사의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003E45E,EnchDwarvenBattleAxeNakedAxe,1,FULL,0,Naked Axe,벌거벗은 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0003E9C2,DremoraMace,1,FULL,0,Dremora War Axe,드레모라 도끼,existing-6.9-context
@@ -12102,21 +12102,21 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E19,SEWeapDaedricBattleAxeDurable,1,FULL,0,Durable Daedric Battle Axe,튼튼한 데드릭 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E1A,SEWeapDaedricBowDurable,1,FULL,0,Durable Daedric Bow,튼튼한 데이드라제 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E1B,SEWeapDaedricClaymoreDurable,1,FULL,0,Durable Daedric Claymore,튼튼한 데드릭 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E1C,SEWeapDaedricDaggerDurable,1,FULL,0,Durable Daedric Dagger,튼튼한 데드릭 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E1C,SEWeapDaedricDaggerDurable,1,FULL,0,Durable Daedric Dagger,튼튼한 데드릭 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E1E,SEWeapDaedricMaceDurable,1,FULL,0,Durable Daedric Mace,튼튼한 데드릭 메이스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E21,SEWeapDaedricWarHammerDurable,1,FULL,0,Durable Daedric Warhammer,튼튼한 데드릭 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E22,SEWeapDwarvenBattleAxeDurable,1,FULL,0,Durable Dwarven Battle Axe,튼튼한 드워븐 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E23,SEWeapDwarvenBowDurable,1,FULL,0,Durable Dwarven Bow,튼튼한 드워프제 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E24,SEWeapDwarvenClaymoreDurable,1,FULL,0,Durable Dwarven Claymore,튼튼한 드워븐 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E25,SEWeapDwarvenDaggerDurable,1,FULL,0,Durable Dwarven Dagger,튼튼한 드워븐 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E25,SEWeapDwarvenDaggerDurable,1,FULL,0,Durable Dwarven Dagger,튼튼한 드워븐 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E27,SEWeapDwarvenMaceDurable,1,FULL,0,Durable Dwarven Mace,튼튼한 드워븐 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E28,SEWeapDwarvenShortSwordDurable,1,FULL,0,Durable Dwarven Shortsword,튼튼한 드워븐 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E28,SEWeapDwarvenShortSwordDurable,1,FULL,0,Durable Dwarven Shortsword,튼튼한 드워븐 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E29,SEWeapDwarvenWarAxeDurable,1,FULL,0,Durable Dwarven War Axe,튼튼한 드워븐 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E2A,SEWeapDwarvenWarHammerDurable,1,FULL,0,Durable Dwarven Warhammer,튼튼한 드워븐 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E2B,SEWeapEbonyBattleAxeDurable,1,FULL,0,Durable Ebony Battle Axe,튼튼한 에보니 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E2C,SEWeapEbonyBowDurable,1,FULL,0,Durable Ebony Bow,튼튼한 에보니 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E2D,SEWeapEbonyClaymoreDurable,1,FULL,0,Durable Ebony Claymore,튼튼한 에보니 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E2E,SEWeapEbonyDaggerDurable,1,FULL,0,Durable Ebony Dagger,튼튼한 에보니 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E2E,SEWeapEbonyDaggerDurable,1,FULL,0,Durable Ebony Dagger,튼튼한 에보니 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E2F,SEWeapEbonyLongswordDurable,1,FULL,0,Durable Ebony Longsword,튼튼한 에보니 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E30,SEWeapEbonyMaceDurable,1,FULL,0,Durable Ebony Mace,튼튼한 에보니 메이스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E32,SEWeapEbonyWarAxeDurable,1,FULL,0,Durable Ebony War Axe,튼튼한 에보니 워 액스,existing-6.9-context
@@ -12124,65 +12124,65 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E34,SEWeapElvenBattleAxeDurable,1,FULL,0,Durable Elven Battle Axe,튼튼한 엘븐 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E35,SEWeapElvenBowDurable,1,FULL,0,Durable Elven Bow,튼튼한 엘븐 보우,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E36,SEWeapElvenClaymoreDurable,1,FULL,0,Durable Elven Claymore,튼튼한 엘븐 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E37,SEWeapElvenDaggerDurable,1,FULL,0,Durable Elven Dagger,튼튼한 엘븐 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E37,SEWeapElvenDaggerDurable,1,FULL,0,Durable Elven Dagger,튼튼한 엘븐 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E38,SEWeapElvenLongSwordDurable,1,FULL,0,Durable Elven Longsword,튼튼한 엘프제 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E39,SEWeapElvenMaceDurable,1,FULL,0,Durable Elven Mace,튼튼한 엘븐 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E3A,SEWeapElvenShortswordDurable,1,FULL,0,Durable Elven Shortsword,튼튼한 엘븐 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E3A,SEWeapElvenShortswordDurable,1,FULL,0,Durable Elven Shortsword,튼튼한 엘븐 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E3B,SEWeapElvenWarAxeDurable,1,FULL,0,Durable Elven War Axe,튼튼한 엘프제 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E3C,SEWeapElvenWarHammerDurable,1,FULL,0,Durable Elven Warhammer,튼튼한 엘븐 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E3D,SEWeapGlassBattleAxeDurable,1,FULL,0,Durable Glass Battle Axe,튼튼한 글래스 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E3F,SEWeapGlassClaymoreDurable,1,FULL,0,Durable Glass Claymore,튼튼한 글래스 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E40,SEWeapGlassDaggerDurable,1,FULL,0,Durable Glass Dagger,튼튼한 글래스 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E40,SEWeapGlassDaggerDurable,1,FULL,0,Durable Glass Dagger,튼튼한 글래스 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E41,SEWeapGlassLongswordDurable,1,FULL,0,Durable Glass Longsword,튼튼한 글래스 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E42,SEWeapGlassMaceDurable,1,FULL,0,Durable Glass Mace,튼튼한 글래스 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E43,SEWeapGlassShortswordDurable,1,FULL,0,Durable Glass Shortsword,튼튼한 글래스 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E43,SEWeapGlassShortswordDurable,1,FULL,0,Durable Glass Shortsword,튼튼한 글래스 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E44,SEWeapGlassWarAxeDurable,1,FULL,0,Durable Glass War Axe,튼튼한 글래스 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E45,SEWeapGlassWarHammerDurable,1,FULL,0,Durable Glass Warhammer,튼튼한 글래스 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E46,SEWeapIronBattleAxeDurable,1,FULL,0,Durable Iron Battle Axe,쇠로만든 튼튼한 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E47,DurableWeapIronBow,1,FULL,0,Durable Iron Bow,튼튼한 철 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E48,SEWeapIronClaymoreDurable,1,FULL,0,Durable Iron Claymore,튼튼한 연철 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E49,SEWeapIronDaggerDurable,1,FULL,0,Durable Iron Dagger,쇠로만든 튼튼한 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E49,SEWeapIronDaggerDurable,1,FULL,0,Durable Iron Dagger,쇠로만든 튼튼한 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E4A,SEWeapIronLongswordDurable,1,FULL,0,Durable Iron Longsword,쇠로만든 튼튼한 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E4B,SEWeapIronMaceDurable,1,FULL,0,Durable Iron Mace,쇠로만든 튼튼한 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E4C,SEWeapIronShortswordDurable,1,FULL,0,Durable Iron Shortsword,쇠로만든 튼튼한 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E4C,SEWeapIronShortswordDurable,1,FULL,0,Durable Iron Shortsword,쇠로만든 튼튼한 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E4D,SEWeapIronWarAxeDurable,1,FULL,0,Durable Iron War Axe,쇠로만든 튼튼한 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E4E,SEWeapIronWarhammerDurable,1,FULL,0,Durable Iron Warhammer,쇠로만든 튼튼한 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E4F,SEWeapSilverBattleAxeDurable,1,FULL,0,Durable Silver BattleAxe,은도금 된 튼튼한 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E50,SEWeapSilverBowDurable,1,FULL,0,Durable Silver Bow,튼튼한 은제 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E51,SEWeapSilverClaymoreDurable,1,FULL,0,Durable Silver Claymore,튼튼한 은제 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E52,SEWeapSilverDaggerDurable,1,FULL,0,Durable Silver Dagger,은도금 된 튼튼한 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E52,SEWeapSilverDaggerDurable,1,FULL,0,Durable Silver Dagger,은도금 된 튼튼한 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E53,SEWeapSilverLongswordDurable,1,FULL,0,Durable Silver Longsword,은도금 된 튼튼한 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E54,SEWeapSilverMaceDurable,1,FULL,0,Durable Silver Mace,은도금 된 튼튼한 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E55,SEWeapSilverShortswordDurable,1,FULL,0,Durable Silver Shortsword,은도금 된 튼튼한 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E55,SEWeapSilverShortswordDurable,1,FULL,0,Durable Silver Shortsword,은도금 된 튼튼한 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E56,SEWeapSilverWarAxeDurable,1,FULL,0,Durable Silver War Axe,은도금 된 튼튼한 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E57,SEWeapSilverWarhammerDurable,1,FULL,0,Durable Silver Warhammer,은도금 된 튼튼한 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E58,SEWeapSteelBattleAxeDurable,1,FULL,0,Durable Steel Battle Axe,튼튼한 강철 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E59,SEWeapSteelBowDurable,1,FULL,0,Durable Steel Bow,튼튼한 강철 보우,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5A,SEWeapSteelClaymoreDurable,1,FULL,0,Durable Steel Claymore,튼튼한 강철 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5B,SEWeapSteelDaggerDurable,1,FULL,0,Durable Steel Dagger,튼튼한 강철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5B,SEWeapSteelDaggerDurable,1,FULL,0,Durable Steel Dagger,튼튼한 강철 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5C,SEWeapSteelLongswordDurable,1,FULL,0,Durable Steel Longsword,튼튼한 강철 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5D,SEWeapSteelMaceDurable,1,FULL,0,Durable Steel Mace,튼튼한 강철 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5E,SEWeapSteelShortswordDurable,1,FULL,0,Durable Steel Shortsword,튼튼한 강철 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5E,SEWeapSteelShortswordDurable,1,FULL,0,Durable Steel Shortsword,튼튼한 강철 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E5F,SEWeapSteelWarAxeDurable,1,FULL,0,Durable Steel War Axe,튼튼한 강철 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E60,SEWeapSteelWarhammerDurable,1,FULL,0,Durable Steel Warhammer,튼튼한 강철 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E9A,SEEnchDaedricBattleAxeStorm,1,FULL,0,Battle Axe of Soul Storms,폭풍 영혼의 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E9B,SEEnchDaedricBowStorm,1,FULL,0,Bow of Soul Storms,영혼 폭풍의 데이드라제 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E9C,SEEnchDaedricClaymoreStorm,1,FULL,0,Claymore of Soul Storms,폭풍 영혼의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E9D,SEEnchDaedricDaggerStorm,1,FULL,0,Dagger of Soul Storms,폭풍 영혼의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E9D,SEEnchDaedricDaggerStorm,1,FULL,0,Dagger of Soul Storms,폭풍 영혼의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045E9F,SEEnchDaedricMaceStorm,1,FULL,0,Mace of Soul Storms,영혼 폭풍의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA2,SEEnchDaedricWarHammerStorm,1,FULL,0,Warhammer of Soul Storms,폭풍 영혼의 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA3,SEEnchDwarvenBattleAxeFlame,1,FULL,0,Battle Axe of Soul Scorching,타들어가는 영혼의 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA4,SEEnchDwarvenBowFlame,1,FULL,0,Bow of Soul Scorching,영혼 작열의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA5,SEEnchDwarvenClaymoreFlame,1,FULL,0,Claymore of Soul Scorching,타들어가는 영혼의 클레이모어 ,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA6,SEEnchDwarvenDaggerFlame,1,FULL,0,Dagger of Soul Scorching,타들어가는 영혼의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA6,SEEnchDwarvenDaggerFlame,1,FULL,0,Dagger of Soul Scorching,타들어가는 영혼의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA8,SEEnchDwarvenMaceFlame,1,FULL,0,Mace of Soul Scorching,타들어가는 영혼의 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA9,SEEnchDwarvenShortSwordFlame,1,FULL,0,Shortsword of Soul Scorching,타들어가는 영혼의 숏소드 ,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EA9,SEEnchDwarvenShortSwordFlame,1,FULL,0,Shortsword of Soul Scorching,타들어가는 영혼의 단검 ,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EAA,SEEnchDwarvenWarAxeFlame,1,FULL,0,War Axe of Soul Scorching,타들어가는 영혼의 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EAB,SEEnchDwarvenWarHammerFlame,1,FULL,0,Warhammer of Soul Scorching,타들어가는 영혼의 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EAC,SEEnchEbonyBattleAxeBlizzard,1,FULL,0,Battle Axe of Soul Blizzards,눈보라 영혼의  배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EAD,SEEnchEbonyBowBlizzard,1,FULL,0,Bow of Soul Blizzards,영혼 눈보라의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EAE,SEEnchEbonyClaymoreBlizzard,1,FULL,0,Claymore of Soul Blizzards,눈보라 영혼의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EAF,SEEnchEbonyDaggerBlizzard,1,FULL,0,Dagger of Soul Blizzards,눈보라 영혼의 단검 ,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EAF,SEEnchEbonyDaggerBlizzard,1,FULL,0,Dagger of Soul Blizzards,눈보라 영혼의 단도 ,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB0,SEEnchEbonyLongswordBlizzard,1,FULL,0,Longsword of Soul Blizzards,눈보라 영혼의 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB1,SEEnchEbonyMaceBlizzard,1,FULL,0,Mace of Soul Blizzards,눈보라 영혼의 메이스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB3,SEEnchEbonyWarAxeBlizzard,1,FULL,0,War Axe of Soul Blizzards,눈보라 영혼의 워 액스,existing-6.9-context
@@ -12190,44 +12190,44 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB5,SEEnchElvenBattleAxeLightning,1,FULL,0,Battle Axe of Soul Voltage,전기충격 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB6,SEEnchElvenBowLightning,1,FULL,0,Bow of Soul Voltage,전기충격 보우,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB7,SEEnchElvenClaymoreLightning,1,FULL,0,Claymore of Soul Voltage,전기충격 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB8,SEEnchElvenDaggerLightning,1,FULL,0,Dagger of Soul Voltage,전기충격 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB8,SEEnchElvenDaggerLightning,1,FULL,0,Dagger of Soul Voltage,전기충격 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EB9,SEEnchElvenLongSwordLightning,1,FULL,0,Longsword of Soul Voltage,영혼 전류의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EBA,SEEnchElvenMaceLightning,1,FULL,0,Mace of Soul Voltage,전기충격 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EBB,SEEnchElvenShortswordLightning,1,FULL,0,Shortsword of Soul Voltage,영혼 전류의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EBB,SEEnchElvenShortswordLightning,1,FULL,0,Shortsword of Soul Voltage,영혼 전류의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EBC,SEEnchElvenWarAxeLightning,1,FULL,0,War Axe of Soul Voltage,영혼 전압의 엘프제 손도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EBD,SEEnchElvenWarHammerLightning,1,FULL,0,Warhammer of Soul Voltage,전기충격 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EBE,SEEnchGlassBattleAxeBlaze,1,FULL,0,Battle Axe of Soul Fire,불타는 영혼의 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC0,SEEnchGlassClaymoreBlaze,1,FULL,0,Claymore of Soul Fire,불타는 영혼의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC1,SEEnchGlassDaggerBlaze,1,FULL,0,Dagger of Soul Fire,불타는 영혼의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC1,SEEnchGlassDaggerBlaze,1,FULL,0,Dagger of Soul Fire,불타는 영혼의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC2,SEEnchGlassLongswordBlaze,1,FULL,0,Longsword of Soul Fire,불타는 영혼의 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC3,SEEnchGlassMaceBlaze,1,FULL,0,Mace of Soul Fire,불타는 영혼의 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC4,SEEnchGlassShortswordBlaze,1,FULL,0,Shortsword of Soul Fire,불타는 영혼의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC4,SEEnchGlassShortswordBlaze,1,FULL,0,Shortsword of Soul Fire,불타는 영혼의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC5,SEEnchGlassWarAxeBlaze,1,FULL,0,War Axe of Soul Fire,불타는 영혼의 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC6,SEEnchGlassWarHammerBlaze,1,FULL,0,Warhammer of Soul Fire,불타는 영혼의 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC7,SEEnchIronBattleAxeEmber,1,FULL,0,Battle Axe of Soul Embers,사라져가는 영혼의 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC8,SEEnchIronBowEmber,1,FULL,0,Bow of Soul Embers,사라져가는 영혼의 보우,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EC9,SEEnchIronClaymoreEmber,1,FULL,0,Claymore of Soul Embers,사라져가는 영혼의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECA,SEEnchIronDaggerEmber,1,FULL,0,Dagger of Soul Embers,영혼 잉걸불의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECA,SEEnchIronDaggerEmber,1,FULL,0,Dagger of Soul Embers,영혼 잉걸불의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECB,SEEnchIronLongswordEmber,1,FULL,0,Longsword of Soul Embers,사라져가는 영혼의 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECC,SEEnchIronMaceEmber,1,FULL,0,Mace of Soul Embers,사라져가는 영혼의 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECD,SEEnchIronShortswordEmber,1,FULL,0,Shortsword of Soul Embers,사라져가는 영혼의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECD,SEEnchIronShortswordEmber,1,FULL,0,Shortsword of Soul Embers,사라져가는 영혼의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECE,SEEnchIronWarAxeEmber,1,FULL,0,War Axe of Soul Embers,사라져가는 영혼의 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ECF,SEEnchIronWarhammerEmber,1,FULL,0,Warhammer of Soul Embers,사라져가는 영혼의 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED0,SEEnchSilverBattleAxeFrostDam,1,FULL,0,Battle Axe of Soul Chill,냉랭한 영혼의 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED1,SEEnchSilverClaymoreFrostDam,1,FULL,0,Claymore of Soul Chill,영혼 오한의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED2,SEEnchSilverDaggerFrostDam,1,FULL,0,Dagger of Soul Chill,냉랭한 영혼의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED2,SEEnchSilverDaggerFrostDam,1,FULL,0,Dagger of Soul Chill,냉랭한 영혼의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED3,SEEnchSilverLongswordFrostDam,1,FULL,0,Longsword of Soul Chill,영혼 오한의 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED4,SEEnchSilverMaceFrostDam,1,FULL,0,Mace of Soul Chill,냉랭한 영혼의 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED5,SEEnchSilverShortswordFrostDam,1,FULL,0,Shortsword of Soul Chill,냉랭한 영혼의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED5,SEEnchSilverShortswordFrostDam,1,FULL,0,Shortsword of Soul Chill,냉랭한 영혼의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED6,SEEnchSilverWarAxeFrostDam,1,FULL,0,War Axe of Soul Chill,냉랭한 영혼의 워 액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED7,SEEnchSilverWarhammerFrostDam,1,FULL,0,Warhammer of Soul Chill,냉랭한 영혼의 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED8,SEEnchSteelBattleAxeSpark,1,FULL,0,Battle Axe of Soul Sparks,영혼 불꽃의 배틀액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045ED9,SEEnchSteelBowSpark,1,FULL,0,Bow of Soul Sparks,영혼 불꽃의 보우,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDA,SEEnchSteelClaymoreSpark,1,FULL,0,Claymore of Soul Sparks,영혼 불꽃의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDB,SEEnchSteelDaggerSpark,1,FULL,0,Dagger of Soul Sparks,영혼 불꽃의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDB,SEEnchSteelDaggerSpark,1,FULL,0,Dagger of Soul Sparks,영혼 불꽃의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDC,SEEnchSteelLongswordSpark,1,FULL,0,Longsword of Soul Sparks,영혼 불꽃의 롱소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDD,SEEnchSteelMaceSpark,1,FULL,0,Mace of Soul Sparks,영혼 불꽃의 메이스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDE,SEEnchSteelShortswordSpark,1,FULL,0,Shortsword of Soul Sparks,영혼 불꽃의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDE,SEEnchSteelShortswordSpark,1,FULL,0,Shortsword of Soul Sparks,영혼 불꽃의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EDF,SEEnchSteelWarAxeSpark,1,FULL,0,War Axe of Soul Sparks,영혼 불꽃의 손도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00045EE0,SEEnchSteelWarhammerSpark,1,FULL,0,Warhammer of Soul Sparks,영혼 불꽃의 워해머,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00047372,HrormirsIcestaff,1,FULL,0,Hrormir's Icestaff,흐로미르의 얼음 지팡이,existing-6.9-context
@@ -12266,8 +12266,8 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000872AB,DremoraBow3Heavy,1,FULL,0,Dremora Fireglow Bow,드레모라 불빛 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00090613,WeapIronWarAxeRusty,1,FULL,0,Rusty Iron War Axe,녹슨 철 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00090614,WeapIronMaceRusty,1,FULL,0,Rusty Iron Mace,녹슨 철 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00090615,WeapIronShortswordRusty,1,FULL,0,Rusty Iron Shortsword,녹슨 철 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00090616,WeapIronDaggerRusty,1,FULL,0,Rusty Iron Dagger,녹슨 철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00090615,WeapIronShortswordRusty,1,FULL,0,Rusty Iron Shortsword,녹슨 철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00090616,WeapIronDaggerRusty,1,FULL,0,Rusty Iron Dagger,녹슨 철 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000908AD,MS92SteelBlackBow,1,FULL,0,Black Bow,검은 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000912BE,StaffofBurden,1,FULL,0,Staff of Burden,부담의 지팡이,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000912BF,StaffofBurdenGreater,1,FULL,0,Greater Staff of Burden,상급 부담의 지팡이,existing-6.9-context
@@ -12408,7 +12408,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000914D2,StaffofBanishment,1,FULL,0,Staff of Banishment,추방의 지팡이,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00091905,DarkBladeWoe30,1,FULL,0,Blade of Woe,통곡의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000977C4,ArenaSilverMace,1,FULL,0,Silver Mace,은 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,000977C5,ArenaSilverShortsword,1,FULL,0,Silver Shortsword,은제 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,000977C5,ArenaSilverShortsword,1,FULL,0,Silver Shortsword,은제 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000977C7,ArenaSilverLongsword,1,FULL,0,Silver Longsword,은 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000977C9,ArenaAkaviriLongSword,1,FULL,0,Old Akaviri Katana,낡은 아카비르 카타나,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,000977CA,ArenaDwarvenClaymore,1,FULL,0,Dwemer Claymore,드웨머 클레이모어,existing-6.9-context
@@ -12551,7 +12551,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01019D3D,rdTemplarSwordOOO2,1,FULL,0,Templar Longsword,성기사 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01019D3E,ShadowMailBowOOOFlame,1,FULL,0,Shadow Bow of Flames,화염의 그림자 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0101AE86,WeapSpiritWarhammer,1,FULL,0,Ghostly Warhammer,유령 전투망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0101F944,WeapIronZDagger,1,FULL,0,M'aiq's Iron Dagger,마이크의 철 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0101F944,WeapIronZDagger,1,FULL,0,M'aiq's Iron Dagger,마이크의 철 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,010222D4,WeapBlackGlassScytheOOO,1,FULL,0,Obsidian Reaper,흑요석 수확자,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,010222D5,WeapGlassScytheOOO,1,FULL,0,Glass Reaper,글래스 수확자,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,010222D6,WeapIronScytheOOO,1,FULL,0,Iron Reaper,철 수확자,existing-6.9-context
@@ -12565,7 +12565,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01026C5D,pegasus2HswordOOO,1,FULL,0,Winged Claymore,날개 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01026C5E,pegasushammerOOO,1,FULL,0,Winged Hammer,날개 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01026C5F,pegasuspbowOOO,1,FULL,0,Winged Bow,날개 활,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,01026C60,pegasuspdaggerOOO,1,FULL,0,Winged Dagger,날개 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,01026C60,pegasuspdaggerOOO,1,FULL,0,Winged Dagger,날개 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01026C61,pegasusstaffOOO,1,FULL,0,Winged Staff,날개 지팡이,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01026C62,pegasuswordOOO,1,FULL,0,Winged Longsword,날개 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01027169,drcutlassOOO,1,FULL,0,Blood Thorn Cutlass,피가시 커틀러스,existing-6.9-context
@@ -12623,7 +12623,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDE9,WeapBraidedBattleaxeOOO,1,FULL,0,Braided Battleaxe,편조 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDEA,WeapBraidedBowOOO,1,FULL,0,Braided Bow,편조 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDEB,WeapBraidedClaymoreOOO,1,FULL,0,Braided Claymore,편조 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDEC,WeapBraidedDaggerOOO,1,FULL,0,Braided Dagger,편조 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDEC,WeapBraidedDaggerOOO,1,FULL,0,Braided Dagger,편조 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDED,WeapBraidedKatanaOOO,1,FULL,0,Braided Katana,편조 카타나,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDEE,WeapBraidedLongswordOOO,1,FULL,0,Braided Longsword,편조 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0103DDEF,WeapBraidedMaceOOO,1,FULL,0,Braided Morningstar,편조 모닝스타,existing-6.9-context
@@ -12640,7 +12640,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0105135E,WeapAyleidMaceEnchShock,1,FULL,0,Malatta Volenbal,말라타 볼렌발,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0105135F,WeapAyleidMaceEnchShockburn,1,FULL,0,Morimalatta Volenbal,모리말라타 볼렌발,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01051360,WeapAyleidMaceEnchVamp,1,FULL,0,Yulme Volenbal,율메 볼렌발,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,01051361,WeapAyleidDagger,1,FULL,0,Ayleid Dagger,에일리드 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,01051361,WeapAyleidDagger,1,FULL,0,Ayleid Dagger,에일리드 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01051364,WeapAyleidClaymore,1,FULL,0,Ayleid Claymore (base),에일리드 클레이모어 (기본형),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01051369,WeapAyleidMace,1,FULL,0,Ayleid Mace,아일레이드 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,01051373,WeapAyleidDaggerEnchFire,1,FULL,0,Molag Ecetu,몰라그 에세투,existing-6.9-context
@@ -12665,23 +12665,23 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000C72,BCommonPike,1,FULL,0,Pike,장창,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000C73,BCommonTrident01,1,FULL,0,Trident,삼지창,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CE6,DLNodachiClaymore,1,FULL,0,Daedric Lord Nodachi,데이드라 군주의 노다치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CE7,CDagger1BlueRuby,1,FULL,0,Blue Ruby Dagger,파란색 루비 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CE7,CDagger1BlueRuby,1,FULL,0,Blue Ruby Dagger,파란색 루비 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CE8,CDagger8DragonLord,1,FULL,0,USED Dragon Lord,USED Dragon Lord,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CE9,CDagger5Falcon,1,FULL,0,Silencer,사일렌서,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CEA,CDagger6Jackal,1,FULL,0,Caress of Sithis,시디스의 손길,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CEC,CDagger4RoundTable,1,FULL,0,Adamantium Dagger,아다만티움 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CED,CDagger3KingArthur,1,FULL,0,Noble Dagger,귀족 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CEC,CDagger4RoundTable,1,FULL,0,Adamantium Dagger,아다만티움 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CED,CDagger3KingArthur,1,FULL,0,Noble Dagger,귀족 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CEE,OrcishMace,1,FULL,0,Orcish Mace,오크제 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CEF,OrcishShortsword,1,FULL,0,Orcish Shortsword,오크제 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CEF,OrcishShortsword,1,FULL,0,Orcish Shortsword,오크제 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF0,OrcishWarAxe,1,FULL,0,Orcish War Axe,오크제 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF1,OrcishWarhammer,1,FULL,0,Orcish Warhammer,오크제 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF2,MithrilBattleaxe,1,FULL,0,Mithril Battle Axe,미스릴 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF3,MithrilBow,1,FULL,0,Mithril Bow,미스릴 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF4,MithrilClaymore,1,FULL,0,Mithril Claymore,미스릴 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF5,MithrilDagger,1,FULL,0,Mithril Dagger,미스릴 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF5,MithrilDagger,1,FULL,0,Mithril Dagger,미스릴 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF6,MithrilLongsword,1,FULL,0,Mithril Longsword,미스릴 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF7,MithrilMace,1,FULL,0,Mithril Mace,미스릴 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF8,MithrilShortsword,1,FULL,0,Mithril Shortsword,미스릴 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF8,MithrilShortsword,1,FULL,0,Mithril Shortsword,미스릴 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CF9,MithrilWarAxe,1,FULL,0,Mithril War Axe,미스릴 한손 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000CFA,MithrilWarhammer,1,FULL,0,Mithril Warhammer,미스릴 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06000D24,arAyleidCeremonyDagger,1,FULL,0,Silarielle Ecetu,실라리엘 에케투,existing-6.9-context
@@ -12710,64 +12710,64 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060011FC,EnchMithrilBattleaxeShock,1,FULL,0,Battle Axe of Electricity,전기의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060011FD,EnchMithrilBowShock,1,FULL,0,Bow of Electricity,전기의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060011FE,EnchMithrilClaymoreShock,1,FULL,0,Claymore of Electricity,전기의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060011FF,EnchMithrilDaggerShock,1,FULL,0,Dagger of Electricity,전기의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060011FF,EnchMithrilDaggerShock,1,FULL,0,Dagger of Electricity,전기의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001200,EnchMithrilLongswordShock,1,FULL,0,Longsword of Electricity,전기의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001201,EnchMithrilMaceShock,1,FULL,0,Mace of Electricity,전기의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001202,EnchMithrilShortswordShock,1,FULL,0,Shortsword of Electricity,전기의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001202,EnchMithrilShortswordShock,1,FULL,0,Shortsword of Electricity,전기의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001203,EnchMithrilWarAxeShock,1,FULL,0,War Axe of Electricity,전기의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001204,EnchMithrilWarhammerShock,1,FULL,0,Warhammer of Electricity,전기의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001205,EnchMithrilBattleaxeFrost,1,FULL,0,Battle Axe of Ice,얼음의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001206,EnchMithrilBowFrost,1,FULL,0,Bow of Ice,얼음의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001207,EnchMithrilClaymoreFrost,1,FULL,0,Claymore of Ice,얼음의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001208,EnchMithrilDaggerFrost,1,FULL,0,Dagger of Ice,얼음의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001208,EnchMithrilDaggerFrost,1,FULL,0,Dagger of Ice,얼음의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001209,EnchMithrilLongswordFrost,1,FULL,0,Longsword of Ice,얼음의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600120A,EnchMithrilMaceFrost,1,FULL,0,Mace of Ice,얼음의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600120B,EnchMithrilShortswordFrost,1,FULL,0,Shortsword of Ice,얼음의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600120B,EnchMithrilShortswordFrost,1,FULL,0,Shortsword of Ice,얼음의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600120C,EnchMithrilWarAxeFrost,1,FULL,0,War Axe of Ice,얼음의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600120D,EnchMithrilWarhammerFrost,1,FULL,0,Warhammer of Ice,얼음의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600120E,EnchMithrilBattleaxeFire,1,FULL,0,Battle Axe of Searing,작열의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600120F,EnchMithrilBowFire,1,FULL,0,Bow of Searing,작열의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001210,EnchMithrilClaymoreFire,1,FULL,0,Claymore of Blazing,타오르는 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001211,EnchMithrilDaggerFire,1,FULL,0,Dagger of Searing,작열의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001211,EnchMithrilDaggerFire,1,FULL,0,Dagger of Searing,작열의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001212,EnchMithrilLongswordFire,1,FULL,0,Longsword of Blazing,타오르는 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001213,EnchMithrilMaceFire,1,FULL,0,Mace of Searing,작열의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001214,EnchMithrilShortswordFire,1,FULL,0,Shortsword of Searing,작열의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001214,EnchMithrilShortswordFire,1,FULL,0,Shortsword of Searing,작열의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001215,EnchMithrilWarAxeFire,1,FULL,0,War Axe of Searing,작열의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001216,EnchMithrilWarhammerFire,1,FULL,0,Warhammer of Searing,작열의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001217,EnchMithrilBattleaxeAbsMagicka,1,FULL,0,Battle Axe of Craving,갈망의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001218,EnchMithrilBowAbsMagicka,1,FULL,0,Bow of Craving,갈망의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001219,EnchMithrilClaymoreAbsMagicka,1,FULL,0,Claymore of Craving,갈망의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121A,EnchMithrilDaggerAbsMagicka,1,FULL,0,Dagger of Craving,갈망의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121A,EnchMithrilDaggerAbsMagicka,1,FULL,0,Dagger of Craving,갈망의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121B,EnchMithrilLongswordAbsMagicka,1,FULL,0,Longsword of Craving,갈망의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121C,EnchMithrilMaceAbsMagicka,1,FULL,0,Mace of Craving,갈망의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121D,EnchMithrilShortswordAbsMagicka,1,FULL,0,Shortsword of Craving,갈망의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121D,EnchMithrilShortswordAbsMagicka,1,FULL,0,Shortsword of Craving,갈망의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121E,EnchMithrilWarAxeAbsMagicka,1,FULL,0,War Axe of Craving,갈망의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600121F,EnchMithrilWarhammerAbsMagicka,1,FULL,0,Warhammer of Craving,갈망의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001220,EnchOrcishBattleaxeShock,1,FULL,0,Battle Axe of Electrocution,감전의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001221,EnchOrcishBowFire,1,FULL,0,Bow of Charring,탄화의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001222,EnchOrcishClaymoreFire,1,FULL,0,Claymore of Charring,탄화의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001223,EnchOrcishDaggerFire,1,FULL,0,Dagger of Charring,탄화의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001223,EnchOrcishDaggerFire,1,FULL,0,Dagger of Charring,탄화의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001224,EnchOrcishLongswordFire,1,FULL,0,Longsword of Scorching,작열의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001225,EnchOrcishMaceFire,1,FULL,0,Mace of Charring,탄화의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001226,EnchOrcishShortswordFire,1,FULL,0,Shortsword of Charring,탄화의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001226,EnchOrcishShortswordFire,1,FULL,0,Shortsword of Charring,탄화의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001227,EnchOrcishWarAxeFire,1,FULL,0,War Axe of Charring,탄화의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001228,EnchOrcishWarhammerFire,1,FULL,0,Warhammer of Charring,탄화의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001229,EnchOrcishBattleaxeFrost,1,FULL,0,Battle Axe of Frigidity,냉기의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122A,EnchOrcishBowFrost,1,FULL,0,Bow of Frigidity,냉기의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122B,EnchOrcishClaymoreDisWeap,1,FULL,0,Claymore of Fragmentation,파편의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122C,EnchOrcishDaggerFrost,1,FULL,0,Dagger of Frigidity,냉기의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122C,EnchOrcishDaggerFrost,1,FULL,0,Dagger of Frigidity,냉기의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122D,EnchOrcishLongswordFrost,1,FULL,0,Longsword of Frigidity,냉기의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122E,EnchOrcishMaceFrost,1,FULL,0,Mace of Frigidity,냉기의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122F,EnchOrcishShortswordFrost,1,FULL,0,Shortsword of Frigidity,냉기의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600122F,EnchOrcishShortswordFrost,1,FULL,0,Shortsword of Frigidity,냉기의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001230,EnchOrcishWarAxeFrost,1,FULL,0,War Axe of Frigidity,냉기의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001231,EnchOrcishWarhammerFrost,1,FULL,0,Warhammer of Frigidity,냉기의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001232,EnchOrcishBattleaxeDamHealth,1,FULL,0,Battle Axe of Hurt,상처의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001233,EnchOrcishBowAbsHealth,1,FULL,0,Bow of Hurt,상처의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001234,EnchOrcishClaymoreAbsHealth,1,FULL,0,Claymore of Hurt,상처의 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001235,EnchOrcishDaggerDamHealth,1,FULL,0,Dagger of Hurt,상처의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001235,EnchOrcishDaggerDamHealth,1,FULL,0,Dagger of Hurt,상처의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001236,EnchOrcishLongswordDamHealth,1,FULL,0,Longsword of Hurt,상처의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001237,EnchOrcishMaceDamHealth,1,FULL,0,Mace of Hurt,상처의 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001238,EnchOrcishShortswordAbsHealth,1,FULL,0,Shortsword of Hurt,상처의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001238,EnchOrcishShortswordAbsHealth,1,FULL,0,Shortsword of Hurt,상처의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06001239,EnchOrcishWarAxeShock,1,FULL,0,War Axe of Striking,타격의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600123A,EnchOrcishWarhammerAbsHealth,1,FULL,0,Warhammer of Ravaging,약탈의 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060014B4,RSRedguardBowMongolWoodShock,1,FULL,0,Charged Redguard Wood Recurve Bow,충전된 레드가드 목재 반곡 활,existing-6.9-context
@@ -12825,8 +12825,8 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002517,RSNordPoignardIIOld,1,FULL,0,Old Poniard II,낡은 단도 II,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002581,ObsidianShdwShortSword11Unique,1,FULL,0,Blade of Penumbra ,반그림자의 검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002582,shdwsword11,1,FULL,0,Obsidian Scimitar,흑요석 시미터,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002583,Obsidianshdwshortsword12superior,1,FULL,0,Obsidian Induin Shortsword ,흑요석 인두인 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002584,Obsidianshdwshortsword12,1,FULL,0,Obsidian Induin Shortsword,흑요석 인두인 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002583,Obsidianshdwshortsword12superior,1,FULL,0,Obsidian Induin Shortsword ,흑요석 인두인 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002584,Obsidianshdwshortsword12,1,FULL,0,Obsidian Induin Shortsword,흑요석 인두인 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002585,Obsidianshdwsword13ClaymoreSuperior,1,FULL,0,Radiant Obsidian Claymore,빛나는 흑요석 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002586,Obsidianshdwsword13Claymore,1,FULL,0,Obsidian Claymore,흑요석 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002587,shdwsword13flimsyClaymore,1,FULL,0,Flimsy Obsidian Claymore,허술한 흑요석 클레이모어,existing-6.9-context
@@ -12860,9 +12860,9 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A51,RSRedguard08Elhazan1HLongsword,1,FULL,0,Elhazan Saber (Redguard Weapon),엘하잔 세이버 (레드가드 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A52,RSRedguard01BowieShortsword,1,FULL,0,Redguard Long Knife,레드가드 긴 나이프,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A53,RSRedguard02KukriShortsword,1,FULL,0,Redguard Kukri,레드가드 쿠크리,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A54,RSRedguard03CurvedDaggerShortsword,1,FULL,0,Redguard Curved Short Sword,레드가드 굽은 짧은 검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A54,RSRedguard03CurvedDaggerShortsword,1,FULL,0,Redguard Curved Short Sword,레드가드 굽은 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A5F,CrystalFatherSword,1,FULL,0,USED SPECTRE Crystal Kings Sword,USED SPECTRE Crystal Kings Sword,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A70,sOOODremoraDaggerSilverDragon,1,FULL,0,Dremora Dagger ,드레모라 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002A70,sOOODremoraDaggerSilverDragon,1,FULL,0,Dremora Dagger ,드레모라 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002B08,RSNordAxeBeardedWaraxe,1,FULL,0,Nord Bearded Axe,노르드 턱날 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002B09,RSNordAxeBeardedOld,1,FULL,0,Old Nord Bearded Axe,낡은 노르드 턱날 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06002B52,RSNordAxeBearded2HBattleaxe,1,FULL,0,Two-Handed Nord Bearded Axe,노르드 양손 수염도끼,existing-6.9-context
@@ -12893,7 +12893,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060031CB,aaaElvenGearDaggerGuardianAstor,1,FULL,0,Welkynd Blade of Fire,화염의 웰킨드 칼날,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003438,RSBreton05TritoniaBronzeLongsword,1,FULL,0,Bronze Tritonia (Breton Weapon),청동 트리토니아 (브레튼 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003439,RSBreton05TritoniaSteelLongsword,1,FULL,0,Steel Tritonia (Breton Weapon),강철 트리토니아 (브레튼 무기),existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003468,sOOOAyleidSetShortsword,1,FULL,0,Ayleid Welkynd Shortsword,에일리드 웰킨드 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003468,sOOOAyleidSetShortsword,1,FULL,0,Ayleid Welkynd Shortsword,에일리드 웰킨드 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060034F6,BluntAdamantiumBlockHammerMace,1,FULL,0,Adamant Breaker,아다만트 파괴자,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060034F7,BluntAdamantiumBlockHammer2HWarhammer,1,FULL,0,Adamantium Warhammer,아다만티움 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060034F8,DremoraBattleAxe,1,FULL,0,Dremora Battle Axe,드레모라 전투도끼,existing-6.9-context
@@ -12932,16 +12932,16 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003883,RSImperialBasketKnife1AREDShortsword,1,FULL,0,Fine Imperial Basket Knife,고급 제국 바스켓힐트 나이프,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003888,RSImperialGladiusMainz1AREDshortsword,1,FULL,0,Fine Mainz Gladius (Imperial Weapon),고급 마인츠 글라디우스 (제국 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003892,RSImperialGladiusPompeii1AREDShortsword,1,FULL,0,Fine Pompeii Gladius (Imperial Weapon),고급 폼페이 글라디우스 (제국 무기),existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003896,RSImperialGladiusPompeii2BREDShortsword,1,FULL,0,Imperial Warder Shortsword,제국 파수병 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003896,RSImperialGladiusPompeii2BREDShortsword,1,FULL,0,Imperial Warder Shortsword,제국 파수병 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600389A,RSImperialGladiusFulham1AREDshortsword,1,FULL,0,Fine Fulham Gladius (Imperial Weapon),고급 풀럼 글라디우스 (제국 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600389E,RSImperialGladiusFulham2BREDshortsword,1,FULL,0,Noble Gladius Fulham (Imperial Weapon),귀족 글라디우스 풀럼 (제국 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060038A0,RSImperialAsterix1ARED,1,FULL,0,Asterix USE CITY GUARDS,Asterix USE CITY GUARDS,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003929,00SilverDragonDaggerLight,1,FULL,0,Apophis Light Dagger USED,Apophis Light Dagger USED,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003982,WeapDaedricWarHammerXyvalTeleport,1,FULL,0,Breath of Dagon,데이건의 숨결,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039AB,sOOOJestersDaggerClassic,1,FULL,0,Jester's Dagger,광대의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039AC,sOOOJestersDaggerComedy,1,FULL,0,Dagger of Wicked Comedy,사악한 희극의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039AB,sOOOJestersDaggerClassic,1,FULL,0,Jester's Dagger,광대의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039AC,sOOOJestersDaggerComedy,1,FULL,0,Dagger of Wicked Comedy,사악한 희극의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039AD,sOOOJestersDaggerHaskill,1,FULL,0,Grotesque Fun,기괴한 즐거움,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039AE,sOOOJestersDaggerTragedy,1,FULL,0,Dagger of Hysterical Tragedy,광란의 비극을 부르는 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039AE,sOOOJestersDaggerTragedy,1,FULL,0,Dagger of Hysterical Tragedy,광란의 비극을 부르는 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060039C5,RSNordAxeWarAxe,1,FULL,0,Nord War Axe,노르드 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003A58,RSNordBroadPoignardOldShortSword,1,FULL,0,Old Broad Poniard (Nord Weapon),낡은 넓은 단도 (노르드 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003AE1,sOOODummyReaper,1,FULL,0,Schnitterklaue,수확자의 발톱,existing-6.9-context
@@ -12973,13 +12973,13 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003C62,EnchMithrilBattleaxeDisArmor,1,FULL,0,Battle Axe of Exposure,노출의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003C66,RSDunmerBow01,1,FULL,0,Dunmer Ivory Bow,던머 상아 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003CDF,SenTineLWeaponsAkaviriNaginata2,1,FULL,0,Akaviri Naginata,아카비리 나기나타,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003D8F,RSDunmerJodyDagger,1,FULL,0,Dunmer Jody Dagger,던머 조디 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003D8F,RSDunmerJodyDagger,1,FULL,0,Dunmer Jody Dagger,던머 조디 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003E01,sOOOAmazonStaffGizmodianArtifice,1,FULL,0,Lore of the Wise Mother ,현명한 모친의 전승,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003E36,sOOOAyleidSetLongSword,1,FULL,0,Ayleid Welkynd Longsword,에일리드 웰킨드 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003EAE,OrcaWeapAzureGlassClaymore,1,FULL,0,Azure Astral Glass Claymore,하늘빛 성계 글래스 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003EAF,OrcaWeapAzureGlassDagger,1,FULL,0,Azure Astral Glass Dagger,하늘빛 성계 글래스 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003EAF,OrcaWeapAzureGlassDagger,1,FULL,0,Azure Astral Glass Dagger,하늘빛 성계 글래스 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003EB0,OrcaWeapAzureGlassLongsword,1,FULL,0,Azure Astral Glass Longsword,하늘빛 성계 글래스 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003EB1,OrcaWeapAzureGlassShortsword,1,FULL,0,Azure Astral Glass Shortsword,하늘빛 성계 글래스 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003EB1,OrcaWeapAzureGlassShortsword,1,FULL,0,Azure Astral Glass Shortsword,하늘빛 성계 글래스 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003F05,Mag1aRoyalEbonyStaff,1,FULL,0,Royal Ebony Staff,왕실 에보니 지팡이,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003F07,Mag1aSilverStaff,1,FULL,0,Silver Staff,은 지팡이,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06003F08,Mag1aTheSnowflake,1,FULL,0,The Snowflake,눈송이,existing-6.9-context
@@ -13026,16 +13026,16 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB2,EnchOrcishLongswordShock,1,FULL,0,Longsword of Striking,타격의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB3,EnchOrcishLongswordDamAgility,1,FULL,0,Longsword of Clumsiness,둔함의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB4,EnchOrcishLongswordDisWeapon,1,FULL,0,Longsword of Fragmentation,파편의 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB5,EnchMithrilShortswordDisWeapon,1,FULL,0,Shortsword of Disarming,무장해제의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB6,EnchMithrilShortswordAbsHealth,1,FULL,0,Shortsword of Reaving,약탈의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB7,EnchOrcishShortswordShock,1,FULL,0,Shortsword of Striking,타격의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB8,EnchOrcishShortswordDisWeap,1,FULL,0,Shortsword of Fragmentation,파편의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB9,EnchOrcishShortswordDamIntel,1,FULL,0,Shortsword of Stupidity,어리석음의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABA,EnchMithrilDaggerDisWeap,1,FULL,0,Dagger of Disarming,무장해제의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABB,EnchMithrilDaggerAbsHealth,1,FULL,0,Dagger of Reaving,약탈의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABC,EnchOrcishDaggerShock,1,FULL,0,Dagger of Striking,타격의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABD,EnchOrcishDaggerDisWeap,1,FULL,0,Dagger of Fragmentation,파편의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABE,EnchOrcishDaggerDamIntelligence,1,FULL,0,Dagger of Stupidity,어리석음의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB5,EnchMithrilShortswordDisWeapon,1,FULL,0,Shortsword of Disarming,무장해제의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB6,EnchMithrilShortswordAbsHealth,1,FULL,0,Shortsword of Reaving,약탈의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB7,EnchOrcishShortswordShock,1,FULL,0,Shortsword of Striking,타격의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB8,EnchOrcishShortswordDisWeap,1,FULL,0,Shortsword of Fragmentation,파편의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AB9,EnchOrcishShortswordDamIntel,1,FULL,0,Shortsword of Stupidity,어리석음의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABA,EnchMithrilDaggerDisWeap,1,FULL,0,Dagger of Disarming,무장해제의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABB,EnchMithrilDaggerAbsHealth,1,FULL,0,Dagger of Reaving,약탈의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABC,EnchOrcishDaggerShock,1,FULL,0,Dagger of Striking,타격의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABD,EnchOrcishDaggerDisWeap,1,FULL,0,Dagger of Fragmentation,파편의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABE,EnchOrcishDaggerDamIntelligence,1,FULL,0,Dagger of Stupidity,어리석음의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004ABF,EnchMithrilBowAbsHealth,1,FULL,0,Bow of Reaving,약탈의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AC0,EnchOrcishBowShock,1,FULL,0,Bow of Striking,타격의 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06004AC1,EnchOrcishBowDemoralize,1,FULL,0,Bow of Alarm,경보의 활,existing-6.9-context
@@ -13068,10 +13068,10 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A08,OrcaWeapAmethystosGlassBattleAxe,1,FULL,0,Amethystos Glass Battle Axe,아메시스토스 글래스 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A09,OrcaWeapAmethystosGlassBow,1,FULL,0,Amethystos Glass Bow,아메시스토스 글래스 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0A,OrcaWeapAmethystosGlassClaymore,1,FULL,0,Amethystos Glass Claymore,아메시스토스 글래스 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0B,OrcaWeapAmethystosGlassDagger,1,FULL,0,Amethystos Glass Dagger,아메시스토스 글래스 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0B,OrcaWeapAmethystosGlassDagger,1,FULL,0,Amethystos Glass Dagger,아메시스토스 글래스 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0C,OrcaWeapAmethystosGlassLongsword,1,FULL,0,Amethystos Glass Longsword,아메시스토스 글래스 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0D,OrcaWeapAmethystosGlassMace,1,FULL,0,Amethystos Glass Mace,아메시스토스 글래스 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0E,OrcaWeapAmethystosGlassShortsword,1,FULL,0,Amethystos Glass Shortsword,아메시스토스 글래스 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0E,OrcaWeapAmethystosGlassShortsword,1,FULL,0,Amethystos Glass Shortsword,아메시스토스 글래스 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A0F,OrcaWeapAmethystosGlassWarAxe,1,FULL,0,Amethystos Glass War Axe,아메시스토스 글래스 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A10,OrcaWeapAmethystosGlassWarHammer,1,FULL,0,Amethystos Glass Warhammer,아메시스토스 글래스 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06005A1C,DreadKnightBattleAxe2hEnchanted,1,FULL,0,Dread Lord's Doom,공포 군주의 파멸,existing-6.9-context
@@ -13088,7 +13088,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006236,sOOOElvenDarkkATANA,1,FULL,0,Golden Night (Altmer Weapon),황금빛 밤 (알트머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006299,RSImperialSaber2ARED,1,FULL,0,Saber 2ared UNIQUE REST DELETE,Saber 2ared UNIQUE REST DELETE,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006471,RSBreton19SmithHammerMace,1,FULL,0,Smith Hammer,대장장이 망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006501,sOOOXivalActivator,1,FULL,0,Iron Shortsword,철 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006501,sOOOXivalActivator,1,FULL,0,Iron Shortsword,철 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060065D1,sOOOAyleidFXShortsword,1,FULL,0,Ayleid Welkynd SS,에일리드 웰킨드 SS,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060067C7,PTKWeaponPoleaxe,1,FULL,0,Fine Steel Poleaxe,고급 강철 폴액스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060067FA,sOOOAyleidCrystalRoyalDagger,1,FULL,0,Bala Ecetu,발라 에케투,existing-6.9-context
@@ -13103,10 +13103,10 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E96,OrcaWeapRedAstralGlassBattleAxe,1,FULL,0,Red Astral Glass Battle Axe,붉은 성계 글래스 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E97,OrcaWeapRedAstralGlassBow,1,FULL,0,Red Astral Glass Bow,붉은 성계 글래스 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E98,OrcaWeapRedAstralGlassClaymore,1,FULL,0,Red Astral Glass Claymore,붉은 성계 글래스 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E99,OrcaWeapRedAstralGlassDagger,1,FULL,0,Red Astral Glass Dagger,붉은 성계 글래스 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E99,OrcaWeapRedAstralGlassDagger,1,FULL,0,Red Astral Glass Dagger,붉은 성계 글래스 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E9A,OrcaWeapRedAstralGlassLongsword,1,FULL,0,Red Astral Glass Longsword,붉은 성계 글래스 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E9B,OrcaWeapRedAstralGlassMace,1,FULL,0,Red Astral Glass Mace,붉은 성계 글래스 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E9C,OrcaWeapRedAstralGlassShortsword,1,FULL,0,Red Astral Glass Shortsword,붉은 성계 글래스 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E9C,OrcaWeapRedAstralGlassShortsword,1,FULL,0,Red Astral Glass Shortsword,붉은 성계 글래스 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E9D,OrcaWeapRedAstralGlassWarAxe,1,FULL,0,Red Astral Glass War Axe,붉은 성계 글래스 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006E9E,OrcaWeapRedAstralGlassWarHammer,1,FULL,0,Red Astral Glass Warhammer,붉은 성계 글래스 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06006ECE,sOOOAyleidCrystalWarAxeCrow,1,FULL,0,Abagaiavoy,아바가이아보이,existing-6.9-context
@@ -13155,13 +13155,13 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008587,RSNordAxeWarOld,1,FULL,0,Old Nord War Axe,낡은 노르드 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008696,RSBreton15MorningstarSpikBronzeWarhammer,1,FULL,0,Spiked Bronze Morningstar,가시 달린 청동 모닝스타,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008697,RSBreton15MorningstarSpikSteelWarhammer,1,FULL,0,Spiked Steel Morningstar,가시 달린 강철 모닝스타,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008698,RSBreton10SpikeDaggerBronze,1,FULL,0,Breton Bronze Spike Dagger ,브레튼 청동 가시 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008699,RSBreton10SpikeDaggerSteel,1,FULL,0,Breton Steel Spike Dagger ,브레튼 강철 가시 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008698,RSBreton10SpikeDaggerBronze,1,FULL,0,Breton Bronze Spike Dagger ,브레튼 청동 가시 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008699,RSBreton10SpikeDaggerSteel,1,FULL,0,Breton Steel Spike Dagger ,브레튼 강철 가시 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869A,RSBreton08LlyrAngularBronzeClaymore,1,FULL,0,Bronze Breton Llyr,청동 브레튼 리르,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869B,RSBreton08LlyrAngularSteelClaymore,1,FULL,0,Steel Breton Llyr,강철 브레튼 리르,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869C,RSLegendMoonbrandLongsword,1,FULL,0,Moonbrand (Khajiit Weapon),문브랜드 (카짓 무기),existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869D,RSBreton09StilettoGoldDagger,1,FULL,0,Royal Breton Dagger ,왕실 브레튼 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869E,RSBreton09StilettoSilverDagger,1,FULL,0,Aristocratic Breton Dagger ,귀족풍 브레튼 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869D,RSBreton09StilettoGoldDagger,1,FULL,0,Royal Breton Dagger ,왕실 브레튼 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869E,RSBreton09StilettoSilverDagger,1,FULL,0,Aristocratic Breton Dagger ,귀족풍 브레튼 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600869F,RSBreton11MacilMace,1,FULL,0,Breton Macil,브레튼 마킬,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060086A0,RSBreton12MormacilWarhammer,1,FULL,0,Mor Macil,모르 마실,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060086A1,RSBreton13MorningstarSteelMace,1,FULL,0,Steel Morningstar (Breton Weapon),강철 모닝스타 (브레튼 무기),existing-6.9-context
@@ -13179,7 +13179,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600876C,GizmodianCruentusVeneficiumgizCVCruelbladeWBALongsword,1,FULL,0,Blade of Sin,죄악의 칼날,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600876D,GizmodianCruentusVeneficiumgizCVCruelbladeXGGLongsword,1,FULL,0,Blade of Summer's Kiss,여름의 입맞춤 칼날,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008875,sOOOAyleidSetMace,1,FULL,0,Ayleid Welkynd Mace,에일리드 웰킨드 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008876,sOOOAyleidSetDagger,1,FULL,0,Ayleid Welkynd Dagger,에일리드 웰킨드 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008876,sOOOAyleidSetDagger,1,FULL,0,Ayleid Welkynd Dagger,에일리드 웰킨드 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008948,RSORC08DragonclawOld,1,FULL,0,Old Dragonclaw Cleaver (Orc Weapon),낡은 용발톱 식칼 (오크 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06008949,RSORC07QuandaoOld,1,FULL,0,Old Quandao Cleaver (Orc Weapon),낡은 관도 식칼 (오크 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600894A,RSORC11OrcKnifeDagger,1,FULL,0,Orc Knife,오크 나이프,existing-6.9-context
@@ -13215,7 +13215,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06009786,FireGlowClaymoreOOO,1,FULL,0,Fireglow Claymore ,불빛 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06009787,FireGlowLongswordOOO,1,FULL,0,Fireglow Longsword ,불빛 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060097C4,GoblinBowOOO,1,FULL,0,Goblin Bow,고블린 활,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060097C5,GoblinCurvedDaggerOOO,1,FULL,0,Goblin Curved Dagger,고블린 굽은 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060097C5,GoblinCurvedDaggerOOO,1,FULL,0,Goblin Curved Dagger,고블린 굽은 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060097C6,GoblinSawOOO,1,FULL,0,Goblin Saw,고블린 톱,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060097C7,GoblinMoriaOOO,1,FULL,0,Goblin Moria,고블린 모리아,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060097C8,GoblinMoriOOO,1,FULL,0,Goblin Mori,고블린 모리,existing-6.9-context
@@ -13254,15 +13254,15 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC71,OrcaWeapPurpleAstralGlassBattleAxe,1,FULL,0,Purple Astral Glass Battle Axe,보라색 성계 글래스 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC72,OrcaWeapPurpleAstralGlassBow,1,FULL,0,Purple Astral Glass Bow,보라색 성계 글래스 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC73,OrcaWeapPurpleAstralGlassClaymore,1,FULL,0,Purple Astral Glass Claymore,보라색 성계 글래스 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC74,OrcaWeapPurpleAstralGlassDagger,1,FULL,0,Purple Astral Glass Dagger,보라색 성계 글래스 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC74,OrcaWeapPurpleAstralGlassDagger,1,FULL,0,Purple Astral Glass Dagger,보라색 성계 글래스 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC75,OrcaWeapPurpleAstralGlassLongsword,1,FULL,0,Purple Astral Glass Longsword,보라색 성계 글래스 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC76,OrcaWeapPurpleAstralGlassMace,1,FULL,0,Purple Astral Glass Mace,보라색 성계 글래스 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC77,OrcaWeapPurpleAstralGlassShortsword,1,FULL,0,Purple Astral Glass Shortsword,보라색 성계 글래스 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC77,OrcaWeapPurpleAstralGlassShortsword,1,FULL,0,Purple Astral Glass Shortsword,보라색 성계 글래스 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC78,OrcaWeapPurpleAstralGlassWarAxe,1,FULL,0,Purple Astral Glass War Axe,보라색 성계 글래스 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AC79,OrcaWeapPurpleAstralGlassWarHammer,1,FULL,0,Purple Astral Glass Warhammer,보라색 성계 글래스 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AEE3,AOHWLongswordFlame,1,FULL,0,Heaven's Glory,천상의 영광,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600AF7C,sOOOSnagaBattleaxe,1,FULL,0,Luminara,루미나라,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B07F,JCPKillDagger,1,FULL,0,Dagger of Erasure,말소의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B07F,JCPKillDagger,1,FULL,0,Dagger of Erasure,말소의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B0AB,RSNordBroadedgeDagger,1,FULL,0,Broadedge (Nord Weapon),넓은 날 (노르드 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B195,ArenaLongSpear,1,FULL,0,Long Spear,긴 창,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B196,ArenaSenseSilverOOO,1,FULL,0,Silver War Scythe,은 전투낫,existing-6.9-context
@@ -13281,12 +13281,12 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E3,RSDunmerChimerSaberOldClaymore,1,FULL,0,Old Dunmer Chimer Saber ,낡은 던머 키머 세이버,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E4,RSDunmerCommanderSaberOldLongsword,1,FULL,0,Old Dunmer Saber,낡은 던머 세이버,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E5,RSDunmerCommanderCutlassOldShortsword,1,FULL,0,Old Dunmer Cutlass,낡은 던머 커틀러스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E6,RSDunmerCrescentDaggerOld,1,FULL,0,Old Dunmer Crescent Dagger ,낡은 던머 초승달 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E6,RSDunmerCrescentDaggerOld,1,FULL,0,Old Dunmer Crescent Dagger ,낡은 던머 초승달 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E7,RSDunmerCrescentScimitarOldShortsword,1,FULL,0,Old Dunmer Crescent Scimitar ,낡은 던머 초승달 시미터,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E8,RSDunmerEagleScimitarOldLongsword,1,FULL,0,Old Dunmer Short Scimitar ,낡은 던머 짧은 시미터,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3E9,RSDunmerEbonyClawOldDagger,1,FULL,0,Old Dunmer Claw,낡은 던머 발톱,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3EA,RSDunmerHookSaberOldLongsword,1,FULL,0,Old Dunmer Hook Saber ,낡은 던머 갈고리 세이버,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3EB,RSDunmerJodyDaggerOldDagger,1,FULL,0,Old Dunmer Jody Dagger,낡은 던머 조디 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3EB,RSDunmerJodyDaggerOldDagger,1,FULL,0,Old Dunmer Jody Dagger,낡은 던머 조디 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3EC,RSDunmerLeafOldClaymore,1,FULL,0,Old Dunmer Leaf Blade ,낡은 던머 나뭇잎 칼날,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3ED,RSDunmerMoricheJambiyaOldDagger,1,FULL,0,Old Dunmer Moriche Jambiya ,낡은 던머 모리케 잠비야,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B3EE,RSDunmerScimitarOldLongsword,1,FULL,0,Old Dunmer Scimitar ,낡은 던머 시미터,existing-6.9-context
@@ -13300,7 +13300,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B61D,ArenaOrcishBattleaxe,1,FULL,0,Orcish Battle Axe,오크제 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B61E,ArenaOrcishMace,1,FULL,0,Orcish Mace,오크제 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B61F,ArenaWeapDwarvenWarHammer,1,FULL,0,Dwemer Warhammer,드웨머 전투망치,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B620,ArenaAdamantiumShortSword,1,FULL,0,Adamantium Shortsword,아다만티움 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B620,ArenaAdamantiumShortSword,1,FULL,0,Adamantium Shortsword,아다만티움 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600B99D,RSORCBow,1,FULL,0,Orc Elite War Bow,오크 정예 전쟁 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600BAA5,RSGoblinShamanStaff02,1,FULL,0,Goblin Staff,고블린 지팡이,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600BDE2,RSDunmerBow01UniqueEn,1,FULL,0,Race Hunter (Dunmer Weapon),종족 사냥꾼 (던머 무기),existing-6.9-context
@@ -13314,7 +13314,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600C62A,OOOSenseDaedraUnique,1,FULL,0,The Annihilator TO USE,The Annihilator TO USE,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600C86B,sOOOAyleidFXLongSword,1,FULL,0,Ayleid Welkynd LS,에일리드 웰킨드 LS,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600CE3C,sOOODarkLegionLongsword,1,FULL,0,Sword of the Dark Legion,어둠 군단의 검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600CE5A,RSDunmerCrescentDagger,1,FULL,0,Dunmer Crescent Dagger,던머 초승달 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600CE5A,RSDunmerCrescentDagger,1,FULL,0,Dunmer Crescent Dagger,던머 초승달 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600CE5B,RSDunmerCrescentScimitarShortsword,1,FULL,0,Dunmer Crescent Scimitar,던머 초승달 시미터,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600D2EA,SenTineLWeaponsSylvanClaymore,1,FULL,0,Sylvan Crusade,숲의 성전,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0600D373,RSArgonian06GullBroadSwordLongswordOld,1,FULL,0,Old Argonian Gull Broadsword,낡은 아르고니안 갈매기 브로드소드,existing-6.9-context
@@ -13369,10 +13369,10 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104DC,OrcaWeapGreenAstralGlassBattleAxe,1,FULL,0,Green Astral Glass Battle Axe,녹색 성계 글래스 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104DD,OrcaWeapGreenAstralGlassBow,1,FULL,0,Green Astral Glass Bow,녹색 성계 글래스 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104DE,OrcaWeapGreenAstralGlassClaymore,1,FULL,0,Green Astral Glass Claymore,녹색 성계 글래스 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104DF,OrcaWeapGreenAstralGlassDagger,1,FULL,0,Green Astral Glass Dagger,녹색 성계 글래스 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104DF,OrcaWeapGreenAstralGlassDagger,1,FULL,0,Green Astral Glass Dagger,녹색 성계 글래스 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104E0,OrcaWeapGreenAstralGlassLongsword,1,FULL,0,Green Astral Glass Longsword,녹색 성계 글래스 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104E1,OrcaWeapGreenAstralGlassMace,1,FULL,0,Green Astral Glass Mace,녹색 성계 글래스 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104E2,OrcaWeapGreenAstralGlassShortsword,1,FULL,0,Green Astral Glass Shortsword,녹색 성계 글래스 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104E2,OrcaWeapGreenAstralGlassShortsword,1,FULL,0,Green Astral Glass Shortsword,녹색 성계 글래스 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104E3,OrcaWeapGreenAstralGlassWarAxe,1,FULL,0,Green Astral Glass War Axe,녹색 성계 글래스 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060104E4,OrcaWeapGreenAstralGlassWarHammer,1,FULL,0,Green Astral Glass Warhammer,녹색 성계 글래스 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06011ABD,sOOOSilverDragonStaffIce,1,FULL,0,Frostvein,서리핏줄,existing-6.9-context
@@ -13460,14 +13460,14 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601E546,RSXivilaiBroadword,1,FULL,0,Xivilai Broadsword,지빌라이 브로드소드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601E549,RSXivilaiCleaverMagma,1,FULL,0,Xivilai Magma Cleaver,지빌라이 마그마 식칼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601E54C,RSXivilaiBroadswordMagma,1,FULL,0,Xivilai Magma Broadsword,지빌라이 마그마 브로드소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601EDA7,DwemerTwinDaggerShock,1,FULL,0,Shock Twin Dagger,전격 쌍둥이 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601EDA7,DwemerTwinDaggerShock,1,FULL,0,Shock Twin Dagger,전격 쌍둥이 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601EDA8,DwemerTwinShortswordFrost,1,FULL,0,Freezing Twin Viper,동결 쌍둥이 독사,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601EDA9,DwemerTwinSwordFire,1,FULL,0,Burning Dwemer Twin Sword,불타는 드웨머 쌍둥이 검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F5FA,sOOODaedricBloodLongsword,1,FULL,0,Daedric Blood Longsword ,데이드라제 피 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F5FB,sOOODaedricBloodClaymore,1,FULL,0,Daedric Blood Claymore ,데이드라제 피 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F5FC,sOOODaedricBloodMaceEn,1,FULL,0,Mace of Sanguis,상귀스의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F603,sOOODaedricBloodBattleAxe,1,FULL,0,Daedric Blood Battle Axe ,데이드라제 피 전투도끼,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F604,sOOODaedricBloodShortsword,1,FULL,0,Daedric Blood Shortsword,데이드라제 피 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F604,sOOODaedricBloodShortsword,1,FULL,0,Daedric Blood Shortsword,데이드라제 피 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F605,sOOODaedricBloodWarAxe,1,FULL,0,Daedric Blood War Axe ,데이드라제 피 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F60C,sOOODaedricBloodBattleAxeEn,1,FULL,0,Battle Axe of Sanguis,상귀스의 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0601F60D,sOOODaedricrBloodClaymoreEn,1,FULL,0,Claymore of Sanguis,상귀스의 클레이모어,existing-6.9-context
@@ -13480,10 +13480,10 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020778,RSXivilaiKatana,1,FULL,0,Xivilai Katana,지빌라이 카타나,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020779,RSXivilaiKatanaMagma,1,FULL,0,Xivilai Magma Katana,지빌라이 마그마 카타나,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CB3,sOOODaedricBlackLongsword,1,FULL,0,Black Daedric Longsword,검은 데이드라제 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CB4,sOOODaedricBlackShortSword,1,FULL,0,Black Daedric Shortsword,검은 데이드라제 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CB4,sOOODaedricBlackShortSword,1,FULL,0,Black Daedric Shortsword,검은 데이드라제 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CB5,sOOODaedricBlackWarAxe,1,FULL,0,Black Daedric War Axe,검은 데이드라제 손도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CB9,sOOODaedricBlackClaymores,1,FULL,0,Black Daedric Claymore,검은 데이드라제 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CBA,sOOODaedricBloodDagger,1,FULL,0,Daedric Blood Dagger ,데이드라제 피 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CBA,sOOODaedricBloodDagger,1,FULL,0,Daedric Blood Dagger ,데이드라제 피 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CBB,sOOODaedricBloodBow,1,FULL,0,Daedric Blood Bow,데이드라제 피 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020CBC,sOOODaedricBloodMace,1,FULL,0,Daedric Blood Mace,데이드라제 피 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06020E4D,RSXivilaiKatanaMagmaLess,1,FULL,0,Xivilai Lesser Magma Katana,지빌라이 하급 마그마 카타나,existing-6.9-context
@@ -13494,12 +13494,12 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0602644B,WeapEboronClaymore,1,FULL,0,Eboron Broadsword (Dunmer Weapon),에보론 브로드소드 (던머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0602644C,WeapAdamantiumLongSword,1,FULL,0,Adamantium Longsword,아다만티움 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0602644D,WeapAdamantiumMace,1,FULL,0,Adamantium Mace,아다만티움 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,0602644E,WeapAdamantiumShortSword,1,FULL,0,Adamantium Shortsword,아다만티움 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,0602644E,WeapAdamantiumShortSword,1,FULL,0,Adamantium Shortsword,아다만티움 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0602644F,WeapAdamantiumWarAxe,1,FULL,0,Adamantium War Axe,아다만티움 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06026452,WeapAdamantiumBattleAxe,1,FULL,0,Adamantium Double Axe,아다만티움 이중 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06026453,WeapEboronBastardSwordClaymore,1,FULL,0,Eboron Bastard Sword (Dunmer Weapon),에보론 바스타드 검 (던머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06026454,WeapEboronBattleAxe,1,FULL,0,Eboron Double Axe (Dunmer Weapon),에보론 이중 도끼 (던머 무기),existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06026455,WeapEboronShortsword,1,FULL,0,Eboron Shortsword (Dunmer Weapon),에보론 숏소드 (던머 무기),existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06026455,WeapEboronShortsword,1,FULL,0,Eboron Shortsword (Dunmer Weapon),에보론 단검 (던머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06026456,WeapEboronWarAxeMace,1,FULL,0,Eboron War Axe (Dunmer Weapon),에보론 도끼 (던머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06026460,AncientSilverClaymore,1,FULL,0,USED Ancient Silver Claymore,USED Ancient Silver Claymore,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0602648D,WoodSilverBowMaplewood,1,FULL,0,UNIQUE Bow,고유 활,existing-6.9-context
@@ -13530,13 +13530,13 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060308D8,ScimitarUniquePurple,1,FULL,0,Ideal Crystal Scimitar,이상 수정 시미터,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06030FBF,NatureCrowsEdge,1,FULL,0,Crow's Edge ,까마귀의 칼날,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06030FC1,NatureBighornMace,1,FULL,0,Shudderhorn,전율의 뿔,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06030FC2,RSBosmerNobleDaggerNateneurotic,1,FULL,0,Sylvan Dagger (Bosmer Weapon),숲의 단검 (보스머 무기),existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06030FC2,RSBosmerNobleDaggerNateneurotic,1,FULL,0,Sylvan Dagger (Bosmer Weapon),숲의 단도 (보스머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06030FC5,NatureIbexHornBow,1,FULL,0,Nord Ibex Horn Bow ,노르드 아이벡스 뿔 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06030FC6,NatureDeadMapleBow,1,FULL,0,Dead Maple Recurve,죽은 단풍나무 반곡,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06030FC8,NatureReedBow,1,FULL,0,Reed Bow,갈대 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06034D50,OOOSerpentDagger,1,FULL,0,Serpent Dagger TO USE SI,Serpent Dagger TO USE SI,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06035AFE,DwemerTwinSword,1,FULL,0,Dwemer Twin Sword,드웨머 쌍둥이 검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06035AFF,DwemerTwinDagger,1,FULL,0,Dwemer Twin Dagger,드웨머 쌍둥이 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06035AFF,DwemerTwinDagger,1,FULL,0,Dwemer Twin Dagger,드웨머 쌍둥이 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06035B00,DwemerClaymoreExquisite,1,FULL,0,Exquisite Dwemer Claymore,정교한 드웨머 클레이모어,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06035B01,DwemerTwinShortsword,1,FULL,0,Dwemer Twin Viper,드웨머 쌍둥이 독사,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06035B03,DwemerShatterpunch,1,FULL,0,Shatterpunch,분쇄 타격,existing-6.9-context
@@ -13566,15 +13566,15 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0604738D,EnchAdamantiumWarAxeShock,1,FULL,0,War Axe of Lightning,번개의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0604738E,EnchAdamantiumWarAxeDisArmor,1,FULL,0,War Axe of Rending,파열의 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0604738F,EnchAdamantiumWarAxeDamageFatigue,1,FULL,0,War Axe of Bleeding,출혈의 도끼,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047390,EnchAdamantiumShortSwordFire,1,FULL,0,Shortsword of Scorching,작열의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047390,EnchAdamantiumShortSwordFire,1,FULL,0,Shortsword of Scorching,작열의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047391,EnchAdamantiumMaceFire,1,FULL,0,Mace of Scorching,작열의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047392,EnchAdamantiumLongSwordFire,1,FULL,0,Longsword of Scorching,작열의 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047393,EnchAdamantiumBattleAxeFire,1,FULL,0,Double Axe of Scorching,작열의 이중 도끼,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047394,EnchAdamantiumDaggerFire,1,FULL,0,Dagger of Scorching,작열의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047395,EnchAdamantiumShortSwordFrost,1,FULL,0,Shortsword of Blizzards,눈보라의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047396,EnchAdamantiumShortSwordShock,1,FULL,0,Shortsword of Lightning,번개의 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047397,EnchAdamantiumShortSwordDisArmor,1,FULL,0,Shortsword of Rending,찢어발기는 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047398,EnchAdamantiumShortSwordSilence,1,FULL,0,Shortsword of Silence,침묵의 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047394,EnchAdamantiumDaggerFire,1,FULL,0,Dagger of Scorching,작열의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047395,EnchAdamantiumShortSwordFrost,1,FULL,0,Shortsword of Blizzards,눈보라의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047396,EnchAdamantiumShortSwordShock,1,FULL,0,Shortsword of Lightning,번개의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047397,EnchAdamantiumShortSwordDisArmor,1,FULL,0,Shortsword of Rending,찢어발기는 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047398,EnchAdamantiumShortSwordSilence,1,FULL,0,Shortsword of Silence,침묵의 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06047399,EnchAdamantiumMaceFrost,1,FULL,0,Mace of Blizzards,눈보라의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0604739A,EnchAdamantiumMaceShock,1,FULL,0,Mace of Lightning,번개의 철퇴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0604739B,EnchAdamantiumMaceDisArmor,1,FULL,0,Mace of Shattering,분쇄의 철퇴,existing-6.9-context
@@ -13587,10 +13587,10 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A2,EnchAdamantiumBattleAxeShock,1,FULL,0,Double Axe of Lightning,라이트닝의 이중 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A3,EnchAdamantiumBattleAxeDisWeapon,1,FULL,0,Double Axe of Shattering,분쇄의 이중 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A4,EnchAdamantiumBattleAxeDemoralize,1,FULL,0,Double Axe of Fear,공포의 이중 도끼,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A5,EnchAdamantiumDaggerFrost,1,FULL,0,Dagger of Blizzards,눈보라의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A6,EnchAdamantiumDaggerShock,1,FULL,0,Dagger of Lightning,번개의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A7,EnchAdamantiumDaggerDisWeapon,1,FULL,0,Dagger of Shattering,분쇄의 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A8,EnchAdamantiumDaggerParalyze,1,FULL,0,Dagger of Immobilization,행동 불능의 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A5,EnchAdamantiumDaggerFrost,1,FULL,0,Dagger of Blizzards,눈보라의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A6,EnchAdamantiumDaggerShock,1,FULL,0,Dagger of Lightning,번개의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A7,EnchAdamantiumDaggerDisWeapon,1,FULL,0,Dagger of Shattering,분쇄의 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A8,EnchAdamantiumDaggerParalyze,1,FULL,0,Dagger of Immobilization,행동 불능의 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473A9,OOOUniqueSlitterbladeLongsword,1,FULL,0,USED JEPHRES STORY Slitterblade,USED JEPHRES STORY Slitterblade,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060473AA,OOOWeapCopperthorn1hLongsword,1,FULL,0,Copperthorn ,구리가시,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060476CB,MedivalLongswordLSA,1,FULL,0,Ancient Longsword,고대의 장검,existing-6.9-context
@@ -13606,10 +13606,10 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060541D8,Mag1aDaedricStaff,1,FULL,0,Daedric Ethereal Staff,데이드라제 영체 지팡이,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067091,aaaElvenGearBattleAxe,1,FULL,0,Welkynd Elven Battle Axe,웰킨드 엘프제 전투 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067092,aaaElvenGearClaymore,1,FULL,0,Welkynd Elven Claymore,웰킨드 엘프제 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067093,aaaElvenGearDagger,1,FULL,0,Welkynd Elven Dagger,웰킨드 엘프제 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067093,aaaElvenGearDagger,1,FULL,0,Welkynd Elven Dagger,웰킨드 엘프제 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067094,aaaElvenGearLongsword,1,FULL,0,Welkynd Elven Longsword,웰킨드 엘프제 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067095,aaaElvenGearMace,1,FULL,0,Welkynd Elven Mace,웰킨드 엘프제 철퇴,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067096,aaaElvenGearShortsword,1,FULL,0,Welkynd Elven Shortsword,웰킨드 엘프제 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067096,aaaElvenGearShortsword,1,FULL,0,Welkynd Elven Shortsword,웰킨드 엘프제 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067097,aaaElvenGearWarAxe,1,FULL,0,Welkynd Elven War Axe,웰킨드 엘프제 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067098,aaaElvenGearWarHammer,1,FULL,0,Welkynd Elven Warhammer,웰킨드 엘프제 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060670A6,OrcaWeapAzureGlassWarHammer,1,FULL,0,Azure Astral Glass Warhammer,하늘빛 성계 글래스 전투 망치,existing-6.9-context
@@ -13626,7 +13626,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060670EE,RSBosmer03BoneWakisakiShortsword,1,FULL,0,Bone Wakizashi (Bosmer Weapon),뼈 와키자시 (보스머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060670EF,RSBosmer08SeawardClaymore,1,FULL,0,Seaward Claymore (Bosmer Weapon),바다의 클레이모어 (보스머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060670F0,RSBosmer08bSeawardCutlassShortsword,1,FULL,0,Seaward Cutlass (Bosmer Weapon),바다의 커틀러스 (보스머 무기),existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060670F1,RSBosmer09IvoryDagger,1,FULL,0,Ivory Dagger (Bosmer Weapon),상아 단검 (보스머 무기),existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060670F1,RSBosmer09IvoryDagger,1,FULL,0,Ivory Dagger (Bosmer Weapon),상아 단도 (보스머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060670F2,RSBosmer07TulwarClaymore,1,FULL,0,Bone Tulwar (Bosmer Weapon),뼈 탈와르 (보스머 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067125,RSNordAxeWar2HOldBattleaxe,1,FULL,0,Old Nord Battleaxe,낡은 노르드 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067127,RSNordBow,1,FULL,0,Nord Bow,노르드 활,existing-6.9-context
@@ -13645,11 +13645,11 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06067158,RSArgonian10CorralniumNailDagger,1,FULL,0,Argonian Corralnium Nail,아르고니안 코랄늄 발톱,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0606715A,RSDunmerShokutoOldShortsword,1,FULL,0,Old Dunmer Shokuto ,낡은 던머 쇼쿠토,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671C7,CDagger7Leviathan,1,FULL,0,Basilisk TO USE SI,Basilisk TO USE SI,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671C8,CDagger2Scarab,1,FULL,0,Scarab Dagger,풍뎅이 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671C8,CDagger2Scarab,1,FULL,0,Scarab Dagger,풍뎅이 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671C9,OrcishBattleaxe,1,FULL,0,Orcish Battle Axe,오크제 전투도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671CA,OrcishBow,1,FULL,0,Orcish Bow,오크제 활,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671CB,OrcishClaymore,1,FULL,0,Orcish Claymore,오크제 클레이모어,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671CC,OrcishDagger,1,FULL,0,Orcish Dagger,오크제 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671CC,OrcishDagger,1,FULL,0,Orcish Dagger,오크제 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,060671CD,OrcishLongsword,1,FULL,0,Orcish Longsword,오크제 장검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06072763,RSImperialAsterix1BREDshortsword,1,FULL,0,Fine Asterix (Imperial Weapon),고급 아스테릭스 (제국 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06072764,RSImperialAsterix2AREDshortsword,1,FULL,0,Noble Asterix (Imperial Weapon),귀족 아스테릭스 (제국 무기),existing-6.9-context
@@ -13727,10 +13727,10 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100F9D,SenTineLWeaponsAkaviriNaginata,1,FULL,0,Akaviri Naginata,아카비리 나기나타,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100F9E,SenTineLWeaponsAkaviriNinjato,1,FULL,0,USED IN MQ09 Akaviri Ninjato,USED IN MQ09 Akaviri Ninjato,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FB0,00SilverDragonDaggerWar,1,FULL,0,Apophis War Dagger USED VOLKOTH,Apophis War Dagger USED VOLKOTH,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FB1,sOOOSilverDragonDaggerHeavy,1,FULL,0,Apophis Heavy Dagger,아포피스 중형 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FB1,sOOOSilverDragonDaggerHeavy,1,FULL,0,Apophis Heavy Dagger,아포피스 중형 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FD7,GizmodianAmazonPriestessgizAPFeatherwynd,1,FULL,0,Featherwynd,페더윈드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FD8,RSKhajiit01ArcherSwordShortsword,1,FULL,0,Khajiit Archer Sword ,카짓 궁수 검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FD9,RSKhajiit10HuntingDagger,1,FULL,0,Khajiit Hunting Dagger ,카짓 사냥 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FD9,RSKhajiit10HuntingDagger,1,FULL,0,Khajiit Hunting Dagger ,카짓 사냥 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FDA,RSRedguard09SilverKnifeDagger,1,FULL,0,Redguard Silver Knife,레드가드 은제 나이프,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FDB,RSKhajiit09ElvinKnifeDagger,1,FULL,0,Khajiit Elvin Knife ,카짓 엘프제 나이프,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FDC,RSKhajiit02BarrowSwordShortsword,1,FULL,0,Khajiit Barrow Sword,카짓 고분 검,existing-6.9-context
@@ -13745,7 +13745,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FE5,RSORC01MeyerOldLongsword,1,FULL,0,Old Meyer (Orc Weapon),오래된 마이어 (오크 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FE6,RSORC05BrokenHeadShortsword,1,FULL,0,Orc Broken Head Blade ,오크 깨진 머리 검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FE7,RSORC06WoodSwordClaymore,1,FULL,0,Orc Wood Sword ,오크 목재 검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FE8,RSORC10TetelaDagger,1,FULL,0,Tetela Dagger (Orc Weapon),테텔라 단검 (오크 무기),existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FE8,RSORC10TetelaDagger,1,FULL,0,Tetela Dagger (Orc Weapon),테텔라 단도 (오크 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FE9,RSORC03ScimitarShortsword,1,FULL,0,Orc Scimitar,오크 시미터,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FEA,RSORC09MiscitarDagger,1,FULL,0,Orc Miscitar ,오크 미시타르,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06100FEB,RSORC02HurukUsedLongsword,1,FULL,0,Used Huruk (Orc Weapon),사용된 후루크 (오크 무기),existing-6.9-context
@@ -13772,18 +13772,18 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06101836,RSImperialLance1ARED,1,FULL,0,Imperial Lance,제국 랜스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06101837,RSHircineLance,1,FULL,0,Hircine Lance,허씬 랜스,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AB5,shdwsword00sh,1,FULL,0,Superior Araelion WarSword,우수한 아라엘리온 전쟁검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AB6,Obsidianshdwshortsword07,1,FULL,0,Obsidian War Dagger,흑요석 전쟁 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AB6,Obsidianshdwshortsword07,1,FULL,0,Obsidian War Dagger,흑요석 전쟁 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AB7,ObsidianShdwwaraxe01,1,FULL,0,Obsidian War Axe,흑요석 도끼,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AB8,shdwsword00F,1,FULL,0,Flimsy Araelion War Sword TO USE,Flimsy Araelion War Sword TO USE,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AB9,ObsidianShdwwaraxe01Superior,1,FULL,0,Obsidian Burial,흑요석 매장,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABA,RSOrcshdwaraxe01Mace,1,FULL,0,Orc's Adamantium Axe,오크의 아다만티움 도끼,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABB,Araelionshdwshortsword07,1,FULL,0,Flimsy Araelion War Dagger,허술한 아라엘리온 전쟁 단검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABC,Obsidianshdwshortsword07Superior,1,FULL,0,Araelion War Dagger ,아라엘리온 전쟁 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABB,Araelionshdwshortsword07,1,FULL,0,Flimsy Araelion War Dagger,허술한 아라엘리온 전쟁 단도,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABC,Obsidianshdwshortsword07Superior,1,FULL,0,Araelion War Dagger ,아라엘리온 전쟁 단도,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABD,ObsidianShdwax02GlaiveBattleaxe,1,FULL,0,Obsidian Glaive,흑요석 글레이브,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABE,RSNordShdwax02fGlaiveBattleaxe,1,FULL,0,Arctic Glaive (Nord Weapon),극지의 글레이브 (노르드 무기),existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102ABF,ObsidianShdwax02BattleaxeGlaiveUnique,1,FULL,0,Xyrrakth,지라크스,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AC0,Obsidianshdwshortsword08,1,FULL,0,Obsidian Shortsword,흑요석 숏소드,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AC1,shdwshortsword08,1,FULL,0,Flimsy Shortsword,허술한 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AC0,Obsidianshdwshortsword08,1,FULL,0,Obsidian Shortsword,흑요석 단검,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AC1,shdwshortsword08,1,FULL,0,Flimsy Shortsword,허술한 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AC2,Obsidianshdwshortsword08superior,1,FULL,0,Araelion Obsidian Sword UNIQUE TO USE,Araelion Obsidian Sword UNIQUE TO USE,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AC3,Obsidianshdwwhammer01Mace,1,FULL,0,Light Obsidian Warhammer ,경량 흑요석 전투 망치,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06102AC4,MirondilShdwWhammer01fMace,1,FULL,0,Mirondil Light Warhammer,미론딜 경량 전쟁망치,existing-6.9-context
@@ -13807,7 +13807,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06103869,FireDaemonBattleAxeScorch,1,FULL,0,Ul’Ashkar,울아슈카르,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,0610469A,aaAbyss,1,FULL,0,Abyss Predator,심연 포식자,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,00000C0C,WeapIronLongsword,1,FULL,0,Iron Longsword,철 장검,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,WEAP,00000C0D,WeapIronShortsword,1,FULL,0,Iron Shortsword,철 숏소드,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,WEAP,00000C0D,WeapIronShortsword,1,FULL,0,Iron Shortsword,철 단검,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06AAC352,WeapSteelSpear,1,FULL,0,Steel Spear,강철 창,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06AAC353,WeapSilverSpear,1,FULL,0,Silver Spear,은제 창,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,WEAP,06AAC354,WeapDwarvenSpear,1,FULL,0,Dwemer Spear,드웨머 창,existing-6.9-context
@@ -18195,7 +18195,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,CELL,061034C2,sOOORRShialiama07,1,FULL,0,Shialiama Cave,시알리아마 동굴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,000149A8,ReedstandCave,1,FULL,0,Reedstand Cave,갈대초목 동굴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,0001662C,Wendelbek,1,FULL,0,Wendelbek,웬델베크,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,CELL,00016884,Mackamentain03,1,FULL,0,Necromancer's Asylum,네크로맨서의 망명처,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,CELL,00016884,Mackamentain03,1,FULL,0,Necromancer's Asylum,강령술사의 망명처,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,0001C388,FortHomestead03,1,FULL,0,Fort Homestead Heroes' Hall,홈스테드 요새 영웅의 홀,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,0002C170,ICMarketDistrictAFightingChance,1,FULL,0,A Fighting Chance,싸움의 기회 상점,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,00059094,FortCedrian02,1,FULL,0,Fort Cedrian Mausoleum,세드리안 요새 영묘,existing-6.9-context
@@ -18250,7 +18250,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,CELL,0008B333,CharcoalCave03,1,FULL,0,Charcoal Cave - Bandit Lair,숯 동굴 - 도적의 소굴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,0101948B,RedGillCaverns,1,FULL,0,Red Gill Cave,붉은 아가미 동굴,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,06102C17,sOOOSpeluncaCruoris03,1,FULL,0,Spelunca Cruoris - Sacrifice Chamber,스펠룬카 크루오리스 - 희생의 방,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,CELL,00014995,EchoCave03,1,FULL,0,Echo Necromancer's Chamber,메아리 동굴 네크로맨서의 방,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,CELL,00014995,EchoCave03,1,FULL,0,Echo Necromancer's Chamber,메아리 동굴 강령술사의 방,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,00033C05,SancreTor04,1,FULL,0,"Sancre Tor, Catacombs","생커 토르, 지하 묘지",existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,0004754D,OblivionRD002Tower01Left,1,FULL,0,Eruption,분출,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,CELL,000A145D,CapstoneCave02,1,FULL,0,Capstone Great Cavern,캡스톤 대동굴,existing-6.9-context
@@ -19484,18 +19484,18 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,INFO,0601A847,,11,NAM1,2,"Please, take us there.",부디 그곳까지 데려다주게.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,00007BF2,Dark10SpecialWizard,2,FULL,0,Affairs of a Wizard,마법사의 용무,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,00007BF2,Dark10SpecialWizard,9,CNAM,0,"I have received my new orders from Lucien Lachance. I must go to Leafrot Cave and kill a necromancer who has begun the process of transforming himself into a lich. This nhecromancer, Celedaen, has not yet completed his metamorphosis, but is still incredibly powerful - possibly too powerful to kill if faced directly. I should search the cave for Celedaen's writings and try to discover his weakness.","루시엔 라찬스에게 새 명령을 받았다. 리프로트 동굴로 가서 리치로 변신하는 과정을 시작한 강령술사를 죽여야 한다. 셀레데인은 아직 변신을 완성하지 않았지만 엄청나게 강력하며, 정면으로 맞서면 죽일 수 없을지도 모른다. 동굴에서 그의 기록을 찾아 약점을 알아내야 한다.",existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,00007BF2,Dark10SpecialWizard,18,CNAM,1,"I have discovered the journal of the necromancer Celedaen. It appears he has used a magic hourglass called the Sands of Resolve to turn himself into a lich and extend his life indefinitely. The process is not yet complete, however, and the hourglass must remain on Celedaen's person for some time, as it contains his life force. If I could remove the Sands of Resolve from Celedaen's posession, perhaps through pickpocketing, he would surely die.",나는 네크로맨서 셀레다엔의 일지를 발견했다. 그 일지에는 그가 불멸의 리치로 변화 시켜주는 결의의 모래시계라는 마법 모래시계를 사용했다고 쓰여져 있었다. 그러나 그 과정은 아직 끝난 것이 아니며 그의 생명력을 담고 있는 모래시계는 언제나 셀레다엔의 곁에 남아있어야만 한다. 만일 그의 주머니 속에 있을 것으로 생각되는 결의의 모래시계를 그에게서 떼어놓을 수 있다면 그는 반드시 죽을 것이다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,00007BF2,Dark10SpecialWizard,18,CNAM,1,"I have discovered the journal of the necromancer Celedaen. It appears he has used a magic hourglass called the Sands of Resolve to turn himself into a lich and extend his life indefinitely. The process is not yet complete, however, and the hourglass must remain on Celedaen's person for some time, as it contains his life force. If I could remove the Sands of Resolve from Celedaen's posession, perhaps through pickpocketing, he would surely die.",나는 강령술사 셀레다엔의 일지를 발견했다. 그 일지에는 그가 불멸의 리치로 변화 시켜주는 결의의 모래시계라는 마법 모래시계를 사용했다고 쓰여져 있었다. 그러나 그 과정은 아직 끝난 것이 아니며 그의 생명력을 담고 있는 모래시계는 언제나 셀레다엔의 곁에 남아있어야만 한다. 만일 그의 주머니 속에 있을 것으로 생각되는 결의의 모래시계를 그에게서 떼어놓을 수 있다면 그는 반드시 죽을 것이다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,00007BF2,Dark10SpecialWizard,22,CNAM,2,"Celedaen is dead. I must pick up my reward and next contract at the dead drop located in an old sack hidden in the bushes beneath the Great Oak, in the city of Chorrol.",셀레다엔은 죽었다. 코롤 시의 거대한 참나무 아래 덤불 속에 숨겨진 비밀 지점에서 보수와 다음 의뢰를 받아야 한다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,00007BF2,Dark10SpecialWizard,30,CNAM,3,I have picked up my reward and received my next contract.,나는 보수를 챙기고 다음 의뢰를 받았다.,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,2,FULL,0,The Necromancer's Amulet,네크로맨서의 아뮬렛,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,9,CNAM,0,"I need to travel to Fort Ontus to retrieve the Necromancer's Amulet, and return it to the Imperial City.",온터스 요새로 가서 네크로맨서 아물렛을 회수한 다음 임페리얼시티로 돌아가야한다.,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,16,CNAM,1,"I've arrived at Fort Ontus. I need to find Caranya, and get the Necromancer's Amulet from her.",온터스 요새에 도착했다. 이제 카라냐를 찾아서 네크로맨서 아물렛을 되찾아야겠다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,2,FULL,0,The Necromancer's Amulet,강령술사의 아뮬렛,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,9,CNAM,0,"I need to travel to Fort Ontus to retrieve the Necromancer's Amulet, and return it to the Imperial City.",온터스 요새로 가서 강령술사 아물렛을 회수한 다음 임페리얼시티로 돌아가야한다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,16,CNAM,1,"I've arrived at Fort Ontus. I need to find Caranya, and get the Necromancer's Amulet from her.",온터스 요새에 도착했다. 이제 카라냐를 찾아서 강령술사 아물렛을 되찾아야겠다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,26,CNAM,2,"Caranya was a traitor to the Mages Guild, and intended to deliver the Amulet to the King of Worms. I need to get out of Fort Ontus and take the Amulet back to the Arcane University.","카라냐는 메이지 길드를 배신했고, 벌레의 왕에게 아뮬렛을 건내주려 했다. 이제 온투스 요새를 나와서 아뮬렛을 아케인 대학으로 가져가야 한다.",existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,47,CNAM,3,I've delivered the Necromancer's Amulet to Hannibal Traven.,네크로맨서 아물렛을 한니발 트래븐에게 건내주었다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03A,MG16Amulet,47,CNAM,3,I've delivered the Necromancer's Amulet to Hannibal Traven.,강령술사 아물렛을 한니발 트래븐에게 건내주었다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,2,FULL,0,Ambush,급습,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,9,CNAM,0,I need to travel to the south of Cyrodiil and meet a group of Battlemages preparing to storm the ruins of Silorn.,사일론의 폐허에서 기습 준비 중인 배틀 메이지들을 만나러 시로딜 남쪽으로 떠나야 한다.,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,21,CNAM,1,"I have arrived at Silorn, and spoken with Thalfin. We cannot enter the ruins, so I must help prepare an ambush for the Necromancers when they attempt to leave.",사일론에 도착한 난 탈핀과 대화했다. 유적으로 들어갈 수 없기에 네크로맨서들이 떠날 채비를 할 때까지 매복해야 한다.,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,26,CNAM,2,I have been discovered by the Necromancers at Silorn. They will surely have alerted Falcar; I'll need to enter the ruins and find him.,사일론에 있던 네크로맨서들이 나를 발견하였다. 그들은 분명히 팔카에게 알릴 것이다. 유적으로 들어가서 그를 찾아야 한다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,21,CNAM,1,"I have arrived at Silorn, and spoken with Thalfin. We cannot enter the ruins, so I must help prepare an ambush for the Necromancers when they attempt to leave.",사일론에 도착한 난 탈핀과 대화했다. 유적으로 들어갈 수 없기에 강령술사들이 떠날 채비를 할 때까지 매복해야 한다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,26,CNAM,2,I have been discovered by the Necromancers at Silorn. They will surely have alerted Falcar; I'll need to enter the ruins and find him.,사일론에 있던 강령술사들이 나를 발견하였다. 그들은 분명히 팔카에게 알릴 것이다. 유적으로 들어가서 그를 찾아야 한다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,30,CNAM,3,Falcar has fled back into the ruins of Silorn. I must find him.,팔카가 사일론 유적 내부로 달아났다. 그를 반드시 찾아야 한다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,34,CNAM,4,I've recovered the Black Soul Gem. It needs to be taken back to Hannibal Traven at the Arcane University.,검은 소울젬을 되찾았다. 아케인 대학에 있는 한니발 트래븐에게 가져다 줘야겠다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0000C03B,MG17Ambush,43,CNAM,5,The Black Soul Gem has been delivered to Hannibal Traven.,검은 소울젬이 한니발 트래븐에게 전해졌다.,existing-6.9-context

@@ -11,6 +11,7 @@ from tempfile import TemporaryDirectory
 from build_obcjk_overlay import records
 from build_unofficial_release import rewrite
 from build_vanilla_overlay import sha256_file
+from issue24_25_followup import correct
 
 # English and Korean plugin SHA-256, respectively.
 MODS = {
@@ -31,6 +32,16 @@ RANKS = {
     "Tyro": "수습생", "Enforcer": "집행관", "Aspirant": "지원자", "Disciple": "제자",
     "Fellow": "정회원", "Expert": "전문가", "Mentor": "지도관", "Headmaster": "길드장",
 }
+
+FOLLOWUP_MODS = {
+    "steps": (*MODS["steps"][:2], "929bad632475d72896bc61840a6933692a8b18e2409bf51e1ed9fc3234615fb6"),
+    "spires": (*MODS["spires"][:2], "e1aa88656ea9b297abc8bb99840c200aafe987090272d06df58f9fc5774f1062"),
+    "ooo-base": (*MODS["ooo-base"][:2], "013a9875ff7a947af922cb8f0a3f1c854ac30c73f815eb56fd5bfb9471dd135b"),
+    "ooo-esp": ("Oscuro's_Oblivion_Overhaul.esp",
+                "de46c371ebd681d6a7c05b5f836d60113d987679ffd13da36b11970b3d81037e",
+                "ce74e591b3ad11c49479adaa27322da3b6035278a91eda2336d3fe282011ab49"),
+}
+FOLLOWUP_FIELDS = {b"FULL", b"NAM1", b"CNAM", b"DESC", b"MNAM", b"FNAM"}
 # The original creatures share the same raw ingredients and cooking recipes.
 FISH = {
     0x013A6833: ("Marlin Fillet", "청새치 살코기", "생선 살코기"),
@@ -110,6 +121,45 @@ def build(mod: str, english: Path, korean: Path, output: Path) -> int:
             or mod == "spires" and count != 2 * len(RANKS)
             or ingredients and count != len(ingredients)):
         raise ValueError(f"Incomplete correction set for {name}: {count}")
+    return write_changes(korean, output, changes)
+
+
+def followup(mod: str, english: Path, korean: Path, output: Path) -> int:
+    name, english_sha, korean_sha = FOLLOWUP_MODS[mod]
+    if sha256_file(english) != english_sha or sha256_file(korean) != korean_sha:
+        raise ValueError(f"Wrong source release for {name}")
+    if output.name != name or output.exists():
+        raise ValueError(f"Use a new output path ending in {name}")
+    original = {key: fields for key, _, fields, _ in records(english)}
+    changes = defaultdict(dict)
+    for key, _, fields, _ in records(korean):
+        kind, fid = key
+        source_fields = original.get(key, ())
+        for index, (tag, raw, _) in enumerate(fields):
+            if tag not in FOLLOWUP_FIELDS or (tag == b"CNAM" and kind != b"QUST"):
+                continue
+            if index >= len(source_fields) or source_fields[index][0] != tag:
+                continue
+            source = source_fields[index][1].rstrip(b"\0")
+            current = raw.rstrip(b"\0")
+            if b"\0" in source or b"\0" in current:
+                continue
+            try:
+                text = current.decode("utf-8")
+                en = source.decode("cp1252")
+            except UnicodeDecodeError:
+                continue
+            updated = correct(en, text, kind, tag, fid)
+            if updated != text:
+                changes[key][index] = (tag, raw, updated.encode() + (b"\0" if raw.endswith(b"\0") else b""))
+    if not changes:
+        raise ValueError(f"No follow-up corrections found in {name}")
+    return write_changes(korean, output, changes)
+
+
+def write_changes(korean, output, changes):
+    name = output.name
+    count = sum(map(len, changes.values()))
     output.parent.mkdir(parents=True, exist_ok=True)
     with TemporaryDirectory(dir=output.parent) as directory:
         staged = Path(directory) / name
@@ -130,12 +180,16 @@ def build(mod: str, english: Path, korean: Path, output: Path) -> int:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mod", choices=MODS)
+    parser.add_argument("mod", choices=MODS.keys() | FOLLOWUP_MODS.keys())
     parser.add_argument("english", type=Path)
     parser.add_argument("korean", type=Path)
     parser.add_argument("output", type=Path, help="New path with the original ESP filename")
+    parser.add_argument("--followup", action="store_true", help="Apply the remaining corrections to the previous Korean release")
     args = parser.parse_args()
-    count = build(args.mod, args.english, args.korean, args.output)
+    function = followup if args.followup else build
+    if args.mod not in (FOLLOWUP_MODS if args.followup else MODS):
+        parser.error("That mod is unavailable in the selected mode")
+    count = function(args.mod, args.english, args.korean, args.output)
     print(f"{args.output}: {count} corrected fields verified")
 
 

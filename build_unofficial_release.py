@@ -10,6 +10,8 @@ save-era English location-name guard are no longer part of the release policy.
 
 from __future__ import annotations
 
+from issue24_25_followup import correct as correct_issue24_25_followup
+
 import argparse
 import csv
 import hashlib
@@ -350,6 +352,13 @@ def collect_changes(original: Path, prior: Path | None, vanilla_audit=None, vani
                 replacement = correct_selected_book(
                     original.name, key[1], old_editor, old, replacement,
                     load_issue6_book_manifest())
+
+            english = decode_english(old)
+            text = replacement[:-1].decode("utf-8") if replacement is not None else english
+            updated = correct_issue24_25_followup(
+                english, text, key[0], field, base_formid, base_ids=identity is not None)
+            if updated != text:
+                replacement = updated.encode("utf-8") + b"\0"
 
             # Reject catastrophic future truncation: BOOK/DESC cannot silently
             # become just the title, even when it is non-empty valid UTF-8.
