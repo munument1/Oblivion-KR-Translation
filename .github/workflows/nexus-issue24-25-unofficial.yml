@@ -1,0 +1,90 @@
+name: Upload issue 24–25 unofficial translations to Nexus
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nexus-issue24-25-unofficial
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - patch: UOP
+            nexus: '56639'
+            file_id: '8036688'
+            version: '3.5.9a-KR1.15'
+            display: UOP KR UTF8 obCJK
+            original: '5296'
+          - patch: USIP
+            nexus: '56640'
+            file_id: ''
+            version: '1.6.2-KR1.11'
+            display: Unofficial Shivering Isles Patch KR
+            original: '10739'
+          - patch: UODP
+            nexus: '56641'
+            file_id: '8036709'
+            version: '27-KR1.12'
+            display: UODP KR UTF8 obCJK
+            original: '9969'
+    steps:
+      - name: Verify staged ZIP and Nexus target
+        id: target
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          PATCH: ${{ matrix.patch }}
+          NEXUS: ${{ matrix.nexus }}
+          FILE_ID: ${{ matrix.file_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ $(gh release view nexus-staging-issue24-25 --json isDraft --jq .isDraft) == true ]]
+          filename="${PATCH}_KR_issue24-25.zip"
+          gh release download nexus-staging-issue24-25 --pattern "$filename" --pattern "$filename.sha256"
+          sha256sum --check "$filename.sha256"
+          api() { curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $KEY" "https://api.nexusmods.com/v3/$1"; }
+          mod_id=$(api "games/oblivion/mods/$NEXUS" | jq -er '.data.id')
+          if [[ "$PATCH" == USIP ]]; then
+            FILE_ID=$(api 'games/oblivion/mod-file-versions/1000046772' | jq -er '.data | select(.version == "1.6.2-KR1.5") | .file.id')
+          fi
+          api "mods/$mod_id/files" | jq -e --arg id "$FILE_ID" '.data.mod_files[] | select((.id | tostring) == $id and .is_active)'
+          printf 'filename=%s\nfile_id=%s\nmod_id=%s\n' "$filename" "$FILE_ID" "$mod_id" >> "$GITHUB_OUTPUT"
+      - name: Upload Korean translation update
+        id: nexus
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ steps.target.outputs.file_id }}
+          mod_id: ${{ steps.target.outputs.mod_id }}
+          filename: ${{ steps.target.outputs.filename }}
+          version: ${{ matrix.version }}
+          display_name: ${{ matrix.display }}
+          description: 'Unofficial Patch Project Team의 원본이 필요한 한국어 번역 교체본입니다. 원본 https://www.nexusmods.com/oblivion/mods/${{ matrix.original }} . 생성형 AI를 번역 교정에 사용했습니다.'
+          changelog: 'GitHub #24·#25 제보를 반영해 본편 v1.2.2와 용어를 맞추고 해당 패치의 한국어 문구를 교정했습니다. 실게임 플레이 검증은 생략했습니다.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Verify published Nexus version
+        env:
+          KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          VERSION: ${{ matrix.version }}
+          FILE_ID: ${{ steps.target.outputs.file_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $KEY" "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" |
+            jq -e --arg v "$VERSION" --arg id "$FILE_ID" '.data.version == $v and (.data.file.id | tostring) == $id'
