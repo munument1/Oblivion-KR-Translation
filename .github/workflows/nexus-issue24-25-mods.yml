@@ -1,0 +1,100 @@
+name: Upload issue 24–25 mod translations to Nexus
+
+on:
+  workflow_dispatch:
+    inputs:
+      patch:
+        description: Which Nexus translation to publish
+        type: choice
+        options: [all, Steps, Spires, MOO, OOO]
+        default: all
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nexus-issue24-25-mods
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - patch: Steps
+            nexus: '56709'
+            version: '3.8.6-KR1.1'
+            source: https://www.nexusmods.com/oblivion/mods/16316
+            changelog: 에일리드 석판 단서 4개를 번역하고 대마법사 표기를 통일했습니다.
+          - patch: Spires
+            nexus: '56708'
+            version: '14-KR1.1'
+            source: https://www.nexusmods.com/oblivion/mods/12997
+            changelog: 고고학 길드의 남녀 계급 표기를 한국어로 번역했습니다.
+          - patch: MOO
+            nexus: '56711'
+            version: '5.0.7-KR1.3'
+            source: https://www.nexusmods.com/oblivion/mods/42780
+            changelog: 같은 전리품을 공유하는 물고기들의 연금술 재료명을 통일했습니다.
+          - patch: OOO
+            nexus: '56710'
+            version: '1.7.2-KR1.3'
+            source: https://www.nexusmods.com/oblivion/mods/46199
+            changelog: 신비한 임프의 쓸개를 신비한 임프의 담즙으로 교정했습니다.
+    steps:
+      - name: Verify archive and resolve the current Nexus file
+        if: inputs.patch == 'all' || inputs.patch == matrix.patch
+        id: target
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          PATCH: ${{ matrix.patch }}
+          NEXUS: ${{ matrix.nexus }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ $(gh release view nexus-staging-issue24-25 --json isDraft --jq .isDraft) == true ]]
+          filename="${PATCH}_KR_issue24-25.zip"
+          gh release download nexus-staging-issue24-25 --pattern "$filename" --pattern "$filename.sha256"
+          sha256sum --check "$filename.sha256"
+          api() { curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $KEY" "https://api.nexusmods.com/v3/$1"; }
+          mod_id=$(api "games/oblivion/mods/$NEXUS" | jq -er '.data.id')
+          groups=$(api "mods/$mod_id/files" | jq -c '[.data.mod_files[] | select(.is_active)]')
+          jq -e 'length == 1' <<< "$groups"
+          file_id=$(jq -er '.[0].id' <<< "$groups")
+          display=$(jq -er '.[0].name' <<< "$groups")
+          printf 'filename=%s\nfile_id=%s\nmod_id=%s\ndisplay=%s\n' "$filename" "$file_id" "$mod_id" "$display" >> "$GITHUB_OUTPUT"
+      - name: Upload Korean translation update
+        if: inputs.patch == 'all' || inputs.patch == matrix.patch
+        id: nexus
+        uses: Nexus-Mods/upload-action@98532f7670c27cbecc78fae03fa3e278147827e2
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ steps.target.outputs.file_id }}
+          mod_id: ${{ steps.target.outputs.mod_id }}
+          filename: ${{ steps.target.outputs.filename }}
+          version: ${{ matrix.version }}
+          display_name: ${{ steps.target.outputs.display }}
+          description: '원본 모드가 필요한 한국어 번역 교체본입니다. 원작과 제작자 정보는 ${{ matrix.source }} 및 ZIP의 안내문을 참조하세요. 생성형 AI를 번역 교정에 사용했습니다.'
+          changelog: 'GitHub #24·#25 교정. ${{ matrix.changelog }} 레코드와 ZIP 해시를 검증했으며 실게임 플레이 검증은 생략했습니다.'
+          category: main
+          archive_existing_version: 'false'
+          primary_mod_manager_download: 'true'
+          allow_mod_manager_download: 'true'
+          update_mod_version: 'true'
+      - name: Verify published Nexus version
+        if: inputs.patch == 'all' || inputs.patch == matrix.patch
+        env:
+          KEY: ${{ secrets.NEXUSMODS_API_KEY }}
+          VERSION_ID: ${{ steps.nexus.outputs.version_id }}
+          VERSION: ${{ matrix.version }}
+          FILE_ID: ${{ steps.target.outputs.file_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail-with-body --silent --show-error --retry 2 --header "apikey: $KEY" "https://api.nexusmods.com/v3/mod-file-versions/$VERSION_ID" |
+            jq -e --arg v "$VERSION" --arg id "$FILE_ID" '.data.version == $v and (.data.file.id | tostring) == $id'
