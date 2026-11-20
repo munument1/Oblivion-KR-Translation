@@ -3,7 +3,7 @@
   "source_nexus": "https://www.nexusmods.com/oblivion/mods/47187",
   "source_folder_label": "OOO Enhanced 47187 6.9 2026-11-08T09-29Z lE8Jkepq",
   "version_identified_from": "OOO Enhanced.esp TES4/SNAM begins 6.9a",
-  "translation_sha256": "7abd388393a42787f402ed3b83b317e6ceef60d1f6cfa2a0e163b87e500ed354",
+  "translation_sha256": "31cb659f22f8bb38e5f84cd3e176db930988cb5b90cdda63600e7903eee40df4",
   "plugins": {
     "00 Base (No main resources)/OOO Enhanced.esp": {
       "sha256": "86828428caca46f06c48a3a7ebfbc2a838170a9680931282407a799cf1719e17",

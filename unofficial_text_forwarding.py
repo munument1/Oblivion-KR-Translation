@@ -35,6 +35,9 @@ def main_translations(root, *, include_issue8=False):
         correct_context_verified_names(table, root / 'canonical_translation_v2.csv')
         correct_cupboard_names(table, root / 'canonical_translation_v2.csv')
         correct_glossary_exceptions(table, root / 'canonical_translation_v2.csv')
+        fixes = load_translations(root / 'canonical_issue24_25_fixes_v1.csv', encoded_column='obcjk_utf8_hex')
+        for key, entries in fixes.items():
+            table[key].extend(entries)
     with (root / 'canonical_locations_v2.csv').open(encoding='utf-8-sig', newline='') as stream:
         for row in csv.DictReader(stream):
             item = Translation(row['effective_source'], row['record_type'].encode(),

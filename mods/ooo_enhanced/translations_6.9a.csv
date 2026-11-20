@@ -2991,7 +2991,7 @@
 00 Base (No main resources)/OOO Enhanced.esp,ARMO,06026474,NLsturdygloves,1,FULL,0,Sturdy Leather Gloves,튼튼한 가죽 장갑,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,ARMO,06026475,NLSturdyleathertrousers,1,FULL,0,Sturdy Leather Trousers,튼튼한 가죽 바지,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,ARMO,06026476,NLSturdyLeatherVest,1,FULL,0,Sturdy Leather Cuirass,튼튼한 가죽 흉갑,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,ARMO,06026477,NLnordicfurboots,1,FULL,0,Nordic Fur Boots,노르드식 털가죽 전투화,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,ARMO,06026477,NLnordicfurboots,1,FULL,0,Nordic Fur Boots,노르드식 모피 전투화,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,ARMO,06026478,NLDoeCuirass,1,FULL,0,Waxed Cuirass,밀랍을 바른 흉갑,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,ARMO,06026479,NLDoeGreaves,1,FULL,0,Waxed Greaves,밀랍을 바른 각반,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,ARMO,0602647A,NLDoeHelmet,1,FULL,0,Waxed Helmet,밀랍을 바른 투구,existing-6.9-context
@@ -11493,7 +11493,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,MISC,06102000,AADBHead,1,FULL,0,Head,머리,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,MISC,06102001,AADBEmptyBottle,1,FULL,0,Empty Potion Bottle,빈 물약병,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,MISC,06103B4E,AA1SKWerewolfPelt,1,FULL,0,Werewolf Pelt,늑대인간 가죽,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,MISC,0000000B,DASkeletonKey,1,FULL,0,Skeleton Key,스켈레톤 키,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,MISC,0000000B,DASkeletonKey,1,FULL,0,Skeleton Key,해골 열쇠,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,MISC,00000191,WelkyndStone,1,FULL,0,Welkynd Stone,웰킨드 스톤,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,FLOR,0600ACD9,IzCHarradaGround,1,FULL,0,Harrada Root Neutralized,중화된 하란다 뿌리,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,FLOR,0600ACDA,IzCSpiddalStickPLANT,1,FULL,0,Spiddal Stick Neutralized,중화된 스피드달의 가지,existing-6.9-context
@@ -14413,7 +14413,7 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234AB,OtiusLoran,1,FULL,0,Otius Loran,오티우스 로란,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234AD,GureryneSelvilo,1,FULL,0,Gureryne Selvilo,구레린 셀빌로,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234AE,OraggraBargol,1,FULL,0,Orag gra-Bargol,오라그 그라-바르골,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234AF,Rasheda,1,FULL,0,Rasheda,라쉬다,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234AF,Rasheda,1,FULL,0,Rasheda,라셰다,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234B3,HidesHisHeart,1,FULL,0,Hides-His-Heart,하이즈-히스-하트,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234B6,Bongond,1,FULL,0,Bongond,봉곤드,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,NPC_,000234BA,Athragar,1,FULL,0,Athragar,아트라가르,existing-6.9-context
@@ -19712,9 +19712,9 @@ If dig you will straight through the muck.<br>","<DIV ALIGN=""LEFT"">
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,20,CNAM,2,"Maglir tells me that he is no longer a member of the Fighters Guild. He is tired of trying to scrounge up work, so he has joined the Blackwood Company.","매글리르는 자기는 더 이상 파이터 길드원이 아니라고 말했다. 그는 일거리를 얻기위해 동분서주 하는 것에 지쳐버렸고, 그래서 블랙우드 컴퍼니에 가입했다고 했다.",existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,25,CNAM,3,Oreyn says I should speak with Aryarie in the Bravil Mages Guild in order to get the details needed to complete Maglir's contract.,오레인은 브라빌 메이지 길드의 아리어리에게서 임무의 세부적인 사항을 알아내어 매글리르의 의뢰를 완료하라고 했다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,29,CNAM,4,Maglir tells me I should speak with Aryarie at the Mage's Guild if I want to finish the Guild contract.,매글리르는 의뢰를 완료하려면 메이지 길드의 아리어리에게 말해보라고 했다.,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,33,CNAM,5,"Aryarie at the Mage's Guild has told me she is glad someone from the Fighters Guild is going to fulfill her contract. She was unwilling to hire the Blackwood Company, as she disliked their reputation. She would like me to find 10 portions of imp gall, and suggests Robber's Glen Cave might be a good spot to hunt for it.","메이지 길드의 아리어리는 파이터 길드의 누군가가 의뢰를 완료해주었으면 좋겠다고 말했다. 그녀는 블랙우드 컴퍼니의 평판을 싫어했기 때문에 그들을 고용하려고 하지 않았다. 그녀는 10개의 임프 담즙을 찾아달라고 하였고, 강도의 협곡 동굴이 그것을 사냥하기 좋은 장소라고 제안하였다.",existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,40,CNAM,6,I have found 10 portions of Imp Gall. I should bring them to Aryarie.,임프 담즙 10개를 발견하였다. 아리어리에게 가져다주어야 한다.,existing-6.9-context
-00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,44,CNAM,7,"Aryarie was pleased with the Imp Gall I brought her. As an extra reward, she's given me a Shield Ring. I should return to Oreyn.",아리아리(Aryarie)는 내가 임프겔(Imp Gall)을 갖다주자 매우 기뻐했다. 추가적인 보상으로 그녀는 나에게 이지스(Aegis)의 반지를 주었다. 오리언(Oreyn)에게 돌아가야겠다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,33,CNAM,5,"Aryarie at the Mage's Guild has told me she is glad someone from the Fighters Guild is going to fulfill her contract. She was unwilling to hire the Blackwood Company, as she disliked their reputation. She would like me to find 10 portions of imp gall, and suggests Robber's Glen Cave might be a good spot to hunt for it.","메이지 길드의 아리어리는 파이터 길드의 누군가가 의뢰를 완료해주었으면 좋겠다고 말했다. 그녀는 블랙우드 컴퍼니의 평판을 싫어했기 때문에 그들을 고용하려고 하지 않았다. 그녀는 10개의 임프의 담즙을 찾아달라고 하였고, 강도의 협곡 동굴이 그것을 사냥하기 좋은 장소라고 제안하였다.",existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,40,CNAM,6,I have found 10 portions of Imp Gall. I should bring them to Aryarie.,임프의 담즙 10개를 발견하였다. 아리어리에게 가져다주어야 한다.,existing-6.9-context
+00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,44,CNAM,7,"Aryarie was pleased with the Imp Gall I brought her. As an extra reward, she's given me a Shield Ring. I should return to Oreyn.",아리아리(Aryarie)는 내가 임프의 담즙을 갖다주자 매우 기뻐했다. 추가적인 보상으로 그녀는 나에게 이지스(Aegis)의 반지를 주었다. 오리언(Oreyn)에게 돌아가야겠다.,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0002D71A,FGD04Defector,48,CNAM,8,"Modryn Oreyn was disturbed by the news about Maglir, but was glad that I was able to complete the contract.","모드린 오레인은 매글리르에 관한 소식에 불안해했지만, 내가 임무를 완수한 것에 대하여 기뻐했다.",existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0002E5BE,MS27,2,FULL,0,Secrets of the Ayleids,아일레이드의 비밀,existing-6.9-context
 00 Base (No main resources)/OOO Enhanced.esp,QUST,0002E5BE,MS27,25,CNAM,0,"Umbacano has hired me to obtain an Ayleid Crown he wants from Herminia Cinna, a rival collector. He paid me in advance; whatever I do not use to purchase the crown I can keep as my fee.",움바카노는 경쟁 수집가 헤르미니아 시나가 가진 아일레이드 왕관을 구해 달라며 나를 고용했다. 돈은 미리 받았으며 왕관을 사는 데 쓰고 남은 돈은 내 보수로 가져도 된다고 했다.,existing-6.9-context

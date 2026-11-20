@@ -308,18 +308,15 @@ class UnofficialForwardingTests(unittest.TestCase):
         self.assertFalse(has_localizable_text(original))
         self.assertTrue(has_localizable_text(self.arena_fixture()))
 
-    def test_main_uses_supplement_to_forward_real_rank_rows(self):
+    def test_main_uses_supplement_to_forward_real_rank_rows_without_audit(self):
         source_root = self.root / 'originals'
         source_dir = source_root / 'UOP'
         source_dir.mkdir(parents=True)
         original = self.arena_fixture()
         original.replace(source_dir / original.name)
         output_root = self.root / 'output'
-        audit_path = self.root / 'vanilla_audit.json'
-        audit_path.write_text(
-            json.dumps({'applied': []}), encoding='utf-8')
         args = ['build_unofficial_release.py', '--source', str(source_root),
-                '--output', str(output_root), '--vanilla-audit', str(audit_path)]
+                '--output', str(output_root)]
         with patch.object(sys, 'argv', args), \
                 patch.object(unofficial, 'PAIRS', (('UOP', 'Synthetic-KR'),)), \
                 patch.object(unofficial, 'load_patch_canonical', return_value={}), \

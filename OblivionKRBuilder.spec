@@ -3,6 +3,7 @@ tables = [
     'canonical_translation_v2.csv',
     'canonical_ui_supplement_v1.csv',
     'canonical_nexus_56688_fur_v1.csv',
+    'canonical_issue24_25_fixes_v1.csv',
     'canonical_book_title_overrides_v1.csv',
     'canonical_locations_v2.csv',
     'issue6_book_markup_manifest_v1.json',

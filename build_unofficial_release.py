@@ -447,6 +447,9 @@ def main():
     book_restorations.update(reviewed_books)
     location_table = load_patch_canonical(root / "canonical_locations_v2.csv")
     patch_location_table = load_patch_canonical(root / "canonical_unofficial_locations_v2.csv")
+    # The reviewed supplement supplies exact FACT ranks even without a vanilla audit.
+    rank_table = load_translations(
+        root / "canonical_ui_supplement_v1.csv", encoded_column="obcjk_utf8_hex")
     if args.vanilla_audit:
         data = json.loads(args.vanilla_audit.read_text(encoding="utf-8"))
         vanilla_audit = {(a["file"], a["type"], a["formid"], a["field"], a["source_sha256"])
@@ -456,18 +459,13 @@ def main():
         vanilla_table = load_translations(
             root / "canonical_translation_v2.csv",
             extra_paths=(root / "canonical_ui_supplement_v1.csv",
-                         root / "canonical_nexus_56688_fur_v1.csv"),
-            encoded_column="obcjk_utf8_hex" if args.text_backend == "obcjk" else "new_bytes_hex")
-        # Audits generated before the UI supplement gained certain FACT ranks
-        # cannot authorize them. Keep the fallback strictly supplement-only.
-        rank_table = load_translations(
-            root / "canonical_ui_supplement_v1.csv",
+                         root / "canonical_nexus_56688_fur_v1.csv",
+                         root / "canonical_issue24_25_fixes_v1.csv"),
             encoded_column="obcjk_utf8_hex" if args.text_backend == "obcjk" else "new_bytes_hex")
         final_table = None
         quest_entries = loading_entries = None
     else:
         vanilla_audit = vanilla_table = final_table = quest_entries = loading_entries = None
-        rank_table = None
     completions = {}
     if args.text_backend == "legacy":
         with (Path(__file__).resolve().parent / "patch_completion.csv").open(encoding="utf-8-sig", newline="") as stream:
@@ -556,7 +554,7 @@ def main():
             if original.name == UOP_PLUGIN and args.text_backend == 'obcjk':
                 from build_gate_messages import build as build_gate_messages
                 temporary = destination.with_suffix('.esp.gate-building')
-                gate_report = build_gate_messages(destination, temporary, original.name)
+                gate_report = build_gate_messages(destination, temporary, original.name, include_issue25=True)
                 temporary.replace(destination)
                 report[original.name]['gate_messages'] = gate_report
                 report[original.name]['output_sha256'] = gate_report['output_sha256']

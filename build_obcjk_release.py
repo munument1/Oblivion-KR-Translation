@@ -85,7 +85,7 @@ def build(args):
     supplement = HERE / 'canonical_ui_supplement_v1.csv'
     # Verified Nexus 56688 armor names override the older canonical wording.
     fur_feedback = HERE / 'canonical_nexus_56688_fur_v1.csv'
-    extra_tables = (supplement, fur_feedback, *(path.resolve() for path in args.extra_csv))
+    extra_tables = (supplement, fur_feedback)
     translations = load_translations(
         args.csv.resolve(), extra_tables,
         encoded_column='obcjk_utf8_hex')
@@ -110,6 +110,12 @@ def build(args):
         correct_glossary_exceptions(translations, HERE / 'canonical_translation_v2.csv')
         from reviewed_semantics import correct_reviewed_semantics
         correct_reviewed_semantics(translations)
+        issue_fixes = HERE / 'canonical_issue24_25_fixes_v1.csv'
+        for key, entries in load_translations(issue_fixes, encoded_column='obcjk_utf8_hex').items():
+            translations[key].extend(entries)
+    for path in args.extra_csv:
+        for key, entries in load_translations(path.resolve(), encoded_column='obcjk_utf8_hex').items():
+            translations[key].extend(entries)
     menu_gmsts = load_utf8_menu_gmsts(HERE / 'menu_gmst_new_821.csv')
     menu_formids = frozenset(item[0] for item in menu_gmsts)
 
@@ -212,7 +218,7 @@ def build(args):
             reports[name]['output_sha256'] = shrine_report['output_sha256']
 
         gate_output = temp / 'Oblivion.gate-messages.esm'
-        gate_report = build_gate_messages(master, gate_output, MASTER)
+        gate_report = build_gate_messages(master, gate_output, MASTER, include_issue25=True)
         copied_gate = master.with_suffix('.esm.gate-building')
         shutil.copyfile(gate_output, copied_gate)
         if sha256_file(copied_gate) != gate_report['output_sha256']:

@@ -28,6 +28,45 @@ PINS = {
 }
 
 
+ISSUE25_PINS = {
+    ('Oblivion.esm', 0x000C8A9C): ('SidewaysCave01Script', '321568d20badab4988580f017b8d6c2f18e8803b85f8394cf4ebe8e60e740f7e'),
+    ('Oblivion.esm', 0x000C8A9B): ('SidewaysCave03Script', 'd4a728f0da0df11e5010a630597681072a152c696e6019e9188138374390a9b2'),
+    ('Oblivion.esm', 0x000C8A9A): ('SidewaysCave02Script', 'f2ef40e0c78179f742d1a8e4ced77a9e494181541b76052711b720e1c7197f65'),
+    ('Oblivion.esm', 0x000C8107): ('SidewaysCaveTablet03', '9a8bd10b25f12fbe4246cffd14f58d14c43b0797e52681c66082982ab405cfde'),
+    ('Oblivion.esm', 0x000C8106): ('SidewaysCaveTablet01', '51b2f2dfe36fd697e1e8e9bce19eb67353d5eb77bcbb4faab39335871652850a'),
+    ('Oblivion.esm', 0x0009764C): ('SE09RootGateMania02SCRIPT', '0b73160bda0792176a3133b4007b3ccdc6de908c4e021c167865e9d485f69cf6'),
+    ('Oblivion.esm', 0x000410C8): ('RootGateMania02SCRIPT', 'c40fdcdaf2beff7f83661c342ec3961c68f1c2494d78bd7962764840371be604'),
+    ('Oblivion.esm', 0x0007D435): ('SEDawnfangSpellEffectScript', 'b06d3fa7b6e5cdd8c9dd7a3481f585292f23533c0aa1f82e75578cb394d9e18e'),
+    ('Oblivion.esm', 0x0007D444): ('SEDuskfangSpellEffectScript', '6c3524d0f52e13fe9d0ae7903d46c447ea12e982cf9ac97b236b68fb47615516'),
+    ('Oblivion.esm', 0x000823C5): ('SEHillofSuicidesSCRIPT', '0ed8cfef539daeed7a54f4c686c1674e41aad61750500ac56179df34573eb455'),
+    ('Oblivion.esm', 0x0006A8E1): ('AyleidWell', 'b9507db2d72572029beaa452439d56877543ac551be7463db7534334c78af47b'),
+    ('Oblivion.esm', 0x0002D078): ('DarkBrotherhoodScript', 'b02f44bc720c9ed5a8c3156a3d47540ed0fce02fd1341b7d909a4b40bcb7e2f6'),
+    ('Unofficial Oblivion Patch.esp', 0x0006A8E1): ('AyleidWell', 'fcbc2316d0bd60368246acd64dd781c6c8b39a62f9b2b0bd16ef17036aecaa77'),
+    ('Unofficial Oblivion Patch.esp', 0x0002D078): ('DarkBrotherhoodScript', 'c48a871533e52e529c92b3917460f87d505df8f2580fd532fd9647d9bcc0a659'),
+}
+
+ISSUE25_MESSAGES = {
+    ' The roots will not budge.': '뿌리가 꿈쩍없다.',
+    'Dawnfang has extinguished %.0f life.': '다운팽 처치 수: %.0f',
+    'Dawnfang has extinguished %.0f lives.': '다운팽 처치 수: %.0f',
+    "Dawnfang's bloodthirst has been quenched.": '다운팽의 갈증이 가셨다.',
+    'Duskfang has extinguished %.0f life.': '더스크팽 처치 수: %.0f',
+    'Duskfang has extinguished %.0f lives.': '더스크팽 처치 수: %.0f',
+    "Duskfang's bloodthirst has been quenched.": '더스크팽의 갈증이 가셨다.',
+    'You cannot speak with this restless soul.': '이 영혼과는 대화할 수 없다.',
+    'This well has been completely drained.': '우물의 힘이 모두 고갈됐다.',
+    'A drained well recharges slowly. ': '우물은 천천히 회복된다.',
+    'You draw power from the well.': '우물의 힘을 얻었다.',
+    'Your killing has been observed by forces unknown....': '정체 모를 자들이 살인을 지켜보았다...',
+    '[A hasty translation is scrawled here...] Meridia-child, Earth root power, sea wave like (earth like a flood?).  People-out (escape? present tense? imperative?).':
+        '[급히 옮긴 글] 메리디아의 아이, 땅뿌리의 힘, 파도처럼(땅이 물결처럼?). 사람들-밖으로(도망? 현재형? 명령형?).',
+    '[A hasty translation is scrawled here...] Stone-Settlers (builders?) not rest (wake?) Meridia.  Terror of the Most Terror. Haste to safehome.':
+        '[급히 옮긴 글] 돌에 정착한 자들(석공?)이 메리디아를 깨운다(?). 지극한 공포. 안전한 집으로 서둘러라.',
+    '[A hasty translation is scrawled here...] Fourth Star Hour (time?) Terror-of-the-Most-Terror of Meridia come (came?).':
+        '[급히 옮긴 글] 네 번째 별의 시각(시간?). 메리디아의 지극한 공포가 온다(왔나?).',
+}
+
+
 def translate_body(body, edid, pin):
     if hashlib.sha256(body).hexdigest() != pin:
         raise ValueError('Gate script differs from the verified original')
@@ -38,11 +77,12 @@ def translate_body(body, edid, pin):
     if sum(k == b'SCDA' for k, _, _ in parts) != 1 or sum(k == b'SCTX' for k, _, _ in parts) != 1:
         raise ValueError('Expected one compiled script and one source script')
     lines = re.findall(rb'^\s*message(?:box)?\s+"([^"\r\n]+)"', fields[b'SCTX'], re.I | re.M)
-    if (len(lines), len(set(lines))) not in ((1, 1), (3, 3)):
+    if (len(lines), len(set(lines))) not in ((1, 1), (2, 2), (3, 3)):
         raise ValueError('Unexpected gate message count')
     replacements = []
     for english in dict.fromkeys(lines):
-        korean = TRANSLATIONS[english.decode('ascii')].encode('utf-8')
+        source_text = english.decode('ascii')
+        korean = (TRANSLATIONS | ISSUE25_MESSAGES)[source_text].encode('utf-8')
         if len(korean) > len(english):
             raise ValueError('Translation exceeds reserved literal length')
         replacements.append((english, korean.ljust(len(english), b' ')))
@@ -72,13 +112,15 @@ def translate_body(body, edid, pin):
     return bytes(output), changes
 
 
-def build(source, output, plugin=None):
+def build(source, output, plugin=None, *, include_issue25=False):
     source, output = Path(source), Path(output)
     plugin = plugin or source.name
     pins = {fid: item for (name, fid), item in PINS.items() if name == plugin}
     expected = 3
     if len(pins) != expected:
         raise ValueError('Unexpected gate identities for supported plugin')
+    if include_issue25:
+        pins.update({fid: item for (name, fid), item in ISSUE25_PINS.items() if name == plugin})
     if source.resolve() == output.resolve() or output.exists():
         raise ValueError('Gate output must be new and separate from input')
     original = source.read_bytes()

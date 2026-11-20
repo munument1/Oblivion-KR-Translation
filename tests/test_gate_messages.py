@@ -21,8 +21,10 @@ class GateMessageTests(unittest.TestCase):
         return body, hashlib.sha256(body).hexdigest()
 
     def test_messages_fit_and_only_literals_change(self):
+        issue25 = list(gates.ISSUE25_MESSAGES)
         for texts in ([next(iter(gates.TRANSLATIONS))], list(gates.TRANSLATIONS)[1:4],
-                      [list(gates.TRANSLATIONS)[-1]]):
+                      [list(gates.TRANSLATIONS)[-1]], [issue25[0]], issue25[1:4], issue25[4:7],
+                      [issue25[7]], issue25[-3:-1], issue25[-4:-1], [issue25[-1]]):
             body, pin = self.fixture(texts)
             result, changes = gates.translate_body(body, 'GateFixture', pin)
             self.assertEqual(len(changes), 2*len(texts))

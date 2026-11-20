@@ -117,9 +117,9 @@ DLCMehrunesRazor.esp,CELL,0100364B,FULL,Cava Beldameld,DL9c08house2,카바 벨�
 DLCMehrunesRazor.esp,CELL,0100385C,FULL,Cava Marspanga,DL9c08house3,카바 말스판가,ecb9b4ebb09420eba790ec8aa4ed8c90eab08000,verified
 DLCMehrunesRazor.esp,REFR,0100206B,FULL,Sundercliff Watch,DL09MapMarker,선더클리프 감시대,ec84a0eb8d94ed81b4eba6aced948420eab090ec8b9ceb8c8000,verified
 DLCOrrery - Unofficial Patch.esp,CELL,0002C173,FULL,Imperial Orrery,ICArcaneUniversityImperialOrrery,제국 천체관측기,eca09ceab5ad20ecb29cecb2b4eab480ecb8a1eab8b000,verified
-DLCOrrery - Unofficial Patch.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,아치메이지의 로비,ec9584ecb998eba994ec9db4eca780ec9d9820eba19cebb98400,verified
+DLCOrrery - Unofficial Patch.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,대마법사의 로비,eb8c80eba788ebb295ec82acec9d9820eba19cebb98400,verified
 DLCOrrery.esp,CELL,0002C173,FULL,Imperial Orrery,ICArcaneUniversityImperialOrrery,제국 천체관측기,eca09ceab5ad20ecb29cecb2b4eab480ecb8a1eab8b000,verified
-DLCOrrery.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,아치메이지의 로비,ec9584ecb998eba994ec9db4eca780ec9d9820eba19cebb98400,verified
+DLCOrrery.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,대마법사의 로비,eb8c80eba788ebb295ec82acec9d9820eba19cebb98400,verified
 DLCOrrery.esp,REFR,000175E1,FULL,Brotch Camp,BrotchCampMapMarker,브로치 캠프,ebb88ceba19cecb99820ecbaa0ed948400,verified
 DLCOrrery.esp,REFR,000175F3,FULL,Camp Ales,CampAlesMapMarker,알스 캠프,ec958cec8aa420ecbaa0ed948400,verified
 DLCOrrery.esp,REFR,000175F5,FULL,Bodean Camp,BodeanCampMapMarker,보딘 캠프,ebb3b4eb949820ecbaa0ed948400,verified
@@ -397,11 +397,11 @@ Oblivion.esm,CELL,00010A46,FULL,"Dire Warren, Subterrane",XPDireWarren02,"끔찍
 Oblivion.esm,CELL,00010A47,FULL,Knotbone Pipes,XPKnotboneChamber04,매듭뼈 파이프,eba7a4eb93adebbc8820ed8c8cec9db4ed948400,verified
 Oblivion.esm,CELL,00010A48,FULL,"Dunroot Burrow, Sanctum of Decadence",XPDunrootBurrow05,"던루트 암굴, 퇴폐의 성소",eb8d98eba3a8ed8ab820ec9594eab5b42c20ed87b4ed8f90ec9d9820ec84b1ec868c00,verified
 Oblivion.esm,CELL,00010A49,FULL,Knifepoint Hollow,XPKnifepointHollow01,나이프포인트 공동,eb8298ec9db4ed9484ed8facec9db8ed8ab820eab3b5eb8f9900,verified
-Oblivion.esm,CELL,00010A4A,FULL,"Knotty Bramble, Hatchery",XPKnottyBramble03,"매듭진 검은딸기나무, 부화장",eba7a4eb93adeca78420eab280ec9d80eb94b8eab8b0eb8298ebacb42c20ebb680ed9994ec9ea500,verified
+Oblivion.esm,CELL,00010A4A,FULL,"Knotty Bramble, Hatchery",XPKnottyBramble03,"뒤엉킨 가시덤불, 부화장",eb92a4ec9789ed82a820eab080ec8b9ceb8da4ebb6882c20ebb680ed9994ec9ea500,verified
 Oblivion.esm,CELL,00010A4B,FULL,Caverns of Susurration,XPGardens05,더미 셀,eb8d94ebafb820ec858000,verified
 Oblivion.esm,CELL,00010A4C,FULL,Knotbone Juncture,XPKnotboneChamber03,매듭뼈 교차로,eba7a4eb93adebbc8820eab590ecb0a8eba19c00,verified
 Oblivion.esm,CELL,00010A4E,FULL,"Dunroot Burrow, Bramble Halls",XPDunrootBurrow04,"던루트 암굴, 검은딸기나무 회랑",eb8d98eba3a8ed8ab820ec9594eab5b42c20eab280ec9d80eb94b8eab8b0eb8298ebacb420ed9a8ceb9e9100,verified
-Oblivion.esm,CELL,00010A4F,FULL,Knotty Bramble,XPKnottyBramble01,매듭진 검은딸기나무,eba7a4eb93adeca78420eab280ec9d80eb94b8eab8b0eb8298ebacb400,verified
+Oblivion.esm,CELL,00010A4F,FULL,Knotty Bramble,XPKnottyBramble01,뒤엉킨 가시덤불,eb92a4ec9789ed82a820eab080ec8b9ceb8da4ebb68800,verified
 Oblivion.esm,CELL,00010A50,FULL,"Blackroot Lair, Outer Encampment",XPBlackrootLair02,"블랙루트 은신처, 외부 야영지",ebb894eb9e99eba3a8ed8ab820ec9d80ec8ba0ecb2982c20ec99b8ebb68020ec95bcec9881eca78000,verified
 Oblivion.esm,CELL,00010A51,FULL,"The Fountainhead, Nursery of Delerium",XPGloomstonePassage04,"샘의 원천, 델리리움의 보육원",ec8398ec9d9820ec9b90ecb29c2c20eb8db8eba6aceba6acec9b80ec9d9820ebb3b4ec9ca1ec9b9000,verified
 Oblivion.esm,CELL,00010A52,FULL,Knotbone Chamber,XPKnotboneChamber01,매듭뼈 방,eba7a4eb93adebbc8820ebb0a900,verified
@@ -410,7 +410,7 @@ Oblivion.esm,CELL,00010A56,FULL,"Rotten Den, Encampment",XPRottenDen05,"썩은 �
 Oblivion.esm,CELL,00010A58,FULL,"Dunroot Burrow, Drone Tunnels",XPDunrootBurrow03,"던루트 암굴, 일벌레 통로",eb8d98eba3a8ed8ab820ec9594eab5b42c20ec9dbcebb28ceba08820ed86b5eba19c00,verified
 Oblivion.esm,CELL,00010A5A,FULL,Corpserot Prison,XPCorpserotPassage01,코어세로트 감옥,ecbd94ec96b4ec84b8eba19ced8ab820eab090ec98a500,verified
 Oblivion.esm,CELL,00010A5D,FULL,Dunroot Burrow,XPDunrootBurrow01,던루트 암굴,eb8d98eba3a8ed8ab820ec9594eab5b400,verified
-Oblivion.esm,CELL,00010A5E,FULL,"Knotty Bramble, Lost Crypt",XPKnottyBramble02,"매듭진 검은딸기나무, 잃어버린 지하실",eba7a4eb93adeca78420eab280ec9d80eb94b8eab8b0eb8298ebacb42c20ec9e83ec96b4ebb284eba6b020eca780ed9598ec8ba400,verified
+Oblivion.esm,CELL,00010A5E,FULL,"Knotty Bramble, Lost Crypt",XPKnottyBramble02,"뒤엉킨 가시덤불, 잃어버린 지하실",eb92a4ec9789ed82a820eab080ec8b9ceb8da4ebb6882c20ec9e83ec96b4ebb284eba6b020eca780ed9598ec8ba400,verified
 Oblivion.esm,CELL,00010A5F,FULL,Conservatorium Corpusculum,XPGardens04,음악원 소형,ec9d8cec9585ec9b9020ec868ced989500,verified
 Oblivion.esm,CELL,00010A60,FULL,The Fountainhead,XPGloomstonePassage01,샘의 원천,ec8398ec9d9820ec9b90ecb29c00,verified
 Oblivion.esm,CELL,00010A61,FULL,"Dunroot Burrow, Kelp Fen",XPDunrootBurrow02,"던루트 암굴, 해초 늪지",eb8d98eba3a8ed8ab820ec9594eab5b42c20ed95b4ecb48820eb8aaaeca78000,verified
@@ -927,7 +927,7 @@ Oblivion.esm,CELL,0002C176,FULL,Mage Quarters,ICArcaneUniversityMageQuarters,메
 Oblivion.esm,CELL,0002C177,FULL,Mystic Archives,ICArcaneUniversityMysticArchives,신비의 기록 보관소,ec8ba0ebb984ec9d9820eab8b0eba19d20ebb3b4eab480ec868c00,verified
 Oblivion.esm,CELL,0002C178,FULL,Praxographical Center,ICArcaneUniversitySpellmaker,실용마법학 연구소,ec8ba4ec9aa9eba788ebb295ed959920ec97b0eab5acec868c00,verified
 Oblivion.esm,CELL,0002C179,FULL,Lustratorium,ICArcaneUniversityAlchemyHeadquarters,루스트라토리움,eba3a8ec8aa4ed8ab8eb9dbced86a0eba6acec9b8000,verified
-Oblivion.esm,CELL,0002C17A,FULL,Arch-Mage's Tower Council Chambers,ICArcaneUniversityArchMagesTowerCouncil,아치메이지의 탑 의원회 회의실,ec9584ecb998eba994ec9db4eca780ec9d9820ed839120ec9d98ec9b90ed9a8c20ed9a8cec9d98ec8ba400,verified
+Oblivion.esm,CELL,0002C17A,FULL,Arch-Mage's Tower Council Chambers,ICArcaneUniversityArchMagesTowerCouncil,대마법사의 탑 의원회 회의실,eb8c80eba788ebb295ec82acec9d9820ed839120ec9d98ec9b90ed9a8c20ed9a8cec9d98ec8ba400,verified
 Oblivion.esm,CELL,0002C17B,FULL,Armory,ICImperialLegionHQArmory,무기고,ebacb4eab8b0eab3a000,verified
 Oblivion.esm,CELL,0002C17C,FULL,The Bastion,ICImperialLegionHQTheBastion,요새,ec9a94ec838800,verified
 Oblivion.esm,CELL,0002C17E,FULL,Imperial Legion Barracks,ICImperialLegionHQBarracks,제국군 병영,eca09ceab5adeab5b020ebb391ec988100,verified
@@ -1493,8 +1493,8 @@ Oblivion.esm,CELL,00049AF2,FULL,Edgar's Basement,ICMarketDistrictEdgarsDiscountS
 Oblivion.esm,CELL,00049AF3,FULL,Rindir's Basement,ICMarketDistrictRindirsStaffsBasement,린디르의 지팡이,eba6b0eb9494eba5b4ec9d9820eca780ed8ca1ec9db400,verified
 Oblivion.esm,CELL,00049AF4,FULL,Rindir's Private Quarters,ICMarketDistrictRindirsStaffsUpstairs,린디르의 개인 방,eba6b0eb9494eba5b4ec9d9820eab09cec9db820ebb0a900,verified
 Oblivion.esm,CELL,00049BC0,FULL,Fort Teleman,FortTeleman,텔레만 요새,ed8594eba088eba78c20ec9a94ec838800,verified
-Oblivion.esm,CELL,00049CF8,FULL,Arch-Mage's Quarters,ICArcaneUniversityArchMagesQuarters,아치메이지의 방,ec9584ecb998eba994ec9db4eca780ec9d9820ebb0a900,verified
-Oblivion.esm,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,아치메이지의 로비,ec9584ecb998eba994ec9db4eca780ec9d9820eba19cebb98400,verified
+Oblivion.esm,CELL,00049CF8,FULL,Arch-Mage's Quarters,ICArcaneUniversityArchMagesQuarters,대마법사의 방,eb8c80eba788ebb295ec82acec9d9820ebb0a900,verified
+Oblivion.esm,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,대마법사의 로비,eb8c80eba788ebb295ec82acec9d9820eba19cebb98400,verified
 Oblivion.esm,CELL,00049E23,FULL,Three Brothers Trade Goods Basement,ICMarketDistrictThreeBrothersBasement,삼형제 교역소 지하실,ec82bced9895eca09c20eab590ec97adec868c20eca780ed9598ec8ba400,verified
 Oblivion.esm,CELL,00049E24,FULL,Stonewall Shields Basement,ICMarketDistrictStonewallShieldsBasement,석벽의 방패 지하실,ec849debb2bdec9d9820ebb0a9ed8ca820eca780ed9598ec8ba400,verified
 Oblivion.esm,CELL,00049E25,FULL,Office of Imperial Commerce Basement,ICMarketDistrictOfficeBasement,제국 상무국 지하실,eca09ceab5ad20ec8381ebacb4eab5ad20eca780ed9598ec8ba400,verified
@@ -2117,7 +2117,7 @@ Oblivion.esm,REFR,0000DA60,FULL,Xedilian,XedilianMapMarker,제딜리안,eca09ceb
 Oblivion.esm,REFR,0000DA65,FULL,Xiditte,,시디테,ec8b9ceb9494ed858c00,verified
 Oblivion.esm,REFR,0000DA6C,FULL,Corpserot Passage,,코어세로트 통로,ecbd94ec96b4ec84b8eba19ced8ab820ed86b5eba19c00,verified
 Oblivion.esm,REFR,0000DA6E,FULL,Rotten Den,,썩은 굴,ec8da9ec9d8020eab5b400,verified
-Oblivion.esm,REFR,0000DA70,FULL,Knotty Bramble,XPKnottyBrambleMapMarker,매듭진 검은딸기나무,eba7a4eb93adeca78420eab280ec9d80eb94b8eab8b0eb8298ebacb400,verified
+Oblivion.esm,REFR,0000DA70,FULL,Knotty Bramble,XPKnottyBrambleMapMarker,뒤엉킨 가시덤불,eb92a4ec9789ed82a820eab080ec8b9ceb8da4ebb68800,verified
 Oblivion.esm,REFR,0000DA72,FULL,Blackroot Lair,,블랙루트 은신처,ebb894eb9e99eba3a8ed8ab820ec9d80ec8ba0ecb29800,verified
 Oblivion.esm,REFR,0000DA74,FULL,Knotbone Chamber,,매듭뼈 방,eba7a4eb93adebbc8820ebb0a900,verified
 Oblivion.esm,REFR,0000DA76,FULL,Fetid Grove,FetidGroveMapMarker,악취의 숲,ec9585ecb7a8ec9d9820ec88b200,verified
@@ -3024,7 +3024,7 @@ Unofficial Oblivion Patch.esp,CELL,0002C176,FULL,Mage Quarters,ICArcaneUniversit
 Unofficial Oblivion Patch.esp,CELL,0002C177,FULL,Mystic Archives,ICArcaneUniversityMysticArchives,신비의 기록 보관소,ec8ba0ebb984ec9d9820eab8b0eba19d20ebb3b4eab480ec868c00,verified
 Unofficial Oblivion Patch.esp,CELL,0002C178,FULL,Praxographical Center,ICArcaneUniversitySpellmaker,실용마법학 연구소,ec8ba4ec9aa9eba788ebb295ed959920ec97b0eab5acec868c00,verified
 Unofficial Oblivion Patch.esp,CELL,0002C179,FULL,Lustratorium,ICArcaneUniversityAlchemyHeadquarters,루스트라토리움,eba3a8ec8aa4ed8ab8eb9dbced86a0eba6acec9b8000,verified
-Unofficial Oblivion Patch.esp,CELL,0002C17A,FULL,Arch-Mage's Tower Council Chambers,ICArcaneUniversityArchMagesTowerCouncil,아치메이지의 탑 의원회 회의실,ec9584ecb998eba994ec9db4eca780ec9d9820ed839120ec9d98ec9b90ed9a8c20ed9a8cec9d98ec8ba400,verified
+Unofficial Oblivion Patch.esp,CELL,0002C17A,FULL,Arch-Mage's Tower Council Chambers,ICArcaneUniversityArchMagesTowerCouncil,대마법사의 탑 의원회 회의실,eb8c80eba788ebb295ec82acec9d9820ed839120ec9d98ec9b90ed9a8c20ed9a8cec9d98ec8ba400,verified
 Unofficial Oblivion Patch.esp,CELL,0002C17B,FULL,Armory,ICImperialLegionHQArmory,무기고,ebacb4eab8b0eab3a000,verified
 Unofficial Oblivion Patch.esp,CELL,0002C17C,FULL,The Bastion,ICImperialLegionHQTheBastion,요새,ec9a94ec838800,verified
 Unofficial Oblivion Patch.esp,CELL,0002C17E,FULL,Imperial Legion Barracks,ICImperialLegionHQBarracks,제국군 병영,eca09ceab5adeab5b020ebb391ec988100,verified
@@ -3449,8 +3449,8 @@ Unofficial Oblivion Patch.esp,CELL,00049AF2,FULL,Edgar's Basement,ICMarketDistri
 Unofficial Oblivion Patch.esp,CELL,00049AF3,FULL,Rindir's Basement,ICMarketDistrictRindirsStaffsBasement,린디르의 지팡이,eba6b0eb9494eba5b4ec9d9820eca780ed8ca1ec9db400,verified
 Unofficial Oblivion Patch.esp,CELL,00049AF4,FULL,Rindir's Private Quarters,ICMarketDistrictRindirsStaffsUpstairs,린디르의 개인 방,eba6b0eb9494eba5b4ec9d9820eab09cec9db820ebb0a900,verified
 Unofficial Oblivion Patch.esp,CELL,00049BC0,FULL,Fort Teleman,FortTeleman,텔레만 요새,ed8594eba088eba78c20ec9a94ec838800,verified
-Unofficial Oblivion Patch.esp,CELL,00049CF8,FULL,Arch-Mage's Quarters,ICArcaneUniversityArchMagesQuarters,아치메이지의 방,ec9584ecb998eba994ec9db4eca780ec9d9820ebb0a900,verified
-Unofficial Oblivion Patch.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,아치메이지의 로비,ec9584ecb998eba994ec9db4eca780ec9d9820eba19cebb98400,verified
+Unofficial Oblivion Patch.esp,CELL,00049CF8,FULL,Arch-Mage's Quarters,ICArcaneUniversityArchMagesQuarters,대마법사의 방,eb8c80eba788ebb295ec82acec9d9820ebb0a900,verified
+Unofficial Oblivion Patch.esp,CELL,00049CF9,FULL,Arch-Mage's Lobby,ICArcaneUniversityArchMagesTowerLobby,대마법사의 로비,eb8c80eba788ebb295ec82acec9d9820eba19cebb98400,verified
 Unofficial Oblivion Patch.esp,CELL,00049E23,FULL,Three Brothers Trade Goods Basement,ICMarketDistrictThreeBrothersBasement,삼형제 교역소 지하실,ec82bced9895eca09c20eab590ec97adec868c20eca780ed9598ec8ba400,verified
 Unofficial Oblivion Patch.esp,CELL,00049E24,FULL,Stonewall Shields Basement,ICMarketDistrictStonewallShieldsBasement,석벽의 방패 지하실,ec849debb2bdec9d9820ebb0a9ed8ca820eca780ed9598ec8ba400,verified
 Unofficial Oblivion Patch.esp,CELL,00049E25,FULL,Office of Imperial Commerce Basement,ICMarketDistrictOfficeBasement,제국 상무국 지하실,eca09ceab5ad20ec8381ebacb4eab5ad20eca780ed9598ec8ba400,verified
@@ -3840,7 +3840,7 @@ Unofficial Shivering Isles Patch.esp,CELL,00010369,FULL,"Xirethard, Subterrane",
 Unofficial Shivering Isles Patch.esp,CELL,00010A40,FULL,"Knifepoint Hollow, Chantry",XPKnifepointHollow02new,"나이프포인트 공동, 기도소",eb8298ec9db4ed9484ed8facec9db8ed8ab820eab3b5eb8f992c20eab8b0eb8f84ec868c00,verified
 Unofficial Shivering Isles Patch.esp,CELL,00010A45,FULL,Blackroot Lair,XPBlackrootLair01,블랙루트 은신처,ebb894eb9e99eba3a8ed8ab820ec9d80ec8ba0ecb29800,verified
 Unofficial Shivering Isles Patch.esp,CELL,00010A49,FULL,Knifepoint Hollow,XPKnifepointHollow01,나이프포인트 공동,eb8298ec9db4ed9484ed8facec9db8ed8ab820eab3b5eb8f9900,verified
-Unofficial Shivering Isles Patch.esp,CELL,00010A4A,FULL,"Knotty Bramble, Hatchery",XPKnottyBramble03,"매듭진 검은딸기나무, 부화장",eba7a4eb93adeca78420eab280ec9d80eb94b8eab8b0eb8298ebacb42c20ebb680ed9994ec9ea500,verified
+Unofficial Shivering Isles Patch.esp,CELL,00010A4A,FULL,"Knotty Bramble, Hatchery",XPKnottyBramble03,"뒤엉킨 가시덤불, 부화장",eb92a4ec9789ed82a820eab080ec8b9ceb8da4ebb6882c20ebb680ed9994ec9ea500,verified
 Unofficial Shivering Isles Patch.esp,CELL,00010A50,FULL,"Blackroot Lair, Outer Encampment",XPBlackrootLair02,"블랙루트 은신처, 외부 야영지",ebb894eb9e99eba3a8ed8ab820ec9d80ec8ba0ecb2982c20ec99b8ebb68020ec95bcec9881eca78000,verified
 Unofficial Shivering Isles Patch.esp,CELL,00010A60,FULL,The Fountainhead,XPGloomstonePassage01,샘의 원천,ec8398ec9d9820ec9b90ecb29c00,verified
 Unofficial Shivering Isles Patch.esp,CELL,00010A73,FULL,"Blackroot Lair, Inner Encampment",XPBlackrootLair04,"블랙루트 은신처, 내부 야영지",ebb894eb9e99eba3a8ed8ab820ec9d80ec8ba0ecb2982c20eb82b4ebb68020ec95bcec9881eca78000,verified
