@@ -85,7 +85,7 @@ def build(source,output,version='6.9a'):
     for rel,info in manifest['plugins'].items():
         assert sha((source/rel).read_bytes())==info['sha256'],f'Wrong source version: {rel}'
     output.mkdir(parents=True)
-    report={'version':f'{version}-KR1.0','plugins':{},'in_game_tested':False}
+    report={'version':manifest.get('korean_release', f'{version}-KR1.0'),'plugins':{},'in_game_tested':False}
     for rel,info in manifest['plugins'].items():
         original=(source/rel).read_bytes();lookup=defaultdict(list)
         for r in by_file[rel]:lookup[(r['kind'].encode(),int(r['fid'],16))].append(r)

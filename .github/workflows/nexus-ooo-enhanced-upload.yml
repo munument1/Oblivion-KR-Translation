@@ -83,6 +83,10 @@ jobs:
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "filename=$filename" >> "$GITHUB_OUTPUT"
           echo "source_version=$source_version" >> "$GITHUB_OUTPUT"
+          if [[ "$version" == '6.9a-KR1.1' ]]; then
+            echo 'description=OOO Enhanced 6.9a의 한국어 번역 교정. 원작자는 Saldron이며 원본이 필요합니다. https://www.nexusmods.com/oblivion/mods/47187 · 생성형 AI로 한국어 문구를 교정했습니다. 실게임 플레이 검증은 생략했습니다.' >> "$GITHUB_OUTPUT"
+            echo 'changelog=GitHub #24·#25 관련 오탈자와 퀘스트 문구 6곳을 수정했습니다. 변경된 본편 ESP는 xEdit으로 다시 확인했고, 선택 ESP 23개는 이전 검증본과 해시가 일치합니다.' >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Append verified xEdit result to the existing Nexus changelog
         if: inputs.operation == 'qa-note'
@@ -128,8 +132,8 @@ jobs:
           filename: ${{ steps.release.outputs.filename }}
           version: ${{ steps.release.outputs.version }}
           display_name: OOO Enhanced Korean UTF8
-          description: 'OOO Enhanced 6.9a 한국어 패치. 발렌우드 순찰자·노예상인과 밀수꾼 일지 148개 추가·변경 항목, 관문 알림의 두 번째 표기를 반영했습니다. 원본 폴더 구조의 ESP 24개 교체본이며 원본 6.9a와 UTF-8 한국어 환경이 필요합니다. xEdit 원본·한국어판 동일 진단 6건, 번역 추가 진단 0건. 한영 대조표·빌더·검증 기록은 GitHub mods/ooo_enhanced에 있습니다. 실제 게임 실행은 미검증입니다.'
-          changelog: '6.9a-KR1.0: 원본 6.9a 대응. 일지 148항목을 포함한 변경 대조표 150행 및 전체 한영 대조표 15,970행 갱신. 기존 OOO 번역 후보를 영문 원문과 재검토하고 지명·인명 표기 정리. 관문 알림 세 번째→두 번째 수정 반영. ESP 24개·레코드 76,829개·스크립트 구간 1,422개 정적 검증, xEdit 영문·한국어판 동일 진단 6건 및 번역 추가 진단 0건 확인. 선택 ESP 23개는 6.9-KR1.0과 동일.'
+          description: ${{ steps.release.outputs.description || 'OOO Enhanced 6.9a 한국어 패치. 원본 6.9a와 UTF-8 한국어 환경이 필요합니다. 실제 게임 실행은 미검증입니다.' }}
+          changelog: ${{ steps.release.outputs.changelog || '원본 6.9a 대응. 퀘스트 일지 및 관문 표기를 교정했습니다.' }}
           category: main
           archive_existing_version: 'false'
           primary_mod_manager_download: 'true'
